@@ -13,6 +13,7 @@
         <module>service</module>
         <module>service-impl</module>
         <module>web</module>
+        <module>entity</module>
     </modules>
     <properties>
         <java.version>1.8</java.version>
