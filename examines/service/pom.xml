@@ -13,7 +13,7 @@
     <dependencies>
         <dependency>
             <groupId>com.csdj.examines</groupId>
-            <artifactId>entity</artifactId>
+            <artifactId>common</artifactId>
         </dependency>
     </dependencies>
 

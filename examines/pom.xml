@@ -9,11 +9,11 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>entity</module>
+        <module>common</module>
         <module>service</module>
         <module>service-impl</module>
         <module>web</module>
-        <module>entity</module>
+        <module>common</module>
     </modules>
     <properties>
         <java.version>1.8</java.version>
@@ -38,7 +38,7 @@
             </dependency>
             <dependency>
                 <groupId>com.csdj.examines</groupId>
-                <artifactId>entity</artifactId>
+                <artifactId>common</artifactId>
                 <version>${examines.version}</version>
             </dependency>
         </dependencies>
