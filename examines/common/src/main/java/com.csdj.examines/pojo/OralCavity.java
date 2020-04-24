@@ -1,3 +1,5 @@
+package com.csdj.examines.pojo;
+
 import com.sun.xml.internal.ws.spi.db.DatabindingException;
 
 import java.util.Date;

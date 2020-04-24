@@ -1,3 +1,5 @@
+package com.csdj.examines.pojo;
+
 public class Suggest {
     private  Integer id;
 

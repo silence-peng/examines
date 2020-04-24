@@ -1,3 +1,5 @@
+package com.csdj.examines.pojo;
+
 public class YxAdviseCheckresult {
     private  Integer relationId;
     private  Integer resultId;

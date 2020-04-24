@@ -1,3 +1,5 @@
+package com.csdj.examines.pojo;
+
 public class Registertype {
     private  Integer regtypeId;
     private  String type;
