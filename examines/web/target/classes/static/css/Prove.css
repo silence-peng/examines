@@ -1,0 +1,74 @@
+.info {
+	height: 17px;
+	width: 60px;
+	border: 1px silver solid;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	padding: 5px 10px;
+	font-size: 10px;
+}
+
+.infos {
+	height: 17px;
+	width: 150px;
+	border: 1px silver solid;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	padding: 5px 10px;
+	font-size: 10px;
+	margin-left: -5px;
+}
+
+.img {
+	width: 150px;
+	height: 150px;
+	border: 1px silver solid;
+	margin-top: 25px;
+}
+
+.abnormality {
+	height: 27px;
+	width: 40px;
+	border: 1px silver solid;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+.abnormalitys {
+	height: 17px;
+	width: 140px;
+	border: 1px silver solid;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	padding: 5px 10px;
+	font-size: 10px;
+	margin-left: -15px;
+}
+
+.layui-unselect {
+	margin-top: 0px;
+	margin-left: 7px;
+}
+
+.suggest {
+	height: 27px;
+	width: 35px;
+	border: 1px silver solid;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+.suggests {
+	height: 17px;
+	width: 400px;
+	border: 1px silver solid;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	padding: 5px 10px;
+	font-size: 10px;
+	margin-left: -15px;
+}
+
+.layui-form-checkbox[lay-skin=primary] i {
+	margin-top: -5px;
+}
