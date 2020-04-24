@@ -147,19 +147,19 @@
             <li class="layui-nav-item">
                 <a href="javascript:void(0)">女性常规检查</a>
             <dl class="layui-nav-child">
-                <dd><a href="javascript:void(0)">常规扩展项目</a></dd>
+                <dd><a href="javascript:void(0)" @click.stop="changeIframe('commonCheck-f')">常规扩展项目</a></dd>
                 <dd><a href="javascript:void(0)" @click.stop="changeIframe('X-f')">X射线检查</a></dd>
                 <dd><a href="javascript:void(0)" @click.stop="changeIframe('mouth-check-f')">口腔检查</a></dd>
-                <dd><a href="javascript:void(0)">检查结果</a></dd>
+                <dd><a href="javascript:void(0)" @click.stop="changeIframe('checkResult-f')">检查结果</a></dd>
             </dl>
             </li>
             <li class="layui-nav-item">
                 <a href="javascript:void(0)">男性常规检查</a>
                 <dl class="layui-nav-child">
-                    <dd><a href="javascript:void(0)">常规扩展项目</a></dd>
+                    <dd><a href="javascript:void(0)" @click.stop="changeIframe('commonCheck-m')">常规扩展项目</a></dd>
                     <dd><a href="javascript:void(0)" @click.stop="changeIframe('X-m')">X射线检查</a></dd>
                     <dd><a href="javascript:void(0)" @click.stop="changeIframe('mouth-check-m')">口腔检查</a></dd>
-                    <dd><a href="javascript:void(0)">检查结果</a></dd>
+                    <dd><a href="javascript:void(0)" @click.stop="changeIframe('checkResult-m')">检查结果</a></dd>
                 </dl>
             </li>
 
