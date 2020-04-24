@@ -1,3 +1,5 @@
+package com.csdj.examines.pojo;
+
 import java.util.Date;
 
 public class Xexamine {

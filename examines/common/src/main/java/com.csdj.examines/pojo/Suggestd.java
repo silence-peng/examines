@@ -1,3 +1,5 @@
+package com.csdj.examines.pojo;
+
 public class Suggestd {
     public Integer getdId() {
         return dId;

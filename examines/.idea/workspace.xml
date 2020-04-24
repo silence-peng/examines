@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9bc5dfc8-bcd4-4512-b517-1f74901a4f98" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/csdj/examines/pojo/ABO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/csdj/examines/pojo/ABO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/pom.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -215,7 +213,7 @@
       <workItem from="1587683849145" duration="830000" />
       <workItem from="1587684711703" duration="3008000" />
       <workItem from="1587688826856" duration="4522000" />
-      <workItem from="1587695445424" duration="2045000" />
+      <workItem from="1587695445424" duration="2923000" />
     </task>
     <task id="LOCAL-00001" summary="彭勇第一次提交项目：上传初步项目框架">
       <created>1587630254909</created>

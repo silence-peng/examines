@@ -1,3 +1,5 @@
+package com.csdj.examines.pojo;
+
 public class Yxadvise {
     private  Integer yxId;
     private  String yxItem;
