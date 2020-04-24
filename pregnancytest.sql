@@ -151,7 +151,7 @@ CREATE TABLE `clinical_examination` (
   `userId` int(11) DEFAULT NULL,
   `pissexamine` varchar(20) DEFAULT NULL,
   `abnormal` varchar(200) DEFAULT NULL,
-  `abotype` varchar(20) DEFAULT NULL,
+  `abotypeId` int(20) DEFAULT NULL,
   `RH` varchar(20) DEFAULT NULL,
   `bloodSugar` varchar(20) DEFAULT NULL COMMENT '血糖含量',
   `HBsAg` varchar(20) DEFAULT NULL COMMENT '(阳性正常，阴性异常)',
@@ -177,7 +177,7 @@ CREATE TABLE `clinical_examination` (
 
 /*Data for the table `clinical_examination` */
 
-insert  into `clinical_examination`(`cId`,`userId`,`pissexamine`,`abnormal`,`abotype`,`RH`,`bloodSugar`,`HBsAg`,`HBeAb`,`HBsAb`,`HBcAb`,`HBeAg`,`ALT`,`Cr`,`TSH`,`fIgG`,`TP`,`jIgG`,`jIgM`,`gIgG`,`gIgM`,`other`,`doctorName`,`examineDate`,`sex`) values (1,2020122412,'正常',NULL,'O型','阳性','4.5','阳性','阳性','阳性','阳性','阳性',10,110,2,'阳性','阳性','阳性','阳性','阳性','阳性',NULL,'张三','2020-04-23',0),(2,2020122412,'正常',NULL,'B型','阳性','4.1','阳性','阳性','阳性','阳性','阳性',12,135,2,'阳性','阳性','阳性','阳性','阳性','阳性',NULL,'张三','2020-04-23',1);
+insert  into `clinical_examination`(`cId`,`userId`,`pissexamine`,`abnormal`,`abotypeId`,`RH`,`bloodSugar`,`HBsAg`,`HBeAb`,`HBsAb`,`HBcAb`,`HBeAg`,`ALT`,`Cr`,`TSH`,`fIgG`,`TP`,`jIgG`,`jIgM`,`gIgG`,`gIgM`,`other`,`doctorName`,`examineDate`,`sex`) values (1,2020122412,'正常',NULL,2,'阳性','4.5','阳性','阳性','阳性','阳性','阳性',10,110,2,'阳性','阳性','阳性','阳性','阳性','阳性',NULL,'张三','2020-04-23',0),(2,2020122412,'正常',NULL,3,'阳性','4.1','阳性','阳性','阳性','阳性','阳性',12,135,2,'阳性','阳性','阳性','阳性','阳性','阳性',NULL,'张三','2020-04-23',1);
 
 /*Table structure for table `health_checkup` */
 
