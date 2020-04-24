@@ -2,12 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9bc5dfc8-bcd4-4512-b517-1f74901a4f98" name="Default Changelist" comment="测试提交">
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/ABO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/Admin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/Assess.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/BUltrasound.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/CgkzResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/ClinicalBilling.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/ClinicalExamination.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/Test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/target/test-classes/META-INF/dao.kotlin_module" beforeDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,23 +40,30 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="$PROJECT_DIR$/../../../apache-maven-3.6.1" />
+        <option name="localRepository" value="D:\Maven\RepositoryMAVEN" />
+        <option name="mavenHome" value="E:/apache-maven-3.6.1" />
         <option name="userSettingsFile" value="D:\MAVEN\apache-maven-3.6.1\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
   </component>
   <component name="ProjectId" id="1avqmgDqKdA0kazejSm08waaDYS" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_directory_selection" value="$PROJECT_DIR$/web/src/main/java/com/csdj/examines" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/common/src/main/java/com/csdj/examines/entity" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/common/src/main/java" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -61,28 +74,20 @@
     <property name="two.files.diff.last.used.folder" value="$PROJECT_DIR$/web/src/main/resources/static/css" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\MAVEN\Git\repository\examines\dao\src\main\resources" />
+      <recent name="D:\MAVEN\Git\repository\examines\web\src\main\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.csdj.examines.pojo" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\IDEAProject\repository\examines\common\src\main\java\com.csdj.examines\pojo" />
       <recent name="D:\MAVEN\Git\examinesRepository\repository\examines\common\src\main\java\com\csdj\examines\entity" />
       <recent name="D:\MAVEN\Git\repository\examines\web\src\main\resources\templates" />
       <recent name="D:\MAVEN\Git\repository\examines\web\src\main\resources\static" />
       <recent name="D:\MAVEN\Git\repository\examines\dao\src\main\resources" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\MAVEN\Git\repository\examines\dao\src\main\resources" />
-      <recent name="D:\MAVEN\Git\repository\examines\web\src\main\resources" />
-    </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager" selected="Spring Boot.ControlerApplication (1)">
     <configuration name="ControlerApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
@@ -139,6 +144,7 @@
       <workItem from="1587638646923" duration="644000" />
       <workItem from="1587683849145" duration="830000" />
       <workItem from="1587684711703" duration="3008000" />
+      <workItem from="1587688826856" duration="2080000" />
     </task>
     <task id="LOCAL-00001" summary="彭勇第一次提交项目：上传初步项目框架">
       <created>1587630254909</created>
@@ -169,5 +175,23 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="彭勇第一次提交项目：上传初步项目框架" />
     <option name="LAST_COMMIT_MESSAGE" value="彭勇第一次提交项目：上传初步项目框架" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1031" y="272" key="#com.intellij.ide.util.MemberChooser" timestamp="1587690873355">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1031" y="272" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1587690873355" />
+    <state x="785" y="156" key="CommitChangelistDialog2" timestamp="1587690941750">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="785" y="156" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1587690941750" />
+    <state x="806" y="269" width="998" height="713" key="SettingsEditor" timestamp="1587688865143">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="806" y="269" width="998" height="713" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1587688865143" />
+    <state x="1025" y="333" key="chooseDestDirectoryDialog" timestamp="1587689247733">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1025" y="333" key="chooseDestDirectoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587689247733" />
   </component>
 </project>
