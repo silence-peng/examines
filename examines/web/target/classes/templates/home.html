@@ -71,9 +71,7 @@
             <li class="layui-nav-item">
                 <a href="javascript:void(0)">基础档案信息</a>
                 <dl class="layui-nav-child">
-                    <dd><a href="javascript:void(0)">列表一</a></dd>
-                    <dd><a href="javascript:void(0)">列表二</a></dd>
-                    <dd><a href="">超链接</a></dd>
+                    <dd><a href="javascript:void(0)" @click.stop="changeIframe('newRecord')">新建人员档案</a></dd>
                 </dl>
             </li>
             <li class="layui-nav-item">
@@ -93,12 +91,7 @@
                 </dl>
             </li>
             <li class="layui-nav-item">
-                <a href="javascript:void(0)">评估建议及其他</a>
-                <dl class="layui-nav-child">
-                    <dd><a href="javascript:void(0)">列表一</a></dd>
-                    <dd><a href="javascript:void(0)">列表二</a></dd>
-                    <dd><a href="">超链接</a></dd>
-                </dl>
+                <a href="javascript:void(0)" @click.stop="changeIframe('Assess')">评估建议及其他</a>
             </li>
         </ul>
 
@@ -126,8 +119,8 @@
             <li class="layui-nav-item layui-nav-itemed">
                 <a class="" href="javascript:void(0)">影像工作站</a>
                 <dl class="layui-nav-child">
-                    <dd><a href="javascript:void(0)">查询档案信息</a></dd>
-                    <dd><a href="javascript:void(0)">打开超声影像</a></dd>
+                    <dd><a href="javascript:void(0)" @click.stop="changeIframe('FindBchao')">查询档案信息</a></dd>
+                    <dd><a href="javascript:void(0)" @click.stop="changeIframe('Bchao')">打开超声影像</a></dd>
                 </dl>
             </li>
         </ul>
@@ -140,8 +133,8 @@
             <li class="layui-nav-item layui-nav-itemed">
                 <a class="" href="javascript:void(0)">申报与证明打印</a>
                 <dl class="layui-nav-child">
-                    <dd><a href="javascript:void(0)">婚前医学证明(女)</a></dd>
-                    <dd><a href="javascript:void(0)">婚前医学证明(男)</a></dd>
+                    <dd><a href="javascript:void(0)" @click.stop="changeIframe('nvProve')">婚前医学证明(女)</a></dd>
+                    <dd><a href="javascript:void(0)" @click.stop="changeIframe('nanProve')">婚前医学证明(男)</a></dd>
                 </dl>
             </li>
             <li class="layui-nav-item">
@@ -186,12 +179,18 @@
 
         },
         components:{
-            "info":{template:"#info"},
+            "info":{template:"#info",methods:{changeIframe:function(value){
+                        $("#iframeMain").attr("src",value);
+                        console.log($("#iframeMain").attr("src"))
+                    }}},
             "check":{template:"#check",methods:{changeIframe:function(value){
                         $("#iframeMain").attr("src",value);
                         console.log($("#iframeMain").attr("src"))
                     }}},
-            "icon":{template:"#icon"},
+            "icon":{template:"#icon",methods:{changeIframe:function(value){
+                        $("#iframeMain").attr("src",value);
+                        console.log($("#iframeMain").attr("src"))
+                    }}},
             "message":{template:"#message"}
         }
     });

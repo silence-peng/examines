@@ -2,18 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9bc5dfc8-bcd4-4512-b517-1f74901a4f98" name="Default Changelist" comment="修改提交">
+      <change afterPath="$PROJECT_DIR$/web/src/main/resources/static/css/Assess.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/resources/static/css/Bchao.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/resources/static/css/FindBchao.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/resources/static/css/Prove.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/resources/static/js/Assess.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/resources/static/js/Bchao.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/resources/static/js/FindBchao.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/resources/static/js/Prove.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/resources/static/js/newRecord.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/resources/templates/Assess.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/resources/templates/Bchao.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/resources/templates/FindBchao.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/resources/templates/nanProve.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/resources/templates/newRecord.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/resources/templates/nvProve.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/ABO.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/ABO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dao/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/target/classes/com/csdj/examines/dao/ABOMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/dao/target/classes/com/csdj/examines/dao/ABOMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examines.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/csdj/examines/pojo/ABO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/csdj/examines/pojo/ABO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/demo.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/demo.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/resources/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/resources/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/classes/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/classes/templates/home.html" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -42,7 +50,7 @@
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="localRepository" value="D:\MAVEN\RepositoryMAVEN" />
-        <option name="mavenHome" value="$PROJECT_DIR$/../../../../apache-maven-3.6.1" />
+        <option name="mavenHome" value="E:/../apache-maven-3.6.1" />
         <option name="userSettingsFile" value="D:\MAVEN\apache-maven-3.6.1\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
@@ -64,7 +72,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/common/src/main/java" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/src/main/resources/static/css" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -78,32 +86,21 @@
     <property name="two.files.diff.last.used.folder" value="$PROJECT_DIR$/web/src/main/resources/static/css" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\IDEAProject\repository\examines\common\src\main\java\com.csdj.examines\pojo" />
-      <recent name="D:\MAVEN\Git\examinesRepository\repository\examines\common\src\main\java\com\csdj\examines\entity" />
-      <recent name="D:\MAVEN\Git\repository\examines\web\src\main\resources\templates" />
-      <recent name="D:\MAVEN\Git\repository\examines\web\src\main\resources\static" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\IDEAProject\repository\examines\web\src\main\resources\static\layui\images\face" />
       <recent name="D:\MAVEN\Git\repository\examines\dao\src\main\resources" />
+      <recent name="D:\MAVEN\Git\repository\examines\web\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.csdj.examines.pojo" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\MAVEN\Git\repository\examines\dao\src\main\resources" />
-      <recent name="D:\MAVEN\Git\repository\examines\web\src\main\resources" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\IDEAProject\repository\examines\web\src\main\resources\static\css" />
+      <recent name="E:\IDEAProject\repository\examines\web\src\main\resources\static\js" />
+      <recent name="E:\IDEAProject\repository\examines\web\src\main\resources\templates" />
+      <recent name="E:\IDEAProject\repository\examines\common\src\main\java\com.csdj.examines\pojo" />
+      <recent name="D:\MAVEN\Git\examinesRepository\repository\examines\common\src\main\java\com\csdj\examines\entity" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager" selected="Spring Boot.ControlerApplication (2)">
     <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
@@ -279,42 +276,50 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="785" y="156" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1587693761572" />
-    <state width="1276" height="253" key="GridCell.Tab.0.bottom" timestamp="1587693494260">
+    <state width="1408" height="161" key="GridCell.Tab.0.bottom" timestamp="1587737740843">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1276" height="253" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587693494260" />
-    <state width="1276" height="253" key="GridCell.Tab.0.center" timestamp="1587693494260">
+    <state width="1408" height="161" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587737740843" />
+    <state width="1408" height="161" key="GridCell.Tab.0.center" timestamp="1587737740842">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1276" height="253" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587693494260" />
-    <state width="1276" height="253" key="GridCell.Tab.0.left" timestamp="1587693494260">
+    <state width="1408" height="161" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587737740842" />
+    <state width="1408" height="161" key="GridCell.Tab.0.left" timestamp="1587737740842">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1276" height="253" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587693494260" />
-    <state width="1276" height="253" key="GridCell.Tab.0.right" timestamp="1587693494260">
+    <state width="1408" height="161" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587737740842" />
+    <state width="1408" height="161" key="GridCell.Tab.0.right" timestamp="1587737740843">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1276" height="253" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587693494260" />
-    <state width="1276" height="253" key="GridCell.Tab.1.bottom" timestamp="1587693476636">
+    <state width="1408" height="161" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587737740843" />
+    <state width="1408" height="161" key="GridCell.Tab.1.bottom" timestamp="1587737740843">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1276" height="253" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587693476636" />
-    <state width="1276" height="253" key="GridCell.Tab.1.center" timestamp="1587693476636">
+    <state width="1408" height="161" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587737740843" />
+    <state width="1408" height="161" key="GridCell.Tab.1.center" timestamp="1587737740843">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1276" height="253" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587693476636" />
-    <state width="1276" height="253" key="GridCell.Tab.1.left" timestamp="1587693476636">
+    <state width="1408" height="161" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587737740843" />
+    <state width="1408" height="161" key="GridCell.Tab.1.left" timestamp="1587737740843">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1276" height="253" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587693476636" />
-    <state width="1276" height="253" key="GridCell.Tab.1.right" timestamp="1587693476636">
+    <state width="1408" height="161" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587737740843" />
+    <state width="1408" height="161" key="GridCell.Tab.1.right" timestamp="1587737740843">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1276" height="253" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587693476636" />
-    <state x="806" y="269" width="998" height="713" key="SettingsEditor" timestamp="1587693447157">
+    <state width="1408" height="161" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587737740843" />
+    <state x="171" y="118" width="1538" height="868" key="MergeDialog" timestamp="1587699270425">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="806" y="269" width="998" height="713" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1587693447157" />
+    <state x="171" y="118" width="1538" height="868" key="MergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587699270425" />
+    <state x="699" y="262" key="MultipleFileMergeDialog" timestamp="1587699270452">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="699" y="262" key="MultipleFileMergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587699270452" />
+    <state x="806" y="269" width="998" height="713" key="SettingsEditor" timestamp="1587737817692">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="806" y="269" width="998" height="713" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1587737817692" />
     <state x="1025" y="333" key="chooseDestDirectoryDialog" timestamp="1587689247733">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -323,5 +328,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="946" y="446" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1587690977695" />
+    <state x="695" y="337" key="git4idea.merge.GitPullDialog" timestamp="1587698866531">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="695" y="337" key="git4idea.merge.GitPullDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587698866531" />
   </component>
 </project>
