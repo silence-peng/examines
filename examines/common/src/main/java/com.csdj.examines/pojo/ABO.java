@@ -5,6 +5,7 @@ import java.io.Serializable;
 public class ABO implements Serializable {
     private Integer id;
     private String type;
+    private String test;
 
     public Integer getId() {
         return id;
