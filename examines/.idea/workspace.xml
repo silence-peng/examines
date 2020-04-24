@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-<<<<<<< Updated upstream
     <list default="true" id="9bc5dfc8-bcd4-4512-b517-1f74901a4f98" name="Default Changelist" comment="修改提交">
-=======
-    <list default="true" id="9bc5dfc8-bcd4-4512-b517-1f74901a4f98" name="Default Changelist" comment="测试提交">
->>>>>>> Stashed changes
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/ABO.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/ABO.java" afterDir="false" />
-<<<<<<< Updated upstream
       <change beforePath="$PROJECT_DIR$/dao/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dao/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dao/target/classes/com/csdj/examines/dao/ABOMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/dao/target/classes/com/csdj/examines/dao/ABOMapper.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/examines.iml" beforeDir="false" />
@@ -17,8 +12,6 @@
       <change beforePath="$PROJECT_DIR$/service/service.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/csdj/examines/pojo/ABO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/csdj/examines/pojo/ABO.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/pom.xml" afterDir="false" />
-=======
->>>>>>> Stashed changes
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -78,14 +71,10 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-<<<<<<< Updated upstream
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
-=======
-    <property name="settings.editor.selected.configurable" value="settings.github" />
->>>>>>> Stashed changes
     <property name="two.files.diff.last.used.folder" value="$PROJECT_DIR$/web/src/main/resources/static/css" />
   </component>
   <component name="RecentsManager">
@@ -322,10 +311,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1276" height="253" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587693476636" />
-    <state x="806" y="269" width="998" height="713" key="SettingsEditor" timestamp="1587697306089">
+    <state x="806" y="269" width="998" height="713" key="SettingsEditor" timestamp="1587693447157">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="806" y="269" width="998" height="713" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1587697306089" />
+    <state x="806" y="269" width="998" height="713" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1587693447157" />
     <state x="1025" y="333" key="chooseDestDirectoryDialog" timestamp="1587689247733">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -334,9 +323,5 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="946" y="446" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1587690977695" />
-    <state x="513" y="365" key="git4idea.merge.GitPullDialog" timestamp="1587697313009">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="513" y="365" key="git4idea.merge.GitPullDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587697313009" />
   </component>
 </project>
