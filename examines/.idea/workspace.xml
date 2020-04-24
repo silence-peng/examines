@@ -1,18 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9bc5dfc8-bcd4-4512-b517-1f74901a4f98" name="Default Changelist" comment="测试提交">
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/ABO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/Admin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/Assess.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/BUltrasound.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/CgkzResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/ClinicalBilling.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/ClinicalExamination.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+    <list default="true" id="9bc5dfc8-bcd4-4512-b517-1f74901a4f98" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/target/test-classes/META-INF/dao.kotlin_module" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +19,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="IgnoredFileRootStore">
     <option name="generatedRoots">
@@ -144,7 +135,7 @@
       <workItem from="1587638646923" duration="644000" />
       <workItem from="1587683849145" duration="830000" />
       <workItem from="1587684711703" duration="3008000" />
-      <workItem from="1587688826856" duration="2080000" />
+      <workItem from="1587688826856" duration="2228000" />
     </task>
     <task id="LOCAL-00001" summary="彭勇第一次提交项目：上传初步项目框架">
       <created>1587630254909</created>
@@ -153,7 +144,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587630254909</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="实体类提交">
+      <created>1587690971313</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1587690971314</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -174,17 +172,18 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="彭勇第一次提交项目：上传初步项目框架" />
-    <option name="LAST_COMMIT_MESSAGE" value="彭勇第一次提交项目：上传初步项目框架" />
+    <MESSAGE value="实体类提交" />
+    <option name="LAST_COMMIT_MESSAGE" value="实体类提交" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1031" y="272" key="#com.intellij.ide.util.MemberChooser" timestamp="1587690873355">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1031" y="272" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1587690873355" />
-    <state x="785" y="156" key="CommitChangelistDialog2" timestamp="1587690941750">
+    <state x="785" y="156" key="CommitChangelistDialog2" timestamp="1587690968477">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="785" y="156" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1587690941750" />
+    <state x="785" y="156" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1587690968477" />
     <state x="806" y="269" width="998" height="713" key="SettingsEditor" timestamp="1587688865143">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -193,5 +192,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1025" y="333" key="chooseDestDirectoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587689247733" />
+    <state x="946" y="446" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1587690977695">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="946" y="446" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1587690977695" />
   </component>
 </project>
