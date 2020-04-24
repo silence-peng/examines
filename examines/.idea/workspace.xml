@@ -1,26 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9bc5dfc8-bcd4-4512-b517-1f74901a4f98" name="Default Changelist" comment="修改提交">
-      <change afterPath="$PROJECT_DIR$/web/src/main/resources/static/css/Assess.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/resources/static/css/Bchao.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/resources/static/css/FindBchao.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/resources/static/css/Prove.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/resources/static/js/Assess.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/resources/static/js/Bchao.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/resources/static/js/FindBchao.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/resources/static/js/Prove.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/resources/static/js/newRecord.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/resources/templates/Assess.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/resources/templates/Bchao.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/resources/templates/FindBchao.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/resources/templates/nanProve.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/resources/templates/newRecord.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/resources/templates/nvProve.html" afterDir="false" />
+    <list default="true" id="9bc5dfc8-bcd4-4512-b517-1f74901a4f98" name="Default Changelist" comment="页面提交">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/demo.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/demo.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/resources/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/resources/templates/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/classes/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/classes/templates/home.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -242,7 +225,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587691079887</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="页面提交">
+      <created>1587737878649</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1587737878649</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -265,49 +255,50 @@
     <MESSAGE value="彭勇第一次提交项目：上传初步项目框架" />
     <MESSAGE value="实体类提交" />
     <MESSAGE value="修改提交" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改提交" />
+    <MESSAGE value="页面提交" />
+    <option name="LAST_COMMIT_MESSAGE" value="页面提交" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1031" y="272" key="#com.intellij.ide.util.MemberChooser" timestamp="1587690873355">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1031" y="272" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1587690873355" />
-    <state x="785" y="156" key="CommitChangelistDialog2" timestamp="1587693761572">
+    <state x="785" y="156" key="CommitChangelistDialog2" timestamp="1587737946969">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="785" y="156" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1587693761572" />
-    <state width="1408" height="161" key="GridCell.Tab.0.bottom" timestamp="1587737740843">
+    <state x="785" y="156" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1587737946969" />
+    <state width="1408" height="161" key="GridCell.Tab.0.bottom" timestamp="1587737970410">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1408" height="161" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587737740843" />
-    <state width="1408" height="161" key="GridCell.Tab.0.center" timestamp="1587737740842">
+    <state width="1408" height="161" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587737970410" />
+    <state width="1408" height="161" key="GridCell.Tab.0.center" timestamp="1587737970410">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1408" height="161" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587737740842" />
-    <state width="1408" height="161" key="GridCell.Tab.0.left" timestamp="1587737740842">
+    <state width="1408" height="161" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587737970410" />
+    <state width="1408" height="161" key="GridCell.Tab.0.left" timestamp="1587737970410">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1408" height="161" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587737740842" />
-    <state width="1408" height="161" key="GridCell.Tab.0.right" timestamp="1587737740843">
+    <state width="1408" height="161" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587737970410" />
+    <state width="1408" height="161" key="GridCell.Tab.0.right" timestamp="1587737970410">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1408" height="161" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587737740843" />
-    <state width="1408" height="161" key="GridCell.Tab.1.bottom" timestamp="1587737740843">
+    <state width="1408" height="161" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587737970410" />
+    <state width="1408" height="161" key="GridCell.Tab.1.bottom" timestamp="1587737970410">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1408" height="161" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587737740843" />
-    <state width="1408" height="161" key="GridCell.Tab.1.center" timestamp="1587737740843">
+    <state width="1408" height="161" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587737970410" />
+    <state width="1408" height="161" key="GridCell.Tab.1.center" timestamp="1587737970410">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1408" height="161" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587737740843" />
-    <state width="1408" height="161" key="GridCell.Tab.1.left" timestamp="1587737740843">
+    <state width="1408" height="161" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587737970410" />
+    <state width="1408" height="161" key="GridCell.Tab.1.left" timestamp="1587737970410">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1408" height="161" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587737740843" />
-    <state width="1408" height="161" key="GridCell.Tab.1.right" timestamp="1587737740843">
+    <state width="1408" height="161" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587737970410" />
+    <state width="1408" height="161" key="GridCell.Tab.1.right" timestamp="1587737970410">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1408" height="161" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587737740843" />
+    <state width="1408" height="161" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587737970410" />
     <state x="171" y="118" width="1538" height="868" key="MergeDialog" timestamp="1587699270425">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
