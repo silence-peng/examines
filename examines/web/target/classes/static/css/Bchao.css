@@ -1,0 +1,39 @@
+.info {
+	height: 17px;
+	width: 60px;
+	border: 1px silver solid;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	padding: 5px 10px;
+	font-size: 10px;
+}
+
+.infos {
+	height: 17px;
+	width: 160px;
+	border: 1px silver solid;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	padding: 5px 10px;
+	font-size: 10px;
+	margin-left: -5px;
+}
+
+.imgTitl {
+	height: 30px;
+	background-color: rgb(214, 236, 246);
+	color: dodgerblue;
+	margin-top: 20px;
+}
+
+.double {
+	width: 100px;
+	height: 20px;
+	padding: 5px;
+}
+
+.box {
+	border: 1px silver solid;
+	border-bottom: none;
+	min-height: 550px;
+}

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" href="layui/css/layui.css">
+		<link rel="stylesheet" href="css/Bchao.css" />
+		<script src="layui/layui.js"></script>
+		<script src="js/Bchao.js"></script>
+	</head>
+	<body>
+		<div class="layui-container" style="width: 90%;">
+			<form class="layui-form">
+				<div class="layui-row" style="border: 1px silver solid;">
+					<div class="layui-col-md3 box">
+						<fieldset class="layui-elem-field layui-field-title">
+						  <legend>基本信息</legend>
+						</fieldset>
+						<div class=""style="text-align: center;">
+							<div>
+								<div class="layui-bg-gray layui-inline info">
+									档案编号：
+								</div>
+								<div class="layui-bg-gray layui-inline infos">
+									
+								</div>
+							</div>
+							<div>
+								<div class="layui-bg-gray layui-inline info">
+									妻子姓名：
+								</div>
+								<div class="layui-bg-gray layui-inline infos">
+									
+								</div>
+							</div>
+							
+							<div>
+								<div class="layui-bg-gray layui-inline info">
+									出生日期：
+								</div>
+								<div class="layui-bg-gray layui-inline infos">
+									
+								</div>
+							</div>
+							
+							<div>
+								<div class="layui-bg-gray layui-inline info">
+									<div class="layui-row">
+										<div class="layui-col-md6">年</div>
+										<div class="layui-col-md6">龄：</div>
+									</div>
+								</div>
+								<div class="layui-bg-gray layui-inline infos">
+									
+								</div>
+							</div>
+							
+							<div>
+								<div class="layui-bg-gray layui-inline info">
+									身份证号：
+								</div>
+								<div class="layui-bg-gray layui-inline infos">
+									
+								</div>
+							</div>
+							
+							<div>
+								<div class="layui-bg-gray layui-inline info">
+									丈夫姓名：
+								</div>
+								<div class="layui-bg-gray layui-inline infos">
+									
+								</div>
+							</div>
+							
+							<div>
+								<div class="layui-bg-gray layui-inline info">
+									出生日期：
+								</div>
+								<div class="layui-bg-gray layui-inline infos">
+									
+								</div>
+							</div>
+							
+							<div>
+								<div class="layui-bg-gray layui-inline info">
+									<div class="layui-row">
+										<div class="layui-col-md6">年</div>
+										<div class="layui-col-md6">龄：</div>
+									</div>
+								</div>
+								<div class="layui-bg-gray layui-inline infos">
+									
+								</div>
+							</div>
+							
+							<div>
+								<div class="layui-bg-gray layui-inline info">
+									身份证号：
+								</div>
+								<div class="layui-bg-gray layui-inline infos">
+									
+								</div>
+							</div>
+							
+							<div>
+								<div class="layui-bg-gray layui-inline info">
+									户口性质：
+								</div>
+								<div class="layui-bg-gray layui-inline infos">
+									
+								</div>
+							</div>
+							
+							<div>
+								<div class="layui-bg-gray layui-inline info">
+									操作医生：
+								</div>
+								<div class="layui-bg-gray layui-inline infos">
+									
+								</div>
+							</div>
+							<div>
+								<div class="imgTitl">
+									<p class="double">双击删除图片</p>
+								</div>
+								<fieldset class="layui-elem-field">
+								  <div class="layui-field-box">
+								    <div class="layui-col-md6" style="margin: 0 0 10px ;">
+										<img src="layui/images/face/66.gif" width="50px" height="40px"/>
+										<span>3362kb</span>
+									</div>
+								  </div>
+								</fieldset>
+							</div>
+						</div>
+					</div>
+					<div class="layui-col-md6 box">
+						<div>
+							<img src="layui/images/img/bchao.png" width="90%" style="padding: 30px;"/>
+						</div>
+					</div>
+					<div class="layui-col-md3 box">
+						<div class="layui-container" style="width: 90%;padding: 20px 0px;">
+							<div class="result">
+								<p>检查结果：</p>
+								<div class="layui-form-item">
+								    <div class="layui-row">
+								      <select name="">
+										  <option value=""></option>
+								          <option value="0">正常</option>
+								          <option value="1">异常</option>
+								      </select>
+								    </div>
+								</div>
+								<p>超声所见（B超描述）</p>
+								<div class="layui-form-item layui-form-text">
+								    <div class="layui-row">
+								      <textarea placeholder="请输入内容" class="layui-textarea" name="desc" style="height: 250px;"></textarea>
+								    </div>
+								</div>
+								<p>检查日期</p>
+								<div class="layui-form-item">
+								    <div class="layui-row">
+								      <input type="text" name="" id="mdate" lay-verify="required" autocomplete="off" class="layui-input">
+								    </div>
+								</div>
+								<p>医生签名</p>
+								<div class="layui-form-item">
+								    <div class="layui-row">
+								      <input type="text" name="" lay-verify="required" autocomplete="off" class="layui-input">
+								    </div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<br />
+				<div class="layui-container" style="text-align: center;">
+					<div class="layui-form-item" >
+						<button type="button" class="layui-btn layui-bg-blue" style="border-radius: 3px;">查询</button>
+						<button type="button" class="layui-btn layui-bg-red" style="border-radius: 3px;">返回</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</body>
+</html>
