@@ -2,13 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9bc5dfc8-bcd4-4512-b517-1f74901a4f98" name="Default Changelist" comment="修改提交">
-      <change afterPath="$PROJECT_DIR$/dao/src/main/java/com/csdj/examines/dao/ABOMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/ABO.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/ABO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/csdj/examines/dao/DaoApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/target/classes/com/csdj/examines/dao/DaoApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/demo.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/demo.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dao/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/target/classes/com/csdj/examines/dao/ABOMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/dao/target/classes/com/csdj/examines/dao/ABOMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examines.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/csdj/examines/pojo/ABO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/csdj/examines/pojo/ABO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/pom.xml" afterDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,8 +41,8 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="localRepository" value="D:\Maven\RepositoryMAVEN" />
-        <option name="mavenHome" value="D:/Maven/apache-maven-3.6.1" />
+        <option name="localRepository" value="D:\MAVEN\RepositoryMAVEN" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../../apache-maven-3.6.1" />
         <option name="userSettingsFile" value="D:\MAVEN\apache-maven-3.6.1\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
@@ -66,17 +71,13 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
     <property name="two.files.diff.last.used.folder" value="$PROJECT_DIR$/web/src/main/resources/static/css" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\MAVEN\Git\repository\examines\dao\src\main\resources" />
-      <recent name="D:\MAVEN\Git\repository\examines\web\src\main\resources" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.csdj.examines.pojo" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\IDEAProject\repository\examines\common\src\main\java\com.csdj.examines\pojo" />
       <recent name="D:\MAVEN\Git\examinesRepository\repository\examines\common\src\main\java\com\csdj\examines\entity" />
@@ -84,8 +85,74 @@
       <recent name="D:\MAVEN\Git\repository\examines\web\src\main\resources\static" />
       <recent name="D:\MAVEN\Git\repository\examines\dao\src\main\resources" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.csdj.examines.pojo" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\MAVEN\Git\repository\examines\dao\src\main\resources" />
+      <recent name="D:\MAVEN\Git\repository\examines\web\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
   </component>
   <component name="RunManager" selected="Spring Boot.ControlerApplication (2)">
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <module name="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <module name="" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ControlerApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="web" />
       <extension name="coverage">
@@ -155,6 +222,7 @@
       <workItem from="1587683849145" duration="830000" />
       <workItem from="1587684711703" duration="3008000" />
       <workItem from="1587688826856" duration="4522000" />
+      <workItem from="1587695445424" duration="1038000" />
     </task>
     <task id="LOCAL-00001" summary="彭勇第一次提交项目：上传初步项目框架">
       <created>1587630254909</created>
