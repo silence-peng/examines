@@ -13,7 +13,7 @@ public class Userinfo {
     private Date mbirthdate;
     private  String mphone;
     private  String methnic;
-    private  String mIdtype;
+    private  String midtype;
     private  Integer mage;
     private  String mculture;
     private  String mjob;
@@ -26,7 +26,7 @@ public class Userinfo {
     private  String fname;
     private  String fcard;
     @DateTimeFormat(pattern = "yyyy-MM-dd")
-    private  Date fbirthDate;
+    private  Date fbirthdate;
     private  String fphone;
     private  String fethnic;
     private  String fidtype;
@@ -47,6 +47,9 @@ public class Userinfo {
     private  Integer regtypeid;
     private  String landlinenumber;
     private  String mimg;
+    private String fimg;
+    private String email;
+    private String doctorname;
 
     @Override
     public String toString() {
@@ -57,7 +60,7 @@ public class Userinfo {
                 ", mbirthdate=" + mbirthdate +
                 ", mphone='" + mphone + '\'' +
                 ", methnic='" + methnic + '\'' +
-                ", mIdtype='" + mIdtype + '\'' +
+                ", midtype='" + midtype + '\'' +
                 ", mage=" + mage +
                 ", mculture='" + mculture + '\'' +
                 ", mjob='" + mjob + '\'' +
@@ -69,7 +72,7 @@ public class Userinfo {
                 ", mregistered='" + mregistered + '\'' +
                 ", fname='" + fname + '\'' +
                 ", fcard='" + fcard + '\'' +
-                ", fbirthDate=" + fbirthDate +
+                ", fbirthdate=" + fbirthdate +
                 ", fphone='" + fphone + '\'' +
                 ", fethnic='" + fethnic + '\'' +
                 ", fidtype='" + fidtype + '\'' +
@@ -88,7 +91,34 @@ public class Userinfo {
                 ", regtypeid=" + regtypeid +
                 ", landlinenumber='" + landlinenumber + '\'' +
                 ", mimg='" + mimg + '\'' +
+                ", fimg='" + fimg + '\'' +
+                ", email='" + email + '\'' +
+                ", doctorname='" + doctorname + '\'' +
                 '}';
+    }
+
+    public String getDoctorname() {
+        return doctorname;
+    }
+
+    public void setDoctorname(String doctorname) {
+        this.doctorname = doctorname;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getFimg() {
+        return fimg;
+    }
+
+    public void setFimg(String fimg) {
+        this.fimg = fimg;
     }
 
     public Integer getUserid() {
@@ -139,12 +169,20 @@ public class Userinfo {
         this.methnic = methnic;
     }
 
-    public String getmIdtype() {
-        return mIdtype;
+    public String getMidtype() {
+        return midtype;
     }
 
-    public void setmIdtype(String mIdtype) {
-        this.mIdtype = mIdtype;
+    public void setMidtype(String midtype) {
+        this.midtype = midtype;
+    }
+
+    public Date getFbirthdate() {
+        return fbirthdate;
+    }
+
+    public void setFbirthdate(Date fbirthdate) {
+        this.fbirthdate = fbirthdate;
     }
 
     public Integer getMage() {
@@ -233,14 +271,6 @@ public class Userinfo {
 
     public void setFcard(String fcard) {
         this.fcard = fcard;
-    }
-
-    public Date getFbirthDate() {
-        return fbirthDate;
-    }
-
-    public void setFbirthDate(Date fbirthDate) {
-        this.fbirthDate = fbirthDate;
     }
 
     public String getFphone() {

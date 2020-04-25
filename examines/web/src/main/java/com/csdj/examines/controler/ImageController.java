@@ -1,6 +1,7 @@
 package com.csdj.examines.controler;
 
 import com.csdj.examines.pojo.Userinfo;
+import com.csdj.examines.service.ImageService;
 import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

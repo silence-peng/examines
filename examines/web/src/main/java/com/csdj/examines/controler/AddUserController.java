@@ -2,6 +2,7 @@ package com.csdj.examines.controler;
 
 import com.csdj.examines.pojo.Registertype;
 import com.csdj.examines.pojo.Userinfo;
+import com.csdj.examines.service.AddUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;

@@ -2,6 +2,7 @@ package com.csdj.examines.service.impl;
 
 import com.csdj.examines.dao.ImageMapper;
 import com.csdj.examines.pojo.Userinfo;
+import com.csdj.examines.service.ImageService;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;

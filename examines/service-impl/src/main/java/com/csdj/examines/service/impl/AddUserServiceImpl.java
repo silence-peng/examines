@@ -4,6 +4,7 @@ import com.csdj.examines.dao.AddUserMapper;
 import com.csdj.examines.dao.RegistertypeMapper;
 import com.csdj.examines.pojo.Registertype;
 import com.csdj.examines.pojo.Userinfo;
+import com.csdj.examines.service.AddUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

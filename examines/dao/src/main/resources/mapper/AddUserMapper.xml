@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.csdj.examines.dao.AddUserMapper">
+    <!--新增人员档案信息 selectKey 新增后返回id-->
+    <insert id="addUserInfo" parameterType="Userinfo">
+        <selectKey resultType="Integer" keyProperty="userid" order="AFTER" >
+            SELECT LAST_INSERT_ID()
+        </selectKey>
+        INSERT INTO userinfo(mname,mcard,mbirthdate,mphone,methnic,midtype,mage,mculture,mjob,mprovince,mcity,mcounty,mdistrict,
+        mvillage,mregistered,fname,fcard,fbirthDate,fphone,fethnic,fIdtype,fage,fculture,fjob,fprovince,fcity,fcounty,fdistrict,
+        fvillage,fregistered,address,creatDate,getMarriedDate,regtypeId,landlineNumber,mimg,fimg,email,doctorName)
+        VALUES(#{mname},#{mcard},#{mbirthdate},#{mphone},#{methnic},#{midtype},#{mage},#{mculture},#{mjob},#{mprovince},#{mcity},#{mcounty},
+        #{mdistrict},#{mvillage},#{mregistered},#{fname},#{fcard},#{fbirthdate},#{fphone},#{fethnic},#{fidtype},#{fage},#{fculture},#{fjob},
+        #{fprovince},#{fcity},#{fcounty},#{fdistrict},#{fvillage},#{fregistered},#{address},#{creatdate},#{getmarrieddate},#{regtypeid},
+        #{landlinenumber},#{mimg},#{fimg},#{email},#{doctorname})
+    </insert>
+    <insert id="addYxResult">
+        INSERT INTO yxcheckresult(userId,sex) VALUES(#{userId},#{sex})
+    </insert>
+</mapper>
