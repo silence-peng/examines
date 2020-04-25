@@ -63,11 +63,11 @@ CREATE TABLE `assess` (
 
 insert  into `assess`(`assId`,`userId`,`content`,`sdId`,`doctorName`,`examineDate`) values (1,2020122412,'保持健康生活方式和行为。',1,'张三','2020-04-23');
 
-/*Table structure for table `b_ultrasound` */
+/*Table structure for table `bultrasound` */
 
-DROP TABLE IF EXISTS `b_ultrasound`;
+DROP TABLE IF EXISTS `bultrasound`;
 
-CREATE TABLE `b_ultrasound` (
+CREATE TABLE `bultrasound` (
   `bId` int(11) NOT NULL AUTO_INCREMENT,
   `userId` int(11) DEFAULT NULL,
   `bImgfile` varchar(100) DEFAULT NULL,
@@ -79,15 +79,15 @@ CREATE TABLE `b_ultrasound` (
   PRIMARY KEY (`bId`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 
-/*Data for the table `b_ultrasound` */
+/*Data for the table `bultrasound` */
 
-insert  into `b_ultrasound`(`bId`,`userId`,`bImgfile`,`result`,`describe`,`examineDate`,`doctorName`,`imgSize`) values (1,2020122412,NULL,'正常','子宫暂未见明显异常声像','2020-04-23 16:14:05','张三',NULL);
+insert  into `bultrasound`(`bId`,`userId`,`bImgfile`,`result`,`describe`,`examineDate`,`doctorName`,`imgSize`) values (1,2020122412,NULL,'正常','子宫暂未见明显异常声像','2020-04-23 16:14:05','张三',NULL);
 
-/*Table structure for table `cgkz_result` */
+/*Table structure for table `cgkzresult` */
 
-DROP TABLE IF EXISTS `cgkz_result`;
+DROP TABLE IF EXISTS `cgkzresult`;
 
-CREATE TABLE `cgkz_result` (
+CREATE TABLE `cgkzresult` (
   `cgId` int(11) NOT NULL AUTO_INCREMENT,
   `nmedicalId` int(11) DEFAULT NULL,
   `medicalId` int(11) DEFAULT NULL,
@@ -99,15 +99,15 @@ CREATE TABLE `cgkz_result` (
   PRIMARY KEY (`cgId`)
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 
-/*Data for the table `cgkz_result` */
+/*Data for the table `cgkzresult` */
 
-insert  into `cgkz_result`(`cgId`,`nmedicalId`,`medicalId`,`birthId`,`doctorName`,`createDate`,`userId`,`sex`) values (1,1,1,1,'张三','2020-04-23',2020122412,0),(2,2,2,2,'张三','2020-04-23',2020122412,1);
+insert  into `cgkzresult`(`cgId`,`nmedicalId`,`medicalId`,`birthId`,`doctorName`,`createDate`,`userId`,`sex`) values (1,1,1,1,'张三','2020-04-23',2020122412,0),(2,2,2,2,'张三','2020-04-23',2020122412,1);
 
-/*Table structure for table `clinical_billing` */
+/*Table structure for table `clinicalbilling` */
 
-DROP TABLE IF EXISTS `clinical_billing`;
+DROP TABLE IF EXISTS `clinicalbilling`;
 
-CREATE TABLE `clinical_billing` (
+CREATE TABLE `clinicalbilling` (
   `billId` int(11) NOT NULL AUTO_INCREMENT,
   `userId` int(11) DEFAULT NULL,
   `B` varchar(20) DEFAULT NULL,
@@ -138,15 +138,15 @@ CREATE TABLE `clinical_billing` (
   PRIMARY KEY (`billId`)
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 
-/*Data for the table `clinical_billing` */
+/*Data for the table `clinicalbilling` */
 
-insert  into `clinical_billing`(`billId`,`userId`,`B`,`M`,`L`,`zCell`,`ABO`,`RH`,`bloodSugar`,`HBsAg`,`HBeAb`,`HBsAb`,`HBcAb`,`HBeAg`,`ALT`,`Cr`,`TSH`,`fIgG`,`TP`,`jIgG`,`jIgM`,`gIgG`,`gIgM`,`other`,`doctorName`,`examineDate`,`sex`) values (1,2020122412,NULL,NULL,'on','on','on','on','on','on','on','on','on','on','on','on','on','on','on','on','on','on','on','','张三','2020-04-23',0),(3,2020122412,NULL,NULL,'on','on','on','on','on','on','on','on','on','on','on','on','on','on','on','on','on','on','on','','张三','2020-04-23',1);
+insert  into `clinicalbilling`(`billId`,`userId`,`B`,`M`,`L`,`zCell`,`ABO`,`RH`,`bloodSugar`,`HBsAg`,`HBeAb`,`HBsAb`,`HBcAb`,`HBeAg`,`ALT`,`Cr`,`TSH`,`fIgG`,`TP`,`jIgG`,`jIgM`,`gIgG`,`gIgM`,`other`,`doctorName`,`examineDate`,`sex`) values (1,2020122412,NULL,NULL,'on','on','on','on','on','on','on','on','on','on','on','on','on','on','on','on','on','on','on','','张三','2020-04-23',0),(3,2020122412,NULL,NULL,'on','on','on','on','on','on','on','on','on','on','on','on','on','on','on','on','on','on','on','','张三','2020-04-23',1);
 
-/*Table structure for table `clinical_examination` */
+/*Table structure for table `clinicalexamination` */
 
-DROP TABLE IF EXISTS `clinical_examination`;
+DROP TABLE IF EXISTS `clinicalexamination`;
 
-CREATE TABLE `clinical_examination` (
+CREATE TABLE `clinicalexamination` (
   `cId` int(11) NOT NULL AUTO_INCREMENT,
   `userId` int(11) DEFAULT NULL,
   `pissexamine` varchar(20) DEFAULT NULL,
@@ -175,15 +175,15 @@ CREATE TABLE `clinical_examination` (
   PRIMARY KEY (`cId`)
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 
-/*Data for the table `clinical_examination` */
+/*Data for the table `clinicalexamination` */
 
-insert  into `clinical_examination`(`cId`,`userId`,`pissexamine`,`abnormal`,`abotypeId`,`RH`,`bloodSugar`,`HBsAg`,`HBeAb`,`HBsAb`,`HBcAb`,`HBeAg`,`ALT`,`Cr`,`TSH`,`fIgG`,`TP`,`jIgG`,`jIgM`,`gIgG`,`gIgM`,`other`,`doctorName`,`examineDate`,`sex`) values (1,2020122412,'正常',NULL,2,'阳性','4.5','阳性','阳性','阳性','阳性','阳性',10,110,2,'阳性','阳性','阳性','阳性','阳性','阳性',NULL,'张三','2020-04-23',0),(2,2020122412,'正常',NULL,3,'阳性','4.1','阳性','阳性','阳性','阳性','阳性',12,135,2,'阳性','阳性','阳性','阳性','阳性','阳性',NULL,'张三','2020-04-23',1);
+insert  into `clinicalexamination`(`cId`,`userId`,`pissexamine`,`abnormal`,`abotypeId`,`RH`,`bloodSugar`,`HBsAg`,`HBeAb`,`HBsAb`,`HBcAb`,`HBeAg`,`ALT`,`Cr`,`TSH`,`fIgG`,`TP`,`jIgG`,`jIgM`,`gIgG`,`gIgM`,`other`,`doctorName`,`examineDate`,`sex`) values (1,2020122412,'正常',NULL,2,'阳性','4.5','阳性','阳性','阳性','阳性','阳性',10,110,2,'阳性','阳性','阳性','阳性','阳性','阳性',NULL,'张三','2020-04-23',0),(2,2020122412,'正常',NULL,3,'阳性','4.1','阳性','阳性','阳性','阳性','阳性',12,135,2,'阳性','阳性','阳性','阳性','阳性','阳性',NULL,'张三','2020-04-23',1);
 
-/*Table structure for table `health_checkup` */
+/*Table structure for table `healthcheckup` */
 
-DROP TABLE IF EXISTS `health_checkup`;
+DROP TABLE IF EXISTS `healthcheckup`;
 
-CREATE TABLE `health_checkup` (
+CREATE TABLE `healthcheckup` (
   `healthId` int(11) NOT NULL AUTO_INCREMENT,
   `userId` int(11) DEFAULT NULL,
   `sex` int(11) DEFAULT NULL,
@@ -210,15 +210,15 @@ CREATE TABLE `health_checkup` (
   PRIMARY KEY (`healthId`)
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 
-/*Data for the table `health_checkup` */
+/*Data for the table `healthcheckup` */
 
-insert  into `health_checkup`(`healthId`,`userId`,`sex`,`height`,`BMI`,`weight`,`smmHg`,`mmHgs`,`P`,`isSpirit`,`spiritContent`,`isTheFive`,`theFiveContent`,`isPosture`,`postureContent`,`isFace`,`faceContent`,`isHair`,`hairContent`,`isThyroid`,`thyroidContent`,`doctorName`,`examineDate`) values (1,2020122412,0,160,19.5,50,NULL,NULL,90,0,NULL,0,NULL,0,NULL,0,NULL,0,NULL,0,NULL,'张三','2020-04-23'),(2,2020122412,1,180,19.4,63,NULL,NULL,92,0,NULL,0,NULL,0,NULL,0,NULL,0,NULL,0,NULL,'张三','2020-04-23');
+insert  into `healthcheckup`(`healthId`,`userId`,`sex`,`height`,`BMI`,`weight`,`smmHg`,`mmHgs`,`P`,`isSpirit`,`spiritContent`,`isTheFive`,`theFiveContent`,`isPosture`,`postureContent`,`isFace`,`faceContent`,`isHair`,`hairContent`,`isThyroid`,`thyroidContent`,`doctorName`,`examineDate`) values (1,2020122412,0,160,19.5,50,NULL,NULL,90,0,NULL,0,NULL,0,NULL,0,NULL,0,NULL,0,NULL,'张三','2020-04-23'),(2,2020122412,1,180,19.4,63,NULL,NULL,92,0,NULL,0,NULL,0,NULL,0,NULL,0,NULL,0,NULL,'张三','2020-04-23');
 
-/*Table structure for table `lab_work` */
+/*Table structure for table `labwork` */
 
-DROP TABLE IF EXISTS `lab_work`;
+DROP TABLE IF EXISTS `labwork`;
 
-CREATE TABLE `lab_work` (
+CREATE TABLE `labwork` (
   `lobId` int(11) NOT NULL AUTO_INCREMENT,
   `userId` int(11) DEFAULT NULL,
   `sex` int(11) DEFAULT NULL,
@@ -230,15 +230,15 @@ CREATE TABLE `lab_work` (
   PRIMARY KEY (`lobId`)
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 
-/*Data for the table `lab_work` */
+/*Data for the table `labwork` */
 
-insert  into `lab_work`(`lobId`,`userId`,`sex`,`project`,`unit`,`scope`,`aisle`,`projectDetails`) values (1,2020122412,0,'肝功能',1,'1.0-1.2',4,'还行'),(2,2020122412,1,'肾功能',2,'4',12,'猛');
+insert  into `labwork`(`lobId`,`userId`,`sex`,`project`,`unit`,`scope`,`aisle`,`projectDetails`) values (1,2020122412,0,'肝功能',1,'1.0-1.2',4,'还行'),(2,2020122412,1,'肾功能',2,'4',12,'猛');
 
-/*Table structure for table `marital_history` */
+/*Table structure for table `maritalhistory` */
 
-DROP TABLE IF EXISTS `marital_history`;
+DROP TABLE IF EXISTS `maritalhistory`;
 
-CREATE TABLE `marital_history` (
+CREATE TABLE `maritalhistory` (
   `birthId` int(11) NOT NULL AUTO_INCREMENT,
   `isDivorced` int(11) DEFAULT NULL,
   `sonCount` int(11) DEFAULT NULL COMMENT '儿子数量',
@@ -248,9 +248,9 @@ CREATE TABLE `marital_history` (
   PRIMARY KEY (`birthId`)
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 
-/*Data for the table `marital_history` */
+/*Data for the table `maritalhistory` */
 
-insert  into `marital_history`(`birthId`,`isDivorced`,`sonCount`,`girlCount`,`isGeneticDisease`,`geneticDisease`) values (1,0,NULL,NULL,1,NULL),(2,0,NULL,NULL,1,NULL);
+insert  into `maritalhistory`(`birthId`,`isDivorced`,`sonCount`,`girlCount`,`isGeneticDisease`,`geneticDisease`) values (1,0,NULL,NULL,1,NULL),(2,0,NULL,NULL,1,NULL);
 
 /*Table structure for table `medicalhistory` */
 
@@ -317,11 +317,11 @@ CREATE TABLE `now_medicalhistorytype` (
 
 insert  into `now_medicalhistorytype`(`ntypeId`,`ntype`) values (1,'非活动性HBV携带者'),(2,'慢性HBV携带者'),(3,'梅毒随访中'),(4,'肺结核随访中');
 
-/*Table structure for table `oral_cavity` */
+/*Table structure for table `oralcavity` */
 
-DROP TABLE IF EXISTS `oral_cavity`;
+DROP TABLE IF EXISTS `oralcavity`;
 
-CREATE TABLE `oral_cavity` (
+CREATE TABLE `oralcavity` (
   `oralId` int(11) NOT NULL AUTO_INCREMENT,
   `userId` int(11) DEFAULT NULL,
   `checkEquipment` varchar(20) DEFAULT NULL COMMENT '检查设备',
@@ -334,9 +334,9 @@ CREATE TABLE `oral_cavity` (
   PRIMARY KEY (`oralId`)
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 
-/*Data for the table `oral_cavity` */
+/*Data for the table `oralcavity` */
 
-insert  into `oral_cavity`(`oralId`,`userId`,`checkEquipment`,`opinion`,`abnormalType`,`abnormalContent`,`doctorName`,`examineDate`,`sex`) values (1,2020122412,'U202',NULL,0,NULL,'张三','2020-04-23',0),(2,2020122412,'U202',NULL,0,NULL,'张三','2020-04-23',1);
+insert  into `oralcavity`(`oralId`,`userId`,`checkEquipment`,`opinion`,`abnormalType`,`abnormalContent`,`doctorName`,`examineDate`,`sex`) values (1,2020122412,'U202',NULL,0,NULL,'张三','2020-04-23',0),(2,2020122412,'U202',NULL,0,NULL,'张三','2020-04-23',1);
 
 /*Table structure for table `registertype` */
 
@@ -366,25 +366,25 @@ CREATE TABLE `suggest` (
 
 insert  into `suggest`(`id`,`content`) values (1,'有准备、有计划的怀孕，避免大龄生育.'),(2,'合理营养，控制饮食，科学增补叶酸、碘、铁、钙等营养素及微童元素。'),(3,'积极预防慢性疾病和传染病.'),(4,'谨慎用药,计划受孕期间尽里避免服用药物。'),(5,'避免接触生活及职业环境中的有毒有害物质(如放射线、高温、铅、汞、苯、农药),避免密切接触宠物。'),(6,'保持健康生活方式和行为。'),(7,'保持心理健康。');
 
-/*Table structure for table `suggest_d` */
+/*Table structure for table `suggestd` */
 
-DROP TABLE IF EXISTS `suggest_d`;
+DROP TABLE IF EXISTS `suggestd`;
 
-CREATE TABLE `suggest_d` (
+CREATE TABLE `suggestd` (
   `dId` int(11) NOT NULL AUTO_INCREMENT,
   `content` varchar(100) DEFAULT NULL,
   PRIMARY KEY (`dId`)
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 
-/*Data for the table `suggest_d` */
+/*Data for the table `suggestd` */
 
-insert  into `suggest_d`(`dId`,`content`) values (1,'在已接受的检查项目中,暂未发现夫妇双方存在对怀孕不利的危险因素。建议定期接受健康教育与指导。'),(2,'夫妇仅一方(丈夫/妻子)接受检查评估。在已接受的检查项...素。建议另-方(丈夫/妻子)尽快前来接受孕前优生健康检查。'),(3,'在已接受的检查项目中,发现对怀孕不利的危险因素,建议进一 步咨询及查治。');
+insert  into `suggestd`(`dId`,`content`) values (1,'在已接受的检查项目中,暂未发现夫妇双方存在对怀孕不利的危险因素。建议定期接受健康教育与指导。'),(2,'夫妇仅一方(丈夫/妻子)接受检查评估。在已接受的检查项...素。建议另-方(丈夫/妻子)尽快前来接受孕前优生健康检查。'),(3,'在已接受的检查项目中,发现对怀孕不利的危险因素,建议进一 步咨询及查治。');
 
-/*Table structure for table `user_info` */
+/*Table structure for table `userinfo` */
 
-DROP TABLE IF EXISTS `user_info`;
+DROP TABLE IF EXISTS `userinfo`;
 
-CREATE TABLE `user_info` (
+CREATE TABLE `userinfo` (
   `userId` int(20) NOT NULL AUTO_INCREMENT,
   `mName` varchar(20) DEFAULT NULL,
   `mCard` varchar(18) DEFAULT NULL,
@@ -426,17 +426,17 @@ CREATE TABLE `user_info` (
   `email` varchar(50) DEFAULT NULL COMMENT '邮编',
   `doctorName` varchar(20) DEFAULT NULL,
   PRIMARY KEY (`userId`)
-) ENGINE=InnoDB AUTO_INCREMENT=2020122418 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=2020122424 DEFAULT CHARSET=utf8;
 
-/*Data for the table `user_info` */
+/*Data for the table `userinfo` */
 
-insert  into `user_info`(`userId`,`mName`,`mCard`,`mBirthDate`,`mPhone`,`methnic`,`mIdType`,`mage`,`mculture`,`mjob`,`mprovince`,`mcity`,`mcounty`,`mdistrict`,`mvillage`,`mregistered`,`fName`,`fCard`,`fBirthDate`,`fPhone`,`fethnic`,`fIdType`,`fage`,`fculture`,`fjob`,`fprovince`,`fcity`,`fcounty`,`fdistrict`,`fvillage`,`fregistered`,`address`,`creatDate`,`getMarriedDate`,`regtypeId`,`landlineNumber`,`mimg`,`fimg`,`email`,`doctorName`) values (2020122412,'言经年','431103199605148045','1996-05-14','18244726331','汉族','身份证',23,'本科','白领','湖南省','长沙市','岳麓区',NULL,NULL,'城市户口','乔文妮','431103199608148045','1996-08-14','13844756951','汉族','身份证',23,'本科','白领','湖南省','岳阳市','xx县','xx乡','xx老王村','城市户口','湖南省长沙市岳麓区xx街道xxx号','2020-04-23','2020-04-17',1,NULL,NULL,'','1101133896@qq.com','张三'),(2020122414,'默苏文','431103199405146854','1994-05-14','18248746131','汉族','身份证',25,'本科','白领','湖北省','武汉市','xx区','xx乡',NULL,'城市户口','陈慧','431103199608148045','1996-08-14','13845124751','汉族','身份证',23,'本科','白领','湖南省','常德市','xx县','xx乡','xx和平村','城市户口','湖北省武汉市xx区xx街道xxx号','2020-04-23','2020-04-10',2,NULL,NULL,'','2541133896@qq.com','张三'),(2020122415,'彭大婶','431103199305211456','1993-05-21','18214585665','汉族','身份证',26,'大专','白领','湖南省','永州市','冷水滩区','高溪市','杨家村','农村户口','刘二娘','431103199608148045','1996-08-14','13844744551','汉族','身份证',23,'本科','白领','湖南省','岳阳市','xx县',NULL,'xx老王村','城市户口','湖北省武汉市xx区xx街道xxx号','2020-04-23','2020-04-11',2,NULL,NULL,'','2564135466@qq.com','王五六'),(2020122416,'成文武','431103199301212241','1993-01-21','18214586632','汉族','身份证',27,'大专','白领','湖南省','永州市','零陵','xx市','土家村','农村户口','刘二娘','431103199608148045','1996-08-14','13844744551','汉族','身份证',23,'本科','白领','湖南省','岳阳市','xx县','xx乡','xx老王村','农村户口','湖北省岳阳市xx区xx街道xxx号','2020-04-23','2020-04-16',1,NULL,NULL,'','594152466@qq.com','王五六');
+insert  into `userinfo`(`userId`,`mName`,`mCard`,`mBirthDate`,`mPhone`,`methnic`,`mIdType`,`mage`,`mculture`,`mjob`,`mprovince`,`mcity`,`mcounty`,`mdistrict`,`mvillage`,`mregistered`,`fName`,`fCard`,`fBirthDate`,`fPhone`,`fethnic`,`fIdType`,`fage`,`fculture`,`fjob`,`fprovince`,`fcity`,`fcounty`,`fdistrict`,`fvillage`,`fregistered`,`address`,`creatDate`,`getMarriedDate`,`regtypeId`,`landlineNumber`,`mimg`,`fimg`,`email`,`doctorName`) values (2020122412,'言经年','431103199605148045','1996-05-14','18244726331','汉族','身份证',23,'本科','白领','湖南省','长沙市','岳麓区',NULL,NULL,'城市户口','乔文妮','431103199608148045','1996-08-14','13844756951','汉族','身份证',23,'本科','白领','湖南省','岳阳市','xx县','xx乡','xx老王村','城市户口','湖南省长沙市岳麓区xx街道xxx号','2020-04-23','2020-04-17',1,NULL,NULL,'','1101133896@qq.com','张三'),(2020122414,'默苏文','431103199405146854','1994-05-14','18248746131','汉族','身份证',25,'本科','白领','湖北省','武汉市','xx区','xx乡',NULL,'城市户口','陈慧','431103199608148045','1996-08-14','13845124751','汉族','身份证',23,'本科','白领','湖南省','常德市','xx县','xx乡','xx和平村','城市户口','湖北省武汉市xx区xx街道xxx号','2020-04-23','2020-04-10',2,NULL,NULL,'','2541133896@qq.com','张三'),(2020122415,'彭大婶','431103199305211456','1993-05-21','18214585665','汉族','身份证',26,'大专','白领','湖南省','永州市','冷水滩区','高溪市','杨家村','农村户口','刘二娘','431103199608148045','1996-08-14','13844744551','汉族','身份证',23,'本科','白领','湖南省','岳阳市','xx县',NULL,'xx老王村','城市户口','湖北省武汉市xx区xx街道xxx号','2020-04-23','2020-04-11',2,NULL,NULL,'','2564135466@qq.com','王五六'),(2020122416,'成文武','431103199301212241','1993-01-21','18214586632','汉族','身份证',27,'大专','白领','湖南省','永州市','零陵','xx市','土家村','农村户口','刘二娘','431103199608148045','1996-08-14','13844744551','汉族','身份证',23,'本科','白领','湖南省','岳阳市','xx县','xx乡','xx老王村','农村户口','湖北省岳阳市xx区xx街道xxx号','2020-04-23','2020-04-16',1,NULL,NULL,'','594152466@qq.com','王五六'),(2020122423,'陈佳辉','456213598741541203','2019-12-29','18245627846','汉族','身份证',25,'大专','白领','湖南','岳阳','','','','农村户口','彭勇','432651245168954125','2019-12-29','13862549856','汉族','身份证',22,'本科','白领','湖南','常德','','','','城市户口','湖南省长沙市岳麓区杜鹃了772号','2019-12-29','2019-12-29',2,'',NULL,NULL,'','周正午');
 
-/*Table structure for table `x_examine` */
+/*Table structure for table `xexamine` */
 
-DROP TABLE IF EXISTS `x_examine`;
+DROP TABLE IF EXISTS `xexamine`;
 
-CREATE TABLE `x_examine` (
+CREATE TABLE `xexamine` (
   `xId` int(11) NOT NULL AUTO_INCREMENT,
   `userId` int(11) DEFAULT NULL,
   `xNum` int(11) DEFAULT NULL,
@@ -449,44 +449,44 @@ CREATE TABLE `x_examine` (
   PRIMARY KEY (`xId`)
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 
-/*Data for the table `x_examine` */
+/*Data for the table `xexamine` */
 
-insert  into `x_examine`(`xId`,`userId`,`xNum`,`opinion`,`abnormalType`,`abnormalContent`,`doctorName`,`examineDate`,`sex`) values (1,2020122412,253,NULL,0,NULL,'张三','2020-04-23',0),(2,2020122412,254,NULL,0,NULL,'张三','2020-04-23',1);
+insert  into `xexamine`(`xId`,`userId`,`xNum`,`opinion`,`abnormalType`,`abnormalContent`,`doctorName`,`examineDate`,`sex`) values (1,2020122412,253,NULL,0,NULL,'张三','2020-04-23',0),(2,2020122412,254,NULL,0,NULL,'张三','2020-04-23',1);
 
-/*Table structure for table `yx_advise` */
+/*Table structure for table `yxadvise` */
 
-DROP TABLE IF EXISTS `yx_advise`;
+DROP TABLE IF EXISTS `yxadvise`;
 
-CREATE TABLE `yx_advise` (
+CREATE TABLE `yxadvise` (
   `yxId` int(11) NOT NULL AUTO_INCREMENT,
   `yxItem` varchar(20) DEFAULT NULL,
   PRIMARY KEY (`yxId`)
 ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 
-/*Data for the table `yx_advise` */
+/*Data for the table `yxadvise` */
 
-insert  into `yx_advise`(`yxId`,`yxItem`) values (1,'未发现医学上不宜结婚德异常情况和疾病'),(2,'建议暂缓结婚'),(3,'建议不宜生育'),(4,'建议不以结婚'),(5,'建议采取医学措施，尊重受检者意愿');
+insert  into `yxadvise`(`yxId`,`yxItem`) values (1,'未发现医学上不宜结婚德异常情况和疾病'),(2,'建议暂缓结婚'),(3,'建议不宜生育'),(4,'建议不以结婚'),(5,'建议采取医学措施，尊重受检者意愿');
 
-/*Table structure for table `yx_advise_checkresult` */
+/*Table structure for table `yxadvisecheckresult` */
 
-DROP TABLE IF EXISTS `yx_advise_checkresult`;
+DROP TABLE IF EXISTS `yxadvisecheckresult`;
 
-CREATE TABLE `yx_advise_checkresult` (
+CREATE TABLE `yxadvisecheckresult` (
   `relationId` int(11) NOT NULL AUTO_INCREMENT,
   `resultId` int(11) DEFAULT NULL COMMENT '检查结果Id',
   `adviseArr` varchar(20) DEFAULT NULL,
   PRIMARY KEY (`relationId`)
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 
-/*Data for the table `yx_advise_checkresult` */
+/*Data for the table `yxadvisecheckresult` */
 
-insert  into `yx_advise_checkresult`(`relationId`,`resultId`,`adviseArr`) values (1,1,'1'),(2,2,'1');
+insert  into `yxadvisecheckresult`(`relationId`,`resultId`,`adviseArr`) values (1,1,'1'),(2,2,'1');
 
-/*Table structure for table `yx_check_result` */
+/*Table structure for table `yxcheckresult` */
 
-DROP TABLE IF EXISTS `yx_check_result`;
+DROP TABLE IF EXISTS `yxcheckresult`;
 
-CREATE TABLE `yx_check_result` (
+CREATE TABLE `yxcheckresult` (
   `resultId` int(11) NOT NULL AUTO_INCREMENT,
   `userId` int(11) DEFAULT NULL,
   `sex` int(11) DEFAULT NULL,
@@ -510,11 +510,11 @@ CREATE TABLE `yx_check_result` (
   `isCgkz` int(11) DEFAULT NULL COMMENT '常规是否检查完毕',
   `isOver` int(11) DEFAULT NULL COMMENT '是否检查完毕',
   PRIMARY KEY (`resultId`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8;
 
-/*Data for the table `yx_check_result` */
+/*Data for the table `yxcheckresult` */
 
-insert  into `yx_check_result`(`resultId`,`userId`,`sex`,`isAbnormal`,`abnormalities`,`disease`,`sanitation`,`consult`,`supplement`,`advise`,`adviseProject`,`isAdvise`,`ReferralHospital`,`referralDate`,`forwardDate`,`proveDate`,`doctorName`,`examineDate`,`isOral`,`isX`,`isCgkz`,`isOver`) values (1,2020122412,0,0,NULL,NULL,'卫生良好',NULL,NULL,NULL,NULL,1,NULL,NULL,NULL,NULL,'张三','2020-04-23',1,1,1,1),(2,2020122412,1,0,NULL,NULL,'卫生良好',NULL,NULL,NULL,NULL,1,NULL,NULL,NULL,NULL,'张三','2020-04-23',1,1,1,1);
+insert  into `yxcheckresult`(`resultId`,`userId`,`sex`,`isAbnormal`,`abnormalities`,`disease`,`sanitation`,`consult`,`supplement`,`advise`,`adviseProject`,`isAdvise`,`ReferralHospital`,`referralDate`,`forwardDate`,`proveDate`,`doctorName`,`examineDate`,`isOral`,`isX`,`isCgkz`,`isOver`) values (1,2020122412,0,0,NULL,NULL,'卫生良好',NULL,NULL,NULL,NULL,1,NULL,NULL,NULL,NULL,'张三','2020-04-23',1,1,1,1),(2,2020122412,1,0,NULL,NULL,'卫生良好',NULL,NULL,NULL,NULL,1,NULL,NULL,NULL,NULL,'张三','2020-04-23',1,1,1,1),(3,2020122414,0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),(4,2020122414,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),(11,2020122423,0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),(12,2020122423,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
 /*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
