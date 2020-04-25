@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.csdj.examines.dao.ImageMapper">
+    <!--查询用户-->
+    <select id="getUser" parameterType="Userinfo">
+        SELECT * FROM user_info where 1=1
+        <if test="mname!='' and mname!=null">
+            and mName like concat('%',#{mname},'%')
+        </if>
+        <if test="fname!='' and fname!=null">
+            and fName like concat('%',#{fname},'%')
+        </if>
+        <if test="mcard!='' and mcard!=null">
+            and mCard = #{mcard}
+        </if>
+        <if test="fcard!='' and fcard!=null">
+            and fCard = #{fcard}
+        </if>
+        <if test="userid!='' and userid!=null">
+            and userId=#{userid}
+        </if>
+        <if test="creatdate!='' and creatdate!=null">
+            and creatDate = #{creatdate}
+        </if>
+        group by creatDate desc
+    </select>
+</mapper>

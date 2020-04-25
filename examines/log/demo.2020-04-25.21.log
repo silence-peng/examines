@@ -1,0 +1,8 @@
+2020-04-25 17:48:34,353 INFO (StartupInfoLogger.java:59)- Started ControlerApplication in 4.2448474 seconds (JVM running for 5.475)
+2020-04-25 17:48:47,102 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT regtypeid,type FROM registertype 
+2020-04-25 17:48:47,121 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-25 17:48:47,135 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 2
+2020-04-25 17:50:24,970 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: INSERT INTO userinfo(mName,mCard,mBirthDate,mPhone,methnic,mIdType,mage,mculture,mjob,mprovince,mcity,mcounty,mdistrict, mvillage,mregistered,fName,fCard,fBirthDate,fPhone,fethnic,fIdType,fage,fculture,fjob,fprovince,fcity,fcounty,fdistrict, fvillage,fregistered,address,creatDate,getMarriedDate,regtypeId,landlineNumber,mimg,fimg,email,doctorName) VALUES(?,?,?,?,?,?,?,?,?,?,?,?, ?,?,?,?,?,?,?,?,?,?,?,?, ?,?,?,?,?,?,?,?,?,?, ?,?,?,?,?) 
+2020-04-25 17:54:17,100 INFO (StartupInfoLogger.java:50)- Starting ControlerApplication on DESKTOP-E0OONUJ with PID 9540 (E:\IDEAProject\examines\examines\web\target\classes started by ZZW in E:\IDEAProject\examines\examines)
+2020-04-25 17:54:17,104 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2020-04-25 17:54:17,105 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
