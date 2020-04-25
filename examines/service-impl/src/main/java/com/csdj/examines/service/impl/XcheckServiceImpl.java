@@ -6,6 +6,8 @@ import com.csdj.examines.service.XcheckService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 /**
  * @author: MR.peng
  * @createDate: 2020/4/25
@@ -17,12 +19,19 @@ public class XcheckServiceImpl implements XcheckService {
     private XcheckMapper xcheckMapper;
 
     public Xexamine IsCheckX(Integer userId, Integer sex) {
-        return xcheckMapper.isCheck(userId, sex);
+        Xexamine xexamine=new Xexamine();
+        xexamine.setUserId(userId);
+        xexamine.setSex(sex);
+        List<Xexamine> list=xcheckMapper.select(xexamine);
+        if (list.size()==1){
+            return list.get(0);
+        }
+        return null;
     }
     public Integer check(Xexamine xexamine) {
-        if (xcheckMapper.isCheck(xexamine.getUserId(), xexamine.getSex())!=null){
-            return xcheckMapper.updXCheck(xexamine);
+        if (xcheckMapper.selectOne(xexamine)!=null){
+            return xcheckMapper.updateByPrimaryKey(xexamine);
         }
-        return xcheckMapper.checkX(xexamine);
+        return xcheckMapper.insertSelective(xexamine);
     }
 }

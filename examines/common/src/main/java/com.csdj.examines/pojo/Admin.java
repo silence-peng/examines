@@ -4,8 +4,17 @@ import java.io.Serializable;
 
 public class Admin implements Serializable {
     private Integer adminId;
-    private String doctorName;
-    private String doctorPassword;
+    private String doctorname;
+    private String doctorpassword;
+
+    @Override
+    public String toString() {
+        return "Admin{" +
+                "adminId=" + adminId +
+                ", doctorname='" + doctorname + '\'' +
+                ", doctorpassword='" + doctorpassword + '\'' +
+                '}';
+    }
 
     public Integer getAdminId() {
         return adminId;
@@ -15,37 +24,19 @@ public class Admin implements Serializable {
         this.adminId = adminId;
     }
 
-    public String getDoctorName() {
-        return doctorName;
+    public String getDoctorname() {
+        return doctorname;
     }
 
-    public void setDoctorName(String doctorName) {
-        this.doctorName = doctorName;
+    public void setDoctorname(String doctorname) {
+        this.doctorname = doctorname;
     }
 
-    public String getDoctorPassword() {
-        return doctorPassword;
+    public String getDoctorpassword() {
+        return doctorpassword;
     }
 
-    public void setDoctorPassword(String doctorPassword) {
-        this.doctorPassword = doctorPassword;
-    }
-
-    @Override
-    public String toString() {
-        return "Admin{" +
-                "adminId=" + adminId +
-                ", doctorName='" + doctorName + '\'' +
-                ", doctorPassword='" + doctorPassword + '\'' +
-                '}';
-    }
-
-    public Admin() {
-    }
-
-    public Admin(Integer adminId, String doctorName, String doctorPassword) {
-        this.adminId = adminId;
-        this.doctorName = doctorName;
-        this.doctorPassword = doctorPassword;
+    public void setDoctorpassword(String doctorpassword) {
+        this.doctorpassword = doctorpassword;
     }
 }

@@ -1,82 +1,70 @@
 package com.csdj.examines.pojo;
 
 public class Maritalhistory {
-    private Integer birthId;
-    private Integer isDivorced;
-    private Integer sonCount;
-    private Integer girlCount;
-    private Integer isGeneticDisease;
-    private String geneticDisease;
+    private Integer birthid;
+    private Integer isdivorced;
+    private Integer soncount;
+    private Integer girlcount;
+    private Integer isgeneticdisease;
+    private String geneticdisease;
 
     @Override
     public String toString() {
-        return "MaritalHistory{" +
-                "birthId=" + birthId +
-                ", isDivorced=" + isDivorced +
-                ", sonCount=" + sonCount +
-                ", girlCount=" + girlCount +
-                ", isGeneticDisease=" + isGeneticDisease +
-                ", geneticDisease='" + geneticDisease + '\'' +
+        return "Maritalhistory{" +
+                "birthid=" + birthid +
+                ", isdivorced=" + isdivorced +
+                ", soncount=" + soncount +
+                ", girlcount=" + girlcount +
+                ", isgeneticdisease=" + isgeneticdisease +
+                ", geneticdisease='" + geneticdisease + '\'' +
                 '}';
     }
 
-    public Maritalhistory() {
+    public Integer getBirthid() {
+        return birthid;
     }
 
-    public Maritalhistory(Integer birthId, Integer isDivorced, Integer sonCount, Integer girlCount, Integer isGeneticDisease, String geneticDisease) {
-        this.birthId = birthId;
-        this.isDivorced = isDivorced;
-        this.sonCount = sonCount;
-        this.girlCount = girlCount;
-        this.isGeneticDisease = isGeneticDisease;
-        this.geneticDisease = geneticDisease;
+    public void setBirthid(Integer birthid) {
+        this.birthid = birthid;
     }
 
-    public Integer getBirthId() {
-        return birthId;
+    public Integer getIsdivorced() {
+        return isdivorced;
     }
 
-    public void setBirthId(Integer birthId) {
-        this.birthId = birthId;
+    public void setIsdivorced(Integer isdivorced) {
+        this.isdivorced = isdivorced;
     }
 
-    public Integer getIsDivorced() {
-        return isDivorced;
+    public Integer getSoncount() {
+        return soncount;
     }
 
-    public void setIsDivorced(Integer isDivorced) {
-        this.isDivorced = isDivorced;
+    public void setSoncount(Integer soncount) {
+        this.soncount = soncount;
     }
 
-    public Integer getSonCount() {
-        return sonCount;
+    public Integer getGirlcount() {
+        return girlcount;
     }
 
-    public void setSonCount(Integer sonCount) {
-        this.sonCount = sonCount;
+    public void setGirlcount(Integer girlcount) {
+        this.girlcount = girlcount;
     }
 
-    public Integer getGirlCount() {
-        return girlCount;
+    public Integer getIsgeneticdisease() {
+        return isgeneticdisease;
     }
 
-    public void setGirlCount(Integer girlCount) {
-        this.girlCount = girlCount;
+    public void setIsgeneticdisease(Integer isgeneticdisease) {
+        this.isgeneticdisease = isgeneticdisease;
     }
 
-    public Integer getIsGeneticDisease() {
-        return isGeneticDisease;
+    public String getGeneticdisease() {
+        return geneticdisease;
     }
 
-    public void setIsGeneticDisease(Integer isGeneticDisease) {
-        this.isGeneticDisease = isGeneticDisease;
-    }
-
-    public String getGeneticDisease() {
-        return geneticDisease;
-    }
-
-    public void setGeneticDisease(String geneticDisease) {
-        this.geneticDisease = geneticDisease;
+    public void setGeneticdisease(String geneticdisease) {
+        this.geneticdisease = geneticdisease;
     }
 }

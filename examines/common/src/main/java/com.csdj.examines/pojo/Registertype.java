@@ -1,23 +1,23 @@
 package com.csdj.examines.pojo;
 
 public class Registertype {
-    private  Integer regtypeId;
+    private  Integer regtypeid;
     private  String type;
 
     @Override
     public String toString() {
         return "Registertype{" +
-                "regtypeId=" + regtypeId +
+                "regtypeid=" + regtypeid +
                 ", type='" + type + '\'' +
                 '}';
     }
 
-    public Integer getRegtypeId() {
-        return regtypeId;
+    public Integer getRegtypeid() {
+        return regtypeid;
     }
 
-    public void setRegtypeId(Integer regtypeId) {
-        this.regtypeId = regtypeId;
+    public void setRegtypeid(Integer regtypeid) {
+        this.regtypeid = regtypeid;
     }
 
     public String getType() {

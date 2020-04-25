@@ -1,31 +1,23 @@
 package com.csdj.examines.pojo;
 
 public class Medicalhistorytype {
-    private Integer typeId;
+    private Integer typeid;
     private String type;
-
-    public Medicalhistorytype() {
-    }
-
-    public Medicalhistorytype(Integer typeId, String type) {
-        this.typeId = typeId;
-        this.type = type;
-    }
 
     @Override
     public String toString() {
-        return "MedicalHistoryType{" +
-                "typeId=" + typeId +
+        return "Medicalhistorytype{" +
+                "typeid=" + typeid +
                 ", type='" + type + '\'' +
                 '}';
     }
 
-    public Integer getTypeId() {
-        return typeId;
+    public Integer getTypeid() {
+        return typeid;
     }
 
-    public void setTypeId(Integer typeId) {
-        this.typeId = typeId;
+    public void setTypeid(Integer typeid) {
+        this.typeid = typeid;
     }
 
     public String getType() {

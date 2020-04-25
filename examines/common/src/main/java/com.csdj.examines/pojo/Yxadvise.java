@@ -1,30 +1,30 @@
 package com.csdj.examines.pojo;
 
 public class Yxadvise {
-    private  Integer yxId;
-    private  String yxItem;
+    private  Integer yxid;
+    private  String yxitem;
+
+    public Integer getYxid() {
+        return yxid;
+    }
+
+    public void setYxid(Integer yxid) {
+        this.yxid = yxid;
+    }
+
+    public String getYxitem() {
+        return yxitem;
+    }
 
     @Override
     public String toString() {
         return "Yxadvise{" +
-                "yxId=" + yxId +
-                ", yxItem='" + yxItem + '\'' +
+                "yxid=" + yxid +
+                ", yxitem='" + yxitem + '\'' +
                 '}';
     }
 
-    public Integer getYxId() {
-        return yxId;
-    }
-
-    public void setYxId(Integer yxId) {
-        this.yxId = yxId;
-    }
-
-    public String getYxItem() {
-        return yxItem;
-    }
-
-    public void setYxItem(String yxItem) {
-        this.yxItem = yxItem;
+    public void setYxitem(String yxitem) {
+        this.yxitem = yxitem;
     }
 }

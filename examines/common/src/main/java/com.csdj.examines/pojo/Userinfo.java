@@ -5,14 +5,14 @@ import org.springframework.format.annotation.DateTimeFormat;
 import java.util.Date;
 
 public class Userinfo {
-    private  Integer userId;
-    private  String mName;
-    private  String mCard;
-    @DateTimeFormat(pattern="YYYY-MM-dd")
-    private Date mBirthDate;
-    private  String mPhone;
+    private  Integer userid;
+    private  String mname;
+    private  String mcard;
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
+    private Date mbirthdate;
+    private  String mphone;
     private  String methnic;
-    private  String mIdType;
+    private  String mIdtype;
     private  Integer mage;
     private  String mculture;
     private  String mjob;
@@ -22,13 +22,13 @@ public class Userinfo {
     private  String mdistrict;
     private  String mvillage;
     private  String mregistered;
-    private  String fName;
-    private  String fCard;
-    @DateTimeFormat(pattern="YYYY-MM-dd")
-    private  Date fBirthDate;
-    private  String fPhone;
+    private  String fname;
+    private  String fcard;
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
+    private  Date fbirthDate;
+    private  String fphone;
     private  String fethnic;
-    private  String fIdType;
+    private  String fidtype;
     private  Integer fage;
     private  String fculture;
     private  String fjob;
@@ -39,24 +39,24 @@ public class Userinfo {
     private  String fvillage;
     private  String fregistered;
     private  String address;
-    @DateTimeFormat(pattern="YYYY-MM-dd")
-    private  Date creatDate;
-    @DateTimeFormat(pattern="YYYY-MM-dd")
-    private  Date getMarriedDate;
-    private  Integer regtypeId;
-    private  String landlineNumber;
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
+    private  Date creatdate;
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
+    private  Date getmarrieddate;
+    private  Integer regtypeid;
+    private  String landlinenumber;
     private  String mimg;
 
     @Override
     public String toString() {
         return "Userinfo{" +
-                "userId=" + userId +
-                ", mName='" + mName + '\'' +
-                ", mCard='" + mCard + '\'' +
-                ", mBirthDate=" + mBirthDate +
-                ", mPhone='" + mPhone + '\'' +
+                "userid=" + userid +
+                ", mname='" + mname + '\'' +
+                ", mcard='" + mcard + '\'' +
+                ", mbirthdate=" + mbirthdate +
+                ", mphone='" + mphone + '\'' +
                 ", methnic='" + methnic + '\'' +
-                ", mIdType='" + mIdType + '\'' +
+                ", mIdtype='" + mIdtype + '\'' +
                 ", mage=" + mage +
                 ", mculture='" + mculture + '\'' +
                 ", mjob='" + mjob + '\'' +
@@ -66,12 +66,12 @@ public class Userinfo {
                 ", mdistrict='" + mdistrict + '\'' +
                 ", mvillage='" + mvillage + '\'' +
                 ", mregistered='" + mregistered + '\'' +
-                ", fName='" + fName + '\'' +
-                ", fCard='" + fCard + '\'' +
-                ", fBirthDate=" + fBirthDate +
-                ", fPhone='" + fPhone + '\'' +
+                ", fname='" + fname + '\'' +
+                ", fcard='" + fcard + '\'' +
+                ", fbirthDate=" + fbirthDate +
+                ", fphone='" + fphone + '\'' +
                 ", fethnic='" + fethnic + '\'' +
-                ", fIdType='" + fIdType + '\'' +
+                ", fidtype='" + fidtype + '\'' +
                 ", fage=" + fage +
                 ", fculture='" + fculture + '\'' +
                 ", fjob='" + fjob + '\'' +
@@ -82,58 +82,52 @@ public class Userinfo {
                 ", fvillage='" + fvillage + '\'' +
                 ", fregistered='" + fregistered + '\'' +
                 ", address='" + address + '\'' +
-                ", creatDate=" + creatDate +
-                ", getMarriedDate=" + getMarriedDate +
-                ", regtypeId=" + regtypeId +
-                ", landlineNumber='" + landlineNumber + '\'' +
+                ", creatdate=" + creatdate +
+                ", getmarrieddate=" + getmarrieddate +
+                ", regtypeid=" + regtypeid +
+                ", landlinenumber='" + landlinenumber + '\'' +
                 ", mimg='" + mimg + '\'' +
-                ", fimg='" + fimg + '\'' +
-                ", email='" + email + '\'' +
-                ", doctorName='" + doctorName + '\'' +
                 '}';
     }
 
-    private  String fimg;
-    private  String email;
-    private  String doctorName;
-    public Integer getUserId() {
-        return userId;
+    public Integer getUserid() {
+        return userid;
     }
 
-    public void setUserId(Integer userId) {
-        this.userId = userId;
+    public void setUserid(Integer userid) {
+        this.userid = userid;
     }
 
-    public String getmName() {
-        return mName;
+    public String getMname() {
+        return mname;
     }
 
-    public void setmName(String mName) {
-        this.mName = mName;
+    public void setMname(String mname) {
+        this.mname = mname;
     }
 
-    public String getmCard() {
-        return mCard;
+    public String getMcard() {
+        return mcard;
     }
 
-    public void setmCard(String mCard) {
-        this.mCard = mCard;
+    public void setMcard(String mcard) {
+        this.mcard = mcard;
     }
 
-    public Date getmBirthDate() {
-        return mBirthDate;
+    public Date getMbirthdate() {
+        return mbirthdate;
     }
 
-    public void setmBirthDate(Date mBirthDate) {
-        this.mBirthDate = mBirthDate;
+    public void setMbirthdate(Date mbirthdate) {
+        this.mbirthdate = mbirthdate;
     }
 
-    public String getmPhone() {
-        return mPhone;
+    public String getMphone() {
+        return mphone;
     }
 
-    public void setmPhone(String mPhone) {
-        this.mPhone = mPhone;
+    public void setMphone(String mphone) {
+        this.mphone = mphone;
     }
 
     public String getMethnic() {
@@ -144,12 +138,12 @@ public class Userinfo {
         this.methnic = methnic;
     }
 
-    public String getmIdType() {
-        return mIdType;
+    public String getmIdtype() {
+        return mIdtype;
     }
 
-    public void setmIdType(String mIdType) {
-        this.mIdType = mIdType;
+    public void setmIdtype(String mIdtype) {
+        this.mIdtype = mIdtype;
     }
 
     public Integer getMage() {
@@ -224,36 +218,36 @@ public class Userinfo {
         this.mregistered = mregistered;
     }
 
-    public String getfName() {
-        return fName;
+    public String getFname() {
+        return fname;
     }
 
-    public void setfName(String fName) {
-        this.fName = fName;
+    public void setFname(String fname) {
+        this.fname = fname;
     }
 
-    public String getfCard() {
-        return fCard;
+    public String getFcard() {
+        return fcard;
     }
 
-    public void setfCard(String fCard) {
-        this.fCard = fCard;
+    public void setFcard(String fcard) {
+        this.fcard = fcard;
     }
 
-    public Date getfBirthDate() {
-        return fBirthDate;
+    public Date getFbirthDate() {
+        return fbirthDate;
     }
 
-    public void setfBirthDate(Date fBirthDate) {
-        this.fBirthDate = fBirthDate;
+    public void setFbirthDate(Date fbirthDate) {
+        this.fbirthDate = fbirthDate;
     }
 
-    public String getfPhone() {
-        return fPhone;
+    public String getFphone() {
+        return fphone;
     }
 
-    public void setfPhone(String fPhone) {
-        this.fPhone = fPhone;
+    public void setFphone(String fphone) {
+        this.fphone = fphone;
     }
 
     public String getFethnic() {
@@ -264,12 +258,12 @@ public class Userinfo {
         this.fethnic = fethnic;
     }
 
-    public String getfIdType() {
-        return fIdType;
+    public String getFidtype() {
+        return fidtype;
     }
 
-    public void setfIdType(String fIdType) {
-        this.fIdType = fIdType;
+    public void setFidtype(String fidtype) {
+        this.fidtype = fidtype;
     }
 
     public Integer getFage() {
@@ -352,36 +346,36 @@ public class Userinfo {
         this.address = address;
     }
 
-    public Date getCreatDate() {
-        return creatDate;
+    public Date getCreatdate() {
+        return creatdate;
     }
 
-    public void setCreatDate(Date creatDate) {
-        this.creatDate = creatDate;
+    public void setCreatdate(Date creatdate) {
+        this.creatdate = creatdate;
     }
 
-    public Date getGetMarriedDate() {
-        return getMarriedDate;
+    public Date getGetmarrieddate() {
+        return getmarrieddate;
     }
 
-    public void setGetMarriedDate(Date getMarriedDate) {
-        this.getMarriedDate = getMarriedDate;
+    public void setGetmarrieddate(Date getmarrieddate) {
+        this.getmarrieddate = getmarrieddate;
     }
 
-    public Integer getRegtypeId() {
-        return regtypeId;
+    public Integer getRegtypeid() {
+        return regtypeid;
     }
 
-    public void setRegtypeId(Integer regtypeId) {
-        this.regtypeId = regtypeId;
+    public void setRegtypeid(Integer regtypeid) {
+        this.regtypeid = regtypeid;
     }
 
-    public String getLandlineNumber() {
-        return landlineNumber;
+    public String getLandlinenumber() {
+        return landlinenumber;
     }
 
-    public void setLandlineNumber(String landlineNumber) {
-        this.landlineNumber = landlineNumber;
+    public void setLandlinenumber(String landlinenumber) {
+        this.landlinenumber = landlinenumber;
     }
 
     public String getMimg() {
@@ -391,31 +385,4 @@ public class Userinfo {
     public void setMimg(String mimg) {
         this.mimg = mimg;
     }
-
-    public String getFimg() {
-        return fimg;
-    }
-
-    public void setFimg(String fimg) {
-        this.fimg = fimg;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public String getDoctorName() {
-        return doctorName;
-    }
-
-    public void setDoctorName(String doctorName) {
-        this.doctorName = doctorName;
-    }
-
-
-
 }

@@ -5,54 +5,54 @@ import org.springframework.format.annotation.DateTimeFormat;
 import java.util.Date;
 
 public class Xexamine {
-    private  Integer xId;
-    private  Integer userId;
-    private  Integer xNum;
+    private  Integer xid;
+    private  Integer userid;
+    private  Integer xnum;
     private  String opinion;
-    private  Integer abnormalType;
-    private  String abnormalContent;
-    private  String doctorName;
-    @DateTimeFormat(pattern="YYYY-MM-dd")
-    private Date examineDate;
+    private  Integer abnormaltype;
+    private  String abnormalcontent;
+    private  String doctorname;
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
+    private Date examinedate;
     private  Integer sex;
 
     @Override
     public String toString() {
         return "Xexamine{" +
-                "xId=" + xId +
-                ", userId=" + userId +
-                ", xNum=" + xNum +
+                "xid=" + xid +
+                ", userid=" + userid +
+                ", xnum=" + xnum +
                 ", opinion='" + opinion + '\'' +
-                ", abnormalType=" + abnormalType +
-                ", abnormalContent='" + abnormalContent + '\'' +
-                ", doctorName='" + doctorName + '\'' +
-                ", examineDate=" + examineDate +
+                ", abnormaltype=" + abnormaltype +
+                ", abnormalcontent='" + abnormalcontent + '\'' +
+                ", doctorname='" + doctorname + '\'' +
+                ", examinedate=" + examinedate +
                 ", sex=" + sex +
                 '}';
     }
 
-    public Integer getxId() {
-        return xId;
+    public Integer getXid() {
+        return xid;
     }
 
-    public void setxId(Integer xId) {
-        this.xId = xId;
+    public void setXid(Integer xid) {
+        this.xid = xid;
     }
 
-    public Integer getUserId() {
-        return userId;
+    public Integer getUserid() {
+        return userid;
     }
 
-    public void setUserId(Integer userId) {
-        this.userId = userId;
+    public void setUserid(Integer userid) {
+        this.userid = userid;
     }
 
-    public Integer getxNum() {
-        return xNum;
+    public Integer getXnum() {
+        return xnum;
     }
 
-    public void setxNum(Integer xNum) {
-        this.xNum = xNum;
+    public void setXnum(Integer xnum) {
+        this.xnum = xnum;
     }
 
     public String getOpinion() {
@@ -63,36 +63,36 @@ public class Xexamine {
         this.opinion = opinion;
     }
 
-    public Integer getAbnormalType() {
-        return abnormalType;
+    public Integer getAbnormaltype() {
+        return abnormaltype;
     }
 
-    public void setAbnormalType(Integer abnormalType) {
-        this.abnormalType = abnormalType;
+    public void setAbnormaltype(Integer abnormaltype) {
+        this.abnormaltype = abnormaltype;
     }
 
-    public String getAbnormalContent() {
-        return abnormalContent;
+    public String getAbnormalcontent() {
+        return abnormalcontent;
     }
 
-    public void setAbnormalContent(String abnormalContent) {
-        this.abnormalContent = abnormalContent;
+    public void setAbnormalcontent(String abnormalcontent) {
+        this.abnormalcontent = abnormalcontent;
     }
 
-    public String getDoctorName() {
-        return doctorName;
+    public String getDoctorname() {
+        return doctorname;
     }
 
-    public void setDoctorName(String doctorName) {
-        this.doctorName = doctorName;
+    public void setDoctorname(String doctorname) {
+        this.doctorname = doctorname;
     }
 
-    public Date getExamineDate() {
-        return examineDate;
+    public Date getExaminedate() {
+        return examinedate;
     }
 
-    public void setExamineDate(Date examineDate) {
-        this.examineDate = examineDate;
+    public void setExaminedate(Date examinedate) {
+        this.examinedate = examinedate;
     }
 
     public Integer getSex() {

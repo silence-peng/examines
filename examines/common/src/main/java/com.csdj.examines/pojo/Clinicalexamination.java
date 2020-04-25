@@ -6,47 +6,47 @@ import java.io.Serializable;
 import java.util.Date;
 
 public class Clinicalexamination implements Serializable {
-    private Integer cId;
-    private Integer userId;
+    private Integer cid;
+    private Integer userid;
     private String pissexamine;
     private String abnormal;
-    private Integer abotypeId;
-    private String RH;
-    private String bloodSugar;
-    private String HBsAg;
-    private String HBeAb;
-    private String HBsAb;
-    private String HBcAb;
-    private String HBeAg;
-    private String ALT;
-    private String Cr;
-    private String TSH;
-    private String fIgG;
-    private String TP;
-    private String jIgG;
-    private String jIgM;
-    private String gIgG;
-    private String gIgM;
+    private Integer abotypeid;
+    private String rh;
+    private String bloodsugar;
+    private String hbsag;
+    private String hbeab;
+    private String hbsab;
+    private String hbcab;
+    private String hbeag;
+    private String alt;
+    private String cr;
+    private String tsh;
+    private String figg;
+    private String tp;
+    private String jigg;
+    private String jigm;
+    private String gigg;
+    private String gigm;
     private String other;
-    private String doctorName;
-    @DateTimeFormat(pattern="YYYY-MM-dd")
-    private Date examineDate;
+    private String doctorname;
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
+    private Date examinedate;
     private Integer sex;
 
-    public Integer getcId() {
-        return cId;
+    public Integer getCid() {
+        return cid;
     }
 
-    public void setcId(Integer cId) {
-        this.cId = cId;
+    public void setCid(Integer cid) {
+        this.cid = cid;
     }
 
-    public Integer getUserId() {
-        return userId;
+    public Integer getUserid() {
+        return userid;
     }
 
-    public void setUserId(Integer userId) {
-        this.userId = userId;
+    public void setUserid(Integer userid) {
+        this.userid = userid;
     }
 
     public String getPissexamine() {
@@ -65,140 +65,140 @@ public class Clinicalexamination implements Serializable {
         this.abnormal = abnormal;
     }
 
-    public Integer getAbotypeId() {
-        return abotypeId;
+    public Integer getAbotypeid() {
+        return abotypeid;
     }
 
-    public void setAbotypeId(Integer abotypeId) {
-        this.abotypeId = abotypeId;
+    public void setAbotypeid(Integer abotypeid) {
+        this.abotypeid = abotypeid;
     }
 
-    public String getRH() {
-        return RH;
+    public String getRh() {
+        return rh;
     }
 
-    public void setRH(String RH) {
-        this.RH = RH;
+    public void setRh(String rh) {
+        this.rh = rh;
     }
 
-    public String getBloodSugar() {
-        return bloodSugar;
+    public String getBloodsugar() {
+        return bloodsugar;
     }
 
-    public void setBloodSugar(String bloodSugar) {
-        this.bloodSugar = bloodSugar;
+    public void setBloodsugar(String bloodsugar) {
+        this.bloodsugar = bloodsugar;
     }
 
-    public String getHBsAg() {
-        return HBsAg;
+    public String getHbsag() {
+        return hbsag;
     }
 
-    public void setHBsAg(String HBsAg) {
-        this.HBsAg = HBsAg;
+    public void setHbsag(String hbsag) {
+        this.hbsag = hbsag;
     }
 
-    public String getHBeAb() {
-        return HBeAb;
+    public String getHbeab() {
+        return hbeab;
     }
 
-    public void setHBeAb(String HBeAb) {
-        this.HBeAb = HBeAb;
+    public void setHbeab(String hbeab) {
+        this.hbeab = hbeab;
     }
 
-    public String getHBsAb() {
-        return HBsAb;
+    public String getHbsab() {
+        return hbsab;
     }
 
-    public void setHBsAb(String HBsAb) {
-        this.HBsAb = HBsAb;
+    public void setHbsab(String hbsab) {
+        this.hbsab = hbsab;
     }
 
-    public String getHBcAb() {
-        return HBcAb;
+    public String getHbcab() {
+        return hbcab;
     }
 
-    public void setHBcAb(String HBcAb) {
-        this.HBcAb = HBcAb;
+    public void setHbcab(String hbcab) {
+        this.hbcab = hbcab;
     }
 
-    public String getHBeAg() {
-        return HBeAg;
+    public String getHbeag() {
+        return hbeag;
     }
 
-    public void setHBeAg(String HBeAg) {
-        this.HBeAg = HBeAg;
+    public void setHbeag(String hbeag) {
+        this.hbeag = hbeag;
     }
 
-    public String getALT() {
-        return ALT;
+    public String getAlt() {
+        return alt;
     }
 
-    public void setALT(String ALT) {
-        this.ALT = ALT;
+    public void setAlt(String alt) {
+        this.alt = alt;
     }
 
     public String getCr() {
-        return Cr;
+        return cr;
     }
 
     public void setCr(String cr) {
-        Cr = cr;
+        this.cr = cr;
     }
 
-    public String getTSH() {
-        return TSH;
+    public String getTsh() {
+        return tsh;
     }
 
-    public void setTSH(String TSH) {
-        this.TSH = TSH;
+    public void setTsh(String tsh) {
+        this.tsh = tsh;
     }
 
-    public String getfIgG() {
-        return fIgG;
+    public String getFigg() {
+        return figg;
     }
 
-    public void setfIgG(String fIgG) {
-        this.fIgG = fIgG;
+    public void setFigg(String figg) {
+        this.figg = figg;
     }
 
-    public String getTP() {
-        return TP;
+    public String getTp() {
+        return tp;
     }
 
-    public void setTP(String TP) {
-        this.TP = TP;
+    public void setTp(String tp) {
+        this.tp = tp;
     }
 
-    public String getjIgG() {
-        return jIgG;
+    public String getJigg() {
+        return jigg;
     }
 
-    public void setjIgG(String jIgG) {
-        this.jIgG = jIgG;
+    public void setJigg(String jigg) {
+        this.jigg = jigg;
     }
 
-    public String getjIgM() {
-        return jIgM;
+    public String getJigm() {
+        return jigm;
     }
 
-    public void setjIgM(String jIgM) {
-        this.jIgM = jIgM;
+    public void setJigm(String jigm) {
+        this.jigm = jigm;
     }
 
-    public String getgIgG() {
-        return gIgG;
+    public String getGigg() {
+        return gigg;
     }
 
-    public void setgIgG(String gIgG) {
-        this.gIgG = gIgG;
+    public void setGigg(String gigg) {
+        this.gigg = gigg;
     }
 
-    public String getgIgM() {
-        return gIgM;
+    public String getGigm() {
+        return gigm;
     }
 
-    public void setgIgM(String gIgM) {
-        this.gIgM = gIgM;
+    public void setGigm(String gigm) {
+        this.gigm = gigm;
     }
 
     public String getOther() {
@@ -209,20 +209,20 @@ public class Clinicalexamination implements Serializable {
         this.other = other;
     }
 
-    public String getDoctorName() {
-        return doctorName;
+    public String getDoctorname() {
+        return doctorname;
     }
 
-    public void setDoctorName(String doctorName) {
-        this.doctorName = doctorName;
+    public void setDoctorname(String doctorname) {
+        this.doctorname = doctorname;
     }
 
-    public Date getExamineDate() {
-        return examineDate;
+    public Date getExaminedate() {
+        return examinedate;
     }
 
-    public void setExamineDate(Date examineDate) {
-        this.examineDate = examineDate;
+    public void setExaminedate(Date examinedate) {
+        this.examinedate = examinedate;
     }
 
     public Integer getSex() {
@@ -231,67 +231,5 @@ public class Clinicalexamination implements Serializable {
 
     public void setSex(Integer sex) {
         this.sex = sex;
-    }
-
-    public Clinicalexamination() {
-    }
-
-    public Clinicalexamination(Integer cId, Integer userId, String pissexamine, String abnormal, Integer abotypeId, String RH, String bloodSugar, String HBsAg, String HBeAb, String HBsAb, String HBcAb, String HBeAg, String ALT, String cr, String TSH, String fIgG, String TP, String jIgG, String jIgM, String gIgG, String gIgM, String other, String doctorName, Date examineDate, Integer sex) {
-        this.cId = cId;
-        this.userId = userId;
-        this.pissexamine = pissexamine;
-        this.abnormal = abnormal;
-        this.abotypeId = abotypeId;
-        this.RH = RH;
-        this.bloodSugar = bloodSugar;
-        this.HBsAg = HBsAg;
-        this.HBeAb = HBeAb;
-        this.HBsAb = HBsAb;
-        this.HBcAb = HBcAb;
-        this.HBeAg = HBeAg;
-        this.ALT = ALT;
-        Cr = cr;
-        this.TSH = TSH;
-        this.fIgG = fIgG;
-        this.TP = TP;
-        this.jIgG = jIgG;
-        this.jIgM = jIgM;
-        this.gIgG = gIgG;
-        this.gIgM = gIgM;
-        this.other = other;
-        this.doctorName = doctorName;
-        this.examineDate = examineDate;
-        this.sex = sex;
-    }
-
-    @Override
-    public String toString() {
-        return "ClinicalExamination{" +
-                "cId=" + cId +
-                ", userId=" + userId +
-                ", pissexamine='" + pissexamine + '\'' +
-                ", abnormal='" + abnormal + '\'' +
-                ", abotypeId=" + abotypeId +
-                ", RH='" + RH + '\'' +
-                ", bloodSugar='" + bloodSugar + '\'' +
-                ", HBsAg='" + HBsAg + '\'' +
-                ", HBeAb='" + HBeAb + '\'' +
-                ", HBsAb='" + HBsAb + '\'' +
-                ", HBcAb='" + HBcAb + '\'' +
-                ", HBeAg='" + HBeAg + '\'' +
-                ", ALT='" + ALT + '\'' +
-                ", Cr='" + Cr + '\'' +
-                ", TSH='" + TSH + '\'' +
-                ", fIgG='" + fIgG + '\'' +
-                ", TP='" + TP + '\'' +
-                ", jIgG='" + jIgG + '\'' +
-                ", jIgM='" + jIgM + '\'' +
-                ", gIgG='" + gIgG + '\'' +
-                ", gIgM='" + gIgM + '\'' +
-                ", other='" + other + '\'' +
-                ", doctorName='" + doctorName + '\'' +
-                ", examineDate=" + examineDate +
-                ", sex=" + sex +
-                '}';
     }
 }

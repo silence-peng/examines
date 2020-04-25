@@ -5,75 +5,75 @@ import org.springframework.format.annotation.DateTimeFormat;
 import java.util.Date;
 
 public class Yxcheckresult {
-    private  Integer resultId;
-    private  Integer userId;
+    private  Integer resultid;
+    private  Integer userid;
     private  Integer sex;
-    private  Integer isAbnormal;
+    private  Integer isabnormal;
     private String  abnormalities;
     private String  disease;
     private String  sanitation;
     private String  consult;
     private String  supplement;
     private String  advise;
-    private String  adviseProject;
-    private Integer  isAdvise;
-    private String  ReferralHospital;
-    @DateTimeFormat(pattern="YYYY-MM-dd")
-    private Date referralDate;
-    @DateTimeFormat(pattern="YYYY-MM-dd")
-    private Date  forwardDate;
-    @DateTimeFormat(pattern="YYYY-MM-dd")
-    private Date  proveDate;
-    private String  doctorName;
-    @DateTimeFormat(pattern="YYYY-MM-dd")
-    private Date  examineDate;
-    private Integer  isOral;
-    private Integer  isX;
-    private Integer  isCgkz;
-    private Integer  isOver;
+    private String  adviseproject;
+    private Integer  isadvise;
+    private String  referralhospital;
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
+    private Date referraldate;
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
+    private Date  forwarddate;
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
+    private Date  provedate;
+    private String  doctorname;
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
+    private Date  examinedate;
+    private Integer  isoral;
+    private Integer  isx;
+    private Integer  iscgkz;
+    private Integer  isover;
 
     @Override
     public String toString() {
-        return "YxCheckResult{" +
-                "resultId=" + resultId +
-                ", userId=" + userId +
+        return "Yxcheckresult{" +
+                "resultid=" + resultid +
+                ", userid=" + userid +
                 ", sex=" + sex +
-                ", isAbnormal=" + isAbnormal +
+                ", isabnormal=" + isabnormal +
                 ", abnormalities='" + abnormalities + '\'' +
                 ", disease='" + disease + '\'' +
                 ", sanitation='" + sanitation + '\'' +
                 ", consult='" + consult + '\'' +
                 ", supplement='" + supplement + '\'' +
                 ", advise='" + advise + '\'' +
-                ", adviseProject='" + adviseProject + '\'' +
-                ", isAdvise=" + isAdvise +
-                ", ReferralHospital='" + ReferralHospital + '\'' +
-                ", referralDate=" + referralDate +
-                ", forwardDate=" + forwardDate +
-                ", proveDate=" + proveDate +
-                ", doctorName='" + doctorName + '\'' +
-                ", examineDate=" + examineDate +
-                ", isOral=" + isOral +
-                ", isX=" + isX +
-                ", isCgkz=" + isCgkz +
-                ", isOver=" + isOver +
+                ", adviseproject='" + adviseproject + '\'' +
+                ", isadvise=" + isadvise +
+                ", referralhospital='" + referralhospital + '\'' +
+                ", referraldate=" + referraldate +
+                ", forwarddate=" + forwarddate +
+                ", provedate=" + provedate +
+                ", doctorname='" + doctorname + '\'' +
+                ", examinedate=" + examinedate +
+                ", isoral=" + isoral +
+                ", isx=" + isx +
+                ", iscgkz=" + iscgkz +
+                ", isover=" + isover +
                 '}';
     }
 
-    public Integer getResultId() {
-        return resultId;
+    public Integer getResultid() {
+        return resultid;
     }
 
-    public void setResultId(Integer resultId) {
-        this.resultId = resultId;
+    public void setResultid(Integer resultid) {
+        this.resultid = resultid;
     }
 
-    public Integer getUserId() {
-        return userId;
+    public Integer getUserid() {
+        return userid;
     }
 
-    public void setUserId(Integer userId) {
-        this.userId = userId;
+    public void setUserid(Integer userid) {
+        this.userid = userid;
     }
 
     public Integer getSex() {
@@ -84,12 +84,12 @@ public class Yxcheckresult {
         this.sex = sex;
     }
 
-    public Integer getIsAbnormal() {
-        return isAbnormal;
+    public Integer getIsabnormal() {
+        return isabnormal;
     }
 
-    public void setIsAbnormal(Integer isAbnormal) {
-        this.isAbnormal = isAbnormal;
+    public void setIsabnormal(Integer isabnormal) {
+        this.isabnormal = isabnormal;
     }
 
     public String getAbnormalities() {
@@ -140,99 +140,99 @@ public class Yxcheckresult {
         this.advise = advise;
     }
 
-    public String getAdviseProject() {
-        return adviseProject;
+    public String getAdviseproject() {
+        return adviseproject;
     }
 
-    public void setAdviseProject(String adviseProject) {
-        this.adviseProject = adviseProject;
+    public void setAdviseproject(String adviseproject) {
+        this.adviseproject = adviseproject;
     }
 
-    public Integer getIsAdvise() {
-        return isAdvise;
+    public Integer getIsadvise() {
+        return isadvise;
     }
 
-    public void setIsAdvise(Integer isAdvise) {
-        this.isAdvise = isAdvise;
+    public void setIsadvise(Integer isadvise) {
+        this.isadvise = isadvise;
     }
 
-    public String getReferralHospital() {
-        return ReferralHospital;
+    public String getReferralhospital() {
+        return referralhospital;
     }
 
-    public void setReferralHospital(String referralHospital) {
-        ReferralHospital = referralHospital;
+    public void setReferralhospital(String referralhospital) {
+        this.referralhospital = referralhospital;
     }
 
-    public Date getReferralDate() {
-        return referralDate;
+    public Date getReferraldate() {
+        return referraldate;
     }
 
-    public void setReferralDate(Date referralDate) {
-        this.referralDate = referralDate;
+    public void setReferraldate(Date referraldate) {
+        this.referraldate = referraldate;
     }
 
-    public Date getForwardDate() {
-        return forwardDate;
+    public Date getForwarddate() {
+        return forwarddate;
     }
 
-    public void setForwardDate(Date forwardDate) {
-        this.forwardDate = forwardDate;
+    public void setForwarddate(Date forwarddate) {
+        this.forwarddate = forwarddate;
     }
 
-    public Date getProveDate() {
-        return proveDate;
+    public Date getProvedate() {
+        return provedate;
     }
 
-    public void setProveDate(Date proveDate) {
-        this.proveDate = proveDate;
+    public void setProvedate(Date provedate) {
+        this.provedate = provedate;
     }
 
-    public String getDoctorName() {
-        return doctorName;
+    public String getDoctorname() {
+        return doctorname;
     }
 
-    public void setDoctorName(String doctorName) {
-        this.doctorName = doctorName;
+    public void setDoctorname(String doctorname) {
+        this.doctorname = doctorname;
     }
 
-    public Date getExamineDate() {
-        return examineDate;
+    public Date getExaminedate() {
+        return examinedate;
     }
 
-    public void setExamineDate(Date examineDate) {
-        this.examineDate = examineDate;
+    public void setExaminedate(Date examinedate) {
+        this.examinedate = examinedate;
     }
 
-    public Integer getIsOral() {
-        return isOral;
+    public Integer getIsoral() {
+        return isoral;
     }
 
-    public void setIsOral(Integer isOral) {
-        this.isOral = isOral;
+    public void setIsoral(Integer isoral) {
+        this.isoral = isoral;
     }
 
-    public Integer getIsX() {
-        return isX;
+    public Integer getIsx() {
+        return isx;
     }
 
-    public void setIsX(Integer isX) {
-        this.isX = isX;
+    public void setIsx(Integer isx) {
+        this.isx = isx;
     }
 
-    public Integer getIsCgkz() {
-        return isCgkz;
+    public Integer getIscgkz() {
+        return iscgkz;
     }
 
-    public void setIsCgkz(Integer isCgkz) {
-        this.isCgkz = isCgkz;
+    public void setIscgkz(Integer iscgkz) {
+        this.iscgkz = iscgkz;
     }
 
-    public Integer getIsOver() {
-        return isOver;
+    public Integer getIsover() {
+        return isover;
     }
 
-    public void setIsOver(Integer isOver) {
-        this.isOver = isOver;
+    public void setIsover(Integer isover) {
+        this.isover = isover;
     }
 }

@@ -5,103 +5,74 @@ import org.springframework.format.annotation.DateTimeFormat;
 import java.util.Date;
 
 public class Healthcheckup {
-    private Integer healthId;
-    private Integer userId;
+    private Integer healthid;
+    private Integer userid;
     private Integer sex;
     private Integer height;
-    private Float BMI;
+    private Float bmi;
     private Float weight;
-    private Integer smmHg;
-    private Integer mmHgs;
-    private Integer P;
-    private Integer  isSpirit;
-    private String spiritContent;
-    private Integer isTheFive;
-    private String theFiveContent;
-    private Integer isPosture;
-    private String postureContent;
-    private Integer isFace;
-    private String faceContent;
-    private Integer isHair;
-    private String hairContent;
-    private Integer isThyroid;
-    private String thyroidContent;
-    private String doctorName;
-    @DateTimeFormat(pattern="YYYY-MM-dd")
-    private Date examineDate;
-
-    public Healthcheckup() {
-    }
-
-    public Healthcheckup(Integer healthId, Integer userId, Integer sex, Integer height, Float BMI, Float weight, Integer smmHg, Integer mmHgs, Integer p, Integer isSpirit, String spiritContent, Integer isTheFive, String theFiveContent, Integer isPosture, String postureContent, Integer isFace, String faceContent, Integer isHair, String hairContent, Integer isThyroid, String thyroidContent, String doctorName, Date examineDate) {
-        this.healthId = healthId;
-        this.userId = userId;
-        this.sex = sex;
-        this.height = height;
-        this.BMI = BMI;
-        this.weight = weight;
-        this.smmHg = smmHg;
-        this.mmHgs = mmHgs;
-        P = p;
-        this.isSpirit = isSpirit;
-        this.spiritContent = spiritContent;
-        this.isTheFive = isTheFive;
-        this.theFiveContent = theFiveContent;
-        this.isPosture = isPosture;
-        this.postureContent = postureContent;
-        this.isFace = isFace;
-        this.faceContent = faceContent;
-        this.isHair = isHair;
-        this.hairContent = hairContent;
-        this.isThyroid = isThyroid;
-        this.thyroidContent = thyroidContent;
-        this.doctorName = doctorName;
-        this.examineDate = examineDate;
-    }
+    private Integer smmhg;
+    private Integer mmhgs;
+    private Integer p;
+    private Integer  isspirit;
+    private String spiritcontent;
+    private Integer isthefive;
+    private String thefivecontent;
+    private Integer isposture;
+    private String posturecontent;
+    private Integer isface;
+    private String facecontent;
+    private Integer ishair;
+    private String haircontent;
+    private Integer isthyroid;
+    private String thyroidcontent;
+    private String doctorname;
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
+    private Date examinedate;
 
     @Override
     public String toString() {
-        return "HealthCheckUp{" +
-                "healthId=" + healthId +
-                ", userId=" + userId +
+        return "Healthcheckup{" +
+                "healthid=" + healthid +
+                ", userid=" + userid +
                 ", sex=" + sex +
                 ", height=" + height +
-                ", BMI=" + BMI +
+                ", bmi=" + bmi +
                 ", weight=" + weight +
-                ", smmHg=" + smmHg +
-                ", mmHgs=" + mmHgs +
-                ", P=" + P +
-                ", isSpirit=" + isSpirit +
-                ", spiritContent='" + spiritContent + '\'' +
-                ", isTheFive=" + isTheFive +
-                ", theFiveContent='" + theFiveContent + '\'' +
-                ", isPosture=" + isPosture +
-                ", postureContent='" + postureContent + '\'' +
-                ", isFace=" + isFace +
-                ", faceContent='" + faceContent + '\'' +
-                ", isHair=" + isHair +
-                ", hairContent='" + hairContent + '\'' +
-                ", isThyroid=" + isThyroid +
-                ", thyroidContent='" + thyroidContent + '\'' +
-                ", doctorName='" + doctorName + '\'' +
-                ", examineDate=" + examineDate +
+                ", smmhg=" + smmhg +
+                ", mmhgs=" + mmhgs +
+                ", p=" + p +
+                ", isspirit=" + isspirit +
+                ", spiritcontent='" + spiritcontent + '\'' +
+                ", isthefive=" + isthefive +
+                ", thefivecontent='" + thefivecontent + '\'' +
+                ", isposture=" + isposture +
+                ", posturecontent='" + posturecontent + '\'' +
+                ", isface=" + isface +
+                ", facecontent='" + facecontent + '\'' +
+                ", ishair=" + ishair +
+                ", haircontent='" + haircontent + '\'' +
+                ", isthyroid=" + isthyroid +
+                ", thyroidcontent='" + thyroidcontent + '\'' +
+                ", doctorname='" + doctorname + '\'' +
+                ", examinedate=" + examinedate +
                 '}';
     }
 
-    public Integer getHealthId() {
-        return healthId;
+    public Integer getHealthid() {
+        return healthid;
     }
 
-    public void setHealthId(Integer healthId) {
-        this.healthId = healthId;
+    public void setHealthid(Integer healthid) {
+        this.healthid = healthid;
     }
 
-    public Integer getUserId() {
-        return userId;
+    public Integer getUserid() {
+        return userid;
     }
 
-    public void setUserId(Integer userId) {
-        this.userId = userId;
+    public void setUserid(Integer userid) {
+        this.userid = userid;
     }
 
     public Integer getSex() {
@@ -120,12 +91,12 @@ public class Healthcheckup {
         this.height = height;
     }
 
-    public Float getBMI() {
-        return BMI;
+    public Float getBmi() {
+        return bmi;
     }
 
-    public void setBMI(Float BMI) {
-        this.BMI = BMI;
+    public void setBmi(Float bmi) {
+        this.bmi = bmi;
     }
 
     public Float getWeight() {
@@ -136,139 +107,139 @@ public class Healthcheckup {
         this.weight = weight;
     }
 
-    public Integer getSmmHg() {
-        return smmHg;
+    public Integer getSmmhg() {
+        return smmhg;
     }
 
-    public void setSmmHg(Integer smmHg) {
-        this.smmHg = smmHg;
+    public void setSmmhg(Integer smmhg) {
+        this.smmhg = smmhg;
     }
 
-    public Integer getMmHgs() {
-        return mmHgs;
+    public Integer getMmhgs() {
+        return mmhgs;
     }
 
-    public void setMmHgs(Integer mmHgs) {
-        this.mmHgs = mmHgs;
+    public void setMmhgs(Integer mmhgs) {
+        this.mmhgs = mmhgs;
     }
 
     public Integer getP() {
-        return P;
+        return p;
     }
 
     public void setP(Integer p) {
-        P = p;
+        this.p = p;
     }
 
-    public Integer getIsSpirit() {
-        return isSpirit;
+    public Integer getIsspirit() {
+        return isspirit;
     }
 
-    public void setIsSpirit(Integer isSpirit) {
-        this.isSpirit = isSpirit;
+    public void setIsspirit(Integer isspirit) {
+        this.isspirit = isspirit;
     }
 
-    public String getSpiritContent() {
-        return spiritContent;
+    public String getSpiritcontent() {
+        return spiritcontent;
     }
 
-    public void setSpiritContent(String spiritContent) {
-        this.spiritContent = spiritContent;
+    public void setSpiritcontent(String spiritcontent) {
+        this.spiritcontent = spiritcontent;
     }
 
-    public Integer getIsTheFive() {
-        return isTheFive;
+    public Integer getIsthefive() {
+        return isthefive;
     }
 
-    public void setIsTheFive(Integer isTheFive) {
-        this.isTheFive = isTheFive;
+    public void setIsthefive(Integer isthefive) {
+        this.isthefive = isthefive;
     }
 
-    public String getTheFiveContent() {
-        return theFiveContent;
+    public String getThefivecontent() {
+        return thefivecontent;
     }
 
-    public void setTheFiveContent(String theFiveContent) {
-        this.theFiveContent = theFiveContent;
+    public void setThefivecontent(String thefivecontent) {
+        this.thefivecontent = thefivecontent;
     }
 
-    public Integer getIsPosture() {
-        return isPosture;
+    public Integer getIsposture() {
+        return isposture;
     }
 
-    public void setIsPosture(Integer isPosture) {
-        this.isPosture = isPosture;
+    public void setIsposture(Integer isposture) {
+        this.isposture = isposture;
     }
 
-    public String getPostureContent() {
-        return postureContent;
+    public String getPosturecontent() {
+        return posturecontent;
     }
 
-    public void setPostureContent(String postureContent) {
-        this.postureContent = postureContent;
+    public void setPosturecontent(String posturecontent) {
+        this.posturecontent = posturecontent;
     }
 
-    public Integer getIsFace() {
-        return isFace;
+    public Integer getIsface() {
+        return isface;
     }
 
-    public void setIsFace(Integer isFace) {
-        this.isFace = isFace;
+    public void setIsface(Integer isface) {
+        this.isface = isface;
     }
 
-    public String getFaceContent() {
-        return faceContent;
+    public String getFacecontent() {
+        return facecontent;
     }
 
-    public void setFaceContent(String faceContent) {
-        this.faceContent = faceContent;
+    public void setFacecontent(String facecontent) {
+        this.facecontent = facecontent;
     }
 
-    public Integer getIsHair() {
-        return isHair;
+    public Integer getIshair() {
+        return ishair;
     }
 
-    public void setIsHair(Integer isHair) {
-        this.isHair = isHair;
+    public void setIshair(Integer ishair) {
+        this.ishair = ishair;
     }
 
-    public String getHairContent() {
-        return hairContent;
+    public String getHaircontent() {
+        return haircontent;
     }
 
-    public void setHairContent(String hairContent) {
-        this.hairContent = hairContent;
+    public void setHaircontent(String haircontent) {
+        this.haircontent = haircontent;
     }
 
-    public Integer getIsThyroid() {
-        return isThyroid;
+    public Integer getIsthyroid() {
+        return isthyroid;
     }
 
-    public void setIsThyroid(Integer isThyroid) {
-        this.isThyroid = isThyroid;
+    public void setIsthyroid(Integer isthyroid) {
+        this.isthyroid = isthyroid;
     }
 
-    public String getThyroidContent() {
-        return thyroidContent;
+    public String getThyroidcontent() {
+        return thyroidcontent;
     }
 
-    public void setThyroidContent(String thyroidContent) {
-        this.thyroidContent = thyroidContent;
+    public void setThyroidcontent(String thyroidcontent) {
+        this.thyroidcontent = thyroidcontent;
     }
 
-    public String getDoctorName() {
-        return doctorName;
+    public String getDoctorname() {
+        return doctorname;
     }
 
-    public void setDoctorName(String doctorName) {
-        this.doctorName = doctorName;
+    public void setDoctorname(String doctorname) {
+        this.doctorname = doctorname;
     }
 
-    public Date getExamineDate() {
-        return examineDate;
+    public Date getExaminedate() {
+        return examinedate;
     }
 
-    public void setExamineDate(Date examineDate) {
-        this.examineDate = examineDate;
+    public void setExaminedate(Date examinedate) {
+        this.examinedate = examinedate;
     }
 }
