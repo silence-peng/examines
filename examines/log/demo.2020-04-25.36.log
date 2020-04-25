@@ -1,0 +1,8 @@
+2020-04-25 21:09:02,854 INFO (StartupInfoLogger.java:59)- Started ControlerApplication in 5.2889482 seconds (JVM running for 7.504)
+2020-04-25 21:09:10,962 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT userid,mname,mcard,mbirthdate,mphone,methnic,midtype,mage,mculture,mjob,mprovince,mcity,mcounty,mdistrict,mvillage,mregistered,fname,fcard,fbirthdate,fphone,fethnic,fidtype,fage,fculture,fjob,fprovince,fcity,fcounty,fdistrict,fvillage,fregistered,address,creatdate,getmarrieddate,regtypeid,landlinenumber,mimg,fimg,email,doctorname FROM userinfo WHERE userid = ? 
+2020-04-25 21:09:10,966 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT yxid,yxitem FROM yxadvise 
+2020-04-25 21:09:10,982 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-25 21:09:10,982 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer)
+2020-04-25 21:09:10,995 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 5
+2020-04-25 21:09:11,000 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-25 21:09:57,550 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT userid,mname,mcard,mbirthdate,mphone,methnic,midtype,mage,mculture,mjob,mprovince,mcity,mcounty,mdistrict,mvillage,mregistered,fname,fcard,fbirthdate,fphone,fethnic,fidtype,fage,fculture,fjob,fprovince,fcity,fcounty,fdistrict,fvillage,fregistered,address,creatdate,getmarrieddate,regtypeid,landlinenumber,mimg,fimg,email,doctorname FROM userinfo WHERE userid = ? 
