@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>一般情况男</title>
+    <link rel="stylesheet" href="layui/layui.js" />
+    <link rel="stylesheet" href="layui/css/layui.css">
+</head>
+<body>
+<br>
+
+<form class="layui-form" action="" >
+    <div  class="layui-container">
+    <div class="layui-form-item">
+    <label class="layui-form-label" >系统编号:</label>
+        <div class="layui-input-inline">
+            <input type="text" style="width: 300px" name="title" lay-verify="title" autocomplete="off"  class="layui-input">
+        </div>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;
+        <div class="layui-inline">
+            <label class="layui-form-label"  >姓名:</label>
+            <div class="layui-input-inline">
+                <input type="text" name="date" style="width: 300px"  lay-verify="title"  autocomplete="off" class="layui-input">
+            </div>
+        </div>
+
+    </div>
+    <div class="layui-form-item" >
+        <label class="layui-form-label" >性别:</label>
+        <div class="layui-input-inline">
+            <input type="text" style="width: 300px" name="title" lay-verify="title" autocomplete="off"  class="layui-input">
+        </div>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;
+        <div class="layui-inline">
+            <label class="layui-form-label"  >出生年月:</label>
+            <div class="layui-input-inline">
+                <input type="text" name="date" style="width: 300px" id="date" lay-verify="date"  autocomplete="off" class="layui-input">
+            </div>
+        </div>
+    </div>
+    <div style="border:  0.8px solid cornflowerblue"><p  style="background-color: rgb(214, 236, 246);font-size: 15px;color: #0074d9;text-align: left">是否患有以下疾病(如果患有,至少选择一项)</p>
+        <div class="layui-form-item" align="left">
+            <div class="layui-input-block">
+                <input type="radio" name="sex" value="是" title="是" >
+                <input type="radio" name="sex" value="否" title="否" checked="">
+            </div>
+        </div>
+
+        <div style="width: 700px;border:  0.8px solid cornflowerblue" align="left">
+            <p  style="background-color: rgb(214, 236, 246);font-size: 15px;color: #0074d9;text-align: left">疾病列表</p>
+            <div class="layui-form-item" pane="">
+
+                <div class="layui-input-block" >
+                    <input type="checkbox" name="like1[write]" lay-skin="primary" title="贫血" >
+                    <input type="checkbox" name="like1[read]" lay-skin="primary" title="高血压">
+                    <input type="checkbox" name="like1[game]" lay-skin="primary" title="心脏病" >
+                    <input type="checkbox" name="like1[game]" lay-skin="primary" title="糖尿病" >
+                    <input type="checkbox" name="like1[game]" lay-skin="primary" title="甲状腺" >
+                    <input type="checkbox" name="like1[game]" lay-skin="primary" title="慢性肾炎" >
+                    <br>
+                    <input type="checkbox" name="like1[write]" lay-skin="primary" title="肿瘤" >
+                    <input type="checkbox" name="like1[read]" lay-skin="primary" title="结核">
+                    <input type="checkbox" name="like1[game]" lay-skin="primary" title="乙型肝炎" >
+                    <input type="checkbox" name="like1[game]" lay-skin="primary" title="淋病/病毒/衣原体感染" >
+                    <input type="checkbox" name="like1[game]" lay-skin="primary" title="精神心理疾病" >
+                    <input type="checkbox" name="like1[game]" lay-skin="primary" title="其他" >
+                </div>
+            </div>
+
+        </div>
+        <br>
+    </div>
+        <br>
+        <div style="border: 0.8px solid cornflowerblue"><p  style="background-color: rgb(214, 236, 246);font-size: 15px;color: #0074d9;text-align: left">是否患有出生缺陷,如先天畸形,遗传病等</p>
+            <div class="layui-form-item" align="left">
+                <div class="layui-input-block">
+                    <input type="radio" name="jb" value="是" title="是" >
+                    <input type="radio" name="jb" value="否" title="否" checked="">
+                </div>
+            </div>
+            <br>
+        </div>
+        <div style="border:  0.8px solid cornflowerblue" ><p  style="background-color: rgb(214, 236, 246);font-size: 15px;color: #0074d9;text-align: left">是否患有以下妇科疾病(如果患有,至少选择一项)</p>
+            <div class="layui-form-item" align="left">
+                <div class="layui-input-block">
+                    <input type="radio" name="sex" value="是" title="是" >
+                    <input type="radio" name="sex" value="否" title="否" checked="">
+                </div>
+            </div>
+
+            <div style="width: 500px;border:  0.8px solid cornflowerblue" >
+                 <div class="layui-form-item" pane="" >
+                    <div class="layui-input-block" align="left" >
+                        <input type="checkbox" name="like1[write]" lay-skin="primary" title="贫血" >
+                        <input type="checkbox" name="like1[read]" lay-skin="primary" title="高血压">
+                        <input type="checkbox" name="like1[game]" lay-skin="primary" title="心脏病" >
+
+                        <input type="checkbox" name="like1[game]" lay-skin="primary" title="其他" >
+                    </div>
+                </div>
+
+            </div>
+            <br>
+        </div>
+        <div style="border: 0.8px solid cornflowerblue"><p  style="background-color: rgb(214, 236, 246);font-size: 15px;color: #0074d9;text-align: left">是否服药</p>
+            <div class="layui-form-item" align="left">
+                <div class="layui-input-block">
+                    <input type="radio" name="jb" value="是" title="是" >
+                    <input type="radio" name="jb" value="否" title="否" checked="">
+                </div>
+            </div>
+            <br>
+        </div>
+        <br>
+        <div class="layui-form-item">
+            <label class="layui-form-label">医生签名:</label>
+            <div class="layui-input-block">
+                <select name="interest" lay-filter="aihao">
+                    <option value="" selected="selected">管理员</option>
+                    <option value="0">写作</option>
+                </select>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">询问日期:</label>
+            <div class="layui-input-block" >
+                <input type="text" name="date" id="date1" lay-verify="date" placeholder="yyyy-MM-dd" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+        <div align="center">
+            <button type="button" class="layui-btn layui-btn-normal">保存</button>
+            <button type="reset" class="layui-btn layui-btn-normal">重置</button></div>
+    </div>
+</form>
+
+<script src="./layui/layui.js" charset="utf-8"></script>
+<script>
+    layui.use(['form', 'layedit', 'laydate'], function(){
+        var form = layui.form
+                ,layer = layui.layer
+                ,layedit = layui.layedit
+                ,laydate = layui.laydate;
+
+        //日期
+        laydate.render({
+            elem: '#date'
+        });
+        laydate.render({
+            elem: '#date1'
+        });
+
+
+
+    });
+
+</script>
+</body>
+</html>

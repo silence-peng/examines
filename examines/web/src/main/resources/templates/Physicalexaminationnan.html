@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>体格检查男</title>
+    <link rel="stylesheet" href="layui/layui.js" />
+    <link rel="stylesheet" href="layui/css/layui.css">
+</head>
+<body>
+<div  class="layui-container">
+<form class="layui-form" action="">
+
+        <div class="layui-form-item">
+            <label class="layui-form-label" >系统编号:</label>
+            <div class="layui-input-inline">
+                <input type="text" style="width: 300px" name="title" lay-verify="title" autocomplete="off"  class="layui-input">
+            </div>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;
+            <div class="layui-inline">
+                <label class="layui-form-label"  >姓名:</label>
+                <div class="layui-input-inline">
+                    <input type="text" name="date" style="width: 300px"  lay-verify="title"  autocomplete="off" class="layui-input">
+                </div>
+            </div>
+
+        </div>
+        <div class="layui-form-item" >
+            <label class="layui-form-label" >性别:</label>
+            <div class="layui-input-inline">
+                <input type="text" style="width: 300px" name="title" lay-verify="title" autocomplete="off"  class="layui-input">
+            </div>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;
+            <div class="layui-inline">
+                <label class="layui-form-label"  >出生年月:</label>
+                <div class="layui-input-inline">
+                    <input type="text" name="date" style="width: 300px" id="date" lay-verify="date"  autocomplete="off" class="layui-input">
+                </div>
+            </div>
+        </div>
+        <div style="border:  0.8px solid cornflowerblue"><p  style="background-color: rgb(214, 236, 246);font-size: 15px;color: #0074d9;text-align: left">女子一般体格检查</p>
+            <div class="layui-form-item">
+                <label class="layui-form-label" >身高(CM):</label>
+                <div class="layui-input-inline">
+                    <input type="text" style="width: 300px" name="title" lay-verify="title" autocomplete="off"  class="layui-input">
+                </div>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;
+                <div class="layui-inline">
+                    <label class="layui-form-label"  style="width: 200px" >体重指数(kg/m2):</label>
+                    <div class="layui-input-inline">
+                        <input type="text" name="date" style="width: 300px"  lay-verify="title"  autocomplete="off" class="layui-input">
+                    </div>
+                </div>
+
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label" >体重(kg):</label>
+                <div class="layui-input-inline">
+                    <input type="text" style="width: 300px" name="title" lay-verify="title" autocomplete="off"  class="layui-input">
+                </div>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;
+                <div class="layui-inline">
+                    <label class="layui-form-label"  style="width: 200px" >收缩压(mmhg):</label>
+                    <div class="layui-input-inline">
+                        <input type="text" name="date" style="width: 300px"  lay-verify="title"  autocomplete="off" class="layui-input">
+                    </div>
+                </div>
+
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label" >心率(次/分):</label>
+                <div class="layui-input-inline">
+                    <input type="text" style="width: 300px" name="title" lay-verify="title" autocomplete="off"  class="layui-input">
+                </div>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;
+                <div class="layui-inline">
+                    <label class="layui-form-label"  style="width: 200px" >舒张压(mmhg):</label>
+                    <div class="layui-input-inline">
+                        <input type="text" name="date" style="width: 300px"  lay-verify="title"  autocomplete="off" class="layui-input">
+                    </div>
+                </div>
+
+            </div>
+
+            <br>
+        </div>
+        <br>
+        <div style="border: 0.8px solid cornflowerblue"><p  style="background-color: rgb(214, 236, 246);font-size: 15px;color: #0074d9;text-align: left">精神状态</p>
+            <div class="layui-form-item" align="left">
+                <div class="layui-input-block">
+                    <input type="radio" name="js" value="是" title="是" >
+                    <input type="radio" name="js" value="否" title="否" checked="">
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label"  style="width: 200px" >精神状态异常描述:</label>
+                    <div class="layui-input-inline">
+                        <input type="text" name="title" style="width: 300px"  lay-verify="title"  autocomplete="off" class="layui-input">
+                    </div>
+                </div>
+            </div>
+            <br>
+        </div>
+        <div style="border:  0.8px solid cornflowerblue" ><p  style="background-color: rgb(214, 236, 246);font-size: 15px;color: #0074d9;text-align: left">智力</p>
+            <div class="layui-form-item" align="left">
+                <div class="layui-input-block">
+                    <input type="radio" name="zl" value="正常" title="正常" checked="">
+                    <input type="radio" name="zl" value="异常" title="异常" >
+                </div>
+            </div>
+
+            <div style="width: 500px;border:  0.8px solid cornflowerblue" >
+               <p style="background-color: rgb(214, 236, 246);font-size: 15px;color: #0074d9;text-align: left">智力异常请打勾</p>
+
+                <div class="layui-form-item" pane="" >
+                    <div class="layui-input-block" align="left" >
+                        <input type="checkbox" name="like1[write]" lay-skin="primary" title="常识" >
+                        <input type="checkbox" name="like1[read]" lay-skin="primary" title="判断">
+                        <input type="checkbox" name="like1[game]" lay-skin="primary" title="记忆" >
+
+                        <input type="checkbox" name="like1[game]" lay-skin="primary" title="计算" >
+                    </div>
+                </div>
+
+            </div>
+            <br>
+        </div>
+    <div style="border: 0.8px solid cornflowerblue"><p  style="background-color: rgb(214, 236, 246);font-size: 15px;color: #0074d9;text-align: left">五官</p>
+        <div class="layui-form-item" align="left">
+            <div class="layui-input-block">
+                <input type="radio" name="wg" value="正常" title="正常" checked="">
+                <input type="radio" name="wg" value="异常" title="异常" >
+            </div>
+            <div class="layui-inline">
+                <label class="layui-form-label"  style="width: 200px" >五官异常描述:</label>
+                <div class="layui-input-inline">
+                    <input type="text" name="title" style="width: 300px"  lay-verify="title"  autocomplete="off" class="layui-input">
+                </div>
+            </div>
+        </div>
+        <br>
+    </div>
+    <div style="border: 0.8px solid cornflowerblue"><p  style="background-color: rgb(214, 236, 246);font-size: 15px;color: #0074d9;text-align: left">特殊体态</p>
+        <div class="layui-form-item" align="left">
+            <div class="layui-input-block">
+                <input type="radio" name="tt" value="无" title="无" checked="">
+                <input type="radio" name="tt" value="有" title="有" >
+            </div>
+            <div class="layui-inline">
+                <label class="layui-form-label"  style="width: 200px" >特殊体态描述:</label>
+                <div class="layui-input-inline">
+                    <input type="text" name="title" style="width: 300px"  lay-verify="title"  autocomplete="off" class="layui-input">
+                </div>
+            </div>
+        </div>
+        <br>
+    </div>
+    <div style="border: 0.8px solid cornflowerblue"><p  style="background-color: rgb(214, 236, 246);font-size: 15px;color: #0074d9;text-align: left">特殊面容</p>
+        <div class="layui-form-item" align="left">
+            <div class="layui-input-block">
+                <input type="radio" name="mr" value="无" title="无" checked="">
+                <input type="radio" name="mr" value="有" title="有" >
+            </div>
+            <div class="layui-inline">
+                <label class="layui-form-label"  style="width: 200px" >特殊面容描述:</label>
+                <div class="layui-input-inline">
+                    <input type="text" name="title" style="width: 300px"  lay-verify="title"  autocomplete="off" class="layui-input">
+                </div>
+            </div>
+        </div>
+        <br>
+    </div>
+    <div style="border: 0.8px solid cornflowerblue"><p  style="background-color: rgb(214, 236, 246);font-size: 15px;color: #0074d9;text-align: left">皮肤毛发</p>
+        <div class="layui-form-item" align="left">
+            <div class="layui-input-block">
+                <input type="radio" name="pf" value="正常" title="正常" checked="">
+                <input type="radio" name="pf" value="异常" title="异常" >
+            </div>
+            <div class="layui-inline">
+                <label class="layui-form-label"  style="width: 200px" >皮肤毛发异常描述:</label>
+                <div class="layui-input-inline">
+                    <input type="text" name="title" style="width: 300px"  lay-verify="title"  autocomplete="off" class="layui-input">
+                </div>
+            </div>
+        </div>
+        <br>
+    </div>
+    <div style="border: 0.8px solid cornflowerblue"><p  style="background-color: rgb(214, 236, 246);font-size: 15px;color: #0074d9;text-align: left">甲状腺</p>
+        <div class="layui-form-item" align="left">
+            <div class="layui-input-block">
+                <input type="radio" name="jzx" value="正常" title="正常" checked="">
+                <input type="radio" name="jzx" value="异常" title="异常" >
+            </div>
+            <div class="layui-inline">
+                <label class="layui-form-label"  style="width: 200px" >甲状腺异常描述:</label>
+                <div class="layui-input-inline">
+                    <input type="text" name="title" style="width: 300px"  lay-verify="title"  autocomplete="off" class="layui-input">
+                </div>
+            </div>
+        </div>
+        <br>
+    </div>
+
+        <br>
+        <div class="layui-form-item">
+            <label class="layui-form-label">医生签名:</label>
+            <div class="layui-input-block">
+                <select name="interest" lay-filter="aihao">
+                    <option value="" selected="selected">管理员</option>
+                    <option value="0">写作</option>
+                </select>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">询问日期:</label>
+            <div class="layui-input-block" >
+                <input type="text" name="date" id="date1" lay-verify="date" placeholder="yyyy-MM-dd" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+        <div align="center">
+            <button type="button" class="layui-btn layui-btn-normal">保存</button>
+            <button type="reset" class="layui-btn layui-btn-normal">重置</button></div>
+
+</form>
+</div>
+<script src="./layui/layui.js" charset="utf-8"></script>
+<script>
+    layui.use(['form', 'layedit', 'laydate'], function(){
+        var form = layui.form
+                ,layer = layui.layer
+                ,layedit = layui.layedit
+                ;
+
+        //日期
+        laydate.render({
+            elem: '#date'
+        });
+        laydate.render({
+            elem: '#date1'
+        });
+
+
+
+    });
+
+</script>
+</body>
+</html>
