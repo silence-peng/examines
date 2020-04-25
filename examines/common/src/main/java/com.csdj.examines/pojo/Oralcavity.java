@@ -13,7 +13,7 @@ public class Oralcavity {
     private  String opinion;
     private  Integer abnormaltype;
     private  String abnormalcontent;
-    private  String doctorbame;
+    private  String doctorname;
     @DateTimeFormat(pattern = "yyyy-MM-dd")
     private Date examinedate;
     private  Integer sex;
@@ -27,7 +27,7 @@ public class Oralcavity {
                 ", opinion='" + opinion + '\'' +
                 ", abnormaltype=" + abnormaltype +
                 ", abnormalcontent='" + abnormalcontent + '\'' +
-                ", doctorbame='" + doctorbame + '\'' +
+                ", doctorname='" + doctorname + '\'' +
                 ", examinedate=" + examinedate +
                 ", sex=" + sex +
                 '}';
@@ -81,12 +81,12 @@ public class Oralcavity {
         this.abnormalcontent = abnormalcontent;
     }
 
-    public String getDoctorbame() {
-        return doctorbame;
+    public String getDoctorname() {
+        return doctorname;
     }
 
     public void setDoctorbame(String doctorbame) {
-        this.doctorbame = doctorbame;
+        this.doctorname = doctorbame;
     }
 
     public Date getExaminedate() {

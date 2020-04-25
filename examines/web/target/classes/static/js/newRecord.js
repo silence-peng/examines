@@ -21,7 +21,7 @@ layui.use(['form','layer','laydate','jquery'], function() {
 		let role = eval(result);
 		$("#regtypeId").append("<option value=''></option>");
 		$(role).each(function(){
-			$("#regtypeId").append("<option value='"+this.regtypeId+"'>"+this.type+"</option>");
+			$("#regtypeId").append("<option value='"+this.regtypeid+"'>"+this.type+"</option>");
 			form.render();//渲染登记类型
 		})
 

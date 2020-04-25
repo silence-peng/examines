@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.csdj.examines.dao.CheckProveMapper">
+    <select id="getAdviseArr" resultType="String">
+        SELECT a.`adviseArr` FROM yxadvisecheckresult a,yxcheckresult b WHERE
+        a.`resultId`=b.`resultId` AND b.userId=#{userid} AND b.`sex`=#{sex}
+    </select>
+</mapper>

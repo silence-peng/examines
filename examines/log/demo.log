@@ -1,4 +1,2 @@
-2020-04-25 18:03:59,616 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 1
-2020-04-25 18:13:59,289 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT regtypeid,type FROM registertype 
-2020-04-25 18:13:59,289 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
-2020-04-25 18:13:59,291 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 2
+2020-04-25 21:52:20,326 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-25 21:52:20,328 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1

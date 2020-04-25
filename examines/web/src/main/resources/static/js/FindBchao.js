@@ -47,7 +47,7 @@ layui.use(['form', 'layer', 'table', 'laydate'], function() {
 				fname:$("#fName").val(),
 				mcard:$("#mCard").val(),
 				fcard:$("#fCard").val(),
-				creatdate:$("#creatDate").val()
+				creatdate:$("#date").val()
 			}
 		});
 		return false;

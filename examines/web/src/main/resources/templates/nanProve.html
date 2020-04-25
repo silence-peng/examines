@@ -6,11 +6,11 @@
 		<link rel="stylesheet" href="layui/css/layui.css">
 		<link rel="stylesheet" href="css/Prove.css" />
 		<script src="layui/layui.js"></script>
-		<script src="js/Prove.js"></script>
+		<script src="js/nanProve.js"></script>
 	</head>
 	<body>
 		<div class="layui-container" style="width: 90%;">
-			<form class="layui-form">
+			<form class="layui-form" lay-filter="formTest">
 				<div class="layui-row" style="margin-top: 20px;">
 					<div class="layui-col-md6">
 						<div class=""style="margin-left: 20px;">
@@ -18,7 +18,7 @@
 								系统编号：
 							</div>
 							<div class="layui-bg-gray layui-inline infos">
-								
+								<input style="border: none;height: 20px;" name="userid" disabled="disabled" class="layui-bg-gray"/>
 							</div>
 						</div>
 						<hr>
@@ -30,7 +30,7 @@
 								</div>
 							</div>
 							<div class="layui-bg-gray layui-inline infos">
-								
+								<input style="border: none;height: 20px;" name="mname" disabled="disabled" class="layui-bg-gray"/>
 							</div>
 						</div>
 						<hr>
@@ -42,7 +42,7 @@
 								</div>
 							</div>
 							<div class="layui-bg-gray layui-inline infos">
-								
+								<input style="border: none;height: 20px;" value="男" disabled="disabled" class="layui-bg-gray"/>
 							</div>
 						</div>
 						<hr>
@@ -51,7 +51,7 @@
 								对方姓名：
 							</div>
 							<div class="layui-bg-gray layui-inline infos">
-								
+								<input style="border: none;height: 20px;" name="fname" disabled="disabled" class="layui-bg-gray"/>
 							</div>
 						</div>
 						<hr>
@@ -67,54 +67,52 @@
 				</div>
 				<br/><br/><br/><br/>
 				<div class="">
+
 					<fieldset class="layui-elem-field">
 						<blockquote class="layui-elem-quote" style="background-color: #93D1FF;">
 							婚前医学检查结果
 						</blockquote>
-						<div class="layui-field-box">
-							<br/>
-							<div class="layui-row">
-								<div class="layui-form-item">
-									<div class="layui-col-md3 layui-col-md-offset1">
-										<div class="layui-bg-gray layui-inline abnormality">
-											<input type="radio" name="sex" value="" checked="checked">
+						<form class="layui-form" lay-filter="formResult">
+							<div class="layui-field-box">
+								<br/>
+								<div class="layui-row">
+									<div class="layui-form-item">
+										<div class="layui-col-md3 layui-col-md-offset1">
+											<div class="layui-bg-gray layui-inline abnormality">
+												<input type="radio" name="isabnormal" value="0" checked="checked">
+											</div>
+											<div class="layui-bg-gray layui-inline abnormalitys">
+												未见异常
+											</div>
 										</div>
-										<div class="layui-bg-gray layui-inline abnormalitys">
-											未见异常
-										</div>
-									</div>
-									<div class="layui-col-md3 layui-col-md-offset1">
-										<div class="layui-bg-gray layui-inline abnormality">
-											<input type="radio" name="sex" value="">
-										</div>
-										<div class="layui-bg-gray layui-inline abnormalitys">
-											存在异常情况，描述如下
+										<div class="layui-col-md3 layui-col-md-offset1">
+											<div class="layui-bg-gray layui-inline abnormality">
+												<input type="radio" name="isabnormal" value="1">
+											</div>
+											<div class="layui-bg-gray layui-inline abnormalitys">
+												存在异常情况，描述如下
+											</div>
 										</div>
 									</div>
 								</div>
+								<br/>
+								<div class="layui-form-item">
+									<div class="layui-row">
+										<input type="text" name="abnormalities" autocomplete="off" placeholder="异常描述" class="layui-input">
+									</div>
+								</div>
 							</div>
-							<br/>
-							<div class="layui-form-item">
-							    <div class="layui-row">
-							      <input type="text" name="" autocomplete="off" placeholder="异常描述" class="layui-input">
-							    </div>
-							</div>
-						</div>
+						</form>
 					</fieldset>
 					<fieldset class="layui-elem-field">
 						<blockquote class="layui-elem-quote" style="background-color: #93D1FF;">
 							医学意见
 						</blockquote>
-					  <div class="layui-field-box">
-						<div class="layui-form-item" style="margin-left: 40px;">
-						    <div class="layui-inline layui-bg-gray suggest">
-						      <input type="checkbox" name="like1[write]" lay-skin="primary">
-						    </div>
-							<div class="layui-bg-gray layui-inline suggests">
-								xxx
+						<form class="layui-form" lay-filter="formAdvise">
+							<div class="layui-field-box" id="advise">
+
 							</div>
-						</div>
-					  </div>
+						</form>
 					</fieldset>
 					<hr>
 				</div>

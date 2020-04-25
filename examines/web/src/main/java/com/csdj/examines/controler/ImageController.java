@@ -5,6 +5,7 @@ import com.csdj.examines.service.ImageService;
 import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
@@ -21,6 +22,11 @@ import java.util.Map;
 public class ImageController {
     @Autowired
     private ImageService imageService;
+
+    @RequestMapping("/{page}")
+    public String page(@PathVariable String page){
+        return page;
+    }
 
     @RequestMapping("getUser")
     @ResponseBody
