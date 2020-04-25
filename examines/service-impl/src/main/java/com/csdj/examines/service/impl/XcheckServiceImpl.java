@@ -24,30 +24,19 @@ public class XcheckServiceImpl implements XcheckService {
     private YxcheckresultMapper checkresultMapper;
 
     public Xexamine IsCheckX(Integer userId, Integer sex) {
-        Xexamine xexamine=new Xexamine();
-        xexamine.setUserid(userId);
-        xexamine.setSex(sex);
-        List<Xexamine> list=xcheckMapper.select(xexamine);
-        if (list.size()==1){
-            return list.get(0);
-        }
-        return null;
+        return xcheckMapper.isCheck(userId, sex);
     }
     @Transactional
     public Integer check(Xexamine xexamine) {
-        if (xcheckMapper.selectOne(xexamine)!=null){
+        Xexamine xexamine1=xcheckMapper.isCheck(xexamine.getUserid(),xexamine.getSex());
+        if (xexamine1!=null){
+            xexamine.setXid(xexamine1.getXid());
             return xcheckMapper.updateByPrimaryKey(xexamine);
         }else {
-            Yxcheckresult yxcheckresult=new Yxcheckresult();
-            yxcheckresult.setUserid(xexamine.getUserid());
-            yxcheckresult.setSex(xexamine.getSex());
-            List<Yxcheckresult> list=checkresultMapper.select(yxcheckresult);
-            if (list.size()==1){
-                yxcheckresult=list.get(0);
-            }
+            Yxcheckresult yxcheckresult=checkresultMapper.getOne(xexamine.getUserid(), xexamine.getSex());
             yxcheckresult.setIsx(1);
             yxcheckresult.setSex(xexamine.getSex());
-            checkresultMapper.updateByPrimaryKey(yxcheckresult);
+            checkresultMapper.updateByPrimaryKeySelective(yxcheckresult);
             return xcheckMapper.insertSelective(xexamine);
         }
 

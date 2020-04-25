@@ -1,0 +1,10 @@
+2020-04-25 21:09:56,377 INFO (StartupInfoLogger.java:59)- Started ControlerApplication in 9.685 seconds (JVM running for 13.055)
+2020-04-25 21:10:05,342 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from xexamine where userid=? and sex=? 
+2020-04-25 21:10:05,374 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122414(Integer), 0(Integer)
+2020-04-25 21:10:05,393 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-25 21:10:17,090 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from xexamine where userid=? and sex=? 
+2020-04-25 21:10:17,091 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122414(Integer), 0(Integer)
+2020-04-25 21:10:17,111 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-25 21:10:17,115 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE xexamine SET userid = ?,xnum = ?,opinion = ?,abnormaltype = ?,abnormalcontent = ?,doctorname = ?,examinedate = ?,sex = ? WHERE xid = ? 
+2020-04-25 21:10:17,116 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122414(Integer), 24(Integer), 发现异常(String), 2(Integer), 发现异常(String), 王五(String), 2020-04-25 00:00:00.0(Timestamp), 0(Integer), 6(Integer)
+2020-04-25 21:10:17,137 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 1

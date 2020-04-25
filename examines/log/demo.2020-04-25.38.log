@@ -1,0 +1,9 @@
+2020-04-25 21:10:22,616 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from xexamine where userid=? and sex=? 
+2020-04-25 21:10:22,624 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122414(Integer), 0(Integer)
+2020-04-25 21:10:22,626 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-25 21:10:22,628 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE xexamine SET userid = ?,xnum = ?,opinion = ?,abnormaltype = ?,abnormalcontent = ?,doctorname = ?,examinedate = ?,sex = ? WHERE xid = ? 
+2020-04-25 21:10:22,631 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122414(Integer), 24(Integer), 发现异常(String), 1(Integer), (String), 王五(String), 2020-04-25 00:00:00.0(Timestamp), 0(Integer), 6(Integer)
+2020-04-25 21:10:22,634 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 1
+2020-04-25 21:10:30,083 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from xexamine where userid=? and sex=? 
+2020-04-25 21:10:30,087 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122414(Integer), 1(Integer)
+2020-04-25 21:10:30,091 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1

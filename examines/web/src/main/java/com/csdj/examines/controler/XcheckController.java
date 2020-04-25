@@ -5,6 +5,7 @@ import com.csdj.examines.pojo.Xexamine;
 import com.csdj.examines.service.XcheckService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -38,7 +39,7 @@ public class XcheckController {
      * @return 结果行数
      */
     @RequestMapping("check")
-    public Integer check(Xexamine xexamine){
+    public Integer check(@RequestBody  Xexamine xexamine){
         return service.check(xexamine);
     }
 }

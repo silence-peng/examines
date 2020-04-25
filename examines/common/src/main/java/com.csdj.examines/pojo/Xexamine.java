@@ -1,11 +1,12 @@
 package com.csdj.examines.pojo;
 
 import org.springframework.format.annotation.DateTimeFormat;
+import javax.persistence.Id;
 
 import java.util.Date;
 
 public class Xexamine {
-
+    @Id
     private  Integer xid;
     private  Integer userid;
     private  Integer xnum;
