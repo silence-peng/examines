@@ -10,18 +10,18 @@ public class Admin implements Serializable {
     @Override
     public String toString() {
         return "Admin{" +
-                "adminId=" + adminId +
+                "adminid=" + adminid +
                 ", doctorname='" + doctorname + '\'' +
                 ", doctorpassword='" + doctorpassword + '\'' +
                 '}';
     }
 
-    public Integer getAdminId() {
-        return adminId;
+    public Integer getAdminid() {
+        return adminid;
     }
 
-    public void setAdminId(Integer adminId) {
-        this.adminId = adminId;
+    public void setAdminid(Integer adminid) {
+        this.adminid = adminid;
     }
 
     public String getDoctorname() {
