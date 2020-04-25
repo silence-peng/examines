@@ -123,11 +123,11 @@
         form.on("radio(error)", function (data) {
             var error = data.value;
             if (this.value === '1') {
-                $("#errorDev").attr("disabled",false);
-            } else if (this.value === '2') {
                 $("#errorDev").attr("disabled",true);
-            }else if (this.value === '0') {
+            } else if (this.value === '2') {
                 $("#errorDev").attr("disabled",false);
+            }else if (this.value === '0') {
+                $("#errorDev").attr("disabled",true);
             }
         });
         //监听指定开关

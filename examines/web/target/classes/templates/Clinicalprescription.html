@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>临床开单女</title>
+    <link rel="stylesheet" href="layui/layui.js" />
+    <link rel="stylesheet" href="layui/css/layui.css">
+</head>
+<body>
+<div  class="layui-container">
+    <form class="layui-form" action="">
+        <div style="border:  0.8px solid cornflowerblue">
+            <p  style="background-color: rgb(214, 236, 246);font-size: 15px;color: #0074d9;text-align: left">尿液常规检查</p>
+
+            <div class="layui-form-item" pane="" >
+                <div class="layui-input-block" align="left" >
+                    <input type="checkbox" name="like1[write]" lay-skin="primary" title="B" >
+                    <input type="checkbox" name="like1[read]" lay-skin="primary" title="M">
+                    <input type="checkbox" name="like1[game]" lay-skin="primary" title="L" >
+
+                    <input type="checkbox" name="like1[game]" lay-skin="primary" title="中值细胞" >
+                </div>
+            </div>
+
+
+                <br>
+            </div>
+        <div style="border:  0.8px solid cornflowerblue">
+            <p  style="background-color: rgb(214, 236, 246);font-size: 15px;color: #0074d9;text-align: left">血型</p>
+
+            <div class="layui-form-item" pane="" >
+                <div class="layui-input-block" align="left" >
+                    <input type="checkbox" name="like1[write]" lay-skin="primary" title="全选" >
+                    <input type="checkbox" name="like1[read]" lay-skin="primary" title="ABO">
+                    <input type="checkbox" name="like1[game]" lay-skin="primary" title="Rh" >
+
+                </div>
+            </div>
+
+
+            <br>
+        </div>
+        <div style="border:  0.8px solid cornflowerblue">
+            <p  style="background-color: rgb(214, 236, 246);font-size: 15px;color: #0074d9;text-align: left">乙肝血清检查</p>
+
+            <div class="layui-form-item" pane="" >
+                <div class="layui-input-block" align="left" >
+                    <input type="checkbox" name="like1[write]" lay-skin="primary" title="全选" >
+                    <input type="checkbox" name="like1[read]" lay-skin="primary" title="HBs-Ag">
+                    <input type="checkbox" name="like1[game]" lay-skin="primary" title="HBs-Ab" >
+                    <input type="checkbox" name="like1[game]" lay-skin="primary" title="Hbe-Ag" >
+                    <input type="checkbox" name="like1[game]" lay-skin="primary" title="HBc-Ab" >
+                </div>
+            </div>
+
+
+            <br>
+        </div>
+        <div style="border:  0.8px solid cornflowerblue">
+            <p  style="background-color: rgb(214, 236, 246);font-size: 15px;color: #0074d9;text-align: left">肝功能检测</p>
+
+            <div class="layui-form-item" pane="" >
+                <div class="layui-input-block" align="left" >
+                    <input type="checkbox" name="like1[write]" lay-skin="primary" title="全选" >
+                    <input type="checkbox" name="like1[read]" lay-skin="primary" title="谷丙转氨酶">
+                    <input type="checkbox" name="like1[game]" lay-skin="primary" title="肌酐" >
+
+                </div>
+            </div>
+            <br>
+        </div>
+        <div style="border:  0.8px solid cornflowerblue">
+            <p  style="background-color: rgb(214, 236, 246);font-size: 15px;color: #0074d9;text-align: left">甲状腺功能检测</p>
+
+            <div class="layui-form-item" pane="" >
+                <div class="layui-input-block" align="left" >
+                    <input type="checkbox" name="like1[write]" lay-skin="primary" title="全选" >
+                    <input type="checkbox" name="like1[read]" lay-skin="primary" title="促甲状腺激素">
+                </div>
+            </div>
+            <br>
+        </div>
+        <div style="border:  0.8px solid cornflowerblue">
+            <p  style="background-color: rgb(214, 236, 246);font-size: 15px;color: #0074d9;text-align: left">病毒筛查</p>
+            <div class="layui-form-item" pane="" >
+                <div class="layui-input-block" align="left" >
+                    <input type="checkbox" name="like1[write]" lay-skin="primary" title="全选" >
+                    <input type="checkbox" name="like1[read]" lay-skin="primary" title="巨细胞病毒IgG">
+                    <input type="checkbox" name="like1[read]" lay-skin="primary" title="梅毒螺旋体筛查">
+                    <input type="checkbox" name="like1[read]" lay-skin="primary" title="弓形体IgG">
+                    <input type="checkbox" name="like1[read]" lay-skin="primary" title="巨细胞病毒IgM">
+                    <input type="checkbox" name="like1[read]" lay-skin="primary" title="风疹病毒IgG">
+                    <input type="checkbox" name="like1[read]" lay-skin="primary" title="弓形体IgM">
+                </div>
+            </div>
+            <br>
+        </div>
+        <div style="border:  0.8px solid cornflowerblue">
+            <p  style="background-color: rgb(214, 236, 246);font-size: 15px;color: #0074d9;text-align: left">其他检查</p>
+            <div class="layui-form-item" pane="" >
+                <div class="layui-input-block" align="left" >
+
+                    <input type="checkbox" name="like1[read]" lay-skin="primary" title="其他">
+                </div>
+            </div>
+            <br>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">医生签名:</label>
+            <div class="layui-input-block">
+                <select name="interest" lay-filter="aihao">
+                    <option value="" selected="selected">管理员</option>
+                    <option value="0">写作</option>
+                </select>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">询问日期:</label>
+            <div class="layui-input-block" >
+                <input type="text" name="date" id="date1" lay-verify="date" placeholder="yyyy-MM-dd" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+        <div align="center">
+            <button type="button" class="layui-btn layui-btn-normal">保存</button>
+            <button type="reset" class="layui-btn layui-btn-normal">重置</button></div>
+
+    </form>
+</div>
+<script src="./layui/layui.js" charset="utf-8"></script>
+<script>
+    layui.use(['form', 'layedit', 'laydate'], function(){
+        var form = layui.form
+                ,layer = layui.layer
+                ,layedit = layui.layedit
+                ,laydate = layui.laydate;
+
+        //日期
+        laydate.render({
+            elem: '#date'
+        });
+        laydate.render({
+            elem: '#date1'
+        });
+
+
+
+    });
+
+</script>
+</body>
+</html>

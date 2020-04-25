@@ -1,0 +1,14 @@
+2020-04-25 11:30:51,090 INFO (StartupInfoLogger.java:59)- Started ControlerApplication in 1.1360681 seconds (JVM running for 530.444)
+2020-04-25 11:31:06,908 INFO (StartupInfoLogger.java:50)- Starting ControlerApplication on DESKTOP-E0OONUJ with PID 10064 (E:\IDEAProject\examines\examines\web\target\classes started by ZZW in E:\IDEAProject\examines\examines)
+2020-04-25 11:31:06,912 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2020-04-25 11:31:06,912 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2020-04-25 11:31:10,328 INFO (StartupInfoLogger.java:59)- Started ControlerApplication in 4.3166091 seconds (JVM running for 6.449)
+2020-04-25 11:31:20,742 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM registertype 
+2020-04-25 11:31:20,761 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-25 11:31:20,791 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 2
+2020-04-25 11:55:54,841 INFO (StartupInfoLogger.java:50)- Starting ControlerApplication on DESKTOP-E0OONUJ with PID 2656 (E:\IDEAProject\examines\examines\web\target\classes started by ZZW in E:\IDEAProject\examines\examines)
+2020-04-25 11:55:54,846 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2020-04-25 11:55:54,848 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2020-04-25 11:58:03,238 INFO (StartupInfoLogger.java:50)- Starting ControlerApplication on DESKTOP-E0OONUJ with PID 5988 (E:\IDEAProject\examines\examines\web\target\classes started by ZZW in E:\IDEAProject\examines\examines)
+2020-04-25 11:58:03,242 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2020-04-25 11:58:03,242 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default

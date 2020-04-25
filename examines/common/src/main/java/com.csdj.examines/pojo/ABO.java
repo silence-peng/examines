@@ -2,7 +2,7 @@ package com.csdj.examines.pojo;
 
 import java.io.Serializable;
 
-public class ABO implements Serializable {
+public class Abo implements Serializable {
     private Integer id;
     private String type;
 
@@ -30,11 +30,11 @@ public class ABO implements Serializable {
                 '}';
     }
 
-    public ABO(Integer id, String type) {
+    public Abo(Integer id, String type) {
         this.id = id;
         this.type = type;
     }
 
-    public ABO() {
+    public Abo() {
     }
 }

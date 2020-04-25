@@ -1,0 +1,6 @@
+2020-04-25 12:14:27,647 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: x(String), null, 2019-12-29 00:00:00.0(Timestamp), 18241526541(String), h(String), 身份证(String), 23(Integer), 本科(String), 白领(String), (String), (String), (String), (String), (String), 农村户口(String), y(String), null, 2019-12-29 00:00:00.0(Timestamp), 18541263321(String), h(String), 身份证(String), 20(Integer), 大专(String), 白领(String), (String), (String), (String), (String), (String), 城市户口(String), (String), 2019-12-29 00:00:00.0(Timestamp), null, 2(Integer), (String), null, null, (String), 周正午(String)
+2020-04-25 12:14:27,655 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 1
+2020-04-25 12:14:27,658 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: /*新增后返回id*/ SELECT LAST_INSERT_ID() 
+2020-04-25 12:14:27,659 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-25 12:14:27,710 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-25 12:14:27,713 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: INSERT INTO yx_check_result(userId,sex) VALUES(?,?) 
