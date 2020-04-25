@@ -20,7 +20,7 @@ public class XcheckServiceImpl implements XcheckService {
 
     public Xexamine IsCheckX(Integer userId, Integer sex) {
         Xexamine xexamine=new Xexamine();
-        xexamine.setUserId(userId);
+        xexamine.setUserid(userId);
         xexamine.setSex(sex);
         List<Xexamine> list=xcheckMapper.select(xexamine);
         if (list.size()==1){
