@@ -1,24 +1,26 @@
 package com.csdj.examines.pojo;
 
 public class Suggestd {
-    public Integer getdId() {
-        return dId;
-    }
 
-    public void setdId(Integer dId) {
-        this.dId = dId;
-    }
+
+    private  Integer did;
+    private  String content;
 
     @Override
     public String toString() {
         return "Suggestd{" +
-                "dId=" + dId +
+                "did=" + did +
                 ", content='" + content + '\'' +
                 '}';
     }
 
-    private  Integer dId;
-    private  String content;
+    public Integer getDid() {
+        return did;
+    }
+
+    public void setDid(Integer did) {
+        this.did = did;
+    }
 
     public String getContent() {
         return content;

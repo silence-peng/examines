@@ -1,42 +1,58 @@
 package com.csdj.examines.pojo;
 
 import org.omg.CORBA.INTERNAL;
+import org.springframework.format.annotation.DateTimeFormat;
 
 import java.io.Serializable;
 import java.util.Date;
 
 public class Bultrasound implements Serializable {
-    private Integer bId;
-    private Integer userId;
-    private String bImgfile;
+    private Integer bid;
+    private Integer userid;
+    private String bimgfile;
     private String result;
     private String describe;
-    private Date examineDate;
-    private String doctorName;
-    private Integer imgSize;
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
+    private Date examinedate;
+    private String doctorname;
+    private Integer imgsize;
 
-    public Integer getbId() {
-        return bId;
+    @Override
+    public String toString() {
+        return "Bultrasound{" +
+                "bid=" + bid +
+                ", userid=" + userid +
+                ", bimgfile='" + bimgfile + '\'' +
+                ", result='" + result + '\'' +
+                ", describe='" + describe + '\'' +
+                ", examinedate=" + examinedate +
+                ", doctorname='" + doctorname + '\'' +
+                ", imgsize=" + imgsize +
+                '}';
     }
 
-    public void setbId(Integer bId) {
-        this.bId = bId;
+    public Integer getBid() {
+        return bid;
     }
 
-    public Integer getUserId() {
-        return userId;
+    public void setBid(Integer bid) {
+        this.bid = bid;
     }
 
-    public void setUserId(Integer userId) {
-        this.userId = userId;
+    public Integer getUserid() {
+        return userid;
     }
 
-    public String getbImgfile() {
-        return bImgfile;
+    public void setUserid(Integer userid) {
+        this.userid = userid;
     }
 
-    public void setbImgfile(String bImgfile) {
-        this.bImgfile = bImgfile;
+    public String getBimgfile() {
+        return bimgfile;
+    }
+
+    public void setBimgfile(String bimgfile) {
+        this.bimgfile = bimgfile;
     }
 
     public String getResult() {
@@ -55,55 +71,27 @@ public class Bultrasound implements Serializable {
         this.describe = describe;
     }
 
-    public Date getExamineDate() {
-        return examineDate;
+    public Date getExaminedate() {
+        return examinedate;
     }
 
-    public void setExamineDate(Date examineDate) {
-        this.examineDate = examineDate;
+    public void setExaminedate(Date examinedate) {
+        this.examinedate = examinedate;
     }
 
-    public String getDoctorName() {
-        return doctorName;
+    public String getDoctorname() {
+        return doctorname;
     }
 
-    public void setDoctorName(String doctorName) {
-        this.doctorName = doctorName;
+    public void setDoctorname(String doctorname) {
+        this.doctorname = doctorname;
     }
 
-    public Integer getImgSize() {
-        return imgSize;
+    public Integer getImgsize() {
+        return imgsize;
     }
 
-    public void setImgSize(Integer imgSize) {
-        this.imgSize = imgSize;
-    }
-
-    public Bultrasound() {
-    }
-
-    public Bultrasound(Integer bId, Integer userId, String bImgfile, String result, String describe, Date examineDate, String doctorName, Integer imgSize) {
-        this.bId = bId;
-        this.userId = userId;
-        this.bImgfile = bImgfile;
-        this.result = result;
-        this.describe = describe;
-        this.examineDate = examineDate;
-        this.doctorName = doctorName;
-        this.imgSize = imgSize;
-    }
-
-    @Override
-    public String toString() {
-        return "BUltrasound{" +
-                "bId=" + bId +
-                ", userId=" + userId +
-                ", bImgfile='" + bImgfile + '\'' +
-                ", result='" + result + '\'' +
-                ", describe='" + describe + '\'' +
-                ", examineDate=" + examineDate +
-                ", doctorName='" + doctorName + '\'' +
-                ", imgSize=" + imgSize +
-                '}';
+    public void setImgsize(Integer imgsize) {
+        this.imgsize = imgsize;
     }
 }

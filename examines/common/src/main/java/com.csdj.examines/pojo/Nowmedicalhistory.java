@@ -1,49 +1,40 @@
 package com.csdj.examines.pojo;
 
 public class Nowmedicalhistory {
-    private Integer nmedicalId;
-    private String ntypeList;
-    private String elseContent;
-
-    public Nowmedicalhistory() {
-    }
-
-    public Nowmedicalhistory(Integer nmedicalId, String ntypeList, String elseContent) {
-        this.nmedicalId = nmedicalId;
-        this.ntypeList = ntypeList;
-        this.elseContent = elseContent;
-    }
+    private Integer nmedicalid;
+    private String ntypelist;
+    private String elsecontent;
 
     @Override
     public String toString() {
-        return "NowMedicalHistory{" +
-                "nmedicalId=" + nmedicalId +
-                ", ntypeList='" + ntypeList + '\'' +
-                ", elseContent='" + elseContent + '\'' +
+        return "Nowmedicalhistory{" +
+                "nmedicalid=" + nmedicalid +
+                ", ntypelist='" + ntypelist + '\'' +
+                ", elsecontent='" + elsecontent + '\'' +
                 '}';
     }
 
-    public Integer getNmedicalId() {
-        return nmedicalId;
+    public Integer getNmedicalid() {
+        return nmedicalid;
     }
 
-    public void setNmedicalId(Integer nmedicalId) {
-        this.nmedicalId = nmedicalId;
+    public void setNmedicalid(Integer nmedicalid) {
+        this.nmedicalid = nmedicalid;
     }
 
-    public String getNtypeList() {
-        return ntypeList;
+    public String getNtypelist() {
+        return ntypelist;
     }
 
-    public void setNtypeList(String ntypeList) {
-        this.ntypeList = ntypeList;
+    public void setNtypelist(String ntypelist) {
+        this.ntypelist = ntypelist;
     }
 
-    public String getElseContent() {
-        return elseContent;
+    public String getElsecontent() {
+        return elsecontent;
     }
 
-    public void setElseContent(String elseContent) {
-        this.elseContent = elseContent;
+    public void setElsecontent(String elsecontent) {
+        this.elsecontent = elsecontent;
     }
 }

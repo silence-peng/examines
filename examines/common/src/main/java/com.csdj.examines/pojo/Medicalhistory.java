@@ -1,128 +1,115 @@
 package com.csdj.examines.pojo;
 
+import org.springframework.format.annotation.DateTimeFormat;
+
 import java.util.Date;
 
 public class Medicalhistory {
-    private Integer medicalId;
-    private String typeList;
-    private String medicalName;
-    private Integer morbidityCount;
-    private Date latelyTime;
-    private Integer isTakeMedicine;
+    private Integer medicalid;
+    private String typelist;
+    private String medicalname;
+    private Integer morbiditycount;
+    private Date latelytime;
+    private Integer istakemedicine;
     private String capacity;
-    private Integer isOperating;
-    private String operatingRoom;
-    private Date operatingDate;
+    private Integer isoperating;
+    private String operatingroom;
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
+    private Date operatingdate;
 
     @Override
     public String toString() {
-        return "MedicalHistory{" +
-                "medicalId=" + medicalId +
-                ", typeList='" + typeList + '\'' +
-                ", medicalName='" + medicalName + '\'' +
-                ", morbidityCount=" + morbidityCount +
-                ", latelyTime=" + latelyTime +
-                ", isTakeMedicine=" + isTakeMedicine +
+        return "Medicalhistory{" +
+                "medicalid=" + medicalid +
+                ", typelist='" + typelist + '\'' +
+                ", medicalname='" + medicalname + '\'' +
+                ", morbiditycount=" + morbiditycount +
+                ", latelytime=" + latelytime +
+                ", istakemedicine=" + istakemedicine +
                 ", capacity='" + capacity + '\'' +
-                ", isOperating=" + isOperating +
-                ", operatingRoom='" + operatingRoom + '\'' +
-                ", operatingDate=" + operatingDate +
+                ", isoperating=" + isoperating +
+                ", operatingroom='" + operatingroom + '\'' +
+                ", operatingdate=" + operatingdate +
                 '}';
     }
 
-    public Medicalhistory() {
+    public Integer getMedicalid() {
+        return medicalid;
     }
 
-    public Medicalhistory(Integer medicalId, String typeList, String medicalName, Integer morbidityCount, Date latelyTime, Integer isTakeMedicine, String capacity, Integer isOperating, String operatingRoom, Date operatingDate) {
-        this.medicalId = medicalId;
-        this.typeList = typeList;
-        this.medicalName = medicalName;
-        this.morbidityCount = morbidityCount;
-        this.latelyTime = latelyTime;
-        this.isTakeMedicine = isTakeMedicine;
-        this.capacity = capacity;
-        this.isOperating = isOperating;
-        this.operatingRoom = operatingRoom;
-        this.operatingDate = operatingDate;
+    public void setMedicalid(Integer medicalid) {
+        this.medicalid = medicalid;
     }
 
-    public Integer getMedicalId() {
-        return medicalId;
+    public void setTypelist(String typelist) {
+        this.typelist = typelist;
     }
 
-    public void setMedicalId(Integer medicalId) {
-        this.medicalId = medicalId;
+    public void setMedicalname(String medicalname) {
+        this.medicalname = medicalname;
     }
 
-    public String getTypeList() {
-        return typeList;
+    public void setMorbiditycount(Integer morbiditycount) {
+        this.morbiditycount = morbiditycount;
     }
 
-    public void setTypeList(String typeList) {
-        this.typeList = typeList;
+    public void setLatelytime(Date latelytime) {
+        this.latelytime = latelytime;
     }
 
-    public String getMedicalName() {
-        return medicalName;
-    }
-
-    public void setMedicalName(String medicalName) {
-        this.medicalName = medicalName;
-    }
-
-    public Integer getMorbidityCount() {
-        return morbidityCount;
-    }
-
-    public void setMorbidityCount(Integer morbidityCount) {
-        this.morbidityCount = morbidityCount;
-    }
-
-    public Date getLatelyTime() {
-        return latelyTime;
-    }
-
-    public void setLatelyTime(Date latelyTime) {
-        this.latelyTime = latelyTime;
-    }
-
-    public Integer getIsTakeMedicine() {
-        return isTakeMedicine;
-    }
-
-    public void setIsTakeMedicine(Integer isTakeMedicine) {
-        this.isTakeMedicine = isTakeMedicine;
-    }
-
-    public String getCapacity() {
-        return capacity;
+    public void setIstakemedicine(Integer istakemedicine) {
+        this.istakemedicine = istakemedicine;
     }
 
     public void setCapacity(String capacity) {
         this.capacity = capacity;
     }
 
-    public Integer getIsOperating() {
-        return isOperating;
+    public void setIsoperating(Integer isoperating) {
+        this.isoperating = isoperating;
     }
 
-    public void setIsOperating(Integer isOperating) {
-        this.isOperating = isOperating;
+    public void setOperatingroom(String operatingroom) {
+        this.operatingroom = operatingroom;
     }
 
-    public String getOperatingRoom() {
-        return operatingRoom;
+    public void setOperatingdate(Date operatingdate) {
+        this.operatingdate = operatingdate;
     }
 
-    public void setOperatingRoom(String operatingRoom) {
-        this.operatingRoom = operatingRoom;
+    public String getTypelist() {
+        return typelist;
     }
 
-    public Date getOperatingDate() {
-        return operatingDate;
+    public String getMedicalname() {
+        return medicalname;
     }
 
-    public void setOperatingDate(Date operatingDate) {
-        this.operatingDate = operatingDate;
+    public Integer getMorbiditycount() {
+        return morbiditycount;
+    }
+
+    public Date getLatelytime() {
+        return latelytime;
+    }
+
+    public Integer getIstakemedicine() {
+        return istakemedicine;
+    }
+
+    public String getCapacity() {
+        return capacity;
+    }
+
+    public Integer getIsoperating() {
+        return isoperating;
+    }
+
+    public String getOperatingroom() {
+        return operatingroom;
+    }
+
+    public Date getOperatingdate() {
+        return operatingdate;
     }
 }

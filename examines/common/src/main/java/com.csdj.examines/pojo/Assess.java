@@ -1,30 +1,45 @@
 package com.csdj.examines.pojo;
 
+import org.springframework.format.annotation.DateTimeFormat;
+
 import java.io.Serializable;
 import java.util.Date;
 
 public class Assess implements Serializable{
-    private Integer assId;
-    private Integer uerId;
+    private Integer assid;
+    private Integer uerid;
     private String content;
-    private Integer sdId;
-    private String doctorName;
-    private Date examineDate;
+    private Integer sdid;
+    private String doctorname;
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
+    private Date examinedate;
 
-    public Integer getAssId() {
-        return assId;
+    @Override
+    public String toString() {
+        return "Assess{" +
+                "assid=" + assid +
+                ", uerid=" + uerid +
+                ", content='" + content + '\'' +
+                ", sdid=" + sdid +
+                ", doctorname='" + doctorname + '\'' +
+                ", examinedate=" + examinedate +
+                '}';
     }
 
-    public void setAssId(Integer assId) {
-        this.assId = assId;
+    public Integer getAssid() {
+        return assid;
     }
 
-    public Integer getUerId() {
-        return uerId;
+    public void setAssid(Integer assid) {
+        this.assid = assid;
     }
 
-    public void setUerId(Integer uerId) {
-        this.uerId = uerId;
+    public Integer getUerid() {
+        return uerid;
+    }
+
+    public void setUerid(Integer uerid) {
+        this.uerid = uerid;
     }
 
     public String getContent() {
@@ -35,51 +50,27 @@ public class Assess implements Serializable{
         this.content = content;
     }
 
-    public Integer getSdId() {
-        return sdId;
+    public Integer getSdid() {
+        return sdid;
     }
 
-    public void setSdId(Integer sdId) {
-        this.sdId = sdId;
+    public void setSdid(Integer sdid) {
+        this.sdid = sdid;
     }
 
-    public String getDoctorName() {
-        return doctorName;
+    public String getDoctorname() {
+        return doctorname;
     }
 
-    public void setDoctorName(String doctorName) {
-        this.doctorName = doctorName;
+    public void setDoctorname(String doctorname) {
+        this.doctorname = doctorname;
     }
 
-    public Date getExamineDate() {
-        return examineDate;
+    public Date getExaminedate() {
+        return examinedate;
     }
 
-    public void setExamineDate(Date examineDate) {
-        this.examineDate = examineDate;
-    }
-
-    public Assess() {
-    }
-
-    public Assess(Integer assId, Integer uerId, String content, Integer sdId, String doctorName, Date examineDate) {
-        this.assId = assId;
-        this.uerId = uerId;
-        this.content = content;
-        this.sdId = sdId;
-        this.doctorName = doctorName;
-        this.examineDate = examineDate;
-    }
-
-    @Override
-    public String toString() {
-        return "Assess{" +
-                "assId=" + assId +
-                ", uerId=" + uerId +
-                ", content='" + content + '\'' +
-                ", sdId=" + sdId +
-                ", doctorName='" + doctorName + '\'' +
-                ", examineDate=" + examineDate +
-                '}';
+    public void setExaminedate(Date examinedate) {
+        this.examinedate = examinedate;
     }
 }

@@ -1,31 +1,23 @@
 package com.csdj.examines.pojo;
 
 public class Nowmedicalhistorytype {
-    private Integer ntypeId;
+    private Integer ntypeid;
     private String ntype;
-
-    public Nowmedicalhistorytype() {
-    }
-
-    public Nowmedicalhistorytype(Integer ntypeId, String ntype) {
-        this.ntypeId = ntypeId;
-        this.ntype = ntype;
-    }
 
     @Override
     public String toString() {
-        return "NowMedicalHistoryType{" +
-                "ntypeId=" + ntypeId +
+        return "Nowmedicalhistorytype{" +
+                "ntypeid=" + ntypeid +
                 ", ntype='" + ntype + '\'' +
                 '}';
     }
 
-    public Integer getNtypeId() {
-        return ntypeId;
+    public Integer getNtypeid() {
+        return ntypeid;
     }
 
-    public void setNtypeId(Integer ntypeId) {
-        this.ntypeId = ntypeId;
+    public void setNtypeid(Integer ntypeid) {
+        this.ntypeid = ntypeid;
     }
 
     public String getNtype() {

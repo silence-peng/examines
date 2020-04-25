@@ -2,48 +2,59 @@ package com.csdj.examines.pojo;
 
 
 
+import org.springframework.format.annotation.DateTimeFormat;
+
 import java.util.Date;
 
 public class Oralcavity {
-    private  Integer oralId;
-    private  Integer userId;
-    private  String checkEquipment;
+    private  Integer oralid;
+    private  Integer userid;
+    private  String checkequipment;
     private  String opinion;
-    private  Integer abnormalType;
-    private  String abnormalContent;
-    private  String doctorName;
-    private Date examineDate;
+    private  Integer abnormaltype;
+    private  String abnormalcontent;
+    private  String doctorbame;
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
+    private Date examinedate;
     private  Integer sex;
 
     @Override
     public String toString() {
-        return "OralCavity{" +
-                "oralId=" + oralId +
-                ", userId=" + userId +
-                ", checkEquipment='" + checkEquipment + '\'' +
+        return "Oralcavity{" +
+                "oralid=" + oralid +
+                ", userid=" + userid +
+                ", checkequipment='" + checkequipment + '\'' +
                 ", opinion='" + opinion + '\'' +
-                ", abnormalType=" + abnormalType +
-                ", abnormalContent='" + abnormalContent + '\'' +
-                ", doctorName='" + doctorName + '\'' +
-                ", examineDate=" + examineDate +
+                ", abnormaltype=" + abnormaltype +
+                ", abnormalcontent='" + abnormalcontent + '\'' +
+                ", doctorbame='" + doctorbame + '\'' +
+                ", examinedate=" + examinedate +
                 ", sex=" + sex +
                 '}';
     }
 
-    public Integer getOralId() {
-        return oralId;
+    public Integer getOralid() {
+        return oralid;
     }
 
-    public void setOralId(Integer oralId) {
-        this.oralId = oralId;
+    public void setOralid(Integer oralid) {
+        this.oralid = oralid;
     }
 
-    public String getCheckEquipment() {
-        return checkEquipment;
+    public Integer getUserid() {
+        return userid;
     }
 
-    public void setCheckEquipment(String checkEquipment) {
-        this.checkEquipment = checkEquipment;
+    public void setUserid(Integer userid) {
+        this.userid = userid;
+    }
+
+    public String getCheckequipment() {
+        return checkequipment;
+    }
+
+    public void setCheckequipment(String checkequipment) {
+        this.checkequipment = checkequipment;
     }
 
     public String getOpinion() {
@@ -54,44 +65,36 @@ public class Oralcavity {
         this.opinion = opinion;
     }
 
-    public Integer getUserId() {
-        return userId;
+    public Integer getAbnormaltype() {
+        return abnormaltype;
     }
 
-    public void setUserId(Integer userId) {
-        this.userId = userId;
+    public void setAbnormaltype(Integer abnormaltype) {
+        this.abnormaltype = abnormaltype;
     }
 
-    public Integer getAbnormalType() {
-        return abnormalType;
+    public String getAbnormalcontent() {
+        return abnormalcontent;
     }
 
-    public void setAbnormalType(Integer abnormalType) {
-        this.abnormalType = abnormalType;
+    public void setAbnormalcontent(String abnormalcontent) {
+        this.abnormalcontent = abnormalcontent;
     }
 
-    public String getAbnormalContent() {
-        return abnormalContent;
+    public String getDoctorbame() {
+        return doctorbame;
     }
 
-    public void setAbnormalContent(String abnormalContent) {
-        this.abnormalContent = abnormalContent;
+    public void setDoctorbame(String doctorbame) {
+        this.doctorbame = doctorbame;
     }
 
-    public String getDoctorName() {
-        return doctorName;
+    public Date getExaminedate() {
+        return examinedate;
     }
 
-    public void setDoctorName(String doctorName) {
-        this.doctorName = doctorName;
-    }
-
-    public Date getExamineDate() {
-        return examineDate;
-    }
-
-    public void setExamineDate(Date examineDate) {
-        this.examineDate = examineDate;
+    public void setExaminedate(Date examinedate) {
+        this.examinedate = examinedate;
     }
 
     public Integer getSex() {

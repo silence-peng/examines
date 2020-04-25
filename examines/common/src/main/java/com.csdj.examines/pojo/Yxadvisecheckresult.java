@@ -1,40 +1,40 @@
 package com.csdj.examines.pojo;
 
 public class Yxadvisecheckresult {
-    private  Integer relationId;
-    private  Integer resultId;
-    private  String adviseArr;
+    private  Integer relationid;
+    private  Integer resultid;
+    private  String advisearr;
 
     @Override
     public String toString() {
-        return "YxAdviseCheckresult{" +
-                "relationId=" + relationId +
-                ", resultId=" + resultId +
-                ", adviseArr='" + adviseArr + '\'' +
+        return "Yxadvisecheckresult{" +
+                "relationid=" + relationid +
+                ", resultid=" + resultid +
+                ", advisearr='" + advisearr + '\'' +
                 '}';
     }
 
-    public Integer getRelationId() {
-        return relationId;
+    public Integer getRelationid() {
+        return relationid;
     }
 
-    public void setRelationId(Integer relationId) {
-        this.relationId = relationId;
+    public void setRelationid(Integer relationid) {
+        this.relationid = relationid;
     }
 
-    public Integer getResultId() {
-        return resultId;
+    public Integer getResultid() {
+        return resultid;
     }
 
-    public void setResultId(Integer resultId) {
-        this.resultId = resultId;
+    public void setResultid(Integer resultid) {
+        this.resultid = resultid;
     }
 
-    public String getAdviseArr() {
-        return adviseArr;
+    public String getAdvisearr() {
+        return advisearr;
     }
 
-    public void setAdviseArr(String adviseArr) {
-        this.adviseArr = adviseArr;
+    public void setAdvisearr(String advisearr) {
+        this.advisearr = advisearr;
     }
 }
