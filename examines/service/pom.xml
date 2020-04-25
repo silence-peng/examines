@@ -15,6 +15,10 @@
             <groupId>com.csdj.examines</groupId>
             <artifactId>common</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.csdj.examines</groupId>
+            <artifactId>dao</artifactId>
+        </dependency>
     </dependencies>
 
 </project>

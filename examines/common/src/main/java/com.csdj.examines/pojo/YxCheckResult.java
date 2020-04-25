@@ -1,5 +1,7 @@
 package com.csdj.examines.pojo;
 
+import org.springframework.format.annotation.DateTimeFormat;
+
 import java.util.Date;
 
 public class YxCheckResult {
@@ -16,10 +18,14 @@ public class YxCheckResult {
     private String  adviseProject;
     private Integer  isAdvise;
     private String  ReferralHospital;
+    @DateTimeFormat(pattern="YYYY-MM-dd")
     private Date referralDate;
+    @DateTimeFormat(pattern="YYYY-MM-dd")
     private Date  forwardDate;
+    @DateTimeFormat(pattern="YYYY-MM-dd")
     private Date  proveDate;
     private String  doctorName;
+    @DateTimeFormat(pattern="YYYY-MM-dd")
     private Date  examineDate;
     private Integer  isOral;
     private Integer  isX;

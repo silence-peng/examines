@@ -1,5 +1,7 @@
 package com.csdj.examines.pojo;
 
+import org.springframework.format.annotation.DateTimeFormat;
+
 import java.io.Serializable;
 import java.util.Date;
 
@@ -29,6 +31,7 @@ public class ClinicalBilling implements Serializable {
     private String gIgM;
     private String other;
     private String doctorName;
+    @DateTimeFormat(pattern="YYYY-MM-dd")
     private Date examineDate;
     private Integer sex;
 

@@ -64,8 +64,8 @@
             <li class="layui-nav-item layui-nav-itemed">
                 <a class="" href="javascript:void(0)">信息查询</a>
                 <dl class="layui-nav-child">
-                    <dd><a href="javascript:void(0)">基础信息查询</a></dd>
-                    <dd><a href="javascript:void(0)">未填信息查询</a></dd>
+                    <dd><a href="javascript:void(0)" @click.stop="changeIframe('Essentialinfo')">基础信息查询</a></dd>
+                    <dd><a href="javascript:void(0)" @click.stop="changeIframe('Unfilledinfo')">未填信息查询</a></dd>
                 </dl>
             </li>
             <li class="layui-nav-item">
@@ -77,17 +77,19 @@
             <li class="layui-nav-item">
                 <a href="javascript:void(0)">妻子信息</a>
                 <dl class="layui-nav-child">
-                    <dd><a href="javascript:void(0)">列表一</a></dd>
-                    <dd><a href="javascript:void(0)">列表二</a></dd>
-                    <dd><a href="">超链接</a></dd>
+                    <dd><a href="javascript:void(0)" @click.stop="changeIframe('General')">一般情况</a></dd>
+                    <dd><a href="javascript:void(0)" @click.stop="changeIframe('Physicalexamination')">体格检查</a></dd>
+                    <dd><a href="javascript:void(0)" @click.stop="changeIframe('Clinicalexamination')">临床检验</a></dd>
+                    <dd><a href="javascript:void(0)" @click.stop="changeIframe('Clinicalprescription')">临床开单</a></dd>
                 </dl>
             </li>
             <li class="layui-nav-item">
                 <a href="javascript:void(0)">丈夫信息</a>
                 <dl class="layui-nav-child">
-                    <dd><a href="javascript:void(0)">列表一</a></dd>
-                    <dd><a href="javascript:void(0)">列表二</a></dd>
-                    <dd><a href="">超链接</a></dd>
+                    <dd><a href="javascript:void(0)" @click.stop="changeIframe('Generalnan')">一般情况</a></dd>
+                    <dd><a href="javascript:void(0)" @click.stop="changeIframe('Physicalexaminationnan')">体格检查</a></dd>
+                    <dd><a href="javascript:void(0)" @click.stop="changeIframe('Clinicalexaminationnan')">临床检验</a></dd>
+                    <dd><a href="javascript:void(0)" @click.stop="changeIframe('Clinicalprescriptionnan')">临床开单</a></dd>
                 </dl>
             </li>
             <li class="layui-nav-item">

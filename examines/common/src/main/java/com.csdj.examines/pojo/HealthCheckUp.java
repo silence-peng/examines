@@ -1,5 +1,7 @@
 package com.csdj.examines.pojo;
 
+import org.springframework.format.annotation.DateTimeFormat;
+
 import java.util.Date;
 
 public class HealthCheckUp {
@@ -25,6 +27,7 @@ public class HealthCheckUp {
     private Integer isThyroid;
     private String thyroidContent;
     private String doctorName;
+    @DateTimeFormat(pattern="YYYY-MM-dd")
     private Date examineDate;
 
     public HealthCheckUp() {

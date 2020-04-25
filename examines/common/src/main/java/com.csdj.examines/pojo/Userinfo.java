@@ -1,11 +1,14 @@
 package com.csdj.examines.pojo;
 
+import org.springframework.format.annotation.DateTimeFormat;
+
 import java.util.Date;
 
 public class Userinfo {
     private  Integer userId;
     private  String mName;
     private  String mCard;
+    @DateTimeFormat(pattern="YYYY-MM-dd")
     private Date mBirthDate;
     private  String mPhone;
     private  String methnic;
@@ -21,6 +24,7 @@ public class Userinfo {
     private  String mregistered;
     private  String fName;
     private  String fCard;
+    @DateTimeFormat(pattern="YYYY-MM-dd")
     private  Date fBirthDate;
     private  String fPhone;
     private  String fethnic;
@@ -35,7 +39,9 @@ public class Userinfo {
     private  String fvillage;
     private  String fregistered;
     private  String address;
+    @DateTimeFormat(pattern="YYYY-MM-dd")
     private  Date creatDate;
+    @DateTimeFormat(pattern="YYYY-MM-dd")
     private  Date getMarriedDate;
     private  Integer regtypeId;
     private  String landlineNumber;

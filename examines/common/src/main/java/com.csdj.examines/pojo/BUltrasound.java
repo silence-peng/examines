@@ -1,6 +1,7 @@
 package com.csdj.examines.pojo;
 
 import org.omg.CORBA.INTERNAL;
+import org.springframework.format.annotation.DateTimeFormat;
 
 import java.io.Serializable;
 import java.util.Date;
@@ -11,6 +12,7 @@ public class BUltrasound implements Serializable {
     private String bImgfile;
     private String result;
     private String describe;
+    @DateTimeFormat(pattern="YYYY-MM-dd")
     private Date examineDate;
     private String doctorName;
     private Integer imgSize;

@@ -2,6 +2,8 @@ package com.csdj.examines.pojo;
 
 
 
+import org.springframework.format.annotation.DateTimeFormat;
+
 import java.util.Date;
 
 public class OralCavity {
@@ -12,6 +14,7 @@ public class OralCavity {
     private  Integer abnormalType;
     private  String abnormalContent;
     private  String doctorName;
+    @DateTimeFormat(pattern="YYYY-MM-dd")
     private Date examineDate;
     private  Integer sex;
 

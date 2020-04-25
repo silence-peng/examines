@@ -1,5 +1,7 @@
 package com.csdj.examines.pojo;
 
+import org.springframework.format.annotation.DateTimeFormat;
+
 import java.util.Date;
 
 public class MedicalHistory {
@@ -7,11 +9,13 @@ public class MedicalHistory {
     private String typeList;
     private String medicalName;
     private Integer morbidityCount;
+    @DateTimeFormat(pattern="YYYY-MM-dd")
     private Date latelyTime;
     private Integer isTakeMedicine;
     private String capacity;
     private Integer isOperating;
     private String operatingRoom;
+    @DateTimeFormat(pattern="YYYY-MM-dd")
     private Date operatingDate;
 
     @Override

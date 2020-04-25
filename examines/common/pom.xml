@@ -12,5 +12,15 @@
     <version>0.0.1-SNAPSHOT</version>
     <artifactId>common</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>5.2.5.RELEASE</version>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
+
+
 
 </project>
