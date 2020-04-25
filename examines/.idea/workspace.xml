@@ -1,60 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9bc5dfc8-bcd4-4512-b517-1f74901a4f98" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/dao/src/main/java/com/csdj/examines/dao/AddUserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dao/src/main/java/com/csdj/examines/dao/ImageMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dao/src/main/resources/mapper/AddUserMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dao/src/main/resources/mapper/ImageMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-impl/src/main/java/com/csdj/examines/service/impl/AddUserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-impl/src/main/java/com/csdj/examines/service/impl/ImageServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/main/java/com.csdj.examines.service/AddUserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/csdj/examines/controler/AddUserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/csdj/examines/controler/ImageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/common.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/examines.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/Assess.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/Assess.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/BUltrasound.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/BUltrasound.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/CgkzResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/CgkzResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/ClinicalBilling.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/ClinicalBilling.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/ClinicalExamination.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/ClinicalExamination.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/HealthCheckUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/HealthCheckUp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/MedicalHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/MedicalHistory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/OralCavity.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/OralCavity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/Userinfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/Userinfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/Xexamine.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/Xexamine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/YxCheckResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/YxCheckResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/csdj/examines/pojo/Assess.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/com/csdj/examines/pojo/Assess.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/csdj/examines/pojo/BUltrasound.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/com/csdj/examines/pojo/BUltrasound.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/csdj/examines/pojo/CgkzResult.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/com/csdj/examines/pojo/CgkzResult.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/csdj/examines/pojo/ClinicalBilling.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/com/csdj/examines/pojo/ClinicalBilling.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/csdj/examines/pojo/ClinicalExamination.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/com/csdj/examines/pojo/ClinicalExamination.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/csdj/examines/pojo/HealthCheckUp.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/com/csdj/examines/pojo/HealthCheckUp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/csdj/examines/pojo/MedicalHistory.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/com/csdj/examines/pojo/MedicalHistory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/csdj/examines/pojo/OralCavity.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/com/csdj/examines/pojo/OralCavity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/csdj/examines/pojo/Userinfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/com/csdj/examines/pojo/Userinfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/csdj/examines/pojo/Xexamine.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/com/csdj/examines/pojo/Xexamine.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/csdj/examines/pojo/YxCheckResult.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/com/csdj/examines/pojo/YxCheckResult.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/com.csdj.examines.service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com.csdj.examines.service/ImageService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/classes/com/csdj/examines/service/UserService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/resources/static/css/Bchao.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/resources/static/css/Bchao.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/resources/static/js/FindBchao.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/resources/static/js/FindBchao.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/resources/static/js/newRecord.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/resources/static/js/newRecord.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/resources/templates/Assess.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/resources/templates/Assess.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/resources/templates/Bchao.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/resources/templates/Bchao.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/resources/templates/FindBchao.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/resources/templates/FindBchao.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/resources/templates/newRecord.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/resources/templates/newRecord.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/classes/static/css/Bchao.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/classes/static/css/Bchao.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/classes/static/js/newRecord.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/classes/static/js/newRecord.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/classes/templates/Assess.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/classes/templates/Assess.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/classes/templates/Bchao.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/classes/templates/Bchao.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/classes/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/classes/templates/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/classes/templates/newRecord.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/classes/templates/newRecord.html" afterDir="false" />
-    </list>
+    <list default="true" id="9bc5dfc8-bcd4-4512-b517-1f74901a4f98" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -235,7 +182,7 @@
       <workItem from="1587688826856" duration="4522000" />
       <workItem from="1587695445424" duration="21538000" />
       <workItem from="1587776653952" duration="245000" />
-      <workItem from="1587779083304" duration="18010000" />
+      <workItem from="1587779083304" duration="18586000" />
     </task>
     <task id="LOCAL-00001" summary="彭勇第一次提交项目：上传初步项目框架">
       <created>1587630254909</created>
@@ -272,7 +219,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587698802859</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="修改提交">
+      <created>1587797294652</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1587797294652</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
