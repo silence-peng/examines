@@ -288,34 +288,34 @@ CREATE TABLE `medicalhistorytype` (
 
 insert  into `medicalhistorytype`(`typeId`,`type`) values (1,'遗传性疾病'),(2,'精神疾病'),(3,'先天性疾病'),(4,'传染病'),(5,'性病'),(6,'重要器官疾病'),(7,'泌尿生殖系统疾病');
 
-/*Table structure for table `now_medicalhistory` */
+/*Table structure for table `nowmedicalhistory` */
 
-DROP TABLE IF EXISTS `now_medicalhistory`;
+DROP TABLE IF EXISTS `nowmedicalhistory`;
 
-CREATE TABLE `now_medicalhistory` (
+CREATE TABLE `nowmedicalhistory` (
   `nmedicalId` int(11) NOT NULL AUTO_INCREMENT,
   `ntypeList` varchar(20) DEFAULT NULL,
   `elseContent` varchar(50) DEFAULT NULL COMMENT '其他病史',
   PRIMARY KEY (`nmedicalId`)
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 
-/*Data for the table `now_medicalhistory` */
+/*Data for the table `nowmedicalhistory` */
 
-insert  into `now_medicalhistory`(`nmedicalId`,`ntypeList`,`elseContent`) values (1,NULL,NULL),(2,NULL,NULL);
+insert  into `nowmedicalhistory`(`nmedicalId`,`ntypeList`,`elseContent`) values (1,NULL,NULL),(2,NULL,NULL);
 
-/*Table structure for table `now_medicalhistorytype` */
+/*Table structure for table `nowmedicalhistorytype` */
 
-DROP TABLE IF EXISTS `now_medicalhistorytype`;
+DROP TABLE IF EXISTS `nowmedicalhistorytype`;
 
-CREATE TABLE `now_medicalhistorytype` (
+CREATE TABLE `nowmedicalhistorytype` (
   `ntypeId` int(11) NOT NULL AUTO_INCREMENT,
   `ntype` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`ntypeId`)
 ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 
-/*Data for the table `now_medicalhistorytype` */
+/*Data for the table `nowmedicalhistorytype` */
 
-insert  into `now_medicalhistorytype`(`ntypeId`,`ntype`) values (1,'非活动性HBV携带者'),(2,'慢性HBV携带者'),(3,'梅毒随访中'),(4,'肺结核随访中');
+insert  into `nowmedicalhistorytype`(`ntypeId`,`ntype`) values (1,'非活动性HBV携带者'),(2,'慢性HBV携带者'),(3,'梅毒随访中'),(4,'肺结核随访中');
 
 /*Table structure for table `oralcavity` */
 
