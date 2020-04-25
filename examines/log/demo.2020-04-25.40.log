@@ -1,0 +1,10 @@
+2020-04-25 21:12:44,118 INFO (StartupInfoLogger.java:59)- Started ControlerApplication in 6.7250527 seconds (JVM running for 180.796)
+2020-04-25 21:27:47,236 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from xexamine where userid=? and sex=? 
+2020-04-25 21:27:47,238 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122414(Integer), 1(Integer)
+2020-04-25 21:27:47,285 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-25 21:27:52,036 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from xexamine where userid=? and sex=? 
+2020-04-25 21:27:52,037 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122414(Integer), 1(Integer)
+2020-04-25 21:27:52,038 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-25 21:27:54,163 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from xexamine where userid=? and sex=? 
+2020-04-25 21:27:54,164 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122414(Integer), 1(Integer)
+2020-04-25 21:27:54,167 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
