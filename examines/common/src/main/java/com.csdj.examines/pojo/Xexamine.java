@@ -5,6 +5,7 @@ import org.springframework.format.annotation.DateTimeFormat;
 import java.util.Date;
 
 public class Xexamine {
+
     private  Integer xid;
     private  Integer userid;
     private  Integer xnum;
