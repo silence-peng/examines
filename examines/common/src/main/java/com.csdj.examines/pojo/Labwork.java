@@ -1,6 +1,9 @@
 package com.csdj.examines.pojo;
 
+import javax.persistence.Id;
+
 public class Labwork {
+    @Id
     private Integer lobid;
     private Integer userid;
     private Integer sex;

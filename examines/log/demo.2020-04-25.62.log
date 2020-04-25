@@ -1,0 +1,8 @@
+2020-04-25 22:39:44,965 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from oralcavity where userid=? and sex=? 
+2020-04-25 22:39:44,975 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122414(Integer), 1(Integer)
+2020-04-25 22:39:44,979 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-25 22:39:53,263 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from oralcavity where userid=? and sex=? 
+2020-04-25 22:39:53,264 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122414(Integer), 1(Integer)
+2020-04-25 22:39:53,267 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-25 22:39:53,267 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE oralcavity SET userid = ?,checkequipment = ?,opinion = ?,abnormaltype = ?,abnormalcontent = ?,doctorname = ?,examinedate = ?,sex = ? WHERE oralid = ? 
+2020-04-25 22:39:53,270 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122414(Integer), 6(String), 未见异常(String), 1(Integer), 发现异常(String), 张三(String), 2020-04-25 00:00:00.0(Timestamp), 1(Integer), 3(Integer)

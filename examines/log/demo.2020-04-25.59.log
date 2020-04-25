@@ -1,0 +1,12 @@
+2020-04-25 22:36:35,823 INFO (StartupInfoLogger.java:59)- Started ControlerApplication in 6.0095477 seconds (JVM running for 8.668)
+2020-04-25 22:37:18,552 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from oralcavity where userid=? and sex=? 
+2020-04-25 22:37:18,576 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122414(Integer), 0(Integer)
+2020-04-25 22:37:18,591 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 0
+2020-04-25 22:37:31,704 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from oralcavity where userid=? and sex=? 
+2020-04-25 22:37:31,706 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122414(Integer), 0(Integer)
+2020-04-25 22:37:31,708 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 0
+2020-04-25 22:37:31,710 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from yxcheckresult where userid=? and sex=? 
+2020-04-25 22:37:31,710 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122414(Integer), 0(Integer)
+2020-04-25 22:37:31,715 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-25 22:37:31,746 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE yxcheckresult SET userid = ?,sex = ?,isoral = ?,isx = ? WHERE resultid = ? 
+2020-04-25 22:37:31,747 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122414(Integer), 0(Integer), 1(Integer), 1(Integer), 3(Integer)

@@ -1,6 +1,9 @@
 package com.csdj.examines.pojo;
 
+import javax.persistence.Id;
+
 public class Registertype {
+    @Id
     private  Integer regtypeid;
     private  String type;
 

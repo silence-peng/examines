@@ -1,6 +1,9 @@
 package com.csdj.examines.pojo;
 
+import javax.persistence.Id;
+
 public class Yxadvise {
+    @Id
     private  Integer yxid;
     private  String yxitem;
 

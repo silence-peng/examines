@@ -1,0 +1,9 @@
+2020-04-25 22:34:28,360 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from oralcavity where userid=? and sex=? 
+2020-04-25 22:34:28,368 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122414(Integer), null
+2020-04-25 22:34:28,418 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 0
+2020-04-25 22:34:28,419 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from yxcheckresult where userid=? and sex=? 
+2020-04-25 22:34:28,420 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122414(Integer), null
+2020-04-25 22:34:28,421 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 0
+2020-04-25 22:36:31,194 INFO (StartupInfoLogger.java:50)- Starting ControlerApplication on DESKTOP-RJURPVR with PID 7288 (D:\MAVEN\Git\examines\examines\web\target\classes started by hh in D:\MAVEN\Git\examines\examines)
+2020-04-25 22:36:31,203 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2020-04-25 22:36:31,204 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default

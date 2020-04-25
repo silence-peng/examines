@@ -1,8 +1,10 @@
 package com.csdj.examines.pojo;
 
+import javax.persistence.Id;
 import java.io.Serializable;
 
 public class Admin implements Serializable {
+    @Id
     private Integer adminid;
     private String doctorname;
     private String doctorpassword;

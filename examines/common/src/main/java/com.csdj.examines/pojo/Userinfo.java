@@ -2,10 +2,12 @@ package com.csdj.examines.pojo;
 
 import org.springframework.format.annotation.DateTimeFormat;
 
+import javax.persistence.Id;
 import java.util.Date;
 
 
 public class Userinfo {
+    @Id
     private  Integer userid;
     private  String mname;
     private  String mcard;

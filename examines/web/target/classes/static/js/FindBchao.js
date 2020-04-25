@@ -17,14 +17,14 @@ layui.use(['form', 'layer', 'table', 'laydate'], function() {
 		limit:3,
 		limit:[3,6],
 		cols: [[
-			{field: 'userid',title: '编号',sort: true}
-			, {field: 'fname',title: '妻子姓名'}
-			, {field: 'fcard',title: '妻子证件号'}
-			, {field: 'fbirthdate',title: '妻子出生日期'}
-			, {field: 'mname',title: '丈夫姓名'}
-			, {field: 'mcard',title: '丈夫证件号'}
-			, {field: 'mbirthdate',title: '丈夫出生日期'}
-			, {field: 'creatdate',title: '建档日期'}
+			{field: 'userId',title: '编号',sort: true}
+			, {field: 'fName',title: '妻子姓名'}
+			, {field: 'fCard',title: '妻子证件号'}
+			, {field: 'fBirthDate',title: '妻子出生日期'}
+			, {field: 'mName',title: '丈夫姓名'}
+			, {field: 'mCard',title: '丈夫证件号'}
+			, {field: 'mBirthDate',title: '丈夫出生日期'}
+			, {field: 'creatDate',title: '建档日期'}
 			, {title:'操作', toolbar: '#barDemo'}
 			]],
 		page: {
@@ -42,12 +42,12 @@ layui.use(['form', 'layer', 'table', 'laydate'], function() {
 				// 重新从第 1 页开始
 			},
 			where : {
-				userid:$("#userId").val(),
-				mname:$("#mName").val(),
-				fname:$("#fName").val(),
-				mcard:$("#mCard").val(),
-				fcard:$("#fCard").val(),
-				creatdate:$("#date").val()
+				userId:$("#userId").val(),
+				mName:$("#mName").val(),
+				fName:$("#fName").val(),
+				mCard:$("#mCard").val(),
+				fCard:$("#fCard").val(),
+				creatDate:$("#creatDate").val()
 			}
 		});
 		return false;

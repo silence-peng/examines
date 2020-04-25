@@ -3,6 +3,7 @@ package com.csdj.examines.dao;
 import com.csdj.examines.pojo.Xexamine;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
+import org.apache.ibatis.annotations.Select;
 import org.springframework.stereotype.Repository;
 
 /**
@@ -14,5 +15,6 @@ import org.springframework.stereotype.Repository;
 @Mapper
 @Repository("xcheckMapper")
 public interface XcheckMapper extends tk.mybatis.mapper.common.Mapper<Xexamine> {
-
+    @Select("select * from xexamine where userid=#{userid} and sex=#{sex}")
+    Xexamine isCheck(@Param("userid")Integer userid,@Param("sex")Integer sex);
 }

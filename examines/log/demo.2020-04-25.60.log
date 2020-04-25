@@ -1,0 +1,8 @@
+2020-04-25 22:37:31,749 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 1
+2020-04-25 22:37:31,761 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: INSERT INTO oralcavity ( userid,checkequipment,opinion,abnormaltype,abnormalcontent,doctorname,examinedate,sex ) VALUES( ?,?,?,?,?,?,?,? ) 
+2020-04-25 22:37:31,766 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122414(Integer), 8(String), 发现异常(String), 0(Integer), (String), 王五(String), 2020-04-25 00:00:00.0(Timestamp), 0(Integer)
+2020-04-25 22:37:31,768 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 1
+2020-04-25 22:37:44,099 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from oralcavity where userid=? and sex=? 
+2020-04-25 22:37:44,103 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122414(Integer), 0(Integer)
+2020-04-25 22:37:44,106 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-25 22:37:44,107 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE oralcavity SET userid = ?,checkequipment = ?,opinion = ?,abnormaltype = ?,abnormalcontent = ?,doctorname = ?,examinedate = ?,sex = ? WHERE oralid = ? 

@@ -1,0 +1,12 @@
+2020-04-25 22:30:09,118 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-25 22:30:09,341 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from oralcavity where userid=? and sex=? 
+2020-04-25 22:30:09,342 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122414(Integer), 1(Integer)
+2020-04-25 22:30:09,345 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-25 22:30:09,581 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from oralcavity where userid=? and sex=? 
+2020-04-25 22:30:09,582 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122414(Integer), 1(Integer)
+2020-04-25 22:30:09,584 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-25 22:30:09,764 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from oralcavity where userid=? and sex=? 
+2020-04-25 22:30:09,766 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122414(Integer), 1(Integer)
+2020-04-25 22:30:09,770 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-25 22:30:09,944 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from oralcavity where userid=? and sex=? 
+2020-04-25 22:30:09,945 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122414(Integer), 1(Integer)

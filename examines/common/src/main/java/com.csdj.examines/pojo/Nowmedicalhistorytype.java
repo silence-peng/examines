@@ -1,6 +1,9 @@
 package com.csdj.examines.pojo;
 
+import javax.persistence.Id;
+
 public class Nowmedicalhistorytype {
+    @Id
     private Integer ntypeid;
     private String ntype;
 

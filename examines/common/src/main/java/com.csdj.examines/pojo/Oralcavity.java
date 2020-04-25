@@ -4,9 +4,11 @@ package com.csdj.examines.pojo;
 
 import org.springframework.format.annotation.DateTimeFormat;
 
+import javax.persistence.Id;
 import java.util.Date;
 
 public class Oralcavity {
+    @Id
     private  Integer oralid;
     private  Integer userid;
     private  String checkequipment;
@@ -85,8 +87,8 @@ public class Oralcavity {
         return doctorname;
     }
 
-    public void setDoctorbame(String doctorbame) {
-        this.doctorname = doctorbame;
+    public void setDoctorname(String doctorname) {
+        this.doctorname = doctorname;
     }
 
     public Date getExaminedate() {

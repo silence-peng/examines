@@ -1,0 +1,8 @@
+2020-04-25 22:27:18,858 INFO (StartupInfoLogger.java:59)- Started ControlerApplication in 3.7984156 seconds (JVM running for 501.962)
+2020-04-25 22:27:48,470 INFO (StartupInfoLogger.java:50)- Starting ControlerApplication on DESKTOP-RJURPVR with PID 344 (D:\MAVEN\Git\examines\examines\web\target\classes started by hh in D:\MAVEN\Git\examines\examines)
+2020-04-25 22:27:48,486 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2020-04-25 22:27:48,487 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2020-04-25 22:27:54,338 INFO (StartupInfoLogger.java:59)- Started ControlerApplication in 7.5954508 seconds (JVM running for 11.044)
+2020-04-25 22:28:08,001 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from oralcavity where userid=? and sex=? 
+2020-04-25 22:28:08,024 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122414(Integer), 1(Integer)
+2020-04-25 22:28:08,047 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
