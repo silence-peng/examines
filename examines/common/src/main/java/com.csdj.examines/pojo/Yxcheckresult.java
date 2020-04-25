@@ -2,9 +2,11 @@ package com.csdj.examines.pojo;
 
 import org.springframework.format.annotation.DateTimeFormat;
 
+import javax.persistence.Id;
 import java.util.Date;
 
 public class Yxcheckresult {
+    @Id
     private  Integer resultid;
     private  Integer userid;
     private  Integer sex;

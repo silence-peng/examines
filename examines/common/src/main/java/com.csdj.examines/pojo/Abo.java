@@ -1,8 +1,10 @@
 package com.csdj.examines.pojo;
 
+import javax.persistence.Id;
 import java.io.Serializable;
 
 public class Abo implements Serializable {
+    @Id
     private Integer id;
     private String type;
 

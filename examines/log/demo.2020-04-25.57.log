@@ -1,0 +1,10 @@
+2020-04-25 22:34:02,045 INFO (StartupInfoLogger.java:59)- Started ControlerApplication in 6.5814373 seconds (JVM running for 9.041)
+2020-04-25 22:34:13,025 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from oralcavity where userid=? and sex=? 
+2020-04-25 22:34:13,048 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122414(Integer), null
+2020-04-25 22:34:13,064 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 0
+2020-04-25 22:34:26,897 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from oralcavity where userid=? and sex=? 
+2020-04-25 22:34:26,898 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122414(Integer), null
+2020-04-25 22:34:26,899 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 0
+2020-04-25 22:34:26,902 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from yxcheckresult where userid=? and sex=? 
+2020-04-25 22:34:26,903 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122414(Integer), null
+2020-04-25 22:34:26,958 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 0

@@ -2,9 +2,11 @@ package com.csdj.examines.pojo;
 
 import org.springframework.format.annotation.DateTimeFormat;
 
+import javax.persistence.Id;
 import java.util.Date;
 
 public class Medicalhistory {
+    @Id
     private Integer medicalid;
     private String typelist;
     private String medicalname;

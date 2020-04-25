@@ -1,6 +1,9 @@
 package com.csdj.examines.pojo;
 
+import javax.persistence.Id;
+
 public class Maritalhistory {
+    @Id
     private Integer birthid;
     private Integer isdivorced;
     private Integer soncount;

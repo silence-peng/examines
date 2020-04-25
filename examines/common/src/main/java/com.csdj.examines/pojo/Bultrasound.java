@@ -3,10 +3,12 @@ package com.csdj.examines.pojo;
 import org.omg.CORBA.INTERNAL;
 import org.springframework.format.annotation.DateTimeFormat;
 
+import javax.persistence.Id;
 import java.io.Serializable;
 import java.util.Date;
 
 public class Bultrasound implements Serializable {
+    @Id
     private Integer bid;
     private Integer userid;
     private String bimgfile;

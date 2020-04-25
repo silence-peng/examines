@@ -1,6 +1,9 @@
 package com.csdj.examines.pojo;
 
+import javax.persistence.Id;
+
 public class Yxadvisecheckresult {
+    @Id
     private  Integer relationid;
     private  Integer resultid;
     private  String advisearr;

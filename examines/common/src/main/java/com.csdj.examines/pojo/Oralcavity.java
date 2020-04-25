@@ -4,16 +4,18 @@ package com.csdj.examines.pojo;
 
 import org.springframework.format.annotation.DateTimeFormat;
 
+import javax.persistence.Id;
 import java.util.Date;
 
 public class Oralcavity {
+    @Id
     private  Integer oralid;
     private  Integer userid;
     private  String checkequipment;
     private  String opinion;
     private  Integer abnormaltype;
     private  String abnormalcontent;
-    private  String doctorbame;
+    private  String doctorname;
     @DateTimeFormat(pattern = "yyyy-MM-dd")
     private Date examinedate;
     private  Integer sex;
@@ -27,7 +29,7 @@ public class Oralcavity {
                 ", opinion='" + opinion + '\'' +
                 ", abnormaltype=" + abnormaltype +
                 ", abnormalcontent='" + abnormalcontent + '\'' +
-                ", doctorbame='" + doctorbame + '\'' +
+                ", doctorname='" + doctorname + '\'' +
                 ", examinedate=" + examinedate +
                 ", sex=" + sex +
                 '}';
@@ -81,12 +83,12 @@ public class Oralcavity {
         this.abnormalcontent = abnormalcontent;
     }
 
-    public String getDoctorbame() {
-        return doctorbame;
+    public String getDoctorname() {
+        return doctorname;
     }
 
-    public void setDoctorbame(String doctorbame) {
-        this.doctorbame = doctorbame;
+    public void setDoctorname(String doctorname) {
+        this.doctorname = doctorname;
     }
 
     public Date getExaminedate() {

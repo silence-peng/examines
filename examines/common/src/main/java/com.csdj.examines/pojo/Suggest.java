@@ -1,6 +1,9 @@
 package com.csdj.examines.pojo;
 
+import javax.persistence.Id;
+
 public class Suggest {
+    @Id
     private  Integer id;
 
     @Override

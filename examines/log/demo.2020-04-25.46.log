@@ -1,0 +1,7 @@
+2020-04-25 22:25:42,118 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122414(Integer), 6(String), 未见异常(String), 0(Integer), (String), 2020-04-25 00:00:00.0(Timestamp), 1(Integer)
+2020-04-25 22:25:42,176 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 1
+2020-04-25 22:25:55,930 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from oralcavity where userid=? and sex=? 
+2020-04-25 22:25:55,931 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122414(Integer), 1(Integer)
+2020-04-25 22:25:55,934 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-25 22:25:55,936 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE oralcavity SET oralid = ?,userid = ?,checkequipment = ?,opinion = ?,abnormaltype = ?,abnormalcontent = ?,doctorbame = ?,examinedate = ?,sex = ? WHERE oralid = ? AND userid = ? AND checkequipment = ? AND opinion = ? AND abnormaltype = ? AND abnormalcontent = ? AND doctorbame = ? AND examinedate = ? AND sex = ? 
+2020-04-25 22:25:55,939 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 3(Integer), 2020122414(Integer), 6(String), 发现异常(String), 1(Integer), 发现异常(String), null, 2020-04-25 00:00:00.0(Timestamp), 1(Integer), 3(Integer), 2020122414(Integer), 6(String), 发现异常(String), 1(Integer), 发现异常(String), null, 2020-04-25 00:00:00.0(Timestamp), 1(Integer)

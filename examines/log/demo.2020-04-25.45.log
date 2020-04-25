@@ -1,0 +1,10 @@
+2020-04-25 22:25:41,969 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from oralcavity where userid=? and sex=? 
+2020-04-25 22:25:41,977 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122414(Integer), 1(Integer)
+2020-04-25 22:25:41,979 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 0
+2020-04-25 22:25:41,981 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from yxcheckresult where userid=? and sex=? 
+2020-04-25 22:25:41,982 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122414(Integer), 1(Integer)
+2020-04-25 22:25:41,986 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-25 22:25:42,023 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE yxcheckresult SET resultid = ?,userid = ?,sex = ?,isoral = ? WHERE resultid = ? AND userid = ? AND sex = ? AND isabnormal = ? AND abnormalities = ? AND disease = ? AND sanitation = ? AND consult = ? AND supplement = ? AND advise = ? AND adviseproject = ? AND isadvise = ? AND referralhospital = ? AND referraldate = ? AND forwarddate = ? AND provedate = ? AND doctorname = ? AND examinedate = ? AND isoral = ? AND isx = ? AND iscgkz = ? AND isover = ? 
+2020-04-25 22:25:42,025 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 4(Integer), 2020122414(Integer), 1(Integer), 1(Integer), 4(Integer), 2020122414(Integer), 1(Integer), null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 1(Integer), null, null, null
+2020-04-25 22:25:42,115 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 0
+2020-04-25 22:25:42,117 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: INSERT INTO oralcavity ( userid,checkequipment,opinion,abnormaltype,abnormalcontent,examinedate,sex ) VALUES( ?,?,?,?,?,?,? ) 

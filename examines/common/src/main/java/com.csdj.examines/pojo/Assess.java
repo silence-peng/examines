@@ -2,10 +2,12 @@ package com.csdj.examines.pojo;
 
 import org.springframework.format.annotation.DateTimeFormat;
 
+import javax.persistence.Id;
 import java.io.Serializable;
 import java.util.Date;
 
 public class Assess implements Serializable{
+    @Id
     private Integer assid;
     private Integer uerid;
     private String content;
