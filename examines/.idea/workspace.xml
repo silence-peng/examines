@@ -1,7 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="9bc5dfc8-bcd4-4512-b517-1f74901a4f98" name="Default Changelist" comment="" />
+=======
+    <list default="true" id="9bc5dfc8-bcd4-4512-b517-1f74901a4f98" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/ABO.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/Abo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/BUltrasound.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/Bultrasound.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/CgkzResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/Cgkzresult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/ClinicalBilling.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/Clinicalbilling.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/ClinicalExamination.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/Clinicalexamination.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/HealthCheckUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/Healthcheckup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/LabWork.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/Labwork.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/MaritalHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/Maritalhistory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/MedicalHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/Medicalhistory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/MedicalHistoryType.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/Medicalhistorytype.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/NowMedicalHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/Nowmedicalhistory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/NowMedicalHistoryType.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/Nowmedicalhistorytype.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/OralCavity.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/Oralcavity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/YxAdviseCheckresult.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/Yxadvisecheckresult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/YxCheckResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/Yxcheckresult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/csdj/examines/dao/ABOMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/csdj/examines/dao/ABOMapper.java" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+>>>>>>> 130114609d45ea89dc03a2285035fe2765c65602
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -11,7 +33,11 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+<<<<<<< HEAD
         <option value="xml" />
+=======
+        <option value="mybatis-cfg.xml" />
+>>>>>>> 130114609d45ea89dc03a2285035fe2765c65602
         <option value="Interface" />
         <option value="Class" />
       </list>
@@ -43,7 +69,9 @@
     </option>
   </component>
   <component name="ProjectId" id="1avqmgDqKdA0kazejSm08waaDYS" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -60,7 +88,11 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/common/src/main/java" />
+<<<<<<< HEAD
     <property name="last_opened_file_path" value="$PROJECT_DIR$/dao/src/main/resources/mybatis" />
+=======
+    <property name="last_opened_file_path" value="E:/彭勇/erq" />
+>>>>>>> 130114609d45ea89dc03a2285035fe2765c65602
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -105,7 +137,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ControlerApplication (2)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="ControlerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.csdj.examines.controler.ControlerApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="UPDATE_ACTION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ControlerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="controler" />
       <extension name="coverage">
         <pattern>
@@ -114,12 +155,6 @@
         </pattern>
       </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.csdj.examines.ControlerApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ControlerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.csdj.examines.controler.ControlerApplication" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="UPDATE_ACTION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
@@ -161,6 +196,7 @@
       <list>
         <item itemvalue="Spring Boot.ControlerApplication (2)" />
         <item itemvalue="Spring Boot.ControlerApplication" />
+        <item itemvalue="Spring Boot.ControlerApplication" />
         <item itemvalue="Spring Boot.ControlerApplication (1)" />
       </list>
     </recent_temporary>
@@ -181,8 +217,12 @@
       <workItem from="1587684711703" duration="3008000" />
       <workItem from="1587688826856" duration="4522000" />
       <workItem from="1587695445424" duration="21538000" />
+<<<<<<< HEAD
       <workItem from="1587776653952" duration="245000" />
       <workItem from="1587779083304" duration="18586000" />
+=======
+      <workItem from="1587776653952" duration="11126000" />
+>>>>>>> 130114609d45ea89dc03a2285035fe2765c65602
     </task>
     <task id="LOCAL-00001" summary="彭勇第一次提交项目：上传初步项目框架">
       <created>1587630254909</created>
@@ -220,6 +260,7 @@
       <updated>1587698802859</updated>
     </task>
     <task id="LOCAL-00006" summary="修改提交">
+<<<<<<< HEAD
       <created>1587797294652</created>
       <option name="number" value="00006" />
       <option name="presentableId" value="LOCAL-00006" />
@@ -227,6 +268,22 @@
       <updated>1587797294652</updated>
     </task>
     <option name="localTasksCounter" value="7" />
+=======
+      <created>1587777097868</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1587777097868</updated>
+    </task>
+    <task id="LOCAL-00007" summary="修改提交">
+      <created>1587797204497</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1587797204497</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
+>>>>>>> 130114609d45ea89dc03a2285035fe2765c65602
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
