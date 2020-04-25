@@ -1,12 +1,11 @@
 package com.csdj.examines.pojo;
 
-import com.sun.xml.internal.ws.spi.db.DatabindingException;
+
 
 import java.util.Date;
 
 public class OralCavity {
     private  Integer oralId;
-
     private  Integer userId;
     private  String checkEquipment;
     private  String opinion;

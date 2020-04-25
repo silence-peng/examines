@@ -2,23 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9bc5dfc8-bcd4-4512-b517-1f74901a4f98" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/web/src/main/resources/templates/commonCheck-f.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/demo.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/demo.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/resources/templates/X-f.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/resources/templates/X-f.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/resources/templates/X-m.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/resources/templates/X-m.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/resources/templates/commonCheck.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/resources/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/resources/templates/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/resources/templates/mouth-check-f.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/resources/templates/mouth-check-f.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/resources/templates/mouth-check-m.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/resources/templates/mouth-check-m.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/resources/templates/test.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/classes/templates/X-f.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/classes/templates/X-f.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/classes/templates/X-m.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/classes/templates/X-m.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/classes/templates/commonCheck.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/classes/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/classes/templates/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/classes/templates/mouth-check-f.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/classes/templates/mouth-check-f.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/classes/templates/mouth-check-m.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/classes/templates/mouth-check-m.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/classes/templates/test.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/OralCavity.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/OralCavity.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -50,9 +35,14 @@
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="localRepository" value="D:\MAVEN\RepositoryMAVEN" />
-        <option name="mavenHome" value="$PROJECT_DIR$/../../../../apache-maven-3.6.1" />
+        <option name="mavenHome" value="D:/MAVEN/apache-maven-3.6.1" />
         <option name="userSettingsFile" value="D:\MAVEN\apache-maven-3.6.1\conf\settings.xml" />
       </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
     </option>
   </component>
   <component name="ProjectId" id="1avqmgDqKdA0kazejSm08waaDYS" />
@@ -115,53 +105,6 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.ControlerApplication">
-    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <module name="" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <module name="" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ControlerApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="web" />
       <extension name="coverage">
@@ -250,6 +193,7 @@
       <workItem from="1587684711703" duration="3008000" />
       <workItem from="1587688826856" duration="4522000" />
       <workItem from="1587695445424" duration="21538000" />
+      <workItem from="1587776653952" duration="245000" />
     </task>
     <task id="LOCAL-00001" summary="彭勇第一次提交项目：上传初步项目框架">
       <created>1587630254909</created>
