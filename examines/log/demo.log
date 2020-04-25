@@ -1,7 +1,9 @@
-2020-04-25 17:28:12,040 INFO (StartupInfoLogger.java:59)- Started ControlerApplication in 2.1108904 seconds (JVM running for 1934.3)
-2020-04-25 17:28:16,060 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT xid,userid,xnum,opinion,abnormaltype,abnormalcontent,doctorname,examinedate,sex FROM xexamine WHERE sex = ? 
-2020-04-25 17:28:16,061 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Integer)
-2020-04-25 17:28:16,065 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
-2020-04-25 17:28:36,818 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT xid,userid,xnum,opinion,abnormaltype,abnormalcontent,doctorname,examinedate,sex FROM xexamine WHERE sex = ? 
-2020-04-25 17:28:36,820 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Integer)
-2020-04-25 17:28:36,826 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-25 20:37:15,754 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from xexamine where userid=? and sex=? 
+2020-04-25 20:37:15,761 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122414(Integer), 1(Integer)
+2020-04-25 20:37:15,763 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-25 20:37:19,500 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from xexamine where userid=? and sex=? 
+2020-04-25 20:37:19,501 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122414(Integer), 1(Integer)
+2020-04-25 20:37:19,503 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-25 20:37:19,503 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE xexamine SET xid = ?,userid = ?,xnum = ?,opinion = ?,abnormaltype = ?,abnormalcontent = ?,doctorname = ?,examinedate = ?,sex = ? WHERE xid = ? AND userid = ? AND xnum = ? AND opinion = ? AND abnormaltype = ? AND abnormalcontent = ? AND doctorname = ? AND examinedate = ? AND sex = ? 
+2020-04-25 20:37:19,505 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 7(Integer), 2020122414(Integer), 21(Integer), 未见异常(String), 1(Integer), (String), 王五(String), 2020-04-25 00:00:00.0(Timestamp), 1(Integer), 7(Integer), 2020122414(Integer), 21(Integer), 未见异常(String), 1(Integer), (String), 王五(String), 2020-04-25 00:00:00.0(Timestamp), 1(Integer)
+2020-04-25 20:37:19,506 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 0
