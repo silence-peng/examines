@@ -4,7 +4,7 @@ package com.csdj.examines.pojo;
 
 import java.util.Date;
 
-public class OralCavity {
+public class Oralcavity {
     private  Integer oralId;
     private  Integer userId;
     private  String checkEquipment;

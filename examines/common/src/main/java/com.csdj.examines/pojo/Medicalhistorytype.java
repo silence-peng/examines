@@ -1,13 +1,13 @@
 package com.csdj.examines.pojo;
 
-public class MedicalHistoryType {
+public class Medicalhistorytype {
     private Integer typeId;
     private String type;
 
-    public MedicalHistoryType() {
+    public Medicalhistorytype() {
     }
 
-    public MedicalHistoryType(Integer typeId, String type) {
+    public Medicalhistorytype(Integer typeId, String type) {
         this.typeId = typeId;
         this.type = type;
     }

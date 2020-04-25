@@ -3,12 +3,14 @@ package com.csdj.examines.pojo;
 import java.io.Serializable;
 import java.util.Date;
 
-public class ClinicalExamination implements Serializable {
-    private Integer cId;
+public class Clinicalbilling implements Serializable {
+    private Integer billId;
     private Integer userId;
-    private String pissexamine;
-    private String abnormal;
-    private Integer abotypeId;
+    private String B;
+    private String M;
+    private String L;
+    private String zCell;
+    private String ABO;
     private String RH;
     private String bloodSugar;
     private String HBsAg;
@@ -30,12 +32,12 @@ public class ClinicalExamination implements Serializable {
     private Date examineDate;
     private Integer sex;
 
-    public Integer getcId() {
-        return cId;
+    public Integer getBillId() {
+        return billId;
     }
 
-    public void setcId(Integer cId) {
-        this.cId = cId;
+    public void setBillId(Integer billId) {
+        this.billId = billId;
     }
 
     public Integer getUserId() {
@@ -46,28 +48,44 @@ public class ClinicalExamination implements Serializable {
         this.userId = userId;
     }
 
-    public String getPissexamine() {
-        return pissexamine;
+    public String getB() {
+        return B;
     }
 
-    public void setPissexamine(String pissexamine) {
-        this.pissexamine = pissexamine;
+    public void setB(String b) {
+        B = b;
     }
 
-    public String getAbnormal() {
-        return abnormal;
+    public String getM() {
+        return M;
     }
 
-    public void setAbnormal(String abnormal) {
-        this.abnormal = abnormal;
+    public void setM(String m) {
+        M = m;
     }
 
-    public Integer getAbotypeId() {
-        return abotypeId;
+    public String getL() {
+        return L;
     }
 
-    public void setAbotypeId(Integer abotypeId) {
-        this.abotypeId = abotypeId;
+    public void setL(String l) {
+        L = l;
+    }
+
+    public String getzCell() {
+        return zCell;
+    }
+
+    public void setzCell(String zCell) {
+        this.zCell = zCell;
+    }
+
+    public String getABO() {
+        return ABO;
+    }
+
+    public void setABO(String ABO) {
+        this.ABO = ABO;
     }
 
     public String getRH() {
@@ -230,15 +248,17 @@ public class ClinicalExamination implements Serializable {
         this.sex = sex;
     }
 
-    public ClinicalExamination() {
+    public Clinicalbilling() {
     }
 
-    public ClinicalExamination(Integer cId, Integer userId, String pissexamine, String abnormal, Integer abotypeId, String RH, String bloodSugar, String HBsAg, String HBeAb, String HBsAb, String HBcAb, String HBeAg, String ALT, String cr, String TSH, String fIgG, String TP, String jIgG, String jIgM, String gIgG, String gIgM, String other, String doctorName, Date examineDate, Integer sex) {
-        this.cId = cId;
+    public Clinicalbilling(Integer billId, Integer userId, String b, String m, String l, String zCell, String ABO, String RH, String bloodSugar, String HBsAg, String HBeAb, String HBsAb, String HBcAb, String HBeAg, String ALT, String cr, String TSH, String fIgG, String TP, String jIgG, String jIgM, String gIgG, String gIgM, String other, String doctorName, Date examineDate, Integer sex) {
+        this.billId = billId;
         this.userId = userId;
-        this.pissexamine = pissexamine;
-        this.abnormal = abnormal;
-        this.abotypeId = abotypeId;
+        B = b;
+        M = m;
+        L = l;
+        this.zCell = zCell;
+        this.ABO = ABO;
         this.RH = RH;
         this.bloodSugar = bloodSugar;
         this.HBsAg = HBsAg;
@@ -263,12 +283,14 @@ public class ClinicalExamination implements Serializable {
 
     @Override
     public String toString() {
-        return "ClinicalExamination{" +
-                "cId=" + cId +
+        return "ClinicalBilling{" +
+                "billId=" + billId +
                 ", userId=" + userId +
-                ", pissexamine='" + pissexamine + '\'' +
-                ", abnormal='" + abnormal + '\'' +
-                ", abotypeId=" + abotypeId +
+                ", B='" + B + '\'' +
+                ", M='" + M + '\'' +
+                ", L='" + L + '\'' +
+                ", zCell='" + zCell + '\'' +
+                ", ABO='" + ABO + '\'' +
                 ", RH='" + RH + '\'' +
                 ", bloodSugar='" + bloodSugar + '\'' +
                 ", HBsAg='" + HBsAg + '\'' +

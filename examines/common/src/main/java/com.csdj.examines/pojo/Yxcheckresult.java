@@ -2,7 +2,7 @@ package com.csdj.examines.pojo;
 
 import java.util.Date;
 
-public class YxCheckResult {
+public class Yxcheckresult {
     private  Integer resultId;
     private  Integer userId;
     private  Integer sex;

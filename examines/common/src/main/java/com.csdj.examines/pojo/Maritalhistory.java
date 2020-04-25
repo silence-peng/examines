@@ -1,6 +1,6 @@
 package com.csdj.examines.pojo;
 
-public class MaritalHistory {
+public class Maritalhistory {
     private Integer birthId;
     private Integer isDivorced;
     private Integer sonCount;
@@ -20,10 +20,10 @@ public class MaritalHistory {
                 '}';
     }
 
-    public MaritalHistory() {
+    public Maritalhistory() {
     }
 
-    public MaritalHistory(Integer birthId, Integer isDivorced, Integer sonCount, Integer girlCount, Integer isGeneticDisease, String geneticDisease) {
+    public Maritalhistory(Integer birthId, Integer isDivorced, Integer sonCount, Integer girlCount, Integer isGeneticDisease, String geneticDisease) {
         this.birthId = birthId;
         this.isDivorced = isDivorced;
         this.sonCount = sonCount;

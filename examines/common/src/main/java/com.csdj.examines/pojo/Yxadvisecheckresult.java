@@ -1,6 +1,6 @@
 package com.csdj.examines.pojo;
 
-public class YxAdviseCheckresult {
+public class Yxadvisecheckresult {
     private  Integer relationId;
     private  Integer resultId;
     private  String adviseArr;

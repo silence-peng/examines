@@ -1,13 +1,13 @@
 package com.csdj.examines.pojo;
 
-public class NowMedicalHistoryType {
+public class Nowmedicalhistorytype {
     private Integer ntypeId;
     private String ntype;
 
-    public NowMedicalHistoryType() {
+    public Nowmedicalhistorytype() {
     }
 
-    public NowMedicalHistoryType(Integer ntypeId, String ntype) {
+    public Nowmedicalhistorytype(Integer ntypeId, String ntype) {
         this.ntypeId = ntypeId;
         this.ntype = ntype;
     }

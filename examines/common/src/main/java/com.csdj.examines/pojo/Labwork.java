@@ -1,6 +1,6 @@
 package com.csdj.examines.pojo;
 
-public class LabWork {
+public class Labwork {
     private Integer lobId;
     private Integer userId;
     private Integer sex;
@@ -74,10 +74,10 @@ public class LabWork {
         this.projectDetails = projectDetails;
     }
 
-    public LabWork() {
+    public Labwork() {
     }
 
-    public LabWork(Integer lobId, Integer userId, Integer sex, String project, Integer unit, String scope, Integer aisle, String projectDetails) {
+    public Labwork(Integer lobId, Integer userId, Integer sex, String project, Integer unit, String scope, Integer aisle, String projectDetails) {
         this.lobId = lobId;
         this.userId = userId;
         this.sex = sex;

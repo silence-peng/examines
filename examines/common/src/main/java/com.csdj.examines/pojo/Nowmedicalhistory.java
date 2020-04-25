@@ -1,14 +1,14 @@
 package com.csdj.examines.pojo;
 
-public class NowMedicalHistory {
+public class Nowmedicalhistory {
     private Integer nmedicalId;
     private String ntypeList;
     private String elseContent;
 
-    public NowMedicalHistory() {
+    public Nowmedicalhistory() {
     }
 
-    public NowMedicalHistory(Integer nmedicalId, String ntypeList, String elseContent) {
+    public Nowmedicalhistory(Integer nmedicalId, String ntypeList, String elseContent) {
         this.nmedicalId = nmedicalId;
         this.ntypeList = ntypeList;
         this.elseContent = elseContent;

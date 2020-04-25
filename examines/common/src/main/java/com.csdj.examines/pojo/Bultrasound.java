@@ -5,7 +5,7 @@ import org.omg.CORBA.INTERNAL;
 import java.io.Serializable;
 import java.util.Date;
 
-public class BUltrasound implements Serializable {
+public class Bultrasound implements Serializable {
     private Integer bId;
     private Integer userId;
     private String bImgfile;
@@ -79,10 +79,10 @@ public class BUltrasound implements Serializable {
         this.imgSize = imgSize;
     }
 
-    public BUltrasound() {
+    public Bultrasound() {
     }
 
-    public BUltrasound(Integer bId, Integer userId, String bImgfile, String result, String describe, Date examineDate, String doctorName, Integer imgSize) {
+    public Bultrasound(Integer bId, Integer userId, String bImgfile, String result, String describe, Date examineDate, String doctorName, Integer imgSize) {
         this.bId = bId;
         this.userId = userId;
         this.bImgfile = bImgfile;

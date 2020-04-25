@@ -2,7 +2,7 @@ package com.csdj.examines.pojo;
 
 import java.util.Date;
 
-public class MedicalHistory {
+public class Medicalhistory {
     private Integer medicalId;
     private String typeList;
     private String medicalName;
@@ -30,10 +30,10 @@ public class MedicalHistory {
                 '}';
     }
 
-    public MedicalHistory() {
+    public Medicalhistory() {
     }
 
-    public MedicalHistory(Integer medicalId, String typeList, String medicalName, Integer morbidityCount, Date latelyTime, Integer isTakeMedicine, String capacity, Integer isOperating, String operatingRoom, Date operatingDate) {
+    public Medicalhistory(Integer medicalId, String typeList, String medicalName, Integer morbidityCount, Date latelyTime, Integer isTakeMedicine, String capacity, Integer isOperating, String operatingRoom, Date operatingDate) {
         this.medicalId = medicalId;
         this.typeList = typeList;
         this.medicalName = medicalName;

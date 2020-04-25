@@ -2,7 +2,7 @@ package com.csdj.examines.pojo;
 
 import java.util.Date;
 
-public class HealthCheckUp {
+public class Healthcheckup {
     private Integer healthId;
     private Integer userId;
     private Integer sex;
@@ -27,10 +27,10 @@ public class HealthCheckUp {
     private String doctorName;
     private Date examineDate;
 
-    public HealthCheckUp() {
+    public Healthcheckup() {
     }
 
-    public HealthCheckUp(Integer healthId, Integer userId, Integer sex, Integer height, Float BMI, Float weight, Integer smmHg, Integer mmHgs, Integer p, Integer isSpirit, String spiritContent, Integer isTheFive, String theFiveContent, Integer isPosture, String postureContent, Integer isFace, String faceContent, Integer isHair, String hairContent, Integer isThyroid, String thyroidContent, String doctorName, Date examineDate) {
+    public Healthcheckup(Integer healthId, Integer userId, Integer sex, Integer height, Float BMI, Float weight, Integer smmHg, Integer mmHgs, Integer p, Integer isSpirit, String spiritContent, Integer isTheFive, String theFiveContent, Integer isPosture, String postureContent, Integer isFace, String faceContent, Integer isHair, String hairContent, Integer isThyroid, String thyroidContent, String doctorName, Date examineDate) {
         this.healthId = healthId;
         this.userId = userId;
         this.sex = sex;

@@ -1,9 +1,9 @@
 package com.csdj.examines.dao;
 
-import com.csdj.examines.pojo.ABO;
+import com.csdj.examines.pojo.Abo;
 
 import java.util.List;
 
 public interface ABOMapper {
-    List<ABO> getAbo();
+    List<Abo> getAbo();
 }

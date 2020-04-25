@@ -2,17 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9bc5dfc8-bcd4-4512-b517-1f74901a4f98" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dao/src/main/java/com/csdj/examines/dao/XcheckMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dao/src/main/resources/mapper/XcheckMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-impl/src/main/java/com/csdj/examines/service/impl/XcheckServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/main/java/com.csdj.examines.service/XcheckService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/csdj/examines/controler/XcheckController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/resources/templates/X-f.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/resources/templates/X-f.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/resources/templates/X-m.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/resources/templates/X-m.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/classes/templates/X-f.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/classes/templates/X-f.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/classes/templates/X-m.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/classes/templates/X-m.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/ABO.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/Abo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/BUltrasound.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/Bultrasound.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/CgkzResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/Cgkzresult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/ClinicalBilling.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/Clinicalbilling.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/ClinicalExamination.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/Clinicalexamination.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/HealthCheckUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/Healthcheckup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/LabWork.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/Labwork.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/MaritalHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/Maritalhistory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/MedicalHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/Medicalhistory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/MedicalHistoryType.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/Medicalhistorytype.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/NowMedicalHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/Nowmedicalhistory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/NowMedicalHistoryType.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/Nowmedicalhistorytype.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/OralCavity.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/Oralcavity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/YxAdviseCheckresult.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/Yxadvisecheckresult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/YxCheckResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/Yxcheckresult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/csdj/examines/dao/ABOMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/csdj/examines/dao/ABOMapper.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -209,7 +214,7 @@
       <workItem from="1587684711703" duration="3008000" />
       <workItem from="1587688826856" duration="4522000" />
       <workItem from="1587695445424" duration="21538000" />
-      <workItem from="1587776653952" duration="10374000" />
+      <workItem from="1587776653952" duration="11126000" />
     </task>
     <task id="LOCAL-00001" summary="彭勇第一次提交项目：上传初步项目框架">
       <created>1587630254909</created>
@@ -253,7 +258,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587777097868</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="修改提交">
+      <created>1587797204497</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1587797204497</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

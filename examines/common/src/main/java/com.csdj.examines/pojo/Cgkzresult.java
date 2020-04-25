@@ -3,7 +3,7 @@ package com.csdj.examines.pojo;
 import java.io.Serializable;
 import java.util.Date;
 
-public class CgkzResult implements Serializable {
+public class Cgkzresult implements Serializable {
     private Integer cgId;
     private Integer nmedicalId;
     private Integer medicalId;
@@ -77,10 +77,10 @@ public class CgkzResult implements Serializable {
         this.sex = sex;
     }
 
-    public CgkzResult() {
+    public Cgkzresult() {
     }
 
-    public CgkzResult(Integer cgId, Integer nmedicalId, Integer medicalId, Integer birthId, String doctorName, Date createDate, Integer userId, Integer sex) {
+    public Cgkzresult(Integer cgId, Integer nmedicalId, Integer medicalId, Integer birthId, String doctorName, Date createDate, Integer userId, Integer sex) {
         this.cgId = cgId;
         this.nmedicalId = nmedicalId;
         this.medicalId = medicalId;
