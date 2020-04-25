@@ -3,7 +3,7 @@ package com.csdj.examines.pojo;
 import java.io.Serializable;
 
 public class Admin implements Serializable {
-    private Integer adminId;
+    private Integer adminid;
     private String doctorname;
     private String doctorpassword;
 

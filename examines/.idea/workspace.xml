@@ -2,22 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9bc5dfc8-bcd4-4512-b517-1f74901a4f98" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/ABO.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/Abo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/BUltrasound.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/Bultrasound.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/CgkzResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/Cgkzresult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/ClinicalBilling.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/Clinicalbilling.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/ClinicalExamination.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/Clinicalexamination.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/HealthCheckUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/Healthcheckup.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/LabWork.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/Labwork.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/MaritalHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/Maritalhistory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/MedicalHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/Medicalhistory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/MedicalHistoryType.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/Medicalhistorytype.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/NowMedicalHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/Nowmedicalhistory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/NowMedicalHistoryType.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/Nowmedicalhistorytype.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/OralCavity.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/Oralcavity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/YxAdviseCheckresult.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/Yxadvisecheckresult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/YxCheckResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/Yxcheckresult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/csdj/examines/dao/ABOMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/csdj/examines/dao/ABOMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/demo.2020-04-25.0.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/demo.2020-04-25.1.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/demo.2020-04-25.2.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/demo.2020-04-25.3.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/demo.2020-04-25.4.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/demo.2020-04-25.5.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/demo.2020-04-25.6.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/demo.2020-04-25.7.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/demo.2020-04-25.8.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/demo.2020-04-25.9.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/demo.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/target/classes/com/csdj/examines/service/XcheckService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com.csdj.examines/pojo/Admin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-impl/src/main/java/com/csdj/examines/service/impl/XcheckServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-impl/src/main/java/com/csdj/examines/service/impl/XcheckServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/resources/templates/X-f.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/resources/templates/X-f.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -94,19 +94,19 @@
     <property name="two.files.diff.last.used.folder" value="$PROJECT_DIR$/web/src/main/resources/static/css" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\MAVEN\Git\repository\examines\dao\src\main\resources" />
+      <recent name="D:\MAVEN\Git\repository\examines\web\src\main\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.csdj.examines.pojo" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\MAVEN\Git\examinesRepository\examines\examines\web\src\main\resources\templates" />
       <recent name="E:\IDEAProject\repository\examines\common\src\main\java\com.csdj.examines\pojo" />
       <recent name="D:\MAVEN\Git\examinesRepository\repository\examines\common\src\main\java\com\csdj\examines\entity" />
       <recent name="D:\MAVEN\Git\repository\examines\web\src\main\resources\templates" />
       <recent name="D:\MAVEN\Git\repository\examines\web\src\main\resources\static" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.csdj.examines.pojo" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\MAVEN\Git\repository\examines\dao\src\main\resources" />
-      <recent name="D:\MAVEN\Git\repository\examines\web\src\main\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -214,7 +214,7 @@
       <workItem from="1587684711703" duration="3008000" />
       <workItem from="1587688826856" duration="4522000" />
       <workItem from="1587695445424" duration="21538000" />
-      <workItem from="1587776653952" duration="11126000" />
+      <workItem from="1587776653952" duration="14823000" />
     </task>
     <task id="LOCAL-00001" summary="彭勇第一次提交项目：上传初步项目框架">
       <created>1587630254909</created>
@@ -265,7 +265,28 @@
       <option name="project" value="LOCAL" />
       <updated>1587797204497</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="修改提交">
+      <created>1587797842575</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1587797842575</updated>
+    </task>
+    <task id="LOCAL-00009" summary="修改提交">
+      <created>1587797995387</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1587797995387</updated>
+    </task>
+    <task id="LOCAL-00010" summary="修改提交">
+      <created>1587800880014</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1587800880014</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

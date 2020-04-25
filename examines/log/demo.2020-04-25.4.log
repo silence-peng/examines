@@ -1,0 +1,8 @@
+2020-04-25 10:36:39,450 INFO (StartupInfoLogger.java:59)- Started ControlerApplication in 2.6903715 seconds (JVM running for 1943.762)
+2020-04-25 10:40:52,772 INFO (StartupInfoLogger.java:50)- Starting ControlerApplication on DESKTOP-RJURPVR with PID 10340 (E:\examines\examines\web\target\classes started by hh in E:\examines\examines)
+2020-04-25 10:40:52,773 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2020-04-25 10:40:52,774 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2020-04-25 10:40:54,948 INFO (StartupInfoLogger.java:59)- Started ControlerApplication in 3.1274019 seconds (JVM running for 2199.26)
+2020-04-25 10:44:18,051 INFO (StartupInfoLogger.java:50)- Starting ControlerApplication on DESKTOP-RJURPVR with PID 10340 (E:\examines\examines\web\target\classes started by hh in E:\examines\examines)
+2020-04-25 10:44:18,052 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2020-04-25 10:44:18,054 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
