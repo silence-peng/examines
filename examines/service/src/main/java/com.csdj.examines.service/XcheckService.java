@@ -21,4 +21,5 @@ public interface XcheckService {
      * @return 结果行数
      */
     Integer check(Xexamine xexamine);
+
 }
