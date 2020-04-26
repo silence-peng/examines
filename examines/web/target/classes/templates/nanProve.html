@@ -67,6 +67,7 @@
 				</div>
 				<br/><br/><br/><br/>
 				<div class="">
+
 					<fieldset class="layui-elem-field">
 						<blockquote class="layui-elem-quote" style="background-color: #93D1FF;">
 							婚前医学检查结果
@@ -75,6 +76,7 @@
 							<br/>
 							<div class="layui-row">
 								<div class="layui-form-item">
+									<input class="layui-hide" type="text" name="resultid" id="resultid">
 									<div class="layui-col-md3 layui-col-md-offset1">
 										<div class="layui-bg-gray layui-inline abnormality">
 											<input type="radio" name="isabnormal" value="0" checked="checked">
@@ -95,9 +97,9 @@
 							</div>
 							<br/>
 							<div class="layui-form-item">
-							    <div class="layui-row">
-							      <input type="text" name="abnormalities" autocomplete="off" placeholder="异常描述" class="layui-input">
-							    </div>
+								<div class="layui-row">
+									<input type="text" id="abnormalities" name="abnormalities" autocomplete="off" placeholder="异常描述" class="layui-input">
+								</div>
 							</div>
 						</div>
 					</fieldset>
@@ -105,9 +107,9 @@
 						<blockquote class="layui-elem-quote" style="background-color: #93D1FF;">
 							医学意见
 						</blockquote>
-					  <div class="layui-field-box" id="advise">
+						<div class="layui-field-box" id="advise">
 
-					  </div>
+						</div>
 					</fieldset>
 					<hr>
 				</div>
@@ -116,8 +118,8 @@
 				
 				<div class="layui-container" style="text-align: center;">
 					<div class="layui-form-item" style="color: red;">
-						<button type="button" class="layui-btn layui-btn-normal">新建</button>
-						<button type="reset" class="layui-btn layui-btn-normal">重置</button>
+						<button type="button" lay-submit lay-filter="formDemo" class="layui-btn">新建</button>
+						<button type="reset" class="layui-btn">重置</button>
 					</div>
 				</div>
 			</form>

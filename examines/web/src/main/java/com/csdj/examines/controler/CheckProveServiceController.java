@@ -4,6 +4,7 @@ import com.csdj.examines.pojo.Userinfo;
 import com.csdj.examines.pojo.Yxadvise;
 import com.csdj.examines.pojo.Yxcheckresult;
 import com.csdj.examines.service.CheckProveService;
+import org.apache.catalina.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -42,6 +43,13 @@ public class CheckProveServiceController {
         List<Yxadvise> yxadvises =checkProveService.getYxAdvise();
         return yxadvises;
     }
+    @RequestMapping("getAdviseArr")
+    @ResponseBody
+    public String getAdviseArr(Integer sex,HttpSession session){
+        session.setAttribute("userid",2020122412);
+        String adviseArr =checkProveService.getAdviseArr((Integer) session.getAttribute("userid"),sex);
+        return adviseArr;
+    }
     @RequestMapping("getYxResult")
     @ResponseBody
     public Yxcheckresult getYxResultByUserid(Integer sex,HttpSession session){
@@ -49,5 +57,15 @@ public class CheckProveServiceController {
         Yxcheckresult yxcheckresult =checkProveService.getYxResultByUserid((Integer) session.getAttribute("userid"),sex);
         return yxcheckresult;
     }
+    @RequestMapping("save")
+    @ResponseBody
+    public String save(String arr, Integer isabnormal, String abnormalities, Integer resultid){
+        int result = checkProveService.save(arr,isabnormal,abnormalities,resultid);
+        if (result>0){
+            return "ok";
+        }
+        return "no";
+    }
+
 
 }
