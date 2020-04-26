@@ -1,0 +1,9 @@
+2020-04-26 15:39:43,578 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT count(0) FROM userinfo WHERE 1 = 1 
+2020-04-26 15:39:43,581 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-26 15:39:43,583 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-26 15:39:43,585 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM userinfo where 1=1 order by creatDate desc LIMIT ? 
+2020-04-26 15:39:43,586 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 3(Integer)
+2020-04-26 15:39:43,593 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 3
+2020-04-26 15:39:44,772 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT userid,mname,mcard,mbirthdate,mphone,methnic,midtype,mage,mculture,mjob,mprovince,mcity,mcounty,mdistrict,mvillage,mregistered,fname,fcard,fbirthdate,fphone,fethnic,fidtype,fage,fculture,fjob,fprovince,fcity,fcounty,fdistrict,fvillage,fregistered,address,creatdate,getmarrieddate,regtypeid,landlinenumber,mimg,fimg,email,doctorname FROM userinfo WHERE userid = ? 
+2020-04-26 15:39:44,773 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer)
+2020-04-26 15:39:44,775 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1

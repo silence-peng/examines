@@ -9,7 +9,7 @@ import java.util.Date;
 public class Assess implements Serializable{
     @Id
     private Integer assid;
-    private Integer uerid;
+    private Integer userid;
     private String content;
     private Integer sdid;
     private String doctorname;
@@ -20,7 +20,7 @@ public class Assess implements Serializable{
     public String toString() {
         return "Assess{" +
                 "assid=" + assid +
-                ", uerid=" + uerid +
+                ", userid=" + userid +
                 ", content='" + content + '\'' +
                 ", sdid=" + sdid +
                 ", doctorname='" + doctorname + '\'' +
@@ -36,12 +36,12 @@ public class Assess implements Serializable{
         this.assid = assid;
     }
 
-    public Integer getUerid() {
-        return uerid;
+    public Integer getUserid() {
+        return userid;
     }
 
-    public void setUerid(Integer uerid) {
-        this.uerid = uerid;
+    public void setUserid(Integer userid) {
+        this.userid = userid;
     }
 
     public String getContent() {

@@ -3,24 +3,54 @@ layui.use(['form','layer','laydate','jquery'], function() {
 		,layer = layui.layer
 		,laydate = layui.laydate
 		,$ = layui.jquery;
-	$.ajax({
-		url:'/checkProve/getUserByuserid'
-		,type:'post'
-		,data:null
-		,dataType:'json'
-		,success:function(e){
-			form.val("formTest",e);
+
+	form.on('radio(isabnormal)',function (data) {
+		console.log(true);
+		if (this.value==="0"){
+			console.log(0);
+			$("#abnormalities").attr("disabled",true);
+		}else {
+			console.log(1);
+			$("#abnormalities").attr("disabled",false);
 		}
 	});
+	/*显示用户信息*/
+
+	/*检查结果*/
 	$.ajax({
 		url:'/checkProve/getYxResult'
 		,type:'post'
 		,data:{sex:0}
 		,dataType:'json'
 		,success:function(e){
-			form.val("formTest",e);
+			if (e.isover==1){
+				$.ajax({
+					url:'/checkProve/getUserByuserid'
+					,type:'post'
+					,data:null
+					,dataType:'json'
+					,success:function(e){
+						$("#sex").val("女");
+						form.val("formTest",e);
+					}
+				});
+				form.val("formTest",e);
+				$.post('/checkProve/getAdviseArr',{sex:0},function (result) {
+					var arr=[];
+					arr=result.split(",");
+					$("input[name='yxid']").each(function () {
+						for (var i=0;i<arr.length;i++){
+							if($(this).val()==parseInt(arr[i])){
+								$(this).attr("checked",true);
+							}
+						}
+					});
+					form.render();
+				})
+			}
 		}
 	});
+	/*医学意见*/
 	$.ajax({
 		url:'/checkProve/getYxAdvise'
 		,type:'post'
@@ -35,35 +65,31 @@ layui.use(['form','layer','laydate','jquery'], function() {
 					"<div class='layui-bg-gray layui-inline suggests'>" +this.yxitem+"</div>"+
 					"</div>");
 			});
-			$.post('/checkProve/getAdviseArr',{sex:0},function (result) {
-				var arr=[];
-				arr=result.split(",");
-				$("input[name='yxid']:checkbox").each(function () {
-					for (var i=0;i<arr.length;i++){
-						if($(this).val()==parseInt(arr[i])){
-							$(this).attr("checked",true);
-						}
-					}
-				})
-			})
+			form.render();
 		}
 	});
-
+	/*提交*/
 	form.on('submit(formDemo)', function(data) {
-		var arrobject = [2,3];
-
-		$("input[name='yxid']:checkbox").each(function() {
-			if ($(this).attr("checked") === true) {
-				console.info($(this).val());
-
+		var arrobject = [];
+		/*得到医学意见所选的值*/
+		$("input[name='yxid']").each(function() {
+			if (this.checked) {
 				arrobject.push($(this).val());
 
 			}
 		});
+		/*有无异常*/
+		var isabnormal=0;
+		$("input[name='isabnormal']").each(function () {
+			if (this.checked){
+				isabnormal = $(this).val();
 
+			}
+		});
 		var arrString =arrobject.join(",");
 		console.log(arrString);
-		var param={arr:arrString,isabnormal:$("input[name='isabnormal']:radio").val(),abnormalities:$("#abnormalities").val(),resultid:$("#resultid").val()}
+		var param={arr:arrString,isabnormal:isabnormal,abnormalities:$("#abnormalities").val(),resultid:$("#resultid").val()};
+		console.log(param);
 		$.ajax({
 			url:"/checkProve/save",
 			type:"post",
@@ -81,4 +107,4 @@ layui.use(['form','layer','laydate','jquery'], function() {
 		return false;
 	});
 
-})
+});

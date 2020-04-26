@@ -1,14 +1,8 @@
-2020-04-26 11:45:23,247 INFO (StartupInfoLogger.java:59)- Started ControlerApplication in 3.7561886 seconds (JVM running for 9358.847)
-2020-04-26 11:45:35,839 INFO (StartupInfoLogger.java:50)- Starting ControlerApplication on DESKTOP-RJURPVR with PID 9704 (D:\MAVEN\Git\examines\examines\web\target\classes started by hh in D:\MAVEN\Git\examines\examines)
-2020-04-26 11:45:35,840 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
-2020-04-26 11:45:35,840 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
-2020-04-26 11:45:40,882 INFO (StartupInfoLogger.java:59)- Started ControlerApplication in 5.1528885 seconds (JVM running for 9376.483)
-2020-04-26 11:53:17,891 INFO (StartupInfoLogger.java:50)- Starting ControlerApplication on DESKTOP-RJURPVR with PID 9704 (D:\MAVEN\Git\examines\examines\web\target\classes started by hh in D:\MAVEN\Git\examines\examines)
-2020-04-26 11:53:17,891 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
-2020-04-26 11:53:17,893 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
-2020-04-26 11:53:26,963 INFO (StartupInfoLogger.java:50)- Starting ControlerApplication on DESKTOP-RJURPVR with PID 9704 (D:\MAVEN\Git\examines\examines\web\target\classes started by hh in D:\MAVEN\Git\examines\examines)
-2020-04-26 11:53:26,964 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
-2020-04-26 11:53:26,964 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
-2020-04-26 12:59:46,756 INFO (StartupInfoLogger.java:50)- Starting ControlerApplication on DESKTOP-RJURPVR with PID 9704 (D:\MAVEN\Git\examines\examines\web\target\classes started by hh in D:\MAVEN\Git\examines\examines)
-2020-04-26 12:59:46,757 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
-2020-04-26 12:59:46,757 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2020-04-26 00:26:49,501 INFO (StartupInfoLogger.java:59)- Started ControlerApplication in 4.6526795 seconds (JVM running for 6.01)
+2020-04-26 00:26:56,733 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT userid,mname,mcard,mbirthdate,mphone,methnic,midtype,mage,mculture,mjob,mprovince,mcity,mcounty,mdistrict,mvillage,mregistered,fname,fcard,fbirthdate,fphone,fethnic,fidtype,fage,fculture,fjob,fprovince,fcity,fcounty,fdistrict,fvillage,fregistered,address,creatdate,getmarrieddate,regtypeid,landlinenumber,mimg,fimg,email,doctorname FROM userinfo WHERE userid = ? 
+2020-04-26 00:26:56,738 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM yxcheckresult WHERE userid=? AND sex=? 
+2020-04-26 00:26:56,753 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT yxid,yxitem FROM yxadvise 
+2020-04-26 00:26:56,760 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer)
+2020-04-26 00:26:56,760 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer), 1(Integer)
+2020-04-26 00:26:56,760 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-26 00:26:56,776 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 5

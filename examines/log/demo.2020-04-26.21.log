@@ -1,12 +1,8 @@
-2020-04-26 14:35:09,088 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 7
-2020-04-26 14:35:11,174 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from cgkzresult where userid=? and sex=? 
-2020-04-26 14:35:11,179 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122414(Integer), 0(Integer)
-2020-04-26 14:35:11,182 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 0
-2020-04-26 14:35:11,184 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT typeid,type FROM medicalhistorytype 
-2020-04-26 14:35:11,185 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
-2020-04-26 14:35:11,188 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 7
-2020-04-26 14:35:17,537 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from cgkzresult where userid=? and sex=? 
-2020-04-26 14:35:17,538 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT typeid,type FROM medicalhistorytype 
-2020-04-26 14:35:17,539 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122414(Integer), 0(Integer)
-2020-04-26 14:35:17,540 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
-2020-04-26 14:35:17,541 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 0
+2020-04-26 00:37:46,966 INFO (StartupInfoLogger.java:59)- Started ControlerApplication in 4.6039011 seconds (JVM running for 6.006)
+2020-04-26 00:37:53,667 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM yxcheckresult WHERE userid=? AND sex=? 
+2020-04-26 00:37:53,670 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT userid,mname,mcard,mbirthdate,mphone,methnic,midtype,mage,mculture,mjob,mprovince,mcity,mcounty,mdistrict,mvillage,mregistered,fname,fcard,fbirthdate,fphone,fethnic,fidtype,fage,fculture,fjob,fprovince,fcity,fcounty,fdistrict,fvillage,fregistered,address,creatdate,getmarrieddate,regtypeid,landlinenumber,mimg,fimg,email,doctorname FROM userinfo WHERE userid = ? 
+2020-04-26 00:37:53,684 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT yxid,yxitem FROM yxadvise 
+2020-04-26 00:37:53,689 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-26 00:37:53,689 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer), 1(Integer)
+2020-04-26 00:37:53,689 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer)
+2020-04-26 00:37:53,705 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 5

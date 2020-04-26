@@ -1,9 +1,6 @@
-2020-04-26 16:23:20,039 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT medicalid,typelist,medicalname,morbiditycount,latelytime,istakemedicine,capacity,isoperating,operatingroom,operatingdate FROM medicalhistory WHERE medicalid = ? 
-2020-04-26 16:23:20,044 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT nmedicalid,ntypelist,elsecontent FROM nowmedicalhistory WHERE nmedicalid = ? 
-2020-04-26 16:23:20,154 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 1(Integer)
-2020-04-26 16:23:20,036 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT birthid,isdivorced,soncount,girlcount,isgeneticdisease,geneticdisease FROM maritalhistory WHERE birthid = ? 
-2020-04-26 16:23:20,171 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 1(Integer)
-2020-04-26 16:23:20,173 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
-2020-04-26 16:23:20,176 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
-2020-04-26 16:23:20,172 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 1(Integer)
-2020-04-26 16:23:20,182 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-26 10:25:32,185 INFO (StartupInfoLogger.java:59)- Started ControlerApplication in 5.7771434 seconds (JVM running for 7.365)
+2020-04-26 10:25:53,040 INFO (StartupInfoLogger.java:50)- Starting ControlerApplication on DESKTOP-E0OONUJ with PID 17292 (E:\IDEAProject\examines\examines\web\target\classes started by ZZW in E:\IDEAProject\examines\examines)
+2020-04-26 10:25:53,044 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2020-04-26 10:25:53,045 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2020-04-26 10:25:57,450 INFO (StartupInfoLogger.java:59)- Started ControlerApplication in 5.5702003 seconds (JVM running for 7.342)
+2020-04-26 10:26:25,424 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT userid,mname,mcard,mbirthdate,mphone,methnic,midtype,mage,mculture,mjob,mprovince,mcity,mcounty,mdistrict,mvillage,mregistered,fname,fcard,fbirthdate,fphone,fethnic,fidtype,fage,fculture,fjob,fprovince,fcity,fcounty,fdistrict,fvillage,fregistered,address,creatdate,getmarrieddate,regtypeid,landlinenumber,mimg,fimg,email,doctorname FROM userinfo WHERE userid = ? 

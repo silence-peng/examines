@@ -1,12 +1,11 @@
-2020-04-26 14:51:12,701 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 7
-2020-04-26 14:51:12,707 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT ntypeid,ntype FROM nowmedicalhistorytype 
-2020-04-26 14:51:12,711 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
-2020-04-26 14:51:12,712 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from cgkzresult where userid=? and sex=? 
-2020-04-26 14:51:12,713 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 4
-2020-04-26 14:51:12,713 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer), 0(Integer)
-2020-04-26 14:51:12,718 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
-2020-04-26 14:51:30,575 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT typeid,type FROM medicalhistorytype 
-2020-04-26 14:51:30,576 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
-2020-04-26 14:51:30,585 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 7
-2020-04-26 14:51:30,604 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT ntypeid,ntype FROM nowmedicalhistorytype 
-2020-04-26 14:51:30,605 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-26 01:09:38,128 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-26 01:09:38,129 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-26 01:09:38,224 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT a.`adviseArr` FROM yxadvisecheckresult a,yxcheckresult b WHERE a.`resultId`=b.`resultId` AND b.userId=? AND b.`sex`=? 
+2020-04-26 01:09:38,225 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer), 1(Integer)
+2020-04-26 01:09:38,228 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-26 01:10:05,374 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE yxcheckresult SET isAbnormal=? ,abnormalities=? WHERE resultId=? 
+2020-04-26 01:10:05,375 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Integer), ddd(String), 2(Integer)
+2020-04-26 01:10:05,458 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 1
+2020-04-26 01:10:05,459 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE yxadvisecheckresult SET adviseArr=? WHERE resultId=? 
+2020-04-26 01:10:05,459 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: (String), 2(Integer)
+2020-04-26 01:10:05,460 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 1

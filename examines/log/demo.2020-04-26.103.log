@@ -1,11 +1,6 @@
-2020-04-26 16:09:06,552 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
-2020-04-26 16:09:06,576 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 4
-2020-04-26 16:09:06,617 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT birthid,isdivorced,soncount,girlcount,isgeneticdisease,geneticdisease FROM maritalhistory WHERE birthid = ? 
-2020-04-26 16:09:06,618 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 1(Integer)
-2020-04-26 16:09:06,620 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT medicalid,typelist,medicalname,morbiditycount,latelytime,istakemedicine,capacity,isoperating,operatingroom,operatingdate FROM medicalhistory WHERE medicalid = ? 
-2020-04-26 16:09:06,621 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
-2020-04-26 16:09:06,621 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 1(Integer)
-2020-04-26 16:09:06,625 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
-2020-04-26 16:09:06,636 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT nmedicalid,ntypelist,elsecontent FROM nowmedicalhistory WHERE nmedicalid = ? 
-2020-04-26 16:09:06,637 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 1(Integer)
-2020-04-26 16:09:06,639 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-26 10:08:02,150 INFO (StartupInfoLogger.java:59)- Started ControlerApplication in 6.0899357 seconds (JVM running for 7.56)
+2020-04-26 10:09:40,963 INFO (StartupInfoLogger.java:50)- Starting ControlerApplication on DESKTOP-E0OONUJ with PID 4996 (E:\IDEAProject\examines\examines\web\target\classes started by ZZW in E:\IDEAProject\examines\examines)
+2020-04-26 10:09:41,006 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2020-04-26 10:09:41,008 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2020-04-26 10:09:45,249 INFO (StartupInfoLogger.java:59)- Started ControlerApplication in 5.2671159 seconds (JVM running for 6.777)
+2020-04-26 10:09:53,294 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT userid,mname,mcard,mbirthdate,mphone,methnic,midtype,mage,mculture,mjob,mprovince,mcity,mcounty,mdistrict,mvillage,mregistered,fname,fcard,fbirthdate,fphone,fethnic,fidtype,fage,fculture,fjob,fprovince,fcity,fcounty,fdistrict,fvillage,fregistered,address,creatdate,getmarrieddate,regtypeid,landlinenumber,mimg,fimg,email,doctorname FROM userinfo WHERE userid = ? 

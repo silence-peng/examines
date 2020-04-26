@@ -1,10 +1,12 @@
-2020-04-26 15:52:04,153 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
-2020-04-26 15:52:04,175 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT nmedicalid,ntypelist,elsecontent FROM nowmedicalhistory WHERE nmedicalid = ? 
-2020-04-26 15:52:04,171 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT medicalid,typelist,medicalname,morbiditycount,latelytime,istakemedicine,capacity,isoperating,operatingroom,operatingdate FROM medicalhistory WHERE medicalid = ? 
-2020-04-26 15:52:04,179 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 1(Integer)
-2020-04-26 15:52:04,179 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 1(Integer)
-2020-04-26 15:52:04,180 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
-2020-04-26 15:52:04,181 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
-2020-04-26 15:52:13,230 INFO (StartupInfoLogger.java:50)- Starting ControlerApplication on DESKTOP-RJURPVR with PID 1244 (D:\MAVEN\Git\examines\examines\web\target\classes started by hh in D:\MAVEN\Git\examines\examines)
-2020-04-26 15:52:13,233 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
-2020-04-26 15:52:13,233 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2020-04-26 09:54:27,913 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer), 0(Integer)
+2020-04-26 09:54:27,913 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer)
+2020-04-26 09:54:27,913 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-26 09:54:27,937 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 5
+2020-04-26 09:54:27,941 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-26 09:54:27,940 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-26 09:54:28,029 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT a.`adviseArr` FROM yxadvisecheckresult a,yxcheckresult b WHERE a.`resultId`=b.`resultId` AND b.userId=? AND b.`sex`=? 
+2020-04-26 09:54:28,031 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer), 0(Integer)
+2020-04-26 09:54:28,034 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-26 09:54:31,411 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE yxcheckresult SET isabnormal = ?,abnormalities = ? WHERE resultid = ? 
+2020-04-26 09:54:31,412 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Integer), (String), 1(Integer)
+2020-04-26 09:54:31,415 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 1

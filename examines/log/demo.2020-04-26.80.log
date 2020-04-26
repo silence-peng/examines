@@ -1,11 +1,8 @@
-2020-04-26 15:43:15,607 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT typeid,type FROM medicalhistorytype 
-2020-04-26 15:43:15,615 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
-2020-04-26 15:43:15,616 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 7
-2020-04-26 15:43:15,618 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT ntypeid,ntype FROM nowmedicalhistorytype 
-2020-04-26 15:43:15,619 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
-2020-04-26 15:43:15,621 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 4
-2020-04-26 15:43:15,630 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from cgkzresult where userid=? and sex=? 
-2020-04-26 15:43:15,631 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer), 0(Integer)
-2020-04-26 15:43:17,292 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
-2020-04-26 15:43:17,326 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT medicalid,typelist,medicalname,morbiditycount,latelytime,istakemedicine,capacity,isoperating,operatingroom,operatingdate FROM medicalhistory WHERE medicalid = ? 
-2020-04-26 15:43:17,327 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 1(Integer)
+2020-04-26 09:49:03,835 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE yxadvisecheckresult SET advisearr = ? WHERE ( ( resultid = ? ) ) 
+2020-04-26 09:49:03,848 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2,3(String), 1(Integer)
+2020-04-26 09:49:03,849 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 1
+2020-04-26 09:50:11,737 INFO (StartupInfoLogger.java:50)- Starting ControlerApplication on DESKTOP-E0OONUJ with PID 13700 (E:\IDEAProject\examines\examines\web\target\classes started by ZZW in E:\IDEAProject\examines\examines)
+2020-04-26 09:50:11,741 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2020-04-26 09:50:11,741 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2020-04-26 09:50:15,062 INFO (StartupInfoLogger.java:59)- Started ControlerApplication in 4.0025678 seconds (JVM running for 5.18)
+2020-04-26 09:50:34,350 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM yxcheckresult WHERE userid=? AND sex=? 

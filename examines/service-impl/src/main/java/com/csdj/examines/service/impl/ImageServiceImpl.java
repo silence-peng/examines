@@ -1,12 +1,16 @@
 package com.csdj.examines.service.impl;
 
+import com.csdj.examines.dao.BultrasoundMapper;
 import com.csdj.examines.dao.ImageMapper;
+import com.csdj.examines.dao.UserinfoMapper;
+import com.csdj.examines.pojo.Bultrasound;
 import com.csdj.examines.pojo.Userinfo;
 import com.csdj.examines.service.ImageService;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 /**
@@ -18,6 +22,10 @@ import java.util.List;
 public class ImageServiceImpl implements ImageService {
     @Autowired
     private ImageMapper imageMapper;
+    @Autowired
+    private UserinfoMapper userinfoMapper;
+    @Autowired
+    private BultrasoundMapper bultrasoundMapper;
 
     /**
      * 查询用户影像信息并分页
@@ -26,10 +34,27 @@ public class ImageServiceImpl implements ImageService {
      * @param pageSize:页大小
      * @return PageHelper <Usrinfo>
      */
-    public PageInfo<Userinfo> getUser(Userinfo userinfo, Integer pageNum, Integer pageSize) {
-        PageHelper.startPage(pageNum, pageSize);
+    public PageInfo<Userinfo> getUser(Integer pageNum, Integer pageSize,Userinfo userinfo) {
+        PageHelper.startPage(pageNum,pageSize);
         List<Userinfo> list = imageMapper.getUser(userinfo);
         PageInfo<Userinfo> page = new PageInfo<Userinfo>(list);
         return page;
     }
+
+    public Userinfo getUserOne(Integer userid) {
+        return userinfoMapper.selectByPrimaryKey(userid);
+    }
+
+    public Bultrasound getBultrasoundOne(Integer userid) {
+        Bultrasound bultrasound= new Bultrasound();
+        bultrasound.setUserid(userid);
+        return bultrasoundMapper.selectOne(bultrasound);
+    }
+    @Transactional
+    public int deleteImg(Integer userid) {
+        Bultrasound bultrasound= new Bultrasound();
+        bultrasound.setUserid(userid);
+        return bultrasoundMapper.delete(bultrasound);
+    }
+
 }

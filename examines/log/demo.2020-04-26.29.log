@@ -1,14 +1,8 @@
-2020-04-26 14:42:28,289 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 7
-2020-04-26 14:42:28,290 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 7
-2020-04-26 14:42:28,796 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from cgkzresult where userid=? and sex=? 
-2020-04-26 14:42:28,797 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122414(Integer), 0(Integer)
-2020-04-26 14:42:28,798 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT typeid,type FROM medicalhistorytype 
-2020-04-26 14:42:28,799 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
-2020-04-26 14:42:28,800 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 0
-2020-04-26 14:42:28,802 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 7
-2020-04-26 14:42:28,811 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT typeid,type FROM medicalhistorytype 
-2020-04-26 14:42:28,813 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
-2020-04-26 14:42:28,816 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 7
-2020-04-26 14:42:28,884 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT ntypeid,ntype FROM nowmedicalhistorytype 
-2020-04-26 14:42:28,885 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
-2020-04-26 14:42:28,887 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 4
+2020-04-26 00:55:53,315 INFO (StartupInfoLogger.java:59)- Started ControlerApplication in 4.2746103 seconds (JVM running for 5.622)
+2020-04-26 00:56:21,066 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT yxid,yxitem FROM yxadvise 
+2020-04-26 00:56:21,072 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM yxcheckresult WHERE userid=? AND sex=? 
+2020-04-26 00:56:21,079 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT userid,mname,mcard,mbirthdate,mphone,methnic,midtype,mage,mculture,mjob,mprovince,mcity,mcounty,mdistrict,mvillage,mregistered,fname,fcard,fbirthdate,fphone,fethnic,fidtype,fage,fculture,fjob,fprovince,fcity,fcounty,fdistrict,fvillage,fregistered,address,creatdate,getmarrieddate,regtypeid,landlinenumber,mimg,fimg,email,doctorname FROM userinfo WHERE userid = ? 
+2020-04-26 00:56:21,087 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer), 1(Integer)
+2020-04-26 00:56:21,087 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer)
+2020-04-26 00:56:21,087 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-26 00:56:21,102 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 5

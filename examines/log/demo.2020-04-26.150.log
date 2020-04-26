@@ -1,17 +1,9 @@
-2020-04-26 16:35:21,251 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
-2020-04-26 16:35:21,251 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
-2020-04-26 16:35:21,255 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT nmedicalid,ntypelist,elsecontent FROM nowmedicalhistory WHERE nmedicalid = ? 
-2020-04-26 16:35:21,263 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2(Integer)
-2020-04-26 16:35:21,265 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
-2020-04-26 16:35:25,113 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT typeid,type FROM medicalhistorytype 
-2020-04-26 16:35:25,114 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
-2020-04-26 16:35:25,116 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT ntypeid,ntype FROM nowmedicalhistorytype 
-2020-04-26 16:35:25,121 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
-2020-04-26 16:35:25,118 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 7
-2020-04-26 16:35:25,123 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 4
-2020-04-26 16:35:25,126 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from cgkzresult where userid=? and sex=? 
-2020-04-26 16:35:25,128 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer), 1(Integer)
-2020-04-26 16:35:25,130 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
-2020-04-26 16:35:25,213 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT birthid,isdivorced,soncount,girlcount,isgeneticdisease,geneticdisease FROM maritalhistory WHERE birthid = ? 
-2020-04-26 16:35:25,213 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2(Integer)
-2020-04-26 16:35:25,214 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT medicalid,typelist,medicalname,morbiditycount,latelytime,istakemedicine,capacity,isoperating,operatingroom,operatingdate FROM medicalhistory WHERE medicalid = ? 
+2020-04-26 11:06:23,361 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-26 11:06:23,362 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-26 11:06:59,598 INFO (StartupInfoLogger.java:50)- Starting ControlerApplication on DESKTOP-E0OONUJ with PID 5324 (E:\IDEAProject\examines\examines\web\target\classes started by ZZW in E:\IDEAProject\examines\examines)
+2020-04-26 11:06:59,602 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2020-04-26 11:06:59,604 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2020-04-26 11:07:03,421 INFO (StartupInfoLogger.java:59)- Started ControlerApplication in 4.620678501 seconds (JVM running for 5.993)
+2020-04-26 11:07:08,661 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT a.`adviseArr` FROM yxadvisecheckresult a,yxcheckresult b WHERE a.`resultId`=b.`resultId` AND b.userId=? AND b.`sex`=? 
+2020-04-26 11:07:08,689 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer), 1(Integer)
+2020-04-26 11:07:08,706 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1

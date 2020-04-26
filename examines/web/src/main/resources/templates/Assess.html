@@ -10,48 +10,36 @@
 	</head>
 	<body style="background-color: rgb(243,244,245);">
 		<div class="layui-container " style="width: 90%;">
-			<form class="layui-form">
+			<form class="layui-form" lay-filter="formTest">
 				<div class="layui-container" style="margin-top: 30px">
 					<div class="layui-form-item layui-inline">
 						<label class="layui-form-label">系统编号：</label>
 						<div class="layui-input-inline">
-						  <input type="text" name="" lay-verify="required" autocomplete="off" class="layui-input">
+						  <input type="text" name="userid" lay-verify="required" autocomplete="off" class="layui-input">
 						</div>
 					</div>
 					<div class="layui-form-item layui-inline">
 						<label class="layui-form-label">丈夫姓名：</label>
 						<div class="layui-input-inline">
-						  <input type="text" name="" lay-verify="required" autocomplete="off" class="layui-input">
+						  <input type="text" name="mname" lay-verify="required" autocomplete="off" class="layui-input">
 						</div>
 					</div>
 					<div class="layui-form-item layui-inline">
 						<label class="layui-form-label">妻子姓名：</label>
 						<div class="layui-input-inline">
-						  <input type="text" name="" lay-verify="required" autocomplete="off" class="layui-input">
+						  <input type="text" name="fname" lay-verify="required" autocomplete="off" class="layui-input">
 						</div>
 					</div>
 				</div>
 				<div class="" style="border: 1px silver solid;background-color: white;">
 					<div style="width: 95%;margin: 0 auto;">
 						<table class="layui-table" id="test" lay-filter="test"></table>
-						<div class="layui-form-item" style="color: red;">
-							<button type="button" class="layui-btn layui-bg-green" style="border-radius: 5px;">使用建议</button>
-						</div>
 						<div class="layui-form-item layui-form-text">
 						    <div class="layui-row">
-						      <textarea class="layui-textarea" name="desc" style="height: 250px;"></textarea>
+						      <textarea class="layui-textarea" name="content" id="content"  style="height: 250px;"></textarea>
 						    </div>
 						</div>
-						<div class="layui-form-item">
-						    <div class="layui-row">
-						      <input type="radio" name="sex" value="" title="" checked="checked">
-						    </div>
-							<div class="layui-row">
-								<input type="radio" name="sex" value="" title="">
-							</div>
-							<div class="layui-row">
-								<input type="radio" name="sex" value="" title="">
-							</div>
+						<div class="layui-form-item" id="radio">
 						</div>
 					</div>
 				</div>
@@ -61,7 +49,7 @@
 						<div class="layui-form-item layui-inline">
 						    <label class="layui-form-label">医生签名：</label>
 						    <div class="layui-input-inline">
-						      <input type="text" name="" lay-verify="required" autocomplete="off" class="layui-input">
+						      <input type="text" name="doctorname" lay-verify="required" autocomplete="off" class="layui-input">
 						    </div>
 						</div>
 					</div>
@@ -69,19 +57,24 @@
 						<div class="layui-form-item layui-inline">
 							<label class="layui-form-label">检查日期：</label>
 							<div class="layui-input-inline">
-							  <input type="text" name="" id="mdate" lay-verify="required" autocomplete="off" class="layui-input">
+							  <input type="text" name="examinedate" id="mdate" lay-verify="required" autocomplete="off" class="layui-input">
 							</div>
 						</div>
 					</div>
 				</div>
 				<div class="layui-container" style="text-align: center;">
 					<div class="layui-form-item" >
-						<button type="button" class="layui-btn layui-bg-blue" style="border-radius: 3px;">保存</button>
+						<button type="button" lay-submit lay-filter="formDemo" class="layui-btn layui-bg-blue" style="border-radius: 3px;">保存</button>
 						<button type="reset" class="layui-btn layui-bg-orange" style="border-radius: 3px;">重置</button>
 						<button type="button" class="layui-btn layui-bg-red" style="border-radius: 3px;">返回</button>
 					</div>
 				</div>
 			</form>
 		</div>
+		<script type="text/html" id="toolbarDemo">
+			<div class="layui-btn-container">
+				<button type="button" class="layui-btn" lay-event="use">使用建议</button>
+			</div>
+		</script>
 	</body>
 </html>

@@ -1,16 +1,14 @@
-2020-04-26 15:56:13,744 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT nmedicalid,ntypelist,elsecontent FROM nowmedicalhistory WHERE nmedicalid = ? 
-2020-04-26 15:56:13,745 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
-2020-04-26 15:56:13,774 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 1(Integer)
-2020-04-26 15:56:13,776 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
-2020-04-26 15:56:14,499 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT typeid,type FROM medicalhistorytype 
-2020-04-26 15:56:14,500 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
-2020-04-26 15:56:14,501 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT ntypeid,ntype FROM nowmedicalhistorytype 
-2020-04-26 15:56:14,502 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
-2020-04-26 15:56:14,519 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 7
-2020-04-26 15:56:14,520 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from cgkzresult where userid=? and sex=? 
-2020-04-26 15:56:14,520 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 4
-2020-04-26 15:56:14,520 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer), 0(Integer)
-2020-04-26 15:56:14,524 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
-2020-04-26 15:56:14,628 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT birthid,isdivorced,soncount,girlcount,isgeneticdisease,geneticdisease FROM maritalhistory WHERE birthid = ? 
-2020-04-26 15:56:14,629 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 1(Integer)
-2020-04-26 15:56:14,630 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT medicalid,typelist,medicalname,morbiditycount,latelytime,istakemedicine,capacity,isoperating,operatingroom,operatingdate FROM medicalhistory WHERE medicalid = ? 
+2020-04-26 09:56:05,277 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-26 09:56:05,276 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-26 09:56:05,375 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT a.`adviseArr` FROM yxadvisecheckresult a,yxcheckresult b WHERE a.`resultId`=b.`resultId` AND b.userId=? AND b.`sex`=? 
+2020-04-26 09:56:05,376 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer), 1(Integer)
+2020-04-26 09:56:05,378 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-26 09:56:08,096 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE yxcheckresult SET isabnormal = ?,abnormalities = ? WHERE resultid = ? 
+2020-04-26 09:56:08,097 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Integer), (String), 2(Integer)
+2020-04-26 09:56:08,101 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 1
+2020-04-26 09:56:08,127 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE yxadvisecheckresult SET advisearr = ? WHERE ( ( resultid = ? ) ) 
+2020-04-26 09:56:08,128 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2,3(String), 2(Integer)
+2020-04-26 09:56:08,129 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 1
+2020-04-26 09:58:38,073 INFO (StartupInfoLogger.java:50)- Starting ControlerApplication on DESKTOP-E0OONUJ with PID 14276 (E:\IDEAProject\examines\examines\web\target\classes started by ZZW in E:\IDEAProject\examines\examines)
+2020-04-26 09:58:38,077 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2020-04-26 09:58:38,078 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default

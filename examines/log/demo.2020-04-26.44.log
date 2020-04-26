@@ -1,16 +1,10 @@
-2020-04-26 15:02:46,054 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 7
-2020-04-26 15:02:46,042 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer), 0(Integer)
-2020-04-26 15:02:46,042 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 4
-2020-04-26 15:02:46,061 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
-2020-04-26 15:02:46,420 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT typeid,type FROM medicalhistorytype 
-2020-04-26 15:02:46,420 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
-2020-04-26 15:02:46,421 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from cgkzresult where userid=? and sex=? 
-2020-04-26 15:02:46,422 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 7
-2020-04-26 15:02:46,424 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer), 0(Integer)
-2020-04-26 15:02:46,425 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT ntypeid,ntype FROM nowmedicalhistorytype 
-2020-04-26 15:02:46,431 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
-2020-04-26 15:02:46,431 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
-2020-04-26 15:02:46,433 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 4
-2020-04-26 15:02:50,396 INFO (StartupInfoLogger.java:50)- Starting ControlerApplication on DESKTOP-RJURPVR with PID 1244 (D:\MAVEN\Git\examines\examines\web\target\classes started by hh in D:\MAVEN\Git\examines\examines)
-2020-04-26 15:02:50,397 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
-2020-04-26 15:02:50,399 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2020-04-26 01:12:58,418 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-26 01:13:05,906 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE yxcheckresult SET isAbnormal=? ,abnormalities=? WHERE resultId=? 
+2020-04-26 01:13:05,907 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Integer), ddd(String), 2(Integer)
+2020-04-26 01:13:05,910 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 1
+2020-04-26 01:13:05,911 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE yxadvisecheckresult SET adviseArr=? WHERE resultId=? 
+2020-04-26 01:13:05,911 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2,3(String), 2(Integer)
+2020-04-26 01:13:05,912 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 1
+2020-04-26 01:14:28,168 INFO (StartupInfoLogger.java:50)- Starting ControlerApplication on DESKTOP-E0OONUJ with PID 7948 (E:\IDEAProject\examines\examines\web\target\classes started by ZZW in E:\IDEAProject\examines\examines)
+2020-04-26 01:14:28,172 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2020-04-26 01:14:28,173 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default

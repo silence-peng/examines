@@ -1,0 +1,16 @@
+2020-04-26 17:41:51,669 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 3
+2020-04-26 17:41:51,683 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT id,content FROM suggest 
+2020-04-26 17:41:51,683 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-26 17:41:51,684 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 7
+2020-04-26 17:41:52,046 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT userid,mname,mcard,mbirthdate,mphone,methnic,midtype,mage,mculture,mjob,mprovince,mcity,mcounty,mdistrict,mvillage,mregistered,fname,fcard,fbirthdate,fphone,fethnic,fidtype,fage,fculture,fjob,fprovince,fcity,fcounty,fdistrict,fvillage,fregistered,address,creatdate,getmarrieddate,regtypeid,landlinenumber,mimg,fimg,email,doctorname FROM userinfo WHERE userid = ? 
+2020-04-26 17:41:52,046 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT did,content FROM suggestd 
+2020-04-26 17:41:52,047 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer)
+2020-04-26 17:41:52,047 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-26 17:41:52,048 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 3
+2020-04-26 17:41:52,049 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-26 17:41:52,061 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT id,content FROM suggest 
+2020-04-26 17:41:52,062 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-26 17:41:52,063 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 7
+2020-04-26 17:41:52,440 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT userid,mname,mcard,mbirthdate,mphone,methnic,midtype,mage,mculture,mjob,mprovince,mcity,mcounty,mdistrict,mvillage,mregistered,fname,fcard,fbirthdate,fphone,fethnic,fidtype,fage,fculture,fjob,fprovince,fcity,fcounty,fdistrict,fvillage,fregistered,address,creatdate,getmarrieddate,regtypeid,landlinenumber,mimg,fimg,email,doctorname FROM userinfo WHERE userid = ? 
+2020-04-26 17:41:52,441 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer)
+2020-04-26 17:41:52,444 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT did,content FROM suggestd 

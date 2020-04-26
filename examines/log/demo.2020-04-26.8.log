@@ -1,8 +1,12 @@
-2020-04-26 10:45:50,768 INFO (StartupInfoLogger.java:59)- Started ControlerApplication in 3.3777648 seconds (JVM running for 5786.368)
-2020-04-26 10:46:22,995 INFO (StartupInfoLogger.java:50)- Starting ControlerApplication on DESKTOP-RJURPVR with PID 9704 (D:\MAVEN\Git\examines\examines\web\target\classes started by hh in D:\MAVEN\Git\examines\examines)
-2020-04-26 10:46:22,996 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
-2020-04-26 10:46:22,996 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
-2020-04-26 10:46:26,337 INFO (StartupInfoLogger.java:59)- Started ControlerApplication in 3.496688 seconds (JVM running for 5821.937)
-2020-04-26 10:47:18,656 INFO (StartupInfoLogger.java:50)- Starting ControlerApplication on DESKTOP-RJURPVR with PID 9704 (D:\MAVEN\Git\examines\examines\web\target\classes started by hh in D:\MAVEN\Git\examines\examines)
-2020-04-26 10:47:18,657 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
-2020-04-26 10:47:18,657 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2020-04-26 00:18:47,011 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-26 00:18:47,006 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 5
+2020-04-26 00:18:47,029 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT a.`adviseArr` FROM yxadvisecheckresult a,yxcheckresult b WHERE a.`resultId`=b.`resultId` AND b.userId=? AND b.`sex`=? 
+2020-04-26 00:18:47,029 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer), 1(Integer)
+2020-04-26 00:18:47,030 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-26 00:21:11,826 INFO (StartupInfoLogger.java:50)- Starting ControlerApplication on DESKTOP-E0OONUJ with PID 16716 (E:\IDEAProject\examines\examines\web\target\classes started by ZZW in E:\IDEAProject\examines\examines)
+2020-04-26 00:21:11,831 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2020-04-26 00:21:11,832 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2020-04-26 00:21:15,376 INFO (StartupInfoLogger.java:59)- Started ControlerApplication in 4.2874405 seconds (JVM running for 5.56)
+2020-04-26 00:22:56,461 INFO (StartupInfoLogger.java:50)- Starting ControlerApplication on DESKTOP-E0OONUJ with PID 15228 (E:\IDEAProject\examines\examines\web\target\classes started by ZZW in E:\IDEAProject\examines\examines)
+2020-04-26 00:22:56,465 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2020-04-26 00:22:56,466 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default

@@ -1,10 +1,10 @@
-2020-04-26 15:53:34,647 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
-2020-04-26 15:53:34,657 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT medicalid,typelist,medicalname,morbiditycount,latelytime,istakemedicine,capacity,isoperating,operatingroom,operatingdate FROM medicalhistory WHERE medicalid = ? 
-2020-04-26 15:53:34,692 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT nmedicalid,ntypelist,elsecontent FROM nowmedicalhistory WHERE nmedicalid = ? 
-2020-04-26 15:53:34,693 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 1(Integer)
-2020-04-26 15:53:34,695 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 1(Integer)
-2020-04-26 15:53:34,696 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
-2020-04-26 15:53:34,696 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
-2020-04-26 15:53:56,531 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from xexamine where userid=? and sex=? 
-2020-04-26 15:53:56,532 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122414(Integer), 0(Integer)
-2020-04-26 15:53:56,534 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-26 09:55:01,601 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-26 09:55:01,601 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer)
+2020-04-26 09:55:01,601 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 5
+2020-04-26 09:55:01,613 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-26 09:55:01,626 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT a.`adviseArr` FROM yxadvisecheckresult a,yxcheckresult b WHERE a.`resultId`=b.`resultId` AND b.userId=? AND b.`sex`=? 
+2020-04-26 09:55:01,627 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer), 1(Integer)
+2020-04-26 09:55:01,628 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-26 09:55:54,011 INFO (StartupInfoLogger.java:50)- Starting ControlerApplication on DESKTOP-E0OONUJ with PID 4676 (E:\IDEAProject\examines\examines\web\target\classes started by ZZW in E:\IDEAProject\examines\examines)
+2020-04-26 09:55:54,067 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2020-04-26 09:55:54,068 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default

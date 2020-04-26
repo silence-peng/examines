@@ -1,14 +1,9 @@
-2020-04-26 14:47:16,799 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 0
-2020-04-26 14:47:16,799 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 7
-2020-04-26 14:47:16,801 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT ntypeid,ntype FROM nowmedicalhistorytype 
-2020-04-26 14:47:16,809 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
-2020-04-26 14:47:16,812 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 4
-2020-04-26 14:47:17,036 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from cgkzresult where userid=? and sex=? 
-2020-04-26 14:47:17,038 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122414(Integer), 0(Integer)
-2020-04-26 14:47:17,038 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT typeid,type FROM medicalhistorytype 
-2020-04-26 14:47:17,039 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
-2020-04-26 14:47:17,039 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT ntypeid,ntype FROM nowmedicalhistorytype 
-2020-04-26 14:47:17,039 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 0
-2020-04-26 14:47:17,040 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
-2020-04-26 14:47:17,041 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 7
-2020-04-26 14:47:17,042 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 4
+2020-04-26 01:08:27,596 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Integer), ddd(String), 2(Integer)
+2020-04-26 01:08:27,601 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 1
+2020-04-26 01:08:27,603 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE yxadvisecheckresult SET adviseArr=? WHERE resultId=? 
+2020-04-26 01:08:27,604 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: (String), 2(Integer)
+2020-04-26 01:08:27,605 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 1
+2020-04-26 01:09:24,657 INFO (StartupInfoLogger.java:50)- Starting ControlerApplication on DESKTOP-E0OONUJ with PID 2308 (E:\IDEAProject\examines\examines\web\target\classes started by ZZW in E:\IDEAProject\examines\examines)
+2020-04-26 01:09:24,661 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2020-04-26 01:09:24,663 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2020-04-26 01:09:28,054 INFO (StartupInfoLogger.java:59)- Started ControlerApplication in 4.1193775 seconds (JVM running for 5.296)

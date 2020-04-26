@@ -1,9 +1,8 @@
-2020-04-26 15:56:14,631 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
-2020-04-26 15:56:14,648 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 1(Integer)
-2020-04-26 15:56:14,647 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT nmedicalid,ntypelist,elsecontent FROM nowmedicalhistory WHERE nmedicalid = ? 
-2020-04-26 15:56:14,680 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
-2020-04-26 15:56:14,681 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 1(Integer)
-2020-04-26 15:56:14,685 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
-2020-04-26 16:00:34,308 INFO (StartupInfoLogger.java:50)- Starting ControlerApplication on DESKTOP-RJURPVR with PID 1244 (D:\MAVEN\Git\examines\examines\web\target\classes started by hh in D:\MAVEN\Git\examines\examines)
-2020-04-26 16:00:34,308 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
-2020-04-26 16:00:34,309 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2020-04-26 09:58:41,526 INFO (StartupInfoLogger.java:59)- Started ControlerApplication in 4.2526109 seconds (JVM running for 5.475)
+2020-04-26 09:58:45,955 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT yxid,yxitem FROM yxadvise 
+2020-04-26 09:58:45,961 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT userid,mname,mcard,mbirthdate,mphone,methnic,midtype,mage,mculture,mjob,mprovince,mcity,mcounty,mdistrict,mvillage,mregistered,fname,fcard,fbirthdate,fphone,fethnic,fidtype,fage,fculture,fjob,fprovince,fcity,fcounty,fdistrict,fvillage,fregistered,address,creatdate,getmarrieddate,regtypeid,landlinenumber,mimg,fimg,email,doctorname FROM userinfo WHERE userid = ? 
+2020-04-26 09:58:45,969 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM yxcheckresult WHERE userid=? AND sex=? 
+2020-04-26 09:58:45,979 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer)
+2020-04-26 09:58:45,979 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-26 09:58:45,979 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer), 0(Integer)
+2020-04-26 09:58:45,994 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 5

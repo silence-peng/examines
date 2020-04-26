@@ -1,12 +1,11 @@
-2020-04-26 15:43:59,326 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 4
-2020-04-26 15:43:59,361 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from cgkzresult where userid=? and sex=? 
-2020-04-26 15:43:59,362 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer), 0(Integer)
-2020-04-26 15:43:59,365 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
-2020-04-26 15:43:59,504 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT birthid,isdivorced,soncount,girlcount,isgeneticdisease,geneticdisease FROM maritalhistory WHERE birthid = ? 
-2020-04-26 15:43:59,504 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 1(Integer)
-2020-04-26 15:43:59,506 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
-2020-04-26 15:43:59,512 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT medicalid,typelist,medicalname,morbiditycount,latelytime,istakemedicine,capacity,isoperating,operatingroom,operatingdate FROM medicalhistory WHERE medicalid = ? 
-2020-04-26 15:43:59,514 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 1(Integer)
-2020-04-26 15:43:59,516 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
-2020-04-26 15:43:59,517 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT nmedicalid,ntypelist,elsecontent FROM nowmedicalhistory WHERE nmedicalid = ? 
-2020-04-26 15:43:59,518 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 1(Integer)
+2020-04-26 09:50:34,476 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-26 09:50:38,710 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE yxcheckresult SET isabnormal = ?,abnormalities = ? WHERE resultid = ? 
+2020-04-26 09:50:38,711 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Integer), (String), 1(Integer)
+2020-04-26 09:50:38,714 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 1
+2020-04-26 09:50:38,732 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE yxadvisecheckresult SET advisearr = ? WHERE ( ( resultid = ? ) ) 
+2020-04-26 09:50:38,733 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2,3(String), 1(Integer)
+2020-04-26 09:50:38,734 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 1
+2020-04-26 09:50:54,259 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT yxid,yxitem FROM yxadvise 
+2020-04-26 09:50:54,259 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM yxcheckresult WHERE userid=? AND sex=? 
+2020-04-26 09:50:54,259 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-26 09:50:54,261 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT userid,mname,mcard,mbirthdate,mphone,methnic,midtype,mage,mculture,mjob,mprovince,mcity,mcounty,mdistrict,mvillage,mregistered,fname,fcard,fbirthdate,fphone,fethnic,fidtype,fage,fculture,fjob,fprovince,fcity,fcounty,fdistrict,fvillage,fregistered,address,creatdate,getmarrieddate,regtypeid,landlinenumber,mimg,fimg,email,doctorname FROM userinfo WHERE userid = ? 
