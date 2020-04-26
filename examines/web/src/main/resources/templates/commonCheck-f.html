@@ -52,17 +52,17 @@
                 <div class="layui-form-item">
                     <div class="layui-input-block" id="medicalhistorytype">
                         <input type="checkbox" lay-skin="primary" name="none" lay-filter="none" value="男" title="无" >
-                        <input type="checkbox" lay-skin="primary" name="type" value="女" title="遗传性疾病">
-                        <input type="checkbox" lay-skin="primary" name="type" value="禁" title="精神疾病">
-                        <input type="checkbox" lay-skin="primary" name="type" value="禁" title="先天性疾病">
-                        <input type="checkbox" lay-skin="primary" name="type" value="禁" title="传染病">
-                        <input type="checkbox" lay-skin="primary" name="type" value="禁" title="性病">
-                        <input type="checkbox" lay-skin="primary" name="type" value="禁" title="重要器官疾病">
-                        <input type="checkbox" lay-skin="primary" name="type" value="禁" title="泌尿生殖系统疾病">
+                        <input type="checkbox" lay-skin="primary" name="nowmedicalhistorytype" value="女" title="遗传性疾病">
+                        <input type="checkbox" lay-skin="primary" name="nowmedicalhistorytype" value="禁" title="精神疾病">
+                        <input type="checkbox" lay-skin="primary" name="nowmedicalhistorytype" value="禁" title="先天性疾病">
+                        <input type="checkbox" lay-skin="primary" name="nowmedicalhistorytype" value="禁" title="传染病">
+                        <input type="checkbox" lay-skin="primary" name="nowmedicalhistorytype" value="禁" title="性病">
+                        <input type="checkbox" lay-skin="primary" name="nowmedicalhistorytype" value="禁" title="重要器官疾病">
+                        <input type="checkbox" lay-skin="primary" name="nowmedicalhistorytype" value="禁" title="泌尿生殖系统疾病">
                     </div>
                 </div>
                 <div class="layui-form-item ">
-                <div class="layui-form-item ">
+
                     <div class="layui-inline">
                         <label class="layui-form-label">疾病名称</label>
                         <div class="layui-input-inline" style="width: 300px;">
@@ -257,13 +257,13 @@
         });
         form.on("checkbox(none)", function (data) {
             if (this.checked){
-                $("input[name='type']").attr("disabled", "disabled");
-                $("input[name='type']").prop("checked", false);
-                $("input[name='type']").next().addClass('layui-radio-disbaled layui-disabled');
+                $("input[name='nowmedicalhistorytype']").attr("disabled", "disabled");
+                $("input[name='nowmedicalhistorytype']").prop("checked", false);
+                $("input[name='nowmedicalhistorytype']").next().addClass('layui-radio-disbaled layui-disabled');
                 form.render('checkbox');
             }else{
-                $("input[name='type']").removeAttr("disabled");
-                $("input[name='type']").next().removeClass('layui-radio-disbaled layui-disabled');
+                $("input[name='nowmedicalhistorytype']").removeAttr("disabled");
+                $("input[name='nowmedicalhistorytype']").next().removeClass('layui-radio-disbaled layui-disabled');
                 form.render('checkbox');
             }
         });

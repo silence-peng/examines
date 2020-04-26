@@ -35,6 +35,8 @@ public class CommonCheckServiceImpl implements CommonCheckService {
                                 ,List<Integer> medicalhistorytype) {
         String str1= StringUtils.join(nowmedicalhistorytype, ",");
         String str2= StringUtils.join(medicalhistorytype, ",");
+        nowmedicalhistory.setNtypelist(str1);
+        medicalhistory.setTypelist(str2);
         Cgkzresult result=cgkzresultMapper.getOne(cgkzresult.getUserid(), cgkzresult.getSex());
         if (result!=null){
             cgkzresult.setBirthid(result.getCgid());
