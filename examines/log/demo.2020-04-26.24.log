@@ -1,0 +1,9 @@
+2020-04-26 00:40:07,858 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-26 00:40:07,861 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-26 00:43:03,760 INFO (StartupInfoLogger.java:50)- Starting ControlerApplication on DESKTOP-E0OONUJ with PID 14756 (E:\IDEAProject\examines\examines\web\target\classes started by ZZW in E:\IDEAProject\examines\examines)
+2020-04-26 00:43:03,765 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2020-04-26 00:43:03,765 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2020-04-26 00:43:07,432 INFO (StartupInfoLogger.java:59)- Started ControlerApplication in 4.3796804 seconds (JVM running for 5.613)
+2020-04-26 00:43:16,846 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT userid,mname,mcard,mbirthdate,mphone,methnic,midtype,mage,mculture,mjob,mprovince,mcity,mcounty,mdistrict,mvillage,mregistered,fname,fcard,fbirthdate,fphone,fethnic,fidtype,fage,fculture,fjob,fprovince,fcity,fcounty,fdistrict,fvillage,fregistered,address,creatdate,getmarrieddate,regtypeid,landlinenumber,mimg,fimg,email,doctorname FROM userinfo WHERE userid = ? 
+2020-04-26 00:43:16,846 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT yxid,yxitem FROM yxadvise 
+2020-04-26 00:43:16,856 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM yxcheckresult WHERE userid=? AND sex=? 

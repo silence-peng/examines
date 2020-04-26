@@ -1,0 +1,13 @@
+2020-04-26 18:01:58,902 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 1
+2020-04-26 18:01:58,908 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT LAST_INSERT_ID() 
+2020-04-26 18:01:58,909 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-26 18:01:58,940 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-26 18:01:58,943 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: INSERT INTO yxcheckresult(userId,sex) VALUES(?,?) 
+2020-04-26 18:01:58,943 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122426(Integer), 0(Integer)
+2020-04-26 18:01:58,945 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 1
+2020-04-26 18:01:58,946 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: INSERT INTO yxcheckresult(userId,sex) VALUES(?,?) 
+2020-04-26 18:01:58,947 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122426(Integer), 1(Integer)
+2020-04-26 18:01:58,948 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 1
+2020-04-26 18:03:28,427 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT regtypeid,type FROM registertype 
+2020-04-26 18:03:28,428 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-26 18:03:28,429 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 2

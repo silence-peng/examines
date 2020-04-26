@@ -1,0 +1,8 @@
+2020-04-26 17:41:20,522 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer)
+2020-04-26 17:41:20,527 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-26 17:41:23,888 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT regtypeid,type FROM registertype 
+2020-04-26 17:41:23,889 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-26 17:41:23,890 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 2
+2020-04-26 17:41:42,824 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT userid,mname,mcard,mbirthdate,mphone,methnic,midtype,mage,mculture,mjob,mprovince,mcity,mcounty,mdistrict,mvillage,mregistered,fname,fcard,fbirthdate,fphone,fethnic,fidtype,fage,fculture,fjob,fprovince,fcity,fcounty,fdistrict,fvillage,fregistered,address,creatdate,getmarrieddate,regtypeid,landlinenumber,mimg,fimg,email,doctorname FROM userinfo WHERE userid = ? 
+2020-04-26 17:41:42,827 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer)
+2020-04-26 17:41:42,827 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT did,content FROM suggestd 

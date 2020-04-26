@@ -1,0 +1,12 @@
+2020-04-26 14:21:52,161 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122423(Integer)
+2020-04-26 14:21:52,162 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122423(Integer), 1(Integer)
+2020-04-26 14:21:52,162 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-26 14:21:52,167 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-26 14:21:52,167 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 5
+2020-04-26 14:21:52,170 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-26 14:21:52,181 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT a.`adviseArr` FROM yxadvisecheckresult a,yxcheckresult b WHERE a.`resultId`=b.`resultId` AND b.userId=? AND b.`sex`=? 
+2020-04-26 14:21:52,181 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122423(Integer), 1(Integer)
+2020-04-26 14:21:52,183 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 0
+2020-04-26 14:22:43,658 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT userid,mname,mcard,mbirthdate,mphone,methnic,midtype,mage,mculture,mjob,mprovince,mcity,mcounty,mdistrict,mvillage,mregistered,fname,fcard,fbirthdate,fphone,fethnic,fidtype,fage,fculture,fjob,fprovince,fcity,fcounty,fdistrict,fvillage,fregistered,address,creatdate,getmarrieddate,regtypeid,landlinenumber,mimg,fimg,email,doctorname FROM userinfo WHERE userid = ? 
+2020-04-26 14:22:43,658 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT yxid,yxitem FROM yxadvise 
+2020-04-26 14:22:43,658 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122423(Integer)

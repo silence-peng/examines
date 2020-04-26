@@ -1,0 +1,16 @@
+2020-04-26 17:41:54,387 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT id,content FROM suggest 
+2020-04-26 17:41:54,389 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-26 17:41:54,390 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 7
+2020-04-26 17:41:54,721 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT userid,mname,mcard,mbirthdate,mphone,methnic,midtype,mage,mculture,mjob,mprovince,mcity,mcounty,mdistrict,mvillage,mregistered,fname,fcard,fbirthdate,fphone,fethnic,fidtype,fage,fculture,fjob,fprovince,fcity,fcounty,fdistrict,fvillage,fregistered,address,creatdate,getmarrieddate,regtypeid,landlinenumber,mimg,fimg,email,doctorname FROM userinfo WHERE userid = ? 
+2020-04-26 17:41:54,722 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer)
+2020-04-26 17:41:54,723 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT did,content FROM suggestd 
+2020-04-26 17:41:54,724 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-26 17:41:54,725 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-26 17:41:54,726 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 3
+2020-04-26 17:41:54,735 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT id,content FROM suggest 
+2020-04-26 17:41:54,735 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-26 17:41:54,736 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 7
+2020-04-26 17:41:55,124 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT userid,mname,mcard,mbirthdate,mphone,methnic,midtype,mage,mculture,mjob,mprovince,mcity,mcounty,mdistrict,mvillage,mregistered,fname,fcard,fbirthdate,fphone,fethnic,fidtype,fage,fculture,fjob,fprovince,fcity,fcounty,fdistrict,fvillage,fregistered,address,creatdate,getmarrieddate,regtypeid,landlinenumber,mimg,fimg,email,doctorname FROM userinfo WHERE userid = ? 
+2020-04-26 17:41:55,125 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer)
+2020-04-26 17:41:55,126 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT did,content FROM suggestd 
+2020-04-26 17:41:55,126 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1

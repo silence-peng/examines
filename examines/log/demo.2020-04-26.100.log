@@ -1,0 +1,13 @@
+2020-04-26 10:04:38,353 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-26 10:04:38,358 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT yxid,yxitem FROM yxadvise 
+2020-04-26 10:04:38,362 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-26 10:04:38,363 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 5
+2020-04-26 10:04:38,377 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT a.`adviseArr` FROM yxadvisecheckresult a,yxcheckresult b WHERE a.`resultId`=b.`resultId` AND b.userId=? AND b.`sex`=? 
+2020-04-26 10:04:38,377 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer), 1(Integer)
+2020-04-26 10:04:38,378 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-26 10:04:42,422 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE yxcheckresult SET isabnormal = ?,abnormalities = ? WHERE resultid = ? 
+2020-04-26 10:04:42,425 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Integer), (String), 2(Integer)
+2020-04-26 10:04:42,429 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 1
+2020-04-26 10:04:42,432 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE yxadvisecheckresult SET advisearr = ? WHERE ( ( resultid = ? ) ) 
+2020-04-26 10:04:42,433 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2,3(String), 2(Integer)
+2020-04-26 10:04:42,434 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 1

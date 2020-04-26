@@ -1,0 +1,11 @@
+2020-04-26 17:46:21,996 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer)
+2020-04-26 17:46:21,996 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT did,content FROM suggestd 
+2020-04-26 17:46:21,999 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-26 17:46:22,001 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-26 17:46:22,001 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 3
+2020-04-26 17:46:22,014 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT id,content FROM suggest 
+2020-04-26 17:46:22,015 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-26 17:46:22,017 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 7
+2020-04-26 17:46:34,309 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: INSERT INTO assess ( assid,userid,content,sdid,doctorname,examinedate ) VALUES( ?,?,?,?,?,? ) 
+2020-04-26 17:46:34,311 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: null, 2020122412(Integer), (String), null, 张三(String), 2020-04-26 00:00:00.0(Timestamp)
+2020-04-26 17:46:34,314 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 1

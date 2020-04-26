@@ -1,0 +1,14 @@
+2020-04-26 10:10:59,635 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-26 10:10:59,634 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-26 10:10:59,756 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT a.`adviseArr` FROM yxadvisecheckresult a,yxcheckresult b WHERE a.`resultId`=b.`resultId` AND b.userId=? AND b.`sex`=? 
+2020-04-26 10:10:59,757 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer), 1(Integer)
+2020-04-26 10:10:59,770 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-26 10:11:07,180 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE yxcheckresult SET isabnormal = ?,abnormalities = ? WHERE resultid = ? 
+2020-04-26 10:11:07,181 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Integer), (String), 2(Integer)
+2020-04-26 10:11:07,185 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 1
+2020-04-26 10:11:07,203 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE yxadvisecheckresult SET advisearr = ? WHERE ( ( resultid = ? ) ) 
+2020-04-26 10:11:07,204 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2,3,4(String), 2(Integer)
+2020-04-26 10:11:07,205 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 1
+2020-04-26 10:14:35,642 INFO (StartupInfoLogger.java:50)- Starting ControlerApplication on DESKTOP-E0OONUJ with PID 14420 (E:\IDEAProject\examines\examines\web\target\classes started by ZZW in E:\IDEAProject\examines\examines)
+2020-04-26 10:14:35,645 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2020-04-26 10:14:35,646 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default

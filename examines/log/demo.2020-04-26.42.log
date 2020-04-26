@@ -1,0 +1,8 @@
+2020-04-26 01:10:10,847 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT a.`adviseArr` FROM yxadvisecheckresult a,yxcheckresult b WHERE a.`resultId`=b.`resultId` AND b.userId=? AND b.`sex`=? 
+2020-04-26 01:10:10,851 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer), 1(Integer)
+2020-04-26 01:10:10,852 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-26 01:12:44,902 INFO (StartupInfoLogger.java:50)- Starting ControlerApplication on DESKTOP-E0OONUJ with PID 13564 (E:\IDEAProject\examines\examines\web\target\classes started by ZZW in E:\IDEAProject\examines\examines)
+2020-04-26 01:12:44,905 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2020-04-26 01:12:44,906 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2020-04-26 01:12:48,348 INFO (StartupInfoLogger.java:59)- Started ControlerApplication in 4.1926862 seconds (JVM running for 5.482)
+2020-04-26 01:12:58,281 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM yxcheckresult WHERE userid=? AND sex=? 

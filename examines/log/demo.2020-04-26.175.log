@@ -1,0 +1,10 @@
+2020-04-26 12:00:55,305 INFO (StartupInfoLogger.java:59)- Started ControlerApplication in 4.1652477 seconds (JVM running for 5.373)
+2020-04-26 12:01:01,642 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select count(0) from (SELECT * FROM userinfo where 1=1 group by creatDate desc) tmp_count 
+2020-04-26 12:01:01,662 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-26 12:01:01,675 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-26 12:01:01,680 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM userinfo where 1=1 group by creatDate desc LIMIT ? 
+2020-04-26 12:01:01,681 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 3(Integer)
+2020-04-26 12:01:01,687 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 2
+2020-04-26 12:03:54,735 INFO (StartupInfoLogger.java:50)- Starting ControlerApplication on DESKTOP-E0OONUJ with PID 628 (E:\IDEAProject\examines\examines\web\target\classes started by ZZW in E:\IDEAProject\examines\examines)
+2020-04-26 12:03:54,754 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2020-04-26 12:03:54,755 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default

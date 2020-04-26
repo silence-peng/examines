@@ -1,0 +1,12 @@
+2020-04-26 10:41:37,878 INFO (StartupInfoLogger.java:59)- Started ControlerApplication in 6.2833234 seconds (JVM running for 9.336)
+2020-04-26 10:48:42,645 INFO (StartupInfoLogger.java:50)- Starting ControlerApplication on DESKTOP-E0OONUJ with PID 13372 (E:\IDEAProject\examines\examines\web\target\classes started by ZZW in E:\IDEAProject\examines\examines)
+2020-04-26 10:48:42,678 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2020-04-26 10:48:42,679 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2020-04-26 10:48:50,467 INFO (StartupInfoLogger.java:59)- Started ControlerApplication in 9.730047501 seconds (JVM running for 15.159)
+2020-04-26 10:49:05,589 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM yxcheckresult WHERE userid=? AND sex=? 
+2020-04-26 10:49:05,617 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT yxid,yxitem FROM yxadvise 
+2020-04-26 10:49:05,620 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-26 10:49:05,620 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer), 1(Integer)
+2020-04-26 10:49:05,639 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 5
+2020-04-26 10:49:05,641 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT userid,mname,mcard,mbirthdate,mphone,methnic,midtype,mage,mculture,mjob,mprovince,mcity,mcounty,mdistrict,mvillage,mregistered,fname,fcard,fbirthdate,fphone,fethnic,fidtype,fage,fculture,fjob,fprovince,fcity,fcounty,fdistrict,fvillage,fregistered,address,creatdate,getmarrieddate,regtypeid,landlinenumber,mimg,fimg,email,doctorname FROM userinfo WHERE userid = ? 
+2020-04-26 10:49:05,643 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer)

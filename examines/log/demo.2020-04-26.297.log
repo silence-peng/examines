@@ -1,0 +1,8 @@
+2020-04-26 17:13:04,074 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-26 17:13:04,084 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 7
+2020-04-26 17:19:23,474 INFO (StartupInfoLogger.java:50)- Starting ControlerApplication on DESKTOP-E0OONUJ with PID 14360 (E:\IDEAProject\examines\examines\web\target\classes started by ZZW in E:\IDEAProject\examines\examines)
+2020-04-26 17:19:23,477 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2020-04-26 17:19:23,478 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2020-04-26 17:19:27,534 INFO (StartupInfoLogger.java:59)- Started ControlerApplication in 5.4034496 seconds (JVM running for 7.201)
+2020-04-26 17:24:38,447 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT did,content FROM suggestd 
+2020-04-26 17:24:38,453 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT userid,mname,mcard,mbirthdate,mphone,methnic,midtype,mage,mculture,mjob,mprovince,mcity,mcounty,mdistrict,mvillage,mregistered,fname,fcard,fbirthdate,fphone,fethnic,fidtype,fage,fculture,fjob,fprovince,fcity,fcounty,fdistrict,fvillage,fregistered,address,creatdate,getmarrieddate,regtypeid,landlinenumber,mimg,fimg,email,doctorname FROM userinfo WHERE userid = ? 

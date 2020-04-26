@@ -1,0 +1,9 @@
+2020-04-26 12:30:38,847 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT count(0) FROM userinfo WHERE 1 = 1 AND creatDate = ? 
+2020-04-26 12:30:38,849 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020-04-23 00:00:00.0(Timestamp)
+2020-04-26 12:30:38,850 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-26 12:30:38,851 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM userinfo where 1=1 and creatDate = ? order by creatDate desc LIMIT ? 
+2020-04-26 12:30:38,852 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020-04-23 00:00:00.0(Timestamp), 3(Integer)
+2020-04-26 12:30:38,853 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 3
+2020-04-26 12:30:44,704 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT count(0) FROM userinfo WHERE 1 = 1 AND userId = ? AND creatDate = ? 
+2020-04-26 12:30:44,705 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer), 2020-04-23 00:00:00.0(Timestamp)
+2020-04-26 12:30:44,707 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
