@@ -67,47 +67,52 @@
 				</div>
 				<br/><br/><br/><br/>
 				<div class="">
+
 					<fieldset class="layui-elem-field">
 						<blockquote class="layui-elem-quote" style="background-color: #93D1FF;">
 							婚前医学检查结果
 						</blockquote>
-						<div class="layui-field-box">
-							<br/>
-							<div class="layui-row">
-								<div class="layui-form-item">
-									<div class="layui-col-md3 layui-col-md-offset1">
-										<div class="layui-bg-gray layui-inline abnormality">
-											<input type="radio" name="isabnormal" value="0" checked="checked">
+						<form class="layui-form" lay-filter="formResult">
+							<div class="layui-field-box">
+								<br/>
+								<div class="layui-row">
+									<div class="layui-form-item">
+										<div class="layui-col-md3 layui-col-md-offset1">
+											<div class="layui-bg-gray layui-inline abnormality">
+												<input type="radio" name="isabnormal" value="0" checked="checked">
+											</div>
+											<div class="layui-bg-gray layui-inline abnormalitys">
+												未见异常
+											</div>
 										</div>
-										<div class="layui-bg-gray layui-inline abnormalitys">
-											未见异常
-										</div>
-									</div>
-									<div class="layui-col-md3 layui-col-md-offset1">
-										<div class="layui-bg-gray layui-inline abnormality">
-											<input type="radio" name="isabnormal" value="1">
-										</div>
-										<div class="layui-bg-gray layui-inline abnormalitys">
-											存在异常情况，描述如下
+										<div class="layui-col-md3 layui-col-md-offset1">
+											<div class="layui-bg-gray layui-inline abnormality">
+												<input type="radio" name="isabnormal" value="1">
+											</div>
+											<div class="layui-bg-gray layui-inline abnormalitys">
+												存在异常情况，描述如下
+											</div>
 										</div>
 									</div>
 								</div>
+								<br/>
+								<div class="layui-form-item">
+									<div class="layui-row">
+										<input type="text" name="abnormalities" autocomplete="off" placeholder="异常描述" class="layui-input">
+									</div>
+								</div>
 							</div>
-							<br/>
-							<div class="layui-form-item">
-							    <div class="layui-row">
-							      <input type="text" name="abnormalities" autocomplete="off" placeholder="异常描述" class="layui-input">
-							    </div>
-							</div>
-						</div>
+						</form>
 					</fieldset>
 					<fieldset class="layui-elem-field">
 						<blockquote class="layui-elem-quote" style="background-color: #93D1FF;">
 							医学意见
 						</blockquote>
-					  <div class="layui-field-box" id="advise">
+						<form class="layui-form" lay-filter="formAdvise">
+							<div class="layui-field-box" id="advise">
 
-					  </div>
+							</div>
+						</form>
 					</fieldset>
 					<hr>
 				</div>

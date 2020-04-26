@@ -11,6 +11,7 @@ public class Medicalhistory {
     private String typelist;
     private String medicalname;
     private Integer morbiditycount;
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
     private Date latelytime;
     private Integer istakemedicine;
     private String capacity;

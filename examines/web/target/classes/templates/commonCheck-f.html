@@ -15,11 +15,11 @@
             <div class="layui-inline">
                 <label class="layui-form-label">编号</label>
                 <div class="layui-input-inline" style="width: 300px;">
-                    <input type="text" name="price_min"  autocomplete="off" class="layui-input">
+                    <input type="text" name="userid"  autocomplete="off" class="layui-input">
                 </div>
                 <label class="layui-form-label">性别</label>
                 <div class="layui-input-inline" style="width: 300px;">
-                    <input type="text" name="price_max"  autocomplete="off" class="layui-input">
+                    <input type="text" name="sex" value="=0" autocomplete="off" class="layui-input">
                 </div>
             </div>
         </div>
@@ -28,12 +28,12 @@
                 <label class="layui-form-label">姓名</label>
                 <div class="layui-input-inline" style="width: 300px;">
 
-                    <input type="text" name="price_min"  autocomplete="off" class="layui-input">
+                    <input type="text" name="fname"  autocomplete="off" class="layui-input">
                 </div>
 
                 <label class="layui-form-label">对方姓名</label>
                 <div class="layui-input-inline" style="width: 300px;">
-                    <input type="text" name="price_max"  autocomplete="off" class="layui-input">
+                    <input type="text" name="mname"  autocomplete="off" class="layui-input">
                 </div>
             </div>
         </div>
@@ -42,7 +42,7 @@
             <div class="layui-form-item">
                 <label class="layui-form-label">职业</label>
                 <div class="layui-input-block">
-                    <input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入您的职业" class="layui-input">
+                    <input type="text" name="fjob" lay-verify="title" autocomplete="off" placeholder="请输入您的职业" class="layui-input">
                 </div>
             </div>
             <div class="layui-container" style="width: 95%">
@@ -50,17 +50,18 @@
                     <legend>既往病史</legend>
                 </fieldset>
                 <div class="layui-form-item">
-                    <div class="layui-input-block">
+                    <div class="layui-input-block" id="medicalhistorytype">
                         <input type="checkbox" lay-skin="primary" name="none" lay-filter="none" value="男" title="无" >
-                        <input type="checkbox" lay-skin="primary" name="error" value="女" title="遗传性疾病">
-                        <input type="checkbox" lay-skin="primary" name="error" value="禁" title="精神疾病">
-                        <input type="checkbox" lay-skin="primary" name="error" value="禁" title="先天性疾病">
-                        <input type="checkbox" lay-skin="primary" name="error" value="禁" title="传染病">
-                        <input type="checkbox" lay-skin="primary" name="error" value="禁" title="性病">
-                        <input type="checkbox" lay-skin="primary" name="error" value="禁" title="重要器官疾病">
-                        <input type="checkbox" lay-skin="primary" name="error" value="禁" title="泌尿生殖系统疾病">
+                        <input type="checkbox" lay-skin="primary" name="type" value="女" title="遗传性疾病">
+                        <input type="checkbox" lay-skin="primary" name="type" value="禁" title="精神疾病">
+                        <input type="checkbox" lay-skin="primary" name="type" value="禁" title="先天性疾病">
+                        <input type="checkbox" lay-skin="primary" name="type" value="禁" title="传染病">
+                        <input type="checkbox" lay-skin="primary" name="type" value="禁" title="性病">
+                        <input type="checkbox" lay-skin="primary" name="type" value="禁" title="重要器官疾病">
+                        <input type="checkbox" lay-skin="primary" name="type" value="禁" title="泌尿生殖系统疾病">
                     </div>
                 </div>
+                <div class="layui-form-item ">
                 <div class="layui-form-item ">
                     <div class="layui-inline">
                         <label class="layui-form-label">疾病名称</label>
@@ -256,13 +257,13 @@
         });
         form.on("checkbox(none)", function (data) {
             if (this.checked){
-                $("input[name='error']").attr("disabled", "disabled");
-                $("input[name='error']").prop("checked", false);
-                $("input[name='error']").next().addClass('layui-radio-disbaled layui-disabled');
+                $("input[name='type']").attr("disabled", "disabled");
+                $("input[name='type']").prop("checked", false);
+                $("input[name='type']").next().addClass('layui-radio-disbaled layui-disabled');
                 form.render('checkbox');
             }else{
-                $("input[name='error']").removeAttr("disabled");
-                $("input[name='error']").next().removeClass('layui-radio-disbaled layui-disabled');
+                $("input[name='type']").removeAttr("disabled");
+                $("input[name='type']").next().removeClass('layui-radio-disbaled layui-disabled');
                 form.render('checkbox');
             }
         });
