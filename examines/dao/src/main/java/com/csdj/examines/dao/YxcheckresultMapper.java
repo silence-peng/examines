@@ -4,8 +4,10 @@ import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.Update;
+import org.springframework.stereotype.Repository;
 
 @Mapper
+@Repository("checkresultMapper")
 public interface YxcheckresultMapper extends tk.mybatis.mapper.common.Mapper<Yxcheckresult> {
     @Select("SELECT * FROM yxcheckresult WHERE userid=#{userid} AND sex=#{sex}")
     Yxcheckresult getYxResultByUserid(@Param("userid")Integer userid, @Param("sex")Integer sex);

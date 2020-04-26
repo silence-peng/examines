@@ -9,17 +9,22 @@
 </head>
 <body>
 <div class="layui-container" id="app" style="width: 90%">
-    <form class="layui-form">
+    <form class="layui-form" lay-filter="example">
         <br><br>
         <div class="layui-form-item ">
             <div class="layui-inline">
                 <label class="layui-form-label">编号</label>
                 <div class="layui-input-inline" style="width: 300px;">
-                    <input type="text" name="price_min"  autocomplete="off" class="layui-input">
+                    <input type="text" name="userid" value="2020122414" autocomplete="off" class="layui-input">
+                    <input type="hidden" name="isInsert" value="insert"  >
+                    <input type="hidden" name="nmedicalid">
+                    <input type="hidden" name="medicalid">
+                    <input type="hidden" name="birthid">
                 </div>
                 <label class="layui-form-label">性别</label>
                 <div class="layui-input-inline" style="width: 300px;">
-                    <input type="text" name="price_max"  autocomplete="off" class="layui-input">
+                    <input type="text" id="gender"  autocomplete="off" class="layui-input">
+                    <input type="hidden" name="sex" value="0" >
                 </div>
             </div>
         </div>
@@ -28,12 +33,12 @@
                 <label class="layui-form-label">姓名</label>
                 <div class="layui-input-inline" style="width: 300px;">
 
-                    <input type="text" name="price_min"  autocomplete="off" class="layui-input">
+                    <input type="text" name="fname" value="陈慧"  autocomplete="off" class="layui-input">
                 </div>
 
                 <label class="layui-form-label">对方姓名</label>
                 <div class="layui-input-inline" style="width: 300px;">
-                    <input type="text" name="price_max"  autocomplete="off" class="layui-input">
+                    <input type="text" name="mname" value="默苏文" autocomplete="off" class="layui-input">
                 </div>
             </div>
         </div>
@@ -42,7 +47,7 @@
             <div class="layui-form-item">
                 <label class="layui-form-label">职业</label>
                 <div class="layui-input-block">
-                    <input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入您的职业" class="layui-input">
+                    <input type="text" name="fjob" value="白领" lay-verify="title" autocomplete="off" placeholder="请输入您的职业" class="layui-input">
                 </div>
             </div>
             <div class="layui-container" style="width: 95%">
@@ -50,22 +55,17 @@
                     <legend>既往病史</legend>
                 </fieldset>
                 <div class="layui-form-item">
-                    <div class="layui-input-block">
-                        <input type="checkbox" lay-skin="primary" name="none" lay-filter="none" value="男" title="无" >
-                        <input type="checkbox" lay-skin="primary" name="error" value="女" title="遗传性疾病">
-                        <input type="checkbox" lay-skin="primary" name="error" value="禁" title="精神疾病">
-                        <input type="checkbox" lay-skin="primary" name="error" value="禁" title="先天性疾病">
-                        <input type="checkbox" lay-skin="primary" name="error" value="禁" title="传染病">
-                        <input type="checkbox" lay-skin="primary" name="error" value="禁" title="性病">
-                        <input type="checkbox" lay-skin="primary" name="error" value="禁" title="重要器官疾病">
-                        <input type="checkbox" lay-skin="primary" name="error" value="禁" title="泌尿生殖系统疾病">
+                    <div class="layui-input-block" id="medicalhistorytype">
+                        <input type="checkbox" lay-skin="primary" name="none" checked lay-filter="none" value="男" title="无" >
+
                     </div>
                 </div>
                 <div class="layui-form-item ">
+
                     <div class="layui-inline">
                         <label class="layui-form-label">疾病名称</label>
                         <div class="layui-input-inline" style="width: 300px;">
-                            <input type="text" name="price_min"  autocomplete="off" class="layui-input">
+                            <input type="text" name="medicalname"   autocomplete="off" class="layui-input">
                         </div>
 
                     </div>
@@ -73,45 +73,44 @@
                 <div class="layui-form-item ">
                     <div class="layui-inline">
                         <label class="layui-form-label" style="width: auto">若为精神疾病，发病次数</label>
-                        <div class="layui-input-inline" style="width: 300px;">
-                            <input type="text" name="price_min"  autocomplete="off" class="layui-input">
+                        <div class="layui-input-inline" style="width: 250px;">
+                            <input type="text" name="morbiditycount"  autocomplete="off" class="layui-input">
                         </div>
                         <label class="layui-form-label" style="width: auto">，最近一次发病时间</label>
-                        <div class="layui-input-inline" style="width: 300px;">
-                            <input type="text" name="date" id="date1" lay-verify="date" placeholder="yyyy-MM-dd" autocomplete="off" class="layui-input">
+                        <div class="layui-input-inline" style="width: 250px;">
+                            <input type="text" style="width: 250px" name="latelytime" id="date1"  autocomplete="off" class="layui-input">
                         </div>
                         <label class="layui-form-label" style="width: auto">最近是否服药</label>
                         <div class="layui-input-inline" style="width: 300px;">
-                            <input type="radio"  name="isMec" value="0" title="是">
-                            <input type="radio"  name="isMec" value="1" title="否">
-
+                            <input type="radio"  name="istakemedicine" value="1" title="是">
+                            <input type="radio"  name="istakemedicine" value="0" title="否">
                         </div>
                     </div>
                 </div>
                 <div class="layui-form-item">
                     <label class="layui-form-label" style="width: auto">目前社会适应能力</label>
                     <div class="layui-input-block">
-                        <input type="radio"  name="life"  value="男" title="正常工作" >
-                        <input type="radio"  name="life" value="女" title="不工作">
-                        <input type="radio"  name="life" value="禁" title="生活自理">
-                        <input type="radio"  name="life" value="禁" title="需要帮助">
-                        <input type="radio"  name="life" value="禁" title="不能自理">
+                        <input type="radio"  name="capacity" checked  value="正常工作" title="正常工作" >
+                        <input type="radio"  name="capacity" value="不工作" title="不工作">
+                        <input type="radio"  name="capacity" value="生活自理" title="生活自理">
+                        <input type="radio"  name="capacity" value="需要帮助" title="需要帮助">
+                        <input type="radio"  name="capacity" value="不能自理" title="不能自理">
                     </div>
                 </div>
                 <div class="layui-form-item ">
                     <div class="layui-inline">
-                        <label class="layui-form-label" style="width: auto">手术室</label>
+                        <label class="layui-form-label" style="width: auto">是否进行手术</label>
                         <div class="layui-input-inline" style="width: 300px;">
-                            <input type="radio"  name="operating" value="0" lay-filter="isOperation" title="无">
-                            <input type="radio"  name="operating" value="1" lay-filter="isOperation" title="有">
+                            <input type="radio"  name="isoperating" value="0" checked lay-filter="isOperation" title="无">
+                            <input type="radio"  name="isoperating" value="1" lay-filter="isOperation" title="有">
                         </div>
                         <label class="layui-form-label" style="width: auto">手术名称：</label>
                         <div class="layui-input-inline" style="width: 300px;">
-                            <input type="text" name="operatingName" disabled  autocomplete="off" class="layui-input">
+                            <input type="text" name="operatingroom" disabled  autocomplete="off" class="layui-input">
                         </div>
                         <label class="layui-form-label" style="width: auto">手术时间：</label>
                         <div class="layui-input-inline" style="width: 300px;">
-                            <input type="text" name="checkDate" id="date2" disabled lay-verify="date" placeholder="yyyy-MM-dd" autocomplete="off" class="layui-input">
+                            <input type="text" name="operatingdate" id="date2" disabled  placeholder="yyyy-MM-dd" autocomplete="off" class="layui-input">
                         </div>
                     </div>
                 </div>
@@ -121,17 +120,13 @@
                 <div class="layui-form-item">
                     <div class="layui-inline">
                         <label class="layui-form-label" style="width: auto"></label>
-                        <div class="layui-input-inline" style="width:800px;">
-                            <input type="checkbox" lay-skin="primary"  name="nowNone" lay-filter="nowNone" value="男" title="无" >
-                            <input type="checkbox" lay-skin="primary"  name="nowIllness" value="女" title="非活动性HBV携带者">
-                            <input type="checkbox" lay-skin="primary" name="nowIllness" value="禁" title="慢性HBV携带者">
-                            <input type="checkbox" lay-skin="primary" name="nowIllness" value="禁" title="梅毒随访中">
-                            <input type="checkbox" lay-skin="primary" name="nowIllness" value="禁" title="肺结核随访中">
-                            <input type="checkbox" lay-skin="primary" name="nowIllness" lay-filter="other" value="禁" title="其他">
+                        <div class="layui-input-inline" id="nowmedicalhistorytype" style="width:800px;">
+                            <input type="checkbox" lay-skin="primary" checked name="nowNone" lay-filter="nowNone" value="男" title="无" >
+
                         </div>
                         <label class="layui-form-label" style="width: auto"></label>
                         <div class="layui-input-inline" style="width: 300px;">
-                            <input type="text" name="dev" disabled="disabled" autocomplete="off" class="layui-input">
+                            <input type="text" name="elsecontent" disabled="disabled" autocomplete="off" class="layui-input">
                         </div>
 
                     </div>
@@ -144,20 +139,29 @@
                     <div class="layui-inline">
                         <label class="layui-form-label" style="width: auto"></label>
                         <div class="layui-input-inline" style="width: 250px;">
-                            <input type="radio"  name="marital" value="0"  title="无" checked>
-                            <input type="radio"  name="marital" value="1"  title="有(丧偶)">
-                        </div>
-                        <label class="layui-form-label" style="width: auto"></label>
-                        <div class="layui-input-inline" style="width: 300px;">
-                            <input type="checkbox" lay-skin="primary"  name="maiden " value="0" lay-filter="maiden" title="未婚先育">
+                            <input type="radio"  name="isdivorced" value="0" lay-filter="maiden"  title="无" checked>
+                            <input type="radio"  name="isdivorced" value="1" lay-filter="maiden" title="有(丧偶)">
                         </div>
                         <label class="layui-form-label" style="width: auto">足月 子</label>
-                        <div class="layui-input-inline" style="width: 300px;">
-                            <input type="text" name="son" disabled autocomplete="off" class="layui-input">
+                        <div class="layui-input-inline" style="width: 100px;">
+                            <input type="text" name="soncount" disabled autocomplete="off" class="layui-input">
                         </div>
                         <label class="layui-form-label" style="width: auto">女</label>
-                        <div class="layui-input-inline" style="width: 300px;">
-                            <input type="text" name="daughter" disabled autocomplete="off" class="layui-input">
+                        <div class="layui-input-inline" style="width: 100px;">
+                            <input type="text" name="girlcount" disabled autocomplete="off" class="layui-input">
+                        </div>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <div class="layui-inline">
+                        <label class="layui-form-label" style="width: auto">子女是否患有遗传疾病</label>
+                        <div class="layui-input-inline" style="width: 250px;">
+                            <input type="radio"  name="isgeneticdisease" value="0" lay-filter="ishaving"  title="无" checked>
+                            <input type="radio"  name="isgeneticdisease" value="1" lay-filter="ishaving" title="有">
+                        </div>
+                        <label class="layui-form-label" style="width: auto"></label>
+                        <div class="layui-input-inline" style="width: 400px;">
+                            <input type="text" name="geneticdisease" disabled autocomplete="off" class="layui-input">
                         </div>
                     </div>
 
@@ -177,19 +181,12 @@
                 <div class="layui-form-item">
                     <div class="layui-inline">
                         <label class="layui-form-label">医师签名</label>
-                        <div class="layui-input-inline" style="width: 30%">
-                            <select name="city"  lay-verify="required">
-                                <option value=""></option>
-                                <option value="0">北京</option>
-                                <option value="1">上海</option>
-                                <option value="2">广州</option>
-                                <option value="3">深圳</option>
-                                <option value="4">杭州</option>
-                            </select>
+                        <div class="layui-input-inline" style="width: 25%">
+                            <input type="text" name="doctorname"  autocomplete="off" class="layui-input">
                         </div>
                         <label class="layui-form-label">检查时间</label>
                         <div class="layui-input-inline">
-                            <input type="text" name="date" id="date" lay-verify="date" placeholder="yyyy-MM-dd" autocomplete="off" class="layui-input">
+                            <input type="text" name="createdate" id="date"  placeholder="yyyy-MM-dd" autocomplete="off" class="layui-input">
                         </div>
                     </div>
                 </div>
@@ -218,7 +215,6 @@
             ,layedit = layui.layedit
             ,laydate = layui.laydate
             ,$=layui.jquery;
-
         //日期
         laydate.render({
             elem: '#date'
@@ -229,87 +225,164 @@
         laydate.render({
             elem: '#date2'
         });
-        form.on("radio(isOperation)", function (data) {
-            if (this.value==='0') {
-                $("input[name='operatingName']").attr("disabled",true);
-                $("input[name='checkDate']").attr("disabled",true);
-            } else if(this.value==='1'){
-                $("input[name='operatingName']").attr("disabled",false);
-                $("input[name='checkDate']").attr("disabled",false);
+
+        $.post("/check/loadMedicalhistorytype",function (result) {
+            $(result).each(function (i) {
+                $("#medicalhistorytype").append("  <input type=\"checkbox\" disabled class=\"layui-radio-disbaled layui-disabled\" lay-skin=\"primary\" name=\"medicalhistorytype\" value='"+result[i].typeid+"' title='"+result[i].type+"'>\n")
+            });
+
+            form.render("checkbox");
+        });
+        if($("input[name='sex']").val()==='1'){
+            $("#gender").val("男");
+        }else if($("input[name='sex']").val()==='0'){
+            $("#gender").val("女");
+        }
+        $.post("/check/loadNmedicalhistorytype",function (r) {
+            $(r).each(function (i) {
+                $("#nowmedicalhistorytype").append("  <input type=\"checkbox\" disabled class=\"layui-radio-disbaled layui-disabled\" lay-skin=\"primary\" name=\"nowmedicalhistorytype\" value='"+r[i].ntypeid+"' title='"+r[i].ntype+"'>\n")
+            });
+            $("#nowmedicalhistorytype").append("  <input type=\"checkbox\" disabled class=\"layui-radio-disbaled layui-disabled\" lay-filter=\"other\" lay-skin=\"primary\" id='other' value='0' title='其他'>\n")
+            form.render("checkbox");
+        });
+        $.post("/check/isCommonCheck",{userid:$("input[name='userid']").val(),sex: $("input[name='sex']").val()},function (result) {
+            if (result!==null && result!==""){
+                $("input[name='isInsert']").val("update");
+                form.val('example', result);
+                $.post("/check/getMaritalhistory",{id:result.birthid},function (maritalhistory) {
+                    if (maritalhistory.isdivorced===1){
+                        $("input[name='soncount']").attr("disabled",false);
+                        $("input[name='girlcount']").attr("disabled",false);
+                    }
+                    if (maritalhistory.isGeneticDisease===1){
+                        $("input[name='geneticDisease']").attr("disabled",false);
+                    }
+                    form.val('example', maritalhistory);
+                });
+                $.post("/check/getMedicalHistory",{id:result.medicalid},function (medicalHistory) {
+                    if(medicalHistory.isoperating===1){
+                        $("input[name='operatingroom']").attr("disabled",false);
+                        $("input[name='operatingdate']").attr("disabled",false);
+                    }
+                    if(medicalHistory.typelist!==null && medicalHistory.typelist!==""){
+                        $("input[name='medicalhistorytype']").removeAttr("disabled");
+                        $("input[name='medicalhistorytype']").next().removeClass('layui-radio-disbaled layui-disabled');
+                        $("input[name='none']").prop("checked", false);
+                        var type = medicalHistory.typelist.split(",");
+                        $(type).each(function (q) {
+                            $("input[name='medicalhistorytype']").eq(type[q]-1).prop("checked", true);
+                            form.render('checkbox');
+                        });
+
+                    }
+                    form.val('example', medicalHistory);
+                });
+                $.post("/check/getNowMedicalHistory",{id:result.nmedicalid},function (nowMedicalHistory) {
+                    if (nowMedicalHistory.ntypelist!==null && nowMedicalHistory.ntypelist!==""){
+                        $("input[name='nowmedicalhistorytype']").removeAttr("disabled");
+                        $("input[name='nowmedicalhistorytype']").next().removeClass('layui-radio-disbaled layui-disabled');
+                        $("#other").removeAttr("disabled");
+                        $("#other").next().removeClass('layui-radio-disbaled layui-disabled');
+                        $("input[name='nowNone']").prop("checked", false);
+                        var type = nowMedicalHistory.ntypelist.split(",");
+                        $(type).each(function (q) {
+                            $("input[name='nowmedicalhistorytype']").eq(type[q]-1).prop("checked", true);
+                        });
+                        if (nowMedicalHistory.elsecontent!==null && nowMedicalHistory.elsecontent!=="" ){
+                            $("#other").prop("checked", true);
+                        }
+                        form.render('checkbox');
+                    }
+                    form.val('example', nowMedicalHistory);
+                });
+            }else{
+                $("input[name='isInsert']").val("insert");
             }
         });
-        form.on("checkbox(maiden)", function (data) {
-            if (this.checked) {
-                $("input[name='son']").attr("disabled",true);
-                $("input[name='daughter']").attr("disabled",true);
+        form.on("radio(isOperation)", function (data) {
+            if (this.value==='0') {
+                $("input[name='operatingroom']").attr("disabled",true);
+                $("input[name='operatingdate']").attr("disabled",true);
+            } else if(this.value==='1'){
+                $("input[name='operatingroom']").attr("disabled",false);
+                $("input[name='operatingdate']").attr("disabled",false);
+            }
+        });
+        form.on("radio(maiden)", function (data) {
+            if (this.value==='0') {
+                $("input[name='soncount']").attr("disabled",true);
+                $("input[name='girlcount']").attr("disabled",true);
+                $("input[name='soncount']").val("");
+                $("input[name='girlcount']").val("");
             } else{
-                $("input[name='son']").attr("disabled",false);
-                $("input[name='daughter']").attr("disabled",false);
+                $("input[name='soncount']").attr("disabled",false);
+                $("input[name='girlcount']").attr("disabled",false);
+            }
+        });
+        form.on("radio(ishaving)", function (data) {
+            if (this.value==='0') {
+                $("input[name='geneticdisease']").attr("disabled",true);
+                $("input[name='geneticdisease']").val("");
+            } else{
+                $("input[name='geneticdisease']").attr("disabled",false);
             }
         });
         form.on("checkbox(other)", function (data) {
             if (this.checked) {
-                $("input[name='dev']").attr("disabled",false);
+                $("input[name='elsecontent']").attr("disabled",false);
             } else{
-                $("input[name='dev']").attr("disabled",true);
+                $("input[name='elsecontent']").attr("disabled",true);
             }
         });
         form.on("checkbox(none)", function (data) {
             if (this.checked){
-                $("input[name='error']").attr("disabled", "disabled");
-                $("input[name='error']").prop("checked", false);
-                $("input[name='error']").next().addClass('layui-radio-disbaled layui-disabled');
+                $("input[name='medicalhistorytype']").attr("disabled", "disabled");
+                $("input[name='medicalhistorytype']").prop("checked", false);
+                $("input[name='medicalhistorytype']").next().addClass('layui-radio-disbaled layui-disabled');
                 form.render('checkbox');
             }else{
-                $("input[name='error']").removeAttr("disabled");
-                $("input[name='error']").next().removeClass('layui-radio-disbaled layui-disabled');
+                $("input[name='medicalhistorytype']").removeAttr("disabled");
+                $("input[name='medicalhistorytype']").next().removeClass('layui-radio-disbaled layui-disabled');
                 form.render('checkbox');
             }
         });
         form.on("checkbox(nowNone)", function (data) {
             if (this.checked){
-                $("input[name='nowIllness']").attr("disabled", "disabled");
-                $("input[name='nowIllness']").prop("checked", false);
-                $("input[name='nowIllness']").next().addClass('layui-radio-disbaled layui-disabled');
-                $("input[name='dev']").attr("disabled",true);
+                $("input[name='nowmedicalhistorytype']").attr("disabled", "disabled");
+                $("input[name='nowmedicalhistorytype']").prop("checked", false);
+                $("input[name='nowmedicalhistorytype']").next().addClass('layui-radio-disbaled layui-disabled');
+                $("#other").attr("disabled", "disabled");
+                $("#other").prop("checked", false);
+                $("#other").next().addClass('layui-radio-disbaled layui-disabled');
+                $("input[name='elsecontent']").attr("disabled",true);
+                $("input[name='elsecontent']").val("");
                 form.render('checkbox');
             }else{
-                $("input[name='nowIllness']").removeAttr("disabled");
-                $("input[name='nowIllness']").next().removeClass('layui-radio-disbaled layui-disabled');
+                $("input[name='nowmedicalhistorytype']").removeAttr("disabled");
+                $("input[name='nowmedicalhistorytype']").next().removeClass('layui-radio-disbaled layui-disabled');
+                $("#other").removeAttr("disabled");
+                $("#other").next().removeClass('layui-radio-disbaled layui-disabled');
                 form.render('checkbox');
             }
         });
-        //创建一个编辑器
-        var editIndex = layedit.build('LAY_demo_editor');
 
-        //自定义验证规则
-        form.verify({
-            title: function(value){
-                if(value.length < 5){
-                    return '标题至少得5个字符啊';
-                }
-            }
-            ,pass: [
-                /^[\S]{6,12}$/
-                ,'密码必须6到12位，且不能出现空格'
-            ]
-            ,content: function(value){
-                layedit.sync(editIndex);
-            }
-        });
-
-        //监听指定开关
-        form.on('switch(switchTest)', function(data){
-            layer.msg('开关checked：'+ (this.checked ? 'true' : 'false'), {
-                offset: '6px'
-            });
-            layer.tips('温馨提示：请注意开关状态的文字可以随意定义，而不仅仅是ON|OFF', data.othis)
-        });
         //监听提交
         form.on('submit(demo1)', function(data){
-            layer.alert(JSON.stringify(data.field), {
-                title: '最终的提交信息'
-            });
+            layer.alert("确定要提交X射线检查结果吗？",function () {
+                $.post('/check/commonCheck',$("form").serialize(),function (result) {
+                    console.log(result)
+                    if (result>0){
+                        var type=$("input[name='isInsert']").val();
+                        if (type==="insert"){
+                            layer.alert("提交成功！")
+                        }else if (type==="update"){
+                            layer.alert("更新成功！")
+                        }
+                    }
+                });
+            })
+
+
             return false;
         });
 

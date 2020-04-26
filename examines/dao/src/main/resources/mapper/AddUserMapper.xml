@@ -16,6 +16,27 @@
         #{fprovince},#{fcity},#{fcounty},#{fdistrict},#{fvillage},#{fregistered},#{address},#{creatdate},#{getmarrieddate},#{regtypeid},
         #{landlinenumber},#{mimg},#{fimg},#{email},#{doctorname})
     </insert>
+    <insert id="addNowmedicalhistory" parameterType="Nowmedicalhistory">
+        <selectKey resultType="Integer" keyProperty="nmedicalid" order="AFTER" >
+            SELECT LAST_INSERT_ID()
+        </selectKey>
+        INSERT INTO Nowmedicalhistory(ntypelist,elsecontent)
+        VALUES(#{ntypelist},#{elsecontent})
+        </insert>
+    <insert id="addMedicalhistory" parameterType="Medicalhistory">
+        <selectKey resultType="Integer" keyProperty="medicalid" order="AFTER" >
+            SELECT LAST_INSERT_ID()
+        </selectKey>
+        INSERT INTO Medicalhistory(typelist,medicalname,morbiditycount,latelytime,istakemedicine,capacity,isoperating,operatingroom,operatingdate)
+        VALUES(#{typelist},#{medicalname},#{morbiditycount},#{latelytime},#{istakemedicine},#{capacity},#{isoperating},#{operatingroom},#{operatingdate})
+    </insert>
+    <insert id="addMaritalhistory" parameterType="Maritalhistory">
+        <selectKey resultType="Integer" keyProperty="birthid" order="AFTER" >
+            SELECT LAST_INSERT_ID()
+        </selectKey>
+        INSERT INTO Maritalhistory(isdivorced,soncount,girlcount,isgeneticdisease,geneticdisease)
+        VALUES(#{isdivorced},#{soncount},#{girlcount},#{isgeneticdisease},#{geneticdisease})
+    </insert>
     <insert id="addYxResult">
         INSERT INTO yxcheckresult(userId,sex) VALUES(#{userId},#{sex})
     </insert>
