@@ -3,6 +3,7 @@ package com.csdj.examines.service.impl;
 import com.csdj.examines.dao.*;
 import com.csdj.examines.pojo.Userinfo;
 import com.csdj.examines.pojo.Yxadvise;
+import com.csdj.examines.pojo.Yxadvisecheckresult;
 import com.csdj.examines.pojo.Yxcheckresult;
 import com.csdj.examines.service.CheckProveService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -51,7 +52,15 @@ public class CheckProveServiceImpl implements CheckProveService {
     }
     @Transactional
     public int save(String arr, Integer isabnormal, String abnormalities, Integer resultid) {
-        yxcheckresultMapper.updateYxResultByUserid(isabnormal,abnormalities,resultid);
-        return yxadvisecheckresultMapper.updateAdvicseResult(arr,resultid);
+        Yxcheckresult yxcheckresult = new Yxcheckresult();
+        yxcheckresult.setResultid(resultid);
+        yxcheckresult.setIsabnormal(isabnormal);
+        yxcheckresult.setAbnormalities(abnormalities);
+        yxcheckresultMapper.updateByPrimaryKeySelective(yxcheckresult);
+        Yxadvisecheckresult advisRsult = new Yxadvisecheckresult();
+        advisRsult.setAdvisearr(arr);
+        example =new Example(advisRsult.getClass());
+        example.createCriteria().andEqualTo("resultid",resultid);
+        return yxadvisecheckresultMapper.updateByExampleSelective(advisRsult,example);
     }
 }

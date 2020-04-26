@@ -8,7 +8,4 @@ import org.apache.ibatis.annotations.Update;
 
 @Mapper
 public interface YxadvisecheckresultMapper extends tk.mybatis.mapper.common.Mapper<Yxadvisecheckresult>{
-    @Update("UPDATE yxadvisecheckresult SET adviseArr=#{arr} WHERE resultId=#{resultid}")
-    int updateAdvicseResult(@Param("arr")String arr,@Param("resultid")Integer resultid);
-
 }

@@ -42,7 +42,7 @@
 								</div>
 							</div>
 							<div class="layui-bg-gray layui-inline infos">
-								<input style="border: none;height: 20px;" value="男" disabled="disabled" class="layui-bg-gray"/>
+								<input style="border: none;height: 20px;" id="sex" value="" disabled="disabled" class="layui-bg-gray"/>
 							</div>
 						</div>
 						<hr>
@@ -79,7 +79,7 @@
 									<input class="layui-hide" type="text" name="resultid" id="resultid">
 									<div class="layui-col-md3 layui-col-md-offset1">
 										<div class="layui-bg-gray layui-inline abnormality">
-											<input type="radio" name="isabnormal" value="0" checked="checked">
+											<input type="radio" name="isabnormal" value="0" checked="checked" lay-filter="isabnormal">
 										</div>
 										<div class="layui-bg-gray layui-inline abnormalitys">
 											未见异常
@@ -87,7 +87,7 @@
 									</div>
 									<div class="layui-col-md3 layui-col-md-offset1">
 										<div class="layui-bg-gray layui-inline abnormality">
-											<input type="radio" name="isabnormal" value="1">
+											<input type="radio" name="isabnormal" value="1" lay-filter="isabnormal">
 										</div>
 										<div class="layui-bg-gray layui-inline abnormalitys">
 											存在异常情况，描述如下
@@ -118,7 +118,7 @@
 				
 				<div class="layui-container" style="text-align: center;">
 					<div class="layui-form-item" style="color: red;">
-						<button type="button" lay-submit lay-filter="formDemo" class="layui-btn">新建</button>
+						<button type="button" lay-submit lay-filter="formDemo" class="layui-btn">保存</button>
 						<button type="reset" class="layui-btn">重置</button>
 					</div>
 				</div>

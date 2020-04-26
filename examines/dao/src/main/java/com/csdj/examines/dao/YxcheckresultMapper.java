@@ -9,8 +9,6 @@ import org.apache.ibatis.annotations.Update;
 public interface YxcheckresultMapper extends tk.mybatis.mapper.common.Mapper<Yxcheckresult> {
     @Select("SELECT * FROM yxcheckresult WHERE userid=#{userid} AND sex=#{sex}")
     Yxcheckresult getYxResultByUserid(@Param("userid")Integer userid, @Param("sex")Integer sex);
-    @Update("UPDATE yxcheckresult SET isAbnormal=#{isabnormal} ,abnormalities=#{abnormalities} WHERE resultId=#{resultid}")
-    int updateYxResultByUserid(@Param("isabnormal")Integer isabnormal, @Param("abnormalities")String abnormalities,@Param("resultid")Integer resultid);
     @Select("select * from yxcheckresult where userid=#{userid} and sex=#{sex}")
     Yxcheckresult getOne(@Param("userid")Integer userid, @Param("sex")Integer sex);
 }

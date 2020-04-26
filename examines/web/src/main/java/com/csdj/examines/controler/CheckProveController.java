@@ -21,7 +21,7 @@ import java.util.List;
  */
 @Controller
 @RequestMapping("checkProve")
-public class CheckProveServiceController {
+public class CheckProveController {
     @Autowired
     private CheckProveService checkProveService;
 
