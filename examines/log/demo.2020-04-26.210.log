@@ -1,0 +1,8 @@
+2020-04-26 18:36:35,631 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 0
+2020-04-26 18:36:37,302 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from yxadvisecheckresult WHERE resultId=? 
+2020-04-26 18:36:37,303 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: null
+2020-04-26 18:36:37,304 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 0
+2020-04-26 18:36:37,305 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: INSERT INTO yxadvisecheckresult ( relationid,resultid,advisearr ) VALUES( ?,?,? ) 
+2020-04-26 18:36:37,306 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: null, null, null
+2020-04-26 18:36:37,307 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 1
+2020-04-26 18:36:37,309 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE yxcheckresult SET userid = ?,sex = ?,isabnormal = ?,abnormalities = ?,disease = ?,sanitation = ?,consult = ?,supplement = ?,advise = ?,adviseproject = ?,isadvise = ?,referralhospital = ?,referraldate = ?,forwarddate = ?,provedate = ?,doctorname = ?,examinedate = ?,isoral = ?,isx = ?,iscgkz = ?,isover = ? WHERE resultid = ? 

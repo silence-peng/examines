@@ -1,0 +1,22 @@
+2020-04-26 16:47:49,479 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 4
+2020-04-26 16:47:49,484 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from cgkzresult where userid=? and sex=?
+2020-04-26 16:47:49,491 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122414(Integer), 0(Integer)
+2020-04-26 16:47:49,493 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-26 16:47:49,578 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT birthid,isdivorced,soncount,girlcount,isgeneticdisease,geneticdisease FROM maritalhistory WHERE birthid = ?
+2020-04-26 16:47:49,579 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 4(Integer)
+2020-04-26 16:47:49,581 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-26 16:47:49,583 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT medicalid,typelist,medicalname,morbiditycount,latelytime,istakemedicine,capacity,isoperating,operatingroom,operatingdate FROM medicalhistory WHERE medicalid = ?
+2020-04-26 16:47:49,584 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 3(Integer)
+2020-04-26 16:47:49,586 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-26 16:47:49,597 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT nmedicalid,ntypelist,elsecontent FROM nowmedicalhistory WHERE nmedicalid = ?
+2020-04-26 16:47:49,598 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 3(Integer)
+2020-04-26 16:47:49,599 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-26 01:18:11,947 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-26 01:18:11,946 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 5
+2020-04-26 01:18:11,946 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-26 01:18:11,963 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT a.`adviseArr` FROM yxadvisecheckresult a,yxcheckresult b WHERE a.`resultId`=b.`resultId` AND b.userId=? AND b.`sex`=?
+2020-04-26 01:18:11,964 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer), 1(Integer)
+2020-04-26 01:18:11,965 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-26 16:51:59,784 INFO (StartupInfoLogger.java:50)- Starting ControlerApplication on DESKTOP-RJURPVR with PID 5144 (D:\MAVEN\Git\examines\examines\web\target\classes started by hh in D:\MAVEN\Git\examines\examines)
+2020-04-26 16:51:59,787 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2020-04-26 16:51:59,787 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default

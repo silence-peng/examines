@@ -1,0 +1,13 @@
+2020-04-26 18:43:29,902 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT yxid,yxitem FROM yxadvise 
+2020-04-26 18:43:29,904 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from yxcheckresult where userid=? and sex=? 
+2020-04-26 18:43:29,908 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-26 18:43:29,910 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122414(Integer), 1(Integer)
+2020-04-26 18:43:29,910 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 5
+2020-04-26 18:43:29,912 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-26 18:43:29,933 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from yxadvisecheckresult WHERE resultId=? 
+2020-04-26 18:43:29,934 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 4(Integer)
+2020-04-26 18:43:29,937 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 0
+2020-04-26 18:43:38,313 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT typeid,type FROM medicalhistorytype 
+2020-04-26 18:43:38,313 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-26 18:43:38,315 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 7
+2020-04-26 18:43:38,316 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from cgkzresult where userid=? and sex=? 

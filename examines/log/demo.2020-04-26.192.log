@@ -1,0 +1,11 @@
+2020-04-26 18:23:28,748 INFO (StartupInfoLogger.java:59)- Started ControlerApplication in 4.6831865 seconds (JVM running for 224.911)
+2020-04-26 18:26:10,673 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT yxid,yxitem FROM yxadvise 
+2020-04-26 18:26:10,676 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-26 18:26:10,680 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 5
+2020-04-26 18:26:10,682 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from yxcheckresult where userid=? and sex=? 
+2020-04-26 18:26:10,683 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer), 0(Integer)
+2020-04-26 18:26:10,686 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-26 18:26:10,725 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from yxadvisecheckresult WHERE resultId=? 
+2020-04-26 18:26:10,728 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 1(Integer)
+2020-04-26 18:26:10,730 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-26 18:26:11,225 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT yxid,yxitem FROM yxadvise 
