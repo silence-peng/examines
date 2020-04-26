@@ -1,15 +1,13 @@
 package com.csdj.examines.service.impl;
 
-import com.csdj.examines.dao.UserinfoMapper;
-import com.csdj.examines.dao.YxadviseMapper;
-import com.csdj.examines.dao.YxadvisecheckresultMapper;
-import com.csdj.examines.dao.YxcheckresultMapper;
+import com.csdj.examines.dao.*;
 import com.csdj.examines.pojo.Userinfo;
 import com.csdj.examines.pojo.Yxadvise;
 import com.csdj.examines.pojo.Yxcheckresult;
 import com.csdj.examines.service.CheckProveService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import tk.mybatis.mapper.entity.Example;
 
 import java.util.List;
@@ -27,6 +25,11 @@ public class CheckProveServiceImpl implements CheckProveService {
     private YxcheckresultMapper yxcheckresultMapper;
     @Autowired
     private YxadviseMapper yxadviseMapper;
+    @Autowired
+    private YxadvisecheckresultMapper yxadvisecheckresultMapper;
+    @Autowired
+    private CheckProveMapper checkProveMapper;
+
     Example example = null;
 
     public Userinfo getUserByUserid(Integer userid) {
@@ -41,5 +44,14 @@ public class CheckProveServiceImpl implements CheckProveService {
 
     public Yxcheckresult getYxResultByUserid(Integer userid, Integer sex) {
         return yxcheckresultMapper.getYxResultByUserid(userid,sex);
+    }
+
+    public String getAdviseArr(Integer userid, Integer sex) {
+        return checkProveMapper.getAdviseArr(userid,sex);
+    }
+    @Transactional
+    public int save(String arr, Integer isabnormal, String abnormalities, Integer resultid) {
+        yxcheckresultMapper.updateYxResultByUserid(isabnormal,abnormalities,resultid);
+        return yxadvisecheckresultMapper.updateAdvicseResult(arr,resultid);
     }
 }
