@@ -1,0 +1,15 @@
+2020-04-26 16:33:30,611 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2(Integer)
+2020-04-26 16:33:30,620 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-26 16:33:31,863 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT typeid,type FROM medicalhistorytype 
+2020-04-26 16:33:31,864 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT ntypeid,ntype FROM nowmedicalhistorytype 
+2020-04-26 16:33:31,864 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-26 16:33:31,865 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-26 16:33:31,866 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 4
+2020-04-26 16:33:31,867 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 7
+2020-04-26 16:33:31,877 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from cgkzresult where userid=? and sex=? 
+2020-04-26 16:33:31,878 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer), 1(Integer)
+2020-04-26 16:33:31,880 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-26 16:33:31,929 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT birthid,isdivorced,soncount,girlcount,isgeneticdisease,geneticdisease FROM maritalhistory WHERE birthid = ? 
+2020-04-26 16:33:31,930 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2(Integer)
+2020-04-26 16:33:31,932 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-26 16:33:31,930 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT medicalid,typelist,medicalname,morbiditycount,latelytime,istakemedicine,capacity,isoperating,operatingroom,operatingdate FROM medicalhistory WHERE medicalid = ? 

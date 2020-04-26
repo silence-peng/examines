@@ -1,0 +1,16 @@
+2020-04-26 16:24:31,663 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT nmedicalid,ntypelist,elsecontent FROM nowmedicalhistory WHERE nmedicalid = ? 
+2020-04-26 16:24:31,664 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-26 16:24:31,662 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-26 16:24:31,670 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 1(Integer)
+2020-04-26 16:24:31,676 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-26 16:24:57,819 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from cgkzresult where userid=? and sex=? 
+2020-04-26 16:24:57,819 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer), 0(Integer)
+2020-04-26 16:24:57,821 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-26 16:24:57,823 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE nowmedicalhistory SET ntypelist = ?,elsecontent = ? WHERE nmedicalid = ? 
+2020-04-26 16:24:57,824 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 1,3,4(String), null, 1(Integer)
+2020-04-26 16:24:57,826 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 1
+2020-04-26 16:24:57,826 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE medicalhistory SET typelist = ?,medicalname = ?,morbiditycount = ?,latelytime = ?,istakemedicine = ?,capacity = ?,isoperating = ?,operatingroom = ?,operatingdate = ? WHERE medicalid = ? 
+2020-04-26 16:24:57,826 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 1,2,4,6(String), 正午病(String), 2(Integer), 2020-04-25 00:00:00.0(Timestamp), 1(Integer), 正常工作(String), 1(Integer), 脑部开发(String), 2020-04-26 00:00:00.0(Timestamp), 1(Integer)
+2020-04-26 16:24:57,828 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 1
+2020-04-26 16:24:57,829 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE cgkzresult SET nmedicalid = ?,medicalid = ?,birthid = ?,doctorname = ?,createdate = ?,userid = ?,sex = ? WHERE cgid = ? 
+2020-04-26 16:24:57,829 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 1(Integer), 1(Integer), 1(Integer), 张三(String), 2020-04-23 00:00:00.0(Timestamp), 2020122412(Integer), 0(Integer), 1(Integer)

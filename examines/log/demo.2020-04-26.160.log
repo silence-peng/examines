@@ -1,0 +1,8 @@
+2020-04-26 16:43:26,304 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 0
+2020-04-26 16:44:36,423 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from cgkzresult where userid=? and sex=? 
+2020-04-26 16:44:36,424 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122414(Integer), 0(Integer)
+2020-04-26 16:44:36,428 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 0
+2020-04-26 16:44:36,430 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from yxcheckresult where userid=? and sex=? 
+2020-04-26 16:44:36,431 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122414(Integer), 0(Integer)
+2020-04-26 16:44:36,472 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-26 16:44:36,474 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE yxcheckresult SET userid = ?,sex = ?,isabnormal = ?,abnormalities = ?,disease = ?,sanitation = ?,consult = ?,supplement = ?,advise = ?,adviseproject = ?,isadvise = ?,referralhospital = ?,referraldate = ?,forwarddate = ?,provedate = ?,doctorname = ?,examinedate = ?,isoral = ?,isx = ?,iscgkz = ?,isover = ? WHERE resultid = ? 

@@ -1,0 +1,9 @@
+2020-04-26 16:09:30,018 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from cgkzresult where userid=? and sex=? 
+2020-04-26 16:09:30,025 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer), 0(Integer)
+2020-04-26 16:09:30,028 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-26 16:09:30,029 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE cgkzresult SET nmedicalid = ?,medicalid = ?,birthid = ?,doctorname = ?,createdate = ?,userid = ?,sex = ? WHERE cgid = ? 
+2020-04-26 16:09:30,031 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 1(Integer), 1(Integer), 1(Integer), 张三(String), 2020-04-23 00:00:00.0(Timestamp), 2020122412(Integer), 0(Integer), null
+2020-04-26 16:09:30,032 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 0
+2020-04-26 16:16:08,536 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT typeid,type FROM medicalhistorytype 
+2020-04-26 16:16:08,537 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-26 16:16:08,538 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT ntypeid,ntype FROM nowmedicalhistorytype 

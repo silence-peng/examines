@@ -1,0 +1,7 @@
+2020-04-26 16:22:26,754 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 1
+2020-04-26 16:22:26,760 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE medicalhistory SET typelist = ?,medicalname = ?,morbiditycount = ?,latelytime = ?,istakemedicine = ?,capacity = ?,isoperating = ?,operatingroom = ?,operatingdate = ? WHERE medicalid = ? 
+2020-04-26 16:22:26,761 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 1,2,4,6(String), 正午病(String), 2(Integer), 2020-04-25 00:00:00.0(Timestamp), 1(Integer), 正常工作(String), 1(Integer), 脑部开发(String), 2020-04-26 00:00:00.0(Timestamp), 1(Integer)
+2020-04-26 16:22:26,791 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 1
+2020-04-26 16:22:26,792 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE cgkzresult SET nmedicalid = ?,medicalid = ?,birthid = ?,doctorname = ?,createdate = ?,userid = ?,sex = ? WHERE cgid = ? 
+2020-04-26 16:22:26,794 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 1(Integer), 1(Integer), 1(Integer), 张三(String), 2020-04-23 00:00:00.0(Timestamp), 2020122412(Integer), 0(Integer), 1(Integer)
+2020-04-26 16:22:26,796 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 1

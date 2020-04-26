@@ -1,1 +1,9 @@
-2020-04-26 13:15:59,419 INFO (StartupInfoLogger.java:59)- Started ControlerApplication in 3.056891 seconds (JVM running for 14795.019)
+2020-04-26 16:44:46,982 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT typeid,type FROM medicalhistorytype 
+2020-04-26 16:44:46,990 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from cgkzresult where userid=? and sex=? 
+2020-04-26 16:44:46,986 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT ntypeid,ntype FROM nowmedicalhistorytype 
+2020-04-26 16:44:46,993 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-26 16:44:46,994 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122414(Integer), 1(Integer)
+2020-04-26 16:44:46,995 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-26 16:44:46,996 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 7
+2020-04-26 16:44:46,996 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 0
+2020-04-26 16:44:46,997 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 4

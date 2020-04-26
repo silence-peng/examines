@@ -1,0 +1,13 @@
+2020-04-26 16:00:38,224 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-26 16:00:38,273 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT birthid,isdivorced,soncount,girlcount,isgeneticdisease,geneticdisease FROM maritalhistory WHERE birthid = ? 
+2020-04-26 16:00:38,274 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 1(Integer)
+2020-04-26 16:00:38,275 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-26 16:00:38,274 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT medicalid,typelist,medicalname,morbiditycount,latelytime,istakemedicine,capacity,isoperating,operatingroom,operatingdate FROM medicalhistory WHERE medicalid = ? 
+2020-04-26 16:00:38,278 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 1(Integer)
+2020-04-26 16:00:38,280 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT nmedicalid,ntypelist,elsecontent FROM nowmedicalhistory WHERE nmedicalid = ? 
+2020-04-26 16:00:38,282 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 1(Integer)
+2020-04-26 16:00:38,282 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-26 16:00:38,284 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-26 16:03:05,877 INFO (StartupInfoLogger.java:50)- Starting ControlerApplication on DESKTOP-RJURPVR with PID 3772 (D:\MAVEN\Git\examines\examines\web\target\classes started by hh in D:\MAVEN\Git\examines\examines)
+2020-04-26 16:03:05,883 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2020-04-26 16:03:05,885 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default

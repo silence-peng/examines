@@ -1,0 +1,12 @@
+2020-04-26 15:27:15,488 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-26 15:27:15,495 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT nmedicalid,ntypelist,elsecontent FROM nowmedicalhistory WHERE nmedicalid = ? 
+2020-04-26 15:27:15,579 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 1(Integer)
+2020-04-26 15:27:15,583 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-26 15:27:15,492 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT medicalid,typelist,medicalname,morbiditycount,latelytime,istakemedicine,capacity,isoperating,operatingroom,operatingdate FROM medicalhistory WHERE medicalid = ? 
+2020-04-26 15:27:15,591 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 1(Integer)
+2020-04-26 15:27:15,593 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-26 15:27:18,079 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT typeid,type FROM medicalhistorytype 
+2020-04-26 15:27:18,080 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-26 15:27:18,082 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 7
+2020-04-26 15:27:18,088 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT ntypeid,ntype FROM nowmedicalhistorytype 
+2020-04-26 15:27:18,088 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 

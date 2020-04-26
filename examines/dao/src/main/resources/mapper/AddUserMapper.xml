@@ -20,15 +20,15 @@
         <selectKey resultType="Integer" keyProperty="nmedicalid" order="AFTER" >
             SELECT LAST_INSERT_ID()
         </selectKey>
-        INSERT INTO userinfo(typelist,medicalname,morbiditycount,latelytime,istakemedicine,capacity,isoperating,operatingroom,operatingdate)
-        VALUES(#{typelist},#{medicalname},#{morbiditycount},#{latelytime},#{istakemedicine},#{capacity},#{isoperating},#{operatingroom},#{operatingdate})
-    </insert>
+        INSERT INTO Nowmedicalhistory(ntypelist,elsecontent)
+        VALUES(#{ntypelist},#{elsecontent})
+        </insert>
     <insert id="addMedicalhistory" parameterType="Medicalhistory">
         <selectKey resultType="Integer" keyProperty="medicalid" order="AFTER" >
             SELECT LAST_INSERT_ID()
         </selectKey>
-        INSERT INTO Medicalhistory(ntypelist,elsecontent)
-        VALUES(#{ntypelist},#{elsecontent})
+        INSERT INTO Medicalhistory(typelist,medicalname,morbiditycount,latelytime,istakemedicine,capacity,isoperating,operatingroom,operatingdate)
+        VALUES(#{typelist},#{medicalname},#{morbiditycount},#{latelytime},#{istakemedicine},#{capacity},#{isoperating},#{operatingroom},#{operatingdate})
     </insert>
     <insert id="addMaritalhistory" parameterType="Maritalhistory">
         <selectKey resultType="Integer" keyProperty="birthid" order="AFTER" >

@@ -6,6 +6,7 @@ import com.csdj.examines.service.CommonCheckService;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 @Service
@@ -29,17 +30,18 @@ public class CommonCheckServiceImpl implements CommonCheckService {
     public Cgkzresult isCommonCheck(Integer userid,Integer sex) {
         return cgkzresultMapper.getOne(userid, sex);
     }
-
+    @Transactional
     public Integer checkCommon(Cgkzresult cgkzresult, Medicalhistory medicalhistory,Maritalhistory maritalhistory,
-                               Nowmedicalhistory nowmedicalhistory,List<Integer> nowmedicalhistorytype
-                                ,List<Integer> medicalhistorytype) {
+                               Nowmedicalhistory nowmedicalhistory,Integer[] nowmedicalhistorytype
+                                ,Integer[] medicalhistorytype) {
         String str1= StringUtils.join(nowmedicalhistorytype, ",");
         String str2= StringUtils.join(medicalhistorytype, ",");
         nowmedicalhistory.setNtypelist(str1);
         medicalhistory.setTypelist(str2);
         Cgkzresult result=cgkzresultMapper.getOne(cgkzresult.getUserid(), cgkzresult.getSex());
         if (result!=null){
-            cgkzresult.setBirthid(result.getCgid());
+            cgkzresult.setCgid(result.getCgid());
+            cgkzresult.setBirthid(result.getBirthid());
             medicalhistory.setMedicalid(cgkzresult.getMedicalid());
             nowmedicalhistory.setNmedicalid(cgkzresult.getNmedicalid());
             nowmedicalhistoryMapper.updateByPrimaryKey(nowmedicalhistory);
@@ -65,5 +67,23 @@ public class CommonCheckServiceImpl implements CommonCheckService {
 
     public List<Medicalhistorytype> getMedicalHistoryType() {
         return medicalhistorytypeMapper.selectAll();
+    }
+
+    public Nowmedicalhistory getNowMedicalHistory(Integer id) {
+        Nowmedicalhistory nowmedicalhistory=new Nowmedicalhistory();
+        nowmedicalhistory.setNmedicalid(id);
+        return nowmedicalhistoryMapper.selectByPrimaryKey(nowmedicalhistory);
+    }
+
+    public Medicalhistory getMedicalHistory(Integer id) {
+        Medicalhistory medicalhistory=new Medicalhistory();
+        medicalhistory.setMedicalid(id);
+        return medicalhistoryMapper.selectByPrimaryKey(medicalhistory);
+    }
+
+    public Maritalhistory getMaritalhistory(Integer id) {
+        Maritalhistory maritalhistory=new Maritalhistory();
+        maritalhistory.setBirthid(id);
+        return maritalhistoryMapper.selectByPrimaryKey(maritalhistory);
     }
 }
