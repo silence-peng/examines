@@ -54,7 +54,7 @@
 
     <div class="layui-footer">
         <!-- 底部固定区域 -->
-        © layui.com - 底部固定区域
+
     </div>
 </div>
 <template id="info">
@@ -106,8 +106,8 @@
             <li class="layui-nav-item layui-nav-itemed">
                 <a class="" href="javascript:void(0)">短信收发</a>
                 <dl class="layui-nav-child">
-                    <dd><a href="javascript:void(0)">自定义短信随访</a></dd>
-                    <dd><a href="javascript:void(0)">评估建议短信随访</a></dd>
+                    <dd><a href="javascript:void(0)" @click.stop="changeIframe('CustomNote')">自定义短信随访</a></dd>
+                    <dd><a href="javascript:void(0)" @click.stop="changeIframe('Note')">评估建议短信随访</a></dd>
                 </dl>
             </li>
         </ul>
@@ -193,7 +193,10 @@
                         $("#iframeMain").attr("src",value);
                         console.log($("#iframeMain").attr("src"))
                     }}},
-            "message":{template:"#message"}
+            "message":{template:"#message",methods:{changeIframe:function(value){
+                    $("#iframeMain").attr("src",value);
+                    console.log($("#iframeMain").attr("src"))
+                }}}
         }
     });
     //JavaScript代码区域
