@@ -17,4 +17,17 @@
         "AND u.createdate between #{startDate} and #{endDate}",
         </if>
     </select>
+    <select id="NoteByUserinfo" parameterType="Userinfo" resultType="Userinfo">
+        SELECT * FROM userinfo WHERE 1=1
+        <if test="fname!=null and fname!=''">
+        AND fname LIKE concat('%',#{fname},'%')
+        </if>
+        <if test="mbirthdate!=null and fbirthdate!=null">
+            AND creatDate>=#{mbirthdate} AND creatDate &lt;=#{fbirthdate}
+        </if>
+        <if test="fcity!=null and fcity!=''">
+            AND fcity LIKE concat('%',#{fcity},'%') OR fprovince LIKE concat('%',#{fcity},'%')
+        </if>
+
+    </select>
 </mapper>

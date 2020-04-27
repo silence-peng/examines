@@ -37,10 +37,10 @@ layui.use(['form','layer','laydate','jquery','table'], function() {
 				// 重新从第 1 页开始
 			},
 			where : {
-				fname:$("#name").val(),
-				fcity:$("#region").val(),
-				mbirthdate:$("#startdate").val(),
-				fbirthdate:$("#enddate").val()
+				fname:$("#fname").val(),
+				fcity:$("#fcity").val(),
+				mbirthdate:$("#mbirthdate").val(),
+				fbirthdate:$("#fbirthdate").val()
 			}
 		});
 		return false;

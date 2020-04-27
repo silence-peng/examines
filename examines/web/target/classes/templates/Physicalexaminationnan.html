@@ -8,49 +8,48 @@
 </head>
 <body>
 <div  class="layui-container">
-<form class="layui-form" action="">
+    <form class="layui-form" id="form" lay-filter="check" action="">
 
         <div class="layui-form-item">
             <label class="layui-form-label" >系统编号:</label>
             <div class="layui-input-inline">
-                <input type="text" style="width: 300px" name="title" lay-verify="title" autocomplete="off"  class="layui-input">
+                <input type="text" style="width: 300px" name="userid" lay-verify="title" readonly="readonly" autocomplete="off"  class="layui-input">
             </div>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             &nbsp;
             <div class="layui-inline">
                 <label class="layui-form-label"  >姓名:</label>
                 <div class="layui-input-inline">
-                    <input type="text" name="date" style="width: 300px"  lay-verify="title"  autocomplete="off" class="layui-input">
+                    <input type="text" name="fname" style="width: 300px"  lay-verify="title" readonly="readonly"  autocomplete="off" class="layui-input">
                 </div>
             </div>
-
         </div>
         <div class="layui-form-item" >
             <label class="layui-form-label" >性别:</label>
             <div class="layui-input-inline">
-                <input type="text" style="width: 300px" name="title" lay-verify="title" autocomplete="off"  class="layui-input">
+                <input type="text" style="width: 300px" name="sex" id="sex" lay-verify="title" autocomplete="off"   class="layui-input">
             </div>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             &nbsp;
             <div class="layui-inline">
                 <label class="layui-form-label"  >出生年月:</label>
                 <div class="layui-input-inline">
-                    <input type="text" name="date" style="width: 300px" id="date" lay-verify="date"  autocomplete="off" class="layui-input">
+                    <input type="text" name="fbirthdate" style="width: 300px"  lay-verify="date" readonly="readonly"  autocomplete="off" class="layui-input">
                 </div>
             </div>
         </div>
-        <div style="border:  0.8px solid cornflowerblue"><p  style="background-color: rgb(214, 236, 246);font-size: 15px;color: #0074d9;text-align: left">女子一般体格检查</p>
+        <div style="border:  0.8px solid cornflowerblue"><p  style="background-color: rgb(214, 236, 246);font-size: 15px;color: #0074d9;text-align: left">男一般体格检查</p>
             <div class="layui-form-item">
                 <label class="layui-form-label" >身高(CM):</label>
                 <div class="layui-input-inline">
-                    <input type="text" style="width: 300px" name="title" lay-verify="title" autocomplete="off"  class="layui-input">
+                    <input type="text" style="width: 300px" name="height" lay-verify="title" autocomplete="off"  class="layui-input">
                 </div>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 &nbsp;
                 <div class="layui-inline">
                     <label class="layui-form-label"  style="width: 200px" >体重指数(kg/m2):</label>
                     <div class="layui-input-inline">
-                        <input type="text" name="date" style="width: 300px"  lay-verify="title"  autocomplete="off" class="layui-input">
+                        <input type="text" name="bmi" style="width: 300px"  lay-verify="title"  autocomplete="off" class="layui-input">
                     </div>
                 </div>
 
@@ -58,14 +57,14 @@
             <div class="layui-form-item">
                 <label class="layui-form-label" >体重(kg):</label>
                 <div class="layui-input-inline">
-                    <input type="text" style="width: 300px" name="title" lay-verify="title" autocomplete="off"  class="layui-input">
+                    <input type="text" style="width: 300px" name="weight" lay-verify="title" autocomplete="off"  class="layui-input">
                 </div>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 &nbsp;
                 <div class="layui-inline">
                     <label class="layui-form-label"  style="width: 200px" >收缩压(mmhg):</label>
                     <div class="layui-input-inline">
-                        <input type="text" name="date" style="width: 300px"  lay-verify="title"  autocomplete="off" class="layui-input">
+                        <input type="text" name="smmhg" style="width: 300px"  lay-verify="title"  autocomplete="off" class="layui-input">
                     </div>
                 </div>
 
@@ -73,14 +72,14 @@
             <div class="layui-form-item">
                 <label class="layui-form-label" >心率(次/分):</label>
                 <div class="layui-input-inline">
-                    <input type="text" style="width: 300px" name="title" lay-verify="title" autocomplete="off"  class="layui-input">
+                    <input type="text" style="width: 300px" name="p" lay-verify="title" autocomplete="off"  class="layui-input">
                 </div>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 &nbsp;
                 <div class="layui-inline">
                     <label class="layui-form-label"  style="width: 200px" >舒张压(mmhg):</label>
                     <div class="layui-input-inline">
-                        <input type="text" name="date" style="width: 300px"  lay-verify="title"  autocomplete="off" class="layui-input">
+                        <input type="text" name="mmhgs" style="width: 300px"  lay-verify="title"  autocomplete="off" class="layui-input">
                     </div>
                 </div>
 
@@ -92,147 +91,124 @@
         <div style="border: 0.8px solid cornflowerblue"><p  style="background-color: rgb(214, 236, 246);font-size: 15px;color: #0074d9;text-align: left">精神状态</p>
             <div class="layui-form-item" align="left">
                 <div class="layui-input-block">
-                    <input type="radio" name="js" value="是" title="是" >
-                    <input type="radio" name="js" value="否" title="否" checked="">
+                    <input type="radio" name="isspirit" id="cb" value="1" title="是" >
+                    <input type="radio" name="isspirit"  value="0" title="否" >
                 </div>
                 <div class="layui-inline">
                     <label class="layui-form-label"  style="width: 200px" >精神状态异常描述:</label>
                     <div class="layui-input-inline">
-                        <input type="text" name="title" style="width: 300px"  lay-verify="title"  autocomplete="off" class="layui-input">
+                        <input type="text" name="spiritcontent" id="jszt" style="width: 300px"  lay-verify="title"  autocomplete="off" class="layui-input">
                     </div>
                 </div>
             </div>
             <br>
         </div>
-        <div style="border:  0.8px solid cornflowerblue" ><p  style="background-color: rgb(214, 236, 246);font-size: 15px;color: #0074d9;text-align: left">智力</p>
+
+        <div style="border: 0.8px solid cornflowerblue"><p  style="background-color: rgb(214, 236, 246);font-size: 15px;color: #0074d9;text-align: left">五官</p>
             <div class="layui-form-item" align="left">
                 <div class="layui-input-block">
-                    <input type="radio" name="zl" value="正常" title="正常" checked="">
-                    <input type="radio" name="zl" value="异常" title="异常" >
+                    <input type="radio" name="isthefive" value="0" title="正常" >
+                    <input type="radio" name="isthefive" value="1" title="异常" >
                 </div>
-            </div>
-
-            <div style="width: 500px;border:  0.8px solid cornflowerblue" >
-               <p style="background-color: rgb(214, 236, 246);font-size: 15px;color: #0074d9;text-align: left">智力异常请打勾</p>
-
-                <div class="layui-form-item" pane="" >
-                    <div class="layui-input-block" align="left" >
-                        <input type="checkbox" name="like1[write]" lay-skin="primary" title="常识" >
-                        <input type="checkbox" name="like1[read]" lay-skin="primary" title="判断">
-                        <input type="checkbox" name="like1[game]" lay-skin="primary" title="记忆" >
-
-                        <input type="checkbox" name="like1[game]" lay-skin="primary" title="计算" >
+                <div class="layui-inline">
+                    <label class="layui-form-label"  style="width: 200px" >五官异常描述:</label>
+                    <div class="layui-input-inline">
+                        <input type="text" name="thefivecontent" style="width: 300px"  lay-verify="title"  autocomplete="off" class="layui-input">
                     </div>
                 </div>
-
             </div>
             <br>
         </div>
-    <div style="border: 0.8px solid cornflowerblue"><p  style="background-color: rgb(214, 236, 246);font-size: 15px;color: #0074d9;text-align: left">五官</p>
-        <div class="layui-form-item" align="left">
-            <div class="layui-input-block">
-                <input type="radio" name="wg" value="正常" title="正常" checked="">
-                <input type="radio" name="wg" value="异常" title="异常" >
-            </div>
-            <div class="layui-inline">
-                <label class="layui-form-label"  style="width: 200px" >五官异常描述:</label>
-                <div class="layui-input-inline">
-                    <input type="text" name="title" style="width: 300px"  lay-verify="title"  autocomplete="off" class="layui-input">
+        <div style="border: 0.8px solid cornflowerblue"><p  style="background-color: rgb(214, 236, 246);font-size: 15px;color: #0074d9;text-align: left">特殊体态</p>
+            <div class="layui-form-item" align="left">
+                <div class="layui-input-block">
+                    <input type="radio" name="isposture" value="0" title="无" >
+                    <input type="radio" name="isposture" value="1" title="有" >
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label"  style="width: 200px" >特殊体态描述:</label>
+                    <div class="layui-input-inline">
+                        <input type="text" name="posturecontent" style="width: 300px"  lay-verify="title"  autocomplete="off" class="layui-input">
+                    </div>
                 </div>
             </div>
+            <br>
         </div>
-        <br>
-    </div>
-    <div style="border: 0.8px solid cornflowerblue"><p  style="background-color: rgb(214, 236, 246);font-size: 15px;color: #0074d9;text-align: left">特殊体态</p>
-        <div class="layui-form-item" align="left">
-            <div class="layui-input-block">
-                <input type="radio" name="tt" value="无" title="无" checked="">
-                <input type="radio" name="tt" value="有" title="有" >
-            </div>
-            <div class="layui-inline">
-                <label class="layui-form-label"  style="width: 200px" >特殊体态描述:</label>
-                <div class="layui-input-inline">
-                    <input type="text" name="title" style="width: 300px"  lay-verify="title"  autocomplete="off" class="layui-input">
+        <div style="border: 0.8px solid cornflowerblue"><p  style="background-color: rgb(214, 236, 246);font-size: 15px;color: #0074d9;text-align: left">特殊面容</p>
+            <div class="layui-form-item" align="left">
+                <div class="layui-input-block">
+                    <input type="radio" name="isface" value="0" title="无" >
+                    <input type="radio" name="isface" value="1" title="有" >
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label"  style="width: 200px" >特殊面容描述:</label>
+                    <div class="layui-input-inline">
+                        <input type="text" name="facecontent" style="width: 300px"  lay-verify="title"  autocomplete="off" class="layui-input">
+                    </div>
                 </div>
             </div>
+            <br>
         </div>
-        <br>
-    </div>
-    <div style="border: 0.8px solid cornflowerblue"><p  style="background-color: rgb(214, 236, 246);font-size: 15px;color: #0074d9;text-align: left">特殊面容</p>
-        <div class="layui-form-item" align="left">
-            <div class="layui-input-block">
-                <input type="radio" name="mr" value="无" title="无" checked="">
-                <input type="radio" name="mr" value="有" title="有" >
-            </div>
-            <div class="layui-inline">
-                <label class="layui-form-label"  style="width: 200px" >特殊面容描述:</label>
-                <div class="layui-input-inline">
-                    <input type="text" name="title" style="width: 300px"  lay-verify="title"  autocomplete="off" class="layui-input">
+        <div style="border: 0.8px solid cornflowerblue"><p  style="background-color: rgb(214, 236, 246);font-size: 15px;color: #0074d9;text-align: left">皮肤毛发</p>
+            <div class="layui-form-item" align="left">
+                <div class="layui-input-block">
+                    <input type="radio" name="ishair" value="0" title="正常" >
+                    <input type="radio" name="ishair" value="1" title="异常" >
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label"  style="width: 200px" >皮肤毛发异常描述:</label>
+                    <div class="layui-input-inline">
+                        <input type="text" name="haircontent" style="width: 300px"  lay-verify="title"  autocomplete="off" class="layui-input">
+                    </div>
                 </div>
             </div>
+            <br>
         </div>
-        <br>
-    </div>
-    <div style="border: 0.8px solid cornflowerblue"><p  style="background-color: rgb(214, 236, 246);font-size: 15px;color: #0074d9;text-align: left">皮肤毛发</p>
-        <div class="layui-form-item" align="left">
-            <div class="layui-input-block">
-                <input type="radio" name="pf" value="正常" title="正常" checked="">
-                <input type="radio" name="pf" value="异常" title="异常" >
-            </div>
-            <div class="layui-inline">
-                <label class="layui-form-label"  style="width: 200px" >皮肤毛发异常描述:</label>
-                <div class="layui-input-inline">
-                    <input type="text" name="title" style="width: 300px"  lay-verify="title"  autocomplete="off" class="layui-input">
+        <div style="border: 0.8px solid cornflowerblue"><p  style="background-color: rgb(214, 236, 246);font-size: 15px;color: #0074d9;text-align: left">甲状腺</p>
+            <div class="layui-form-item" align="left">
+                <div class="layui-input-block">
+                    <input type="radio" name="isthyroid" value="0" title="正常" >
+                    <input type="radio" name="isthyroid"  value="1" title="异常" >
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label"  style="width: 200px" >甲状腺异常描述:</label>
+                    <div class="layui-input-inline">
+                        <input type="text" name="thyroidcontent" style="width: 300px"  lay-verify="title"  autocomplete="off" class="layui-input">
+                    </div>
                 </div>
             </div>
+            <br>
         </div>
-        <br>
-    </div>
-    <div style="border: 0.8px solid cornflowerblue"><p  style="background-color: rgb(214, 236, 246);font-size: 15px;color: #0074d9;text-align: left">甲状腺</p>
-        <div class="layui-form-item" align="left">
-            <div class="layui-input-block">
-                <input type="radio" name="jzx" value="正常" title="正常" checked="">
-                <input type="radio" name="jzx" value="异常" title="异常" >
-            </div>
-            <div class="layui-inline">
-                <label class="layui-form-label"  style="width: 200px" >甲状腺异常描述:</label>
-                <div class="layui-input-inline">
-                    <input type="text" name="title" style="width: 300px"  lay-verify="title"  autocomplete="off" class="layui-input">
-                </div>
-            </div>
-        </div>
-        <br>
-    </div>
 
         <br>
         <div class="layui-form-item">
             <label class="layui-form-label">医生签名:</label>
-            <div class="layui-input-block">
-                <select name="interest" lay-filter="aihao">
-                    <option value="" selected="selected">管理员</option>
-                    <option value="0">写作</option>
-                </select>
+            <div class="layui-input-inline">
+                <input type="text" name="doctorname" style="width: 300px"  lay-verify="title"  autocomplete="off" class="layui-input">
             </div>
         </div>
         <div class="layui-form-item">
             <label class="layui-form-label">询问日期:</label>
             <div class="layui-input-block" >
-                <input type="text" name="date" id="date1" lay-verify="date" placeholder="yyyy-MM-dd" autocomplete="off" class="layui-input">
+                <input type="text" name="examinedate" id="date1" lay-verify="date" placeholder="yyyy-MM-dd" autocomplete="off" class="layui-input">
             </div>
         </div>
         <div align="center">
-            <button type="button" class="layui-btn layui-btn-normal">保存</button>
+            <button type="button" id="button" class="layui-btn layui-btn-normal">保存</button>
             <button type="reset" class="layui-btn layui-btn-normal">重置</button></div>
 
-</form>
+    </form>
 </div>
 <script src="./layui/layui.js" charset="utf-8"></script>
+<script src="./js/jquery-1.12.4.js" charset="utf-8"></script>
+
 <script>
+
     layui.use(['form', 'layedit', 'laydate'], function(){
         var form = layui.form
-                ,layer = layui.layer
-                ,layedit = layui.layedit
-                ;
+            ,layer = layui.layer
+            ,layedit = layui.layedit
+            ,laydate = layui.laydate;
 
         //日期
         laydate.render({
@@ -241,7 +217,42 @@
         laydate.render({
             elem: '#date1'
         });
+        $("#button").click(function() {
+            var sex=$("#sex").val("1");
 
+            $.ajax({
+                url:"/Physicalexmination/updatehealthcheck",
+                type:"post",
+                data:$("#form").serialize(),
+                dataType:"text",
+                success:function(result){
+                    if(result=='a'){
+                        layer.msg("保存成功!",{time:1000,icon:1})
+                        location.href="Physicalexaminationnan.html";
+                    }else{
+                        layer.msg("保存失败!",{icon:2})
+                    }
+                }
+            });
+
+        });
+        $(document).ready(function(){
+            var sex="1";
+            $.ajax({
+                url:"/Physicalexmination/get",
+                type:"post",
+                data:{"sex":sex},
+                dataType:"json",
+                success:function(result){
+                    if(result.sex==1){
+                        result.sex="男";
+                    }
+                    form.val("check",result);
+
+                }
+            });
+
+        })
 
 
     });

@@ -9,22 +9,23 @@
 <body>
 <br>
 <div  class="layui-container">
-<form class="layui-form" action="" >
+<form class="layui-form"  id="form" lay-filter="check" action="" >
         <div style="border:  0.8px solid cornflowerblue"><p  style="background-color: rgb(214, 236, 246);font-size: 15px;color: #0074d9;text-align: left">尿液常规检查</p>
             <br/>
+            <input type="hidden" name="sex" style="width: 300px"  lay-verify="title"  autocomplete="off" class="layui-input">
             <div class="layui-form-item" style="width: 100%">
                 <label class="layui-form-label" style="width: 100px" >尿液常规检查:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <div class="layui-input-inline" style="width: 300px">
-                    <select name="interest" lay-filter="aihao">
-                        <option value="" selected="">所有</option>
-                        <option value="">身份证</option>
-                        <option value="">手机号</option>
+                    <select name="pissexamine" lay-filter="aihao">
+
+                        <option value="正常">正常</option>
+                        <option value="异常">异常</option>
                     </select>
                 </div>
             <div class="layui-inline">
                 <label class="layui-form-label"  style="width: 200px" >异常描述:</label>
                 <div class="layui-input-inline">
-                    <input type="text" name="title" style="width: 300px"  lay-verify="title"  autocomplete="off" class="layui-input">
+                    <input type="text" name="abnormal" style="width: 300px"  lay-verify="title"  autocomplete="off" class="layui-input">
                 </div>
             </div>
 
@@ -38,16 +39,14 @@
                 <div class="layui-form-item" style="width: 100%">
                     <label class="layui-form-label" style="width: 100px" >ABO:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <div class="layui-input-inline" style="width: 300px">
-                        <select name="interest" lay-filter="aihao">
-                            <option value="" selected="">所有</option>
-                            <option value="">身份证</option>
-                            <option value="">手机号</option>
+                        <select name="abotypeid" id="abotypeid" lay-filter="aihao">
+
                         </select>
                     </div>
                     <div class="layui-inline">
                         <label class="layui-form-label"  style="width: 200px" >RH:</label>
                         <div class="layui-input-inline">
-                            <input type="text" name="title" style="width: 300px"  lay-verify="title"  autocomplete="off" class="layui-input">
+                            <input type="text" name="rh" style="width: 300px"  lay-verify="title"  autocomplete="off" class="layui-input">
                         </div>
                     </div>
                 </div>
@@ -57,7 +56,7 @@
                         <div class="layui-inline">
                             <label class="layui-form-label"  style="width: 200px" >血糖(mmol/L):</label>
                             <div class="layui-input-inline">
-                                <input type="text" name="title" style="width: 300px"  lay-verify="title"  autocomplete="off" class="layui-input">
+                                <input type="text" name="bloodsugar" style="width: 300px"  lay-verify="title"  autocomplete="off" class="layui-input">
                             </div>
                         </div>
 
@@ -68,43 +67,38 @@
                     <div class="layui-form-item" style="width: 100%">
                         <label class="layui-form-label" style="width: 100px" >HBs-Ag:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         <div class="layui-input-inline" style="width: 370px">
-                            <select name="interest" lay-filter="aihao">
-                                <option value="" selected="">所有</option>
-                                <option value="">身份证</option>
-                                <option value="">手机号</option>
+                            <select name="hbsag" lay-filter="aihao">
+                                <option value="阳性">阳性</option>
+                                <option value="阴性">阴性</option>
                             </select>
                         </div>
                         <label class="layui-form-label" style="width: 100px" >HBe-Ab:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         <div class="layui-input-inline" style="width: 370px">
-                            <select name="interest" lay-filter="aihao">
-                                <option value="" selected="">所有</option>
-                                <option value="">身份证</option>
-                                <option value="">手机号</option>
+                            <select name="hbeab" lay-filter="aihao">
+                                <option value="阳性">阳性</option>
+                                <option value="阴性">阴性</option>
                             </select>
                         </div>
                         <br>
                         <label class="layui-form-label" style="width: 100px" >HBs-Ab:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         <div class="layui-input-inline" style="width: 370px">
-                            <select name="interest" lay-filter="aihao">
-                                <option value="" selected="">所有</option>
-                                <option value="">身份证</option>
-                                <option value="">手机号</option>
+                            <select name="hbsab" lay-filter="aihao">
+                                <option value="阳性">阳性</option>
+                                <option value="阴性">阴性</option>
                             </select>
                         </div>
                         <label class="layui-form-label" style="width: 100px" >HBc-Ab:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         <div class="layui-input-inline" style="width: 370px">
-                            <select name="interest" lay-filter="aihao">
-                                <option value="" selected="">所有</option>
-                                <option value="">身份证</option>
-                                <option value="">手机号</option>
+                            <select name="hbcab" lay-filter="aihao">
+                                <option value="阳性">阳性</option>
+                                <option value="阴性">阴性</option>
                             </select>
                         </div>
                         <label class="layui-form-label" style="width: 100px" >HBe-Ab:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         <div class="layui-input-inline" style="width: 370px">
-                            <select name="interest" lay-filter="aihao">
-                                <option value="" selected="">所有</option>
-                                <option value="">身份证</option>
-                                <option value="">手机号</option>
+                            <select name="hbeag" lay-filter="aihao">
+                                <option value="阳性">阳性</option>
+                                <option value="阴性">阴性</option>
                             </select>
                         </div>
                     </div>
@@ -113,12 +107,12 @@
                         <div class="layui-form-item" style="width: 100%">
                             <label class="layui-form-label"  style="width: 200px" >谷丙转氨酶ALT(U/L):</label>
                             <div class="layui-input-inline">
-                                <input type="text" name="title" style="width: 300px"  lay-verify="title"  autocomplete="off" class="layui-input">
+                                <input type="text" name="alt" style="width: 300px"  lay-verify="title"  autocomplete="off" class="layui-input">
                             </div>
                             <div class="layui-inline">
                                 <label class="layui-form-label"  style="width: 200px" >肌酐Cr(umol/L):</label>
                                 <div class="layui-input-inline">
-                                    <input type="text" name="title" style="width: 300px"  lay-verify="title"  autocomplete="off" class="layui-input">
+                                    <input type="text" name="cr" style="width: 300px"  lay-verify="title"  autocomplete="off" class="layui-input">
                                 </div>
                             </div>
                         </div>
@@ -129,7 +123,7 @@
                                 <div class="layui-inline">
                                     <label class="layui-form-label"  style="width: 200px" >促甲状腺TSH(uIU/ml):</label>
                                     <div class="layui-input-inline">
-                                        <input type="text" name="title" style="width: 300px"  lay-verify="title"  autocomplete="off" class="layui-input">
+                                        <input type="text" name="tsh" style="width: 300px"  lay-verify="title"  autocomplete="off" class="layui-input">
                                     </div>
                                 </div>
 
@@ -140,51 +134,45 @@
                             <div class="layui-form-item" style="width: 100%">
                                 <label class="layui-form-label" style="width: 100px" >风疹病毒:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                 <div class="layui-input-inline" style="width: 370px">
-                                    <select name="interest" lay-filter="aihao">
-                                        <option value="" selected="">所有</option>
-                                        <option value="">身份证</option>
-                                        <option value="">手机号</option>
+                                    <select name="figg" lay-filter="aihao">
+                                        <option value="阳性">阳性</option>
+                                        <option value="阴性">阴性</option>
                                     </select>
                                 </div>
                                 <label class="layui-form-label" style="width: 100px" >梅毒螺旋体:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                 <div class="layui-input-inline" style="width: 370px">
-                                    <select name="interest" lay-filter="aihao">
-                                        <option value="" selected="">所有</option>
-                                        <option value="">身份证</option>
-                                        <option value="">手机号</option>
+                                    <select name="tp" lay-filter="aihao">
+                                        <option value="阳性">阳性</option>
+                                        <option value="阴性">阴性</option>
                                     </select>
                                 </div>
                                 <br>
                                 <label class="layui-form-label" style="width: 100px" >巨细胞病毒IgG:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                 <div class="layui-input-inline" style="width: 370px">
-                                    <select name="interest" lay-filter="aihao">
-                                        <option value="" selected="">所有</option>
-                                        <option value="">身份证</option>
-                                        <option value="">手机号</option>
+                                    <select name="jigg" lay-filter="aihao">
+                                        <option value="阳性">阳性</option>
+                                        <option value="阴性">阴性</option>
                                     </select>
                                 </div>
                                 <label class="layui-form-label" style="width: 100px" >巨细胞病毒IgM:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                 <div class="layui-input-inline" style="width: 370px">
-                                    <select name="interest" lay-filter="aihao">
-                                        <option value="" selected="">所有</option>
-                                        <option value="">身份证</option>
-                                        <option value="">手机号</option>
+                                    <select name="jigm" lay-filter="aihao">
+                                        <option value="阳性">阳性</option>
+                                        <option value="阴性">阴性</option>
                                     </select>
                                 </div>
                                 <label class="layui-form-label" style="width: 100px" >弓形体IgG:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                 <div class="layui-input-inline" style="width: 370px">
-                                    <select name="interest" lay-filter="aihao">
-                                        <option value="" selected="">所有</option>
-                                        <option value="">身份证</option>
-                                        <option value="">手机号</option>
+                                    <select name="gigg" lay-filter="aihao">
+                                        <option value="阳性">阳性</option>
+                                        <option value="阴性">阴性</option>
                                     </select>
                                 </div>
                                 <label class="layui-form-label" style="width: 100px" >弓形体IgM:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                 <div class="layui-input-inline" style="width: 370px">
-                                    <select name="interest" lay-filter="aihao">
-                                        <option value="" selected="">所有</option>
-                                        <option value="">身份证</option>
-                                        <option value="">手机号</option>
+                                    <select name="gigm" lay-filter="aihao">
+                                        <option value="阳性">阳性</option>
+                                        <option value="阴性">阴性</option>
                                     </select>
                                 </div>
                             </div>
@@ -196,7 +184,7 @@
                     <div class="layui-form-item layui-form-text">
 
                         <div class="layui-input-block">
-                            <textarea placeholder="" class="layui-textarea"></textarea>
+                            <textarea placeholder="" name="other" class="layui-textarea"></textarea>
                         </div>
                     </div>
 </div>
@@ -205,27 +193,25 @@
 
 
         <br>
-        <div class="layui-form-item">
-            <label class="layui-form-label">医生签名:</label>
-            <div class="layui-input-block">
-                <select name="interest" lay-filter="aihao">
-                    <option value="" selected="selected">管理员</option>
-                    <option value="0">写作</option>
-                </select>
-            </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">医生签名:</label>
+        <div class="layui-input-inline">
+            <input type="text" name="doctorname" style="width: 300px"  lay-verify="title"  autocomplete="off" class="layui-input">
         </div>
+    </div>
         <div class="layui-form-item">
             <label class="layui-form-label">询问日期:</label>
             <div class="layui-input-block" >
-                <input type="text" name="date" id="date1" lay-verify="date" placeholder="yyyy-MM-dd" autocomplete="off" class="layui-input">
+                <input type="text" name="examinedate" id="date1" lay-verify="date" placeholder="yyyy-MM-dd" autocomplete="off" class="layui-input">
             </div>
         </div>
         <div align="center">
-            <button type="button" class="layui-btn layui-btn-normal">保存</button>
+            <button type="button" id="button" class="layui-btn layui-btn-normal">保存</button>
             <button type="reset" class="layui-btn layui-btn-normal">重置</button></div>
 </form>
 </div>
 <script src="./layui/layui.js" charset="utf-8"></script>
+<script src="./js/jquery-1.12.4.js" charset="utf-8"></script>
 <script>
     layui.use(['form', 'layedit', 'laydate'], function(){
         var form = layui.form
@@ -240,7 +226,42 @@
         laydate.render({
             elem: '#date1'
         });
+        $(document).ready(function(){
+            $.post("/Clincalzzh/xlk",function(result){
+                $(result).each(function(){
+                    $("#abotypeid").append("<option value="+this.id+">"+this.type+"</option>")
+                })
+            })
+            var sex="0";
+            $.ajax({
+                url:"/Clincalzzh/get",
+                type:"post",
+                data:{"sex":sex},
+                dataType:"json",
+                success:function(result){
+                    form.val("check",result);
+                }
+            });
 
+        })
+        $("#button").click(function() {
+
+            $.ajax({
+                url:"/Clincalzzh/updateClincale",
+                type:"post",
+                data:$("#form").serialize(),
+                dataType:"text",
+                success:function(result){
+                    if(result=='a'){
+                        layer.msg("保存成功!",{time:3000,icon:1})
+
+                    }else{
+                        layer.msg("保存失败!",{icon:2})
+                    }
+                }
+            });
+
+        });
 
 
     });
