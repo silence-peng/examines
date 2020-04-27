@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" href="layui/css/layui.css">
+		<script src="layui/layui.js"></script>
+		<script src="js/CustomNote.js"></script>
+		<style type="text/css">
+			.imgTitl {
+				height: 50px;
+				background-color: rgb(214, 236, 246);
+				color: dodgerblue;
+				margin-top: 20px;
+			}
+			
+			.double {
+				width: 150px;
+				height: 20px;
+				padding: 15px;
+			}
+		</style>
+	</head>
+	<body>
+		<div  class="layui-container" style="width: 90%;">
+			<form class="layui-form">
+				<div class="layui-container" style="margin-top: 50px;">
+					<div class="layui-row">
+						<div class="layui-form-item">
+							<div class="layui-col-md4">
+								<label class="layui-form-label">姓名</label>
+								<div class="layui-input-inline">
+								  <input type="text" name="" autocomplete="off" class="layui-input">
+								</div>
+							</div>
+							<div class="layui-col-md4 layui-col-lg-offset3">
+								<label class="layui-form-label">随访地区</label>
+								<div class="layui-input-inline">
+								  <input type="text" name="" autocomplete="off" class="layui-input">
+								</div>
+							</div>
+						</div>
+						<div class="layui-form-item">
+							<div class="layui-col-md4">
+								<label class="layui-form-label">创建时间</label>
+								<div class="layui-input-inline">
+								<input type="text" name="" id="mdate" class="layui-input">
+								</div>
+							</div>
+							<div class="layui-col-md4 layui-col-lg-offset3">
+								<label class="layui-form-label">至</label>
+								<div class="layui-input-inline">
+								<input type="text" name="" id="fdate" class="layui-input">
+								</div>
+								<button type="button" class="layui-btn layui-bg-blue">查询</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<fieldset class="layui-elem-field">
+					<div class="layui-field-box layui-bg-gray" >
+						<div class="layui-form-item">
+							<label class="layui-form-label">短信内容：</label>
+							<div class="layui-input-inline">
+							  <textarea class="layui-textarea" name="desc" style="height: 50px;width: 300px;"></textarea>
+							</div>
+						</div>
+					</div>
+				</fieldset>
+				<div class="imgTitl" style="margin-top:50px;">
+					<p class="double">评估建议短息随访</p>
+				</div>
+				<fieldset class="layui-elem-field">
+					<div class="layui-field-box">
+						<table class="layui-table" id="test" lay-filter="test"></table>
+					</div>
+				</fieldset>
+				<script type="text/html" id="barDemo">
+					<a class="layui-btn layui-btn-xs" lay-submit lay-filter="formDemo" lay-event="send">发送短信</a>
+				</script>
+			</form>
+		</div>
+	</body>
+</html>
