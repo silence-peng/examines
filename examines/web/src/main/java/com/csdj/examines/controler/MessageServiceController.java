@@ -9,7 +9,7 @@ import java.util.Date;
 
 @RestController
 @RequestMapping("message")
-public class MessageServiceImpl {
+public class MessageServiceController {
     @Autowired
     private MessageService service;
     @RequestMapping("loadInfo")
