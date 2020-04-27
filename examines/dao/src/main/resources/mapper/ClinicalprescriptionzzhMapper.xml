@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "mybatis-3-mapper.dtd" >
+<mapper namespace="com.csdj.examines.dao.ClinicalprescriptionzzhMapper">
+        <select id="getnvClincal" resultType="Clinicalbilling">
+            SELECT * FROM clinicalbilling where userid=#{userid} and sex=#{sex};
+        </select>
+    <update id="updateClincal" parameterType="Clinicalbilling">
+        update clinicalbilling set b=#{b},m=#{m},l=#{l},zcell=#{zcell},abo=#{abo},rh=#{rh},bloodsugar=#{bloodsugar},
+        hbsag=#{hbsag},hbeab=#{hbeab},hbsab=#{hbsab},hbcab=#{hbcab},hbeag=#{hbeag},alt=#{alt},cr=#{cr},tsh=#{tsh},
+        figg=#{figg},tp=#{tp},jigg=#{jigg},jigm=#{jigm},gigg=#{gigg},gigm=#{gigm},other=#{other},doctorname=#{doctorname},
+        examinedate=#{examinedate} where userid=#{userid} and sex=#{sex}
+    </update>
+</mapper>

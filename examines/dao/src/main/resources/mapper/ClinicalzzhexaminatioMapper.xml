@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "mybatis-3-mapper.dtd" >
+<mapper namespace="com.csdj.examines.dao.ClinicalzzhexaminationMapper">
+    <select id="getClinical" resultType="Clinicalexamination">
+        SELECT * FROM  clinicalexamination a,abo c WHERE  c.id=a.`abotypeId` AND a.`userId`=#{userid} and a.`sex`=#{sex};
+    </select>
+    <select id="getabo" resultType="Abo">
+        select * from abo
+    </select>
+    <update id="updateClincale" parameterType="Clinicalexamination">
+        update clinicalexamination set pissexamine=#{pissexamine},abnormal=#{abnormal},abotypeid=#{abotypeid},
+        rh=#{rh},bloodsugar=#{bloodsugar},hbsag=#{hbsag},hbeab=#{hbeab},hbsab=#{hbsab},hbcab=#{hbcab},hbeag=#{hbeag},
+        alt=#{alt},cr=#{cr},tsh=#{tsh},figg=#{figg},tp=#{tp},jigg=#{jigg},jigm=#{jigm},gigg=#{gigg},gigm=#{gigm},other=#{other},
+        doctorname=#{doctorname},examinedate=#{examinedate} where userid=#{userid} and sex=#{sex}
+    </update>
+</mapper>

@@ -17,8 +17,9 @@ public class MessageServiceImpl implements MessageService {
     private UserinfoMapper mapper;
     @Autowired
     private CheckProveMapper checkProveMapper;
-    public List<Userinfo> loadUserInfo(String name, Date startdate, Date enddate) {
-        return checkProveMapper.loadUserInfo(name, startdate, enddate);
+    public PageInfo<Userinfo> loadUserInfo(String name, Date startdate, Date enddate, Integer page, Integer limit) {
+        PageHelper.startPage(page,limit);
+        return new PageInfo<Userinfo>(checkProveMapper.loadUserInfo(name, startdate, enddate));
     }
 
     public PageInfo<Userinfo> NoteByUserinfo(Userinfo userinfo,Integer pageNum,Integer pageSize) {

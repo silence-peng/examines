@@ -5,7 +5,13 @@
     <title>基本信息查询</title>
     <link rel="stylesheet" href="layui/layui.js" />
     <link rel="stylesheet" href="layui/css/layui.css">
+
 </head>
+<style>
+    .layui-table-click{
+        color: red;
+    }
+</style>
 <body>
 <div class="layui-container">
 <div style="background-color: rgb(214, 236, 246);color: #0074d9;height: 50px;text-align: center;line-height: 50px;"><h2>查询条件</h2></div>
@@ -15,78 +21,67 @@
     <div class="layui-form-item" >
         <label class="layui-form-label" style="width: 100px">档案编号:</label>
         <div class="layui-input-inline">
-            <input type="text" style="width: 300px" name="title" lay-verify="title" autocomplete="off"  class="layui-input">
-        </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" style="width: 300px" id="userid" name="userid" lay-verify="title" autocomplete="off"  class="layui-input">
+        </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         &nbsp;
         <div class="layui-inline">
             <label class="layui-form-label" style="width: 100px" >建档开始日期:</label>
             <div class="layui-input-inline">
-                <input type="text" name="date" style="width: 250px" id="date" lay-verify="date"  autocomplete="off" class="layui-input">
+                <input type="text" name="creatDateone" style="width: 250px" id="creatDateone" lay-verify="date"  autocomplete="off" class="layui-input">
             </div>
         </div>
         &nbsp;&nbsp;
         <div class="layui-inline">
             <label class="layui-form-label" style="width: 100px">建档结束日期:</label>
             <div class="layui-input-inline">
-                <input type="text" name="date1" style="width: 200px" id="date1" lay-verify="date"  autocomplete="off" class="layui-input">
+                <input type="text" name="creatDatetwo" style="width: 200px" id="creatDatetwo" lay-verify="date"  autocomplete="off" class="layui-input">
             </div>
         </div>
     </div>
     <div class="layui-form-item" >
         <label class="layui-form-label" style="width: 100px">妻子姓名:</label>
         <div class="layui-input-inline">
-            <input type="text" style="width: 220px" name="title" lay-verify="title" autocomplete="off"  class="layui-input">
+            <input type="text" style="width: 220px" name="mName" id="mname" lay-verify="title" autocomplete="off"  class="layui-input">
         </div>
         <label class="layui-form-label" style="width: 100px">妻子证件号:</label>
         <div class="layui-input-inline">
-            <input type="text" style="width: 220px" name="title" lay-verify="title" autocomplete="off" class="layui-input">
+            <input type="text" style="width: 220px" name="mcard" id="mcard" lay-verify="title" autocomplete="off" class="layui-input">
         </div>
         <label class="layui-form-label" style="width: 100px">丈夫姓名:</label>
         <div class="layui-input-inline">
-            <input type="text" style="width: 220px" name="title" lay-verify="title" autocomplete="off"  class="layui-input">
+            <input type="text" style="width: 220px" name="fname" id="fname" lay-verify="title" autocomplete="off"  class="layui-input">
         </div>
 
     </div>
     <div class="layui-form-item" style="width: 100%">
         <label class="layui-form-label" style="width: 100px">丈夫证件号:</label>
         <div class="layui-input-inline">
-            <input type="text" style="width: 220px" name="title" lay-verify="title" autocomplete="off" class="layui-input">
+            <input type="text" style="width: 220px" name="fcard" id="fcard" lay-verify="title" autocomplete="off" class="layui-input">
         </div>
-        <label class="layui-form-label" style="width: 100px" >检验状态:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <div class="layui-input-inline" style="width: 300px">
-            <select name="interest" lay-filter="aihao">
-                <option value="" selected="">请选择</option>
-                <option value="">检验完成</option>
-                <option value="">未完成</option>
-            </select>
-        </div>
+
         <label class="layui-form-label" style="width: 100px" >B超状态:</label>
         <div class="layui-input-inline" style="width: 200px">
-            <select name="interest" lay-filter="aihao">
+            <select name="result" lay-filter="result" id="result">
                 <option value="" selected="">请选择</option>
-                <option value="">正常</option>
-                <option value="">异常</option>
+                <option value="正常">正常</option>
+                <option value="异常">异常</option>
             </select>
         </div>
     </div>
-    <div class="layui-form-item" style="width: 100%">
-        <label class="layui-form-label" style="width: 100px" >登记类型:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <div class="layui-input-inline" style="width: 300px">
-            <select name="interest" lay-filter="aihao">
-                <option value="" selected="">所有</option>
-                <option value="">身份证</option>
-                <option value="">手机号</option>
-            </select>
-        </div>
-        <button type="button" class="layui-btn layui-btn-normal">查询按钮</button>
-        <button type="reset" class="layui-btn layui-btn-normal">清空查询条件</button>
-    </div>
+
+    <button class="layui-btn" data-type="reload" id="button">查询</button>
+    <button type="reset" class="layui-btn layui-btn-normal">清空查询条件</button>
     </form>
 <div style="background-color: rgb(214, 236, 246);color: #0074d9;height: 50px;text-align: center;line-height: 50px;"><h2>查询结果</h2></div>
 <br>
-<table class="layui-hide" id="test"></table>
-    <div class="layui-container">
+<table class="layui-hide" id="test" lay-filter="test"></table>
+    <script type="text/html" id="toolbarDemo">
+        <div class="layui-btn-container">
+            <button class="layui-btn layui-btn-sm" lay-event="getCheckData">选中此条</button>
+        </div>
+    </script>
 <script src="./layui/layui.js" charset="utf-8"></script>
+<script src="./js/jquery-1.12.4.js" charset="utf-8"></script>
 <script>
     layui.use(['form', 'layedit','table', 'laydate'], function(){
         var form = layui.form
@@ -95,40 +90,93 @@
                 ,laydate = layui.laydate
             ,table = layui.table;
 
+        table.render({
+            elem: '#test'
+            ,url: '/General/getGeneraluserinfo'
+            ,page:true
+            ,limit: 3
+            ,toolbar: '#toolbarDemo'
+            ,defaultToolbar: ['filter', 'exports']
+            ,id:'testReload'
+            ,cols:[
+                    [{type: 'radio', fixed: 'left'}
+                    ,{field:'userid',title:'编号',sort: true}
+                    ,{field:'mname',title:'妻子姓名'}
+                    ,{field:'mcard',title:'妻子证件号'}
+                    ,{field:'mbirthdate',title:'妻子出生日期'}
+                    ,{field:'fname',title:'丈夫姓名'}
+                    ,{field:'fcard',title:'丈夫证件号'}
+                    ,{field:'fbirthdate',title:'丈夫出生日期'}
+                    ,{field:'creatdate',title:'建档日期'}]
+            ]
+        });
+        $("#button").click(function() {
+            //执行重载
+            table.reload('testReload',{
+               where:{
+                   userid:$("#userid").val(),creatDateone:$("#creatDateone").val(),creatDatetwo:$("#creatDatetwo").val(),mname:$("#mname").val()
+                   ,mcard:$("#mcard").val(),fname:$("#fname").val(),fcard:$("#fcard").val(),result:$("#result").val()
+                }, page: {
+                    curr: 1 //重新从第 1 页开始
+                }
+            });
+            return false;
 
+        });
+        //头工具栏事件
+        table.on('toolbar(test)', function(obj){
+            var checkStatus = table.checkStatus('testReload');
+            switch(obj.event){
+                case 'getCheckData':
+
+                    var data = checkStatus.data;
+                            //动态添加背景色
+                            if (data!='') {
+                                layer.msg("选中成功",{
+                                    icon:1
+                                });
+                            }else{
+                                layer.msg("没有选中",{icon:2})
+                            }
+                    var userids='';
+
+                    if (data.length>0) {
+                        for ( var i = 0; i<data.length; i++) {
+                            userids+=data[i].userid;
+                        }
+                    }
+                    // layer.confirm('确认删除吗?',{title:'提示',icon:5},function(index){
+                        $.ajax({
+                            type:'post',
+                            url:'/General/adduserid',
+                            data:{'userid':userids},
+                            success:function(data){
+                                if(data='a'){
+                                }
+                            }
+                        });
+                    //
+                    // });
+                    break;
+            };
+        });
+    table.on('row(test)',function(){
+        if(obj.tr.hasClass('layui-table-click')){
+                 obj.tr.removeClass('layui-table-click');
+        }else{
+             obj.tr.addClass('layui-table-click');
+    }
+});
         //日期
         laydate.render({
-            elem: '#date'
+            elem: '#creatDatetwo'
         });
         laydate.render({
-            elem: '#date1'
+            elem: '#creatDateone'
         });
-        table.render({
-                    elem: '#test'
-                    ,url:'/demo/table/user/'
-                    ,cols:[
-                        [{field:'id',title:'编号',sort:true}
-                        ,{field:'username',title:'妻子姓名'}
-                        ,{field:'sex',title:'妻子证件号'}
-                        ,{field:'city',title:'妻子出生日期'}
-                        ,{field:'username',title:'丈夫姓名'}
-                        ,{field:'experience',title:'丈夫证件号'}
-                        ,{field:'score',title:'丈夫出生日期'}
-                        ,{field:'classify',title:'建档日期'}
-                        ,{field:'wealth',title:'是否上传'}
-                        ,{field:'wealth',title:'上传时间'}
-                        ,{field:'wealth',title:'国家编号'}]
-            ]
-                    ,page:true
-                });
-
 
     });
-    // layui.use('table', function(){
-    //     var table = layui.table;
-    //
-    //
-    // });
+
 </script>
 </body>
 </html>

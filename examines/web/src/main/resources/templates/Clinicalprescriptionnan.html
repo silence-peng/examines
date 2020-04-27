@@ -8,32 +8,18 @@
 </head>
 <body>
 <div  class="layui-container">
-    <form class="layui-form" action="">
+    <form class="layui-form" lay-filter="check" id="form" action="">
         <div style="border:  0.8px solid cornflowerblue">
             <p  style="background-color: rgb(214, 236, 246);font-size: 15px;color: #0074d9;text-align: left">尿液常规检查</p>
+            <input type="hidden" name="sex" style="width: 300px"  lay-verify="title"  autocomplete="off" class="layui-input">
 
             <div class="layui-form-item" pane="" >
                 <div class="layui-input-block" align="left" >
-                    <input type="checkbox" name="like1[write]" lay-skin="primary" title="B" >
-                    <input type="checkbox" name="like1[read]" lay-skin="primary" title="M">
-                    <input type="checkbox" name="like1[game]" lay-skin="primary" title="L" >
+                    <input type="checkbox" name="b" value="on"  lay-skin="primary" title="B" >
+                    <input type="checkbox" name="m"  value="on"  lay-skin="primary" title="M">
+                    <input type="checkbox" name="l"  value="on" lay-skin="primary" title="L" >
 
-                    <input type="checkbox" name="like1[game]" lay-skin="primary" title="中值细胞" >
-                </div>
-            </div>
-
-
-                <br>
-            </div>
-        <div style="border:  0.8px solid cornflowerblue">
-            <p  style="background-color: rgb(214, 236, 246);font-size: 15px;color: #0074d9;text-align: left">血型</p>
-
-            <div class="layui-form-item" pane="" >
-                <div class="layui-input-block" align="left" >
-                    <input type="checkbox" name="like1[write]" lay-skin="primary" title="全选" >
-                    <input type="checkbox" name="like1[read]" lay-skin="primary" title="ABO">
-                    <input type="checkbox" name="like1[game]" lay-skin="primary" title="Rh" >
-
+                    <input type="checkbox" name="zcell"  value="on" lay-skin="primary" title="中值细胞" >
                 </div>
             </div>
 
@@ -41,15 +27,32 @@
             <br>
         </div>
         <div style="border:  0.8px solid cornflowerblue">
+            <p  style="background-color: rgb(214, 236, 246);font-size: 15px;color: #0074d9;text-align: left">血型</p>
+
+            <div class="layui-form-item" pane="" >
+                <div class="layui-input-block" align="left" >
+                    <input type="checkbox" lay-skin="primary"  class="quan" id="c_all"  lay-filter="c_all"   title="全部">
+                    <input type="checkbox" name="abo"  value="on" lay-skin="primary" lay-filter="c_one" class="xuexing" title="ABO">
+                    <input type="checkbox" name="rh"  value="on" lay-skin="primary" lay-filter="c_one" class="xuexing" title="Rh" >
+
+                </div>
+            </div>
+
+
+            <br>
+        </div>
+        <input type="checkbox" name="bloodsugar"  value="on" lay-skin="primary" title="血糖" >
+        <div style="border:  0.8px solid cornflowerblue">
             <p  style="background-color: rgb(214, 236, 246);font-size: 15px;color: #0074d9;text-align: left">乙肝血清检查</p>
 
             <div class="layui-form-item" pane="" >
                 <div class="layui-input-block" align="left" >
-                    <input type="checkbox" name="like1[write]" lay-skin="primary" title="全选" >
-                    <input type="checkbox" name="like1[read]" lay-skin="primary" title="HBs-Ag">
-                    <input type="checkbox" name="like1[game]" lay-skin="primary" title="HBs-Ab" >
-                    <input type="checkbox" name="like1[game]" lay-skin="primary" title="Hbe-Ag" >
-                    <input type="checkbox" name="like1[game]" lay-skin="primary" title="HBc-Ab" >
+                    <input type="checkbox" name="" lay-skin="primary" lay-filter="x_all" id="q" title="全选" >
+                    <input type="checkbox"  value="on" name="hbsag" lay-skin="primary" lay-filter="x_one" class="xq" title="HBs-Ag">
+                    <input type="checkbox"  value="on" name="hbeab" lay-skin="primary" lay-filter="x_one" class="xq" title="HBs-Ab" >
+                    <input type="checkbox"  value="on" name="hbsab" lay-skin="primary" lay-filter="x_one" class="xq" title="Hbe-Ag" >
+                    <input type="checkbox"  value="on" name="hbcab" lay-skin="primary" class="xq" lay-filter="x_one" title="HBe-Ab" >
+                    <input type="checkbox"  value="on" name="hbeag" lay-skin="primary" class="xq" lay-filter="x_one" title="HBc-Ab" >
                 </div>
             </div>
 
@@ -61,9 +64,9 @@
 
             <div class="layui-form-item" pane="" >
                 <div class="layui-input-block" align="left" >
-                    <input type="checkbox" name="like1[write]" lay-skin="primary" title="全选" >
-                    <input type="checkbox" name="like1[read]" lay-skin="primary" title="谷丙转氨酶">
-                    <input type="checkbox" name="like1[game]" lay-skin="primary" title="肌酐" >
+                    <input type="checkbox" name="" lay-filter="g_all" id="g" lay-skin="primary" title="全选" >
+                    <input type="checkbox"  value="on" name="alt" lay-skin="primary" class="g" lay-filter="g_one" title="谷丙转氨酶">
+                    <input type="checkbox"  value="on" name="cr" lay-skin="primary" class="g" lay-filter="g_one" title="肌酐" >
 
                 </div>
             </div>
@@ -74,8 +77,8 @@
 
             <div class="layui-form-item" pane="" >
                 <div class="layui-input-block" align="left" >
-                    <input type="checkbox" name="like1[write]" lay-skin="primary" title="全选" >
-                    <input type="checkbox" name="like1[read]" lay-skin="primary" title="促甲状腺激素">
+                    <input type="checkbox" name="like1[write]" lay-filter="j_all" id="j" lay-skin="primary" title="全选" >
+                    <input type="checkbox"  value="on" name="tsh" lay-skin="primary"  class="j" lay-filter="j_one"  title="促甲状腺激素">
                 </div>
             </div>
             <br>
@@ -84,13 +87,13 @@
             <p  style="background-color: rgb(214, 236, 246);font-size: 15px;color: #0074d9;text-align: left">病毒筛查</p>
             <div class="layui-form-item" pane="" >
                 <div class="layui-input-block" align="left" >
-                    <input type="checkbox" name="like1[write]" lay-skin="primary" title="全选" >
-                    <input type="checkbox" name="like1[read]" lay-skin="primary" title="巨细胞病毒IgG">
-                    <input type="checkbox" name="like1[read]" lay-skin="primary" title="梅毒螺旋体筛查">
-                    <input type="checkbox" name="like1[read]" lay-skin="primary" title="弓形体IgG">
-                    <input type="checkbox" name="like1[read]" lay-skin="primary" title="巨细胞病毒IgM">
-                    <input type="checkbox" name="like1[read]" lay-skin="primary" title="风疹病毒IgG">
-                    <input type="checkbox" name="like1[read]" lay-skin="primary" title="弓形体IgM">
+                    <input type="checkbox" name="like1[write]" lay-filter="b_all" id="b"lay-skin="primary" title="全选" >
+                    <input type="checkbox"  value="on" name="figg" lay-skin="primary"  class="b" lay-filter="b_one" title="巨细胞病毒IgG">
+                    <input type="checkbox"  value="on" name="tp" lay-skin="primary" class="b" lay-filter="b_one" title="梅毒螺旋体筛查">
+                    <input type="checkbox"  value="on" name="jigg" lay-skin="primary" class="b" lay-filter="b_one" title="弓形体IgG">
+                    <input type="checkbox"  value="on" name="jigm" lay-skin="primary" class="b" lay-filter="b_one" title="巨细胞病毒IgM">
+                    <input type="checkbox"  value="on" name="gigg" lay-skin="primary" class="b" lay-filter="b_one" title="风疹病毒IgG">
+                    <input type="checkbox"  value="on" name="gigm" lay-skin="primary" class="b" lay-filter="b_one" title="弓形体IgM">
                 </div>
             </div>
             <br>
@@ -100,39 +103,37 @@
             <div class="layui-form-item" pane="" >
                 <div class="layui-input-block" align="left" >
 
-                    <input type="checkbox" name="like1[read]" lay-skin="primary" title="其他">
+                    <input type="checkbox"  value="on" name="other" lay-skin="primary" title="其他">
                 </div>
             </div>
             <br>
         </div>
         <div class="layui-form-item">
             <label class="layui-form-label">医生签名:</label>
-            <div class="layui-input-block">
-                <select name="interest" lay-filter="aihao">
-                    <option value="" selected="selected">管理员</option>
-                    <option value="0">写作</option>
-                </select>
+            <div class="layui-input-inline">
+                <input type="text" name="doctorname" style="width: 300px"  lay-verify="title"  autocomplete="off" class="layui-input">
             </div>
         </div>
         <div class="layui-form-item">
             <label class="layui-form-label">询问日期:</label>
             <div class="layui-input-block" >
-                <input type="text" name="date" id="date1" lay-verify="date" placeholder="yyyy-MM-dd" autocomplete="off" class="layui-input">
+                <input type="text" name="examinedate" id="date1" lay-verify="date" placeholder="yyyy-MM-dd" autocomplete="off" class="layui-input">
             </div>
         </div>
         <div align="center">
-            <button type="button" class="layui-btn layui-btn-normal">保存</button>
+            <button type="button" id="button" class="layui-btn layui-btn-normal">保存</button>
             <button type="reset" class="layui-btn layui-btn-normal">重置</button></div>
 
     </form>
 </div>
 <script src="./layui/layui.js" charset="utf-8"></script>
+<script src="./js/jquery-1.12.4.js" charset="utf-8"></script>
 <script>
     layui.use(['form', 'layedit', 'laydate'], function(){
         var form = layui.form
-                ,layer = layui.layer
-                ,layedit = layui.layedit
-                ,laydate = layui.laydate;
+            ,layer = layui.layer
+            ,layedit = layui.layedit
+            ,laydate = layui.laydate;
 
         //日期
         laydate.render({
@@ -141,10 +142,201 @@
         laydate.render({
             elem: '#date1'
         });
+        form.on('checkbox(c_all)', function (data) {
+            var a = data.elem.checked;
+            if (a == true) {
+                $(".xuexing").prop("checked", true);
+                form.render('checkbox');
+            } else {
+                $(".xuexing").prop("checked", false);
+                form.render('checkbox');
+            }
+        });
+        form.on('checkbox(c_one)', function (data) {
+            var item = $(".xuexing");
+            for (var i = 0; i < item.length; i++) {
+                if (item[i].checked == false) {
+                    $("#c_all").prop("checked", false);
+                    form.render('checkbox');
+                    break;
+                }
+            }
+            //如果都勾选了  勾上全选
+            var all = item.length;
+            for (var i = 0; i < item.length; i++) {
+                if (item[i].checked == true) {
+                    all--;
+                }
+            }
+            if (all == 0) {
+                $("#c_all").prop("checked", true);
+                form.render('checkbox');
+            }
 
+        });
+        form.on('checkbox(x_one)', function (data) {
+            var item = $(".xq");
+            for (var i = 0; i < item.length; i++) {
+                if (item[i].checked == false) {
+                    $("#q").prop("checked", false);
+                    form.render('checkbox');
+                    break;
+                }
+            }
+            //如果都勾选了  勾上全选
+            var all = item.length;
+            for (var i = 0; i < item.length; i++) {
+                if (item[i].checked == true) {
+                    all--;
+                }
+            }
+            if (all == 0) {
+                $("#q").prop("checked", true);
+                form.render('checkbox');
+            }
 
+        });
+        form.on('checkbox(x_all)', function (data) {
+            var a = data.elem.checked;
+            if (a == true) {
+                $(".xq").prop("checked", true);
+                form.render('checkbox');
+            } else {
+                $(".xq").prop("checked", false);
+                form.render('checkbox');
+            }
+        });
+        form.on('checkbox(g_one)', function (data) {
+            var item = $(".g");
+            for (var i = 0; i < item.length; i++) {
+                if (item[i].checked == false) {
+                    $("#g").prop("checked", false);
+                    form.render('checkbox');
+                    break;
+                }
+            }
+            //如果都勾选了  勾上全选
+            var all = item.length;
+            for (var i = 0; i < item.length; i++) {
+                if (item[i].checked == true) {
+                    all--;
+                }
+            }
+            if (all == 0) {
+                $("#g").prop("checked", true);
+                form.render('checkbox');
+            }
+
+        });
+        form.on('checkbox(g_all)', function (data) {
+            var a = data.elem.checked;
+            if (a == true) {
+                $(".g").prop("checked", true);
+                form.render('checkbox');
+            } else {
+                $(".g").prop("checked", false);
+                form.render('checkbox');
+            }
+        });
+        form.on('checkbox(j_one)', function (data) {
+            var item = $(".j");
+            for (var i = 0; i < item.length; i++) {
+                if (item[i].checked == false) {
+                    $("#j").prop("checked", false);
+                    form.render('checkbox');
+                    break;
+                }
+            }
+            //如果都勾选了  勾上全选
+            var all = item.length;
+            for (var i = 0; i < item.length; i++) {
+                if (item[i].checked == true) {
+                    all--;
+                }
+            }
+            if (all == 0) {
+                $("#j").prop("checked", true);
+                form.render('checkbox');
+            }
+
+        });
+        form.on('checkbox(j_all)', function (data) {
+            var a = data.elem.checked;
+            if (a == true) {
+                $(".j").prop("checked", true);
+                form.render('checkbox');
+            } else {
+                $(".j").prop("checked", false);
+                form.render('checkbox');
+            }
+        });
+
+        form.on('checkbox(b_one)', function (data) {
+            var item = $(".b");
+            for (var i = 0; i < item.length; i++) {
+                if (item[i].checked == false) {
+                    $("#b").prop("checked", false);
+                    form.render('checkbox');
+                    break;
+                }
+            }
+            //如果都勾选了  勾上全选
+            var all = item.length;
+            for (var i = 0; i < item.length; i++) {
+                if (item[i].checked == true) {
+                    all--;
+                }
+            }
+            if (all == 0) {
+                $("#b").prop("checked", true);
+                form.render('checkbox');
+            }
+
+        });
+        form.on('checkbox(b_all)', function (data) {
+            var a = data.elem.checked;
+            if (a == true) {
+                $(".b").prop("checked", true);
+                form.render('checkbox');
+            } else {
+                $(".b").prop("checked", false);
+                form.render('checkbox');
+            }
+        });
+        form.render('checkbox');
+        $(document).ready(function () {
+
+            var sex = "1";
+            $.ajax({
+                url: "/prescription/getscript",
+                type: "post",
+                data: {"sex": sex},
+                dataType: "json",
+                success: function (result) {
+                    form.val("check", result);
+                }
+            });
+
+        })
+        $("#button").click(function() {
+            $.ajax({
+                url:"/prescription/updateClincale",
+                type:"post",
+                data:$("#form").serialize(),
+                dataType:"text",
+                success:function(result){
+                    if(result=='a'){
+                        layer.msg("保存成功!",{time:3000,icon:1})
+                    }else{
+                        layer.msg("保存失败!",{icon:2})
+                    }
+                }
+            });
+
+        });
 
     });
+
 
 </script>
 </body>
