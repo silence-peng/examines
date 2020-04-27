@@ -7,4 +7,5 @@
         SELECT a.`adviseArr` FROM yxadvisecheckresult a,yxcheckresult b WHERE
         a.`resultId`=b.`resultId` AND b.userId=#{userid} AND b.`sex`=#{sex}
     </select>
+
 </mapper>
