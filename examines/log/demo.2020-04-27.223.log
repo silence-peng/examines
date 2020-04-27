@@ -1,0 +1,14 @@
+2020-04-27 21:05:12,858 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 3
+2020-04-27 21:07:08,459 INFO (StartupInfoLogger.java:50)- Starting ControlerApplication on DESKTOP-E0OONUJ with PID 8668 (E:\IDEAProject\examines\examines\web\target\classes started by ZZW in E:\IDEAProject\examines\examines)
+2020-04-27 21:07:08,464 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2020-04-27 21:07:08,468 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2020-04-27 21:07:12,877 INFO (StartupInfoLogger.java:59)- Started ControlerApplication in 5.4104917 seconds (JVM running for 6.874)
+2020-04-27 21:07:25,991 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT count(0) FROM userinfo WHERE 1 = 1 
+2020-04-27 21:07:26,007 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-27 21:07:26,022 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-27 21:07:26,025 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM userinfo WHERE 1=1 LIMIT ? 
+2020-04-27 21:07:26,026 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 3(Integer)
+2020-04-27 21:07:26,033 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 3
+2020-04-27 21:08:41,030 INFO (StartupInfoLogger.java:50)- Starting ControlerApplication on DESKTOP-E0OONUJ with PID 16880 (E:\IDEAProject\examines\examines\web\target\classes started by ZZW in E:\IDEAProject\examines\examines)
+2020-04-27 21:08:41,034 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2020-04-27 21:08:41,035 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default

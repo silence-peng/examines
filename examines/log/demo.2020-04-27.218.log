@@ -1,0 +1,13 @@
+2020-04-27 21:04:26,845 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT count(0) FROM userinfo WHERE 1 = 1 
+2020-04-27 21:04:26,852 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-27 21:04:26,856 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-27 21:04:26,858 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM userinfo where 1=1 order by creatDate desc LIMIT ? 
+2020-04-27 21:04:26,859 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 3(Integer)
+2020-04-27 21:04:26,868 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 3
+2020-04-27 21:04:28,049 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT bid,userid,bimgfile,result,dev,examinedate,bdoctorname,imgsize FROM bultrasound WHERE userid = ? 
+2020-04-27 21:04:28,052 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122415(Integer)
+2020-04-27 21:04:28,055 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-27 21:04:32,385 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT count(0) FROM userinfo WHERE 1 = 1 
+2020-04-27 21:04:32,386 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-27 21:04:32,388 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-27 21:04:32,389 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM userinfo where 1=1 order by creatDate desc LIMIT ? 

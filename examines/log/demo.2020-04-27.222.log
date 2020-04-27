@@ -1,0 +1,10 @@
+2020-04-27 21:04:49,913 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 常德(String), 常德(String)
+2020-04-27 21:04:49,960 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-27 21:04:49,961 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM userinfo WHERE 1=1 AND fcity LIKE concat('%',?,'%') OR fprovince LIKE concat('%',?,'%') LIMIT ? 
+2020-04-27 21:04:49,962 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 常德(String), 常德(String), 3(Integer)
+2020-04-27 21:04:49,964 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 2
+2020-04-27 21:05:12,853 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT count(0) FROM userinfo WHERE 1 = 1 
+2020-04-27 21:05:12,854 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-27 21:05:12,855 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-27 21:05:12,856 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM userinfo WHERE 1=1 LIMIT ? 
+2020-04-27 21:05:12,856 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 3(Integer)

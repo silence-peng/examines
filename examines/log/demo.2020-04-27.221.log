@@ -1,0 +1,12 @@
+2020-04-27 21:04:40,253 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-27 21:04:40,270 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-27 21:04:40,270 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM userinfo where 1=1 order by creatDate desc LIMIT ? 
+2020-04-27 21:04:40,271 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 3(Integer)
+2020-04-27 21:04:40,273 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 3
+2020-04-27 21:04:42,440 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT count(0) FROM userinfo WHERE 1 = 1 
+2020-04-27 21:04:42,440 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-27 21:04:42,442 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-27 21:04:42,442 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM userinfo WHERE 1=1 LIMIT ? 
+2020-04-27 21:04:42,443 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 3(Integer)
+2020-04-27 21:04:42,446 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 3
+2020-04-27 21:04:49,912 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT count(0) FROM userinfo WHERE 1 = 1 AND fcity LIKE concat('%', ?, '%') OR fprovince LIKE concat('%', ?, '%') 
