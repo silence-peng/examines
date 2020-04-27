@@ -95,14 +95,13 @@ public class ImageController {
             String path = System.getProperty("user.dir")+ "/web/src/main/resources/static/img/";
             String name=file.getOriginalFilename();
             String newFileName= UUID.randomUUID().toString();
-            String suffix=name.substring(name.lastIndexOf(".")+1);
-            String newpath=path+"\\"+newFileName+"."+suffix;
+            String suffix=name.substring(name.lastIndexOf("."));
+            String newpath=path+"\\"+newFileName+suffix;
             Float size = Float.parseFloat(String.valueOf(file.getSize())) / 1024;
             BigDecimal b = new BigDecimal(size);
             // 2表示2位 ROUND_HALF_UP表明四舍五入
             size = b.setScale(2, BigDecimal.ROUND_HALF_UP).floatValue();
-            if(suffix.equals("png") || suffix.equals("jpg") || suffix.equals("jpeg")){
-                System.out.println(userid);
+            if(suffix.equals(".png") || suffix.equals(".jpg") || suffix.equals(".jpeg")){
                 File nfile = new File(newpath);
                 file.transferTo(nfile);
                 bultrasound.setBimgfile(newFileName+suffix);

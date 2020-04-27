@@ -59,12 +59,11 @@ $(function () {
 				data:{userid:$("#userid").val()},
 				dataType:"json",
 				success:function(result){
-					$('#img1').attr('src', "/img/"+result.bimgfile);
-					$('#img2').attr('src', "/img/"+result.bimgfile);
+					$('#img1').attr('src', "img/"+result.bimgfile);
+					$('#img2').attr('src', "img/"+result.bimgfile);
 					$("#size").html("");
 					$("#size").append(result.imgsize+"kb");
 					form.val("formTest",result);
-					form.render();
 				}
 			});
 			return false;
