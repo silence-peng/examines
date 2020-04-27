@@ -21,7 +21,7 @@ layui.use(['form','layer','table','laydate','jquery'], function() {
 			});
 		}
 	});
-	$.ajax({
+	/*$.ajax({
 		url:'/assesAndOther/getSuggestd'
 		,type:'post'
 		,data:null
@@ -29,12 +29,12 @@ layui.use(['form','layer','table','laydate','jquery'], function() {
 		,success:function(e){
 			$(e).each(function () {
 				$("#radio").append("<div class='layui-row'>" +
-					"<input type='radio' value='"+this.did+"' name='"+this.sdid+"' lay-verify='required' checked='checked' title='"+this.content+"'>" +
+					"<input type='radio' value='"+this.did+"' name='sdid' lay-verify='required' checked='checked' title='"+this.content+"'>" +
 					"</div>");
 			});
 			form.render();
 		}
-	});
+	});*/
 
 	table.render({
 		elem:'#test'
@@ -65,7 +65,7 @@ layui.use(['form','layer','table','laydate','jquery'], function() {
 			url:"/assesAndOther/addAssess",
 			type:"post",
 			data:param,
-			dataType:"json",
+			dataType:"text",
 			success:function(result){
 				if(result=="ok"){
 					layer.msg('保存成功!');
