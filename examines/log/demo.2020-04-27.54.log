@@ -1,0 +1,11 @@
+2020-04-27 17:44:14,847 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT count(0) FROM userinfo WHERE 1 = 1 AND fname LIKE concat('%', ?, '%') AND fcity LIKE concat('%', ?, '%') 
+2020-04-27 17:44:14,864 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 王(String), 常德(String)
+2020-04-27 17:44:14,866 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-27 17:44:17,279 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT count(0) FROM userinfo WHERE 1 = 1 AND fcity LIKE concat('%', ?, '%') 
+2020-04-27 17:44:17,280 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 常德(String)
+2020-04-27 17:44:17,282 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-27 17:44:17,283 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM userinfo WHERE 1=1 AND fcity LIKE concat('%',?,'%') LIMIT ? 
+2020-04-27 17:44:17,341 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 常德(String), 3(Integer)
+2020-04-27 17:44:17,344 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 2
+2020-04-27 17:45:06,037 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT count(0) FROM userinfo WHERE 1 = 1 AND fcity LIKE concat('%', ?, '%') 
+2020-04-27 17:45:06,038 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 常德(String)

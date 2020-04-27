@@ -1,0 +1,12 @@
+2020-04-27 18:50:32,634 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT count(0) FROM userinfo WHERE 1 = 1 
+2020-04-27 18:50:32,637 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-27 18:50:32,639 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-27 18:50:32,641 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM userinfo where 1=1 order by creatDate desc LIMIT ? 
+2020-04-27 18:50:32,641 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 3(Integer)
+2020-04-27 18:50:32,644 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 3
+2020-04-27 18:50:33,470 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT userid,mname,mcard,mbirthdate,mphone,methnic,midtype,mage,mculture,mjob,mprovince,mcity,mcounty,mdistrict,mvillage,mregistered,fname,fcard,fbirthdate,fphone,fethnic,fidtype,fage,fculture,fjob,fprovince,fcity,fcounty,fdistrict,fvillage,fregistered,address,creatdate,getmarrieddate,regtypeid,landlinenumber,mimg,fimg,email,doctorname FROM userinfo WHERE userid = ? 
+2020-04-27 18:50:33,472 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer)
+2020-04-27 18:50:33,475 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-27 18:52:03,587 INFO (StartupInfoLogger.java:50)- Starting ControlerApplication on DESKTOP-E0OONUJ with PID 7236 (E:\IDEAProject\examines\examines\web\target\classes started by ZZW in E:\IDEAProject\examines\examines)
+2020-04-27 18:52:03,591 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2020-04-27 18:52:03,592 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default

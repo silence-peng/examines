@@ -1,0 +1,9 @@
+2020-04-27 17:52:15,609 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT count(0) FROM userinfo WHERE 1 = 1 AND fcity LIKE concat('%', ?, '%') OR fprovince LIKE concat('%', ?, '%') 
+2020-04-27 17:52:15,714 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 湖南(String), 湖南(String)
+2020-04-27 17:52:15,715 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-27 17:52:15,716 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM userinfo WHERE 1=1 AND fcity LIKE concat('%',?,'%') OR fprovince LIKE concat('%',?,'%') LIMIT ?, ? 
+2020-04-27 17:52:15,717 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 湖南(String), 湖南(String), 3(Integer), 3(Integer)
+2020-04-27 17:52:15,719 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 2
+2020-04-27 17:53:57,379 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT count(0) FROM userinfo WHERE 1 = 1 AND fcity LIKE concat('%', ?, '%') OR fprovince LIKE concat('%', ?, '%') 
+2020-04-27 17:53:57,380 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 湖南(String), 湖南(String)
+2020-04-27 17:53:57,381 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1

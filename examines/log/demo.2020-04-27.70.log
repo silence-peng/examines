@@ -1,0 +1,8 @@
+2020-04-27 17:49:01,764 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT count(0) FROM userinfo WHERE 1 = 1 AND fname LIKE concat('%', ?, '%') AND creatDate >= ? AND creatDate <= ? 
+2020-04-27 17:49:01,865 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 王(String), 2020-04-15 00:00:00.0(Timestamp), 2020-04-23 00:00:00.0(Timestamp)
+2020-04-27 17:49:01,868 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-27 17:49:01,869 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM userinfo WHERE 1=1 AND fname LIKE concat('%',?,'%') AND creatDate >= ? AND creatDate <= ? LIMIT ? 
+2020-04-27 17:49:01,870 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 王(String), 2020-04-15 00:00:00.0(Timestamp), 2020-04-23 00:00:00.0(Timestamp), 3(Integer)
+2020-04-27 17:49:01,873 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-27 17:49:18,663 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT count(0) FROM userinfo WHERE 1 = 1 
+2020-04-27 17:49:18,664 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 

@@ -1,0 +1,9 @@
+2020-04-27 20:35:58,660 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122414(Integer)
+2020-04-27 20:35:58,667 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-27 20:35:59,919 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT bid,userid,bimgfile,result,dev,examinedate,bdoctorname,imgsize FROM bultrasound WHERE userid = ? 
+2020-04-27 20:35:59,920 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122414(Integer)
+2020-04-27 20:35:59,922 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-27 20:37:21,568 INFO (StartupInfoLogger.java:50)- Starting ControlerApplication on DESKTOP-E0OONUJ with PID 8460 (E:\IDEAProject\examines\examines\web\target\classes started by ZZW in E:\IDEAProject\examines\examines)
+2020-04-27 20:37:21,581 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2020-04-27 20:37:21,582 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2020-04-27 20:37:26,405 INFO (StartupInfoLogger.java:59)- Started ControlerApplication in 5.593333 seconds (JVM running for 6.855)

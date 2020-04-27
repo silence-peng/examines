@@ -1,0 +1,9 @@
+2020-04-27 20:15:34,038 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT bid,userid,bimgfile,result,dev,examinedate,doctorname,imgsize FROM bultrasound WHERE userid = ? 
+2020-04-27 20:15:34,045 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer)
+2020-04-27 20:15:34,047 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-27 20:15:42,671 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT bid,userid,bimgfile,result,dev,examinedate,doctorname,imgsize FROM bultrasound WHERE userid = ? 
+2020-04-27 20:15:42,672 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer)
+2020-04-27 20:15:42,674 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-27 20:15:42,675 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE bultrasound SET userid = ?,bimgfile = ?,result = ?,dev = ?,examinedate = ?,doctorname = ?,imgsize = ? WHERE bid = ? 
+2020-04-27 20:15:42,676 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer), /img/bchao.png(String), 正常(String), 子宫暂未见明显声象(String), 2020-04-23 00:00:00.0(Timestamp), 张三(String), 10854(Integer), 6(Integer)
+2020-04-27 20:15:42,680 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 1

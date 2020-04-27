@@ -1,0 +1,10 @@
+2020-04-27 20:11:11,005 INFO (StartupInfoLogger.java:59)- Started ControlerApplication in 1.7912815 seconds (JVM running for 1005.378)
+2020-04-27 20:11:13,779 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT count(0) FROM userinfo WHERE 1 = 1 
+2020-04-27 20:11:13,780 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-27 20:11:13,782 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-27 20:11:13,783 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM userinfo where 1=1 order by creatDate desc LIMIT ? 
+2020-04-27 20:11:13,783 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 3(Integer)
+2020-04-27 20:11:13,786 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 3
+2020-04-27 20:11:15,174 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT bid,userid,bimgfile,result,dev,examinedate,doctorname,imgsize FROM bultrasound WHERE userid = ? 
+2020-04-27 20:11:15,176 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122415(Integer)
+2020-04-27 20:11:15,178 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 0

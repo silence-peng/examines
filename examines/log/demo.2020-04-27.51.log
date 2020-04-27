@@ -1,0 +1,9 @@
+2020-04-27 17:43:08,343 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select count(0) from (SELECT * FROM userinfo WHERE 1=1 AND fname concat('%',?,'%')) tmp_count 
+2020-04-27 17:43:08,348 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 王(String)
+2020-04-27 17:43:44,571 INFO (StartupInfoLogger.java:50)- Starting ControlerApplication on DESKTOP-E0OONUJ with PID 10600 (E:\IDEAProject\examines\examines\web\target\classes started by ZZW in E:\IDEAProject\examines\examines)
+2020-04-27 17:43:44,576 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2020-04-27 17:43:44,576 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2020-04-27 17:43:48,624 INFO (StartupInfoLogger.java:59)- Started ControlerApplication in 4.8411889 seconds (JVM running for 6.105)
+2020-04-27 17:43:58,395 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT count(0) FROM userinfo WHERE 1 = 1 
+2020-04-27 17:43:58,414 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-27 17:43:58,430 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1

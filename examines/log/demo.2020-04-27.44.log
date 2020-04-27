@@ -1,0 +1,12 @@
+2020-04-27 17:40:52,722 INFO (StartupInfoLogger.java:59)- Started ControlerApplication in 4.5234192 seconds (JVM running for 5.723)
+2020-04-27 17:41:01,933 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT count(0) FROM userinfo WHERE 1 = 1 
+2020-04-27 17:41:01,953 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-27 17:41:01,982 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-27 17:41:01,985 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM userinfo WHERE 1=1 LIMIT ? 
+2020-04-27 17:41:01,987 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 3(Integer)
+2020-04-27 17:41:01,993 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 3
+2020-04-27 17:41:08,763 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT count(0) FROM userinfo WHERE 1 = 1 
+2020-04-27 17:41:08,766 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-27 17:41:08,768 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-27 17:41:08,769 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM userinfo WHERE 1=1 LIMIT ? 
+2020-04-27 17:41:08,769 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 3(Integer)
