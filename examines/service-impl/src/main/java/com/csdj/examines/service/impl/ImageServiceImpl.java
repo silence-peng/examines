@@ -11,6 +11,7 @@ import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import tk.mybatis.mapper.entity.Example;
 
 import java.util.List;
 /**
@@ -62,6 +63,15 @@ public class ImageServiceImpl implements ImageService {
             return bultrasoundMapper.updateByPrimaryKey(bultrasound);
         }
         return bultrasoundMapper.insert(bultrasound);
+    }
+    @Transactional
+    public int updateImg(Bultrasound bultrasound) {
+        if (this.getBultrasoundOne(bultrasound.getUserid())==null){
+            return bultrasoundMapper.insert(bultrasound);
+        }
+        Example example = new Example(bultrasound.getClass());
+        example.createCriteria().andEqualTo("userid",bultrasound.getUserid());
+        return bultrasoundMapper.updateByExampleSelective(bultrasound,example);
     }
 
 

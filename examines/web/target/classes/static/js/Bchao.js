@@ -10,20 +10,35 @@ $(function () {
 			elem: '#mdate'
 		});
 
-		var uploadInst = upload.render({
+		upload.render({
 			elem: '#test1'
-			,url: 'https://httpbin.org/post' //改成您自己的上传接口
-			,before: function(obj){
-				obj.preview(function(index, file, result){
-					$('#demo1').attr('src', result); //图片链接（base64）
-				});
+			,url: '/image/updateImg'
+			,auto: false//选择文件后不自动上传
+			,bindAction: '#commit'
+			,before: function(){
+				this.data={
+					userid:$("#userid").val()
+				}
 			}
+			//选择文件后的回调
+			,choose: function (obj) {
+				obj.preview(function (index, file, result) {
+					$('#demo1').attr('src', '/img/'+result);
+				})
+			}
+			//操作成功的回调
 			,done: function(res){
 				//如果上传失败
 				if(res.code > 0){
-					return layer.msg('上传失败');
+					layer.msg('上传失败');
+				}else{
+					layer.msg('上传成功');
+					location.reload();
 				}
-				//上传成功
+			}
+			//上传错误回调
+			,error: function (index, upload) {
+				layer.alert('上传失败！' + index);
 			}
 		});
 
@@ -44,18 +59,9 @@ $(function () {
 				data:{userid:$("#userid").val()},
 				dataType:"json",
 				success:function(result){
-					$("#minImg").html("");
-					$("#maxImg").html("");
-					if(result.bimgfile!=null && result.bimgfile!=""){
-						$("#minImg").append("<img src='"+result.bimgfile+"' width='50px' height='40px'/>" +
-							"<label name='imgsize'>"+result.imgsize+"</label>");
-						$("#maxImg").append("<img src='"+result.bimgfile+"' width='90%' style='padding: 30px;'/>");
-					}else{
-						var p = "<p>暂未图片信息</p>";
-						$("#maxImg").append(p);
-						$("#minImg").append(p);
-					}
-					console.log(result.bdoctorname);
+					$('#img1').attr('src', result.bimgfile);
+					$('#img2').attr('src', result.bimgfile);
+					$("#minImg").append("<label name='imgsize'>"+result.imgsize+"kb</label>")
 					form.val("formTest",result);
 				}
 			});
@@ -64,10 +70,9 @@ $(function () {
 		$("#minImg").dblclick(function () {
 			$.post('/image/deleteImg',{userid:$("#userid").val()},function (e) {
 				if(e=="ok"){
-					$("#minImg").hide();
-					$("#maxImg").hide();
+					$("#minImg").html(null);
+					$("#maxImg").html(null);
 				}
-				$("#maxImg").hide();
 			})
 		})
 	});

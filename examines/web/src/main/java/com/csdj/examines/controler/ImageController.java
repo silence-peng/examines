@@ -9,10 +9,16 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.multipart.MultipartFile;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
+import java.io.File;
+import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.UUID;
 
 /**
  * @author: ZhouZhengWu
@@ -78,5 +84,47 @@ public class ImageController {
             return "ok";
         }
         return "no";
+    }
+    @RequestMapping("updateImg")
+    @ResponseBody
+    public Object updateImg(MultipartFile file,Integer userid) throws IOException {
+        Bultrasound bultrasound = new Bultrasound();
+        Map<String,Object> map = new HashMap<String,Object>();
+        Map<String,Object> map2 = new HashMap<String,Object>();
+        if (!file.isEmpty()){
+            String path = System.getProperty("user.dir")+ "/web/src/main/resources/static/img/";
+            String name=file.getOriginalFilename();
+            String newFileName= UUID.randomUUID().toString();
+            String suffix=name.substring(name.lastIndexOf(".")+1);
+            String newpath=path+"\\"+newFileName+"."+suffix;
+            Float size = Float.parseFloat(String.valueOf(file.getSize())) / 1024;
+            BigDecimal b = new BigDecimal(size);
+            // 2表示2位 ROUND_HALF_UP表明四舍五入
+            size = b.setScale(2, BigDecimal.ROUND_HALF_UP).floatValue();
+            if(suffix.equals("png") || suffix.equals("jpg") || suffix.equals("jpeg")){
+                System.out.println(userid);
+                File nfile = new File(newpath);
+                file.transferTo(nfile);
+                bultrasound.setBimgfile(newFileName+suffix);
+                bultrasound.setImgsize(size);
+                bultrasound.setUserid(userid);
+                int result = imageService.updateImg(bultrasound);
+                if (result>0) {
+                    map2.put("src",newFileName+suffix);//图片url
+                    map2.put("title",newFileName);//图片名称
+                    map.put("code",0);//0表示成功，1失败
+                    map.put("msg","上传成功");//提示消息
+                    map.put("data",map2);
+                    return map;
+                }
+            }
+            map2.put("src",newFileName+suffix);//图片url
+            map2.put("title",newFileName);//图片名称
+            map.put("code",1);//0表示成功，1失败
+            map.put("msg","上传失败");//提示消息
+            map.put("data",map2);
+            return map2;
+        }
+        return null;
     }
 }
