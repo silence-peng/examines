@@ -1,0 +1,12 @@
+2020-04-27 15:37:52,160 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-27 15:37:52,157 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 3
+2020-04-27 15:38:02,632 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT assid,userid,content,sdid,doctorname,examinedate FROM assess WHERE ( ( userid = ? ) ) 
+2020-04-27 15:38:02,632 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer)
+2020-04-27 15:38:02,635 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-27 15:38:02,637 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE assess SET userid = ?,content = ?,sdid = ?,doctorname = ?,examinedate = ? WHERE assid = ? 
+2020-04-27 15:38:02,638 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer), (String), null, 张三(String), 2020-04-27 00:00:00.0(Timestamp), 1(Integer)
+2020-04-27 15:38:02,644 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 1
+2020-04-27 15:42:47,155 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT assid,userid,content,sdid,doctorname,examinedate FROM assess WHERE ( ( userid = ? ) ) 
+2020-04-27 15:42:47,158 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer)
+2020-04-27 15:42:47,160 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-27 15:42:47,161 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE assess SET userid = ?,content = ?,sdid = ?,doctorname = ?,examinedate = ? WHERE assid = ? 

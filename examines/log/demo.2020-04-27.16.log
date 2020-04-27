@@ -1,0 +1,7 @@
+2020-04-27 15:54:34,324 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT id,content FROM suggest 
+2020-04-27 15:54:34,321 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT userid,mname,mcard,mbirthdate,mphone,methnic,midtype,mage,mculture,mjob,mprovince,mcity,mcounty,mdistrict,mvillage,mregistered,fname,fcard,fbirthdate,fphone,fethnic,fidtype,fage,fculture,fjob,fprovince,fcity,fcounty,fdistrict,fvillage,fregistered,address,creatdate,getmarrieddate,regtypeid,landlinenumber,mimg,fimg,email,doctorname FROM userinfo WHERE userid = ? 
+2020-04-27 15:54:34,347 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-27 15:54:34,347 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer)
+2020-04-27 15:54:34,362 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 7
+2020-04-27 15:54:34,367 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-27 15:54:49,012 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT userid,mname,mcard,mbirthdate,mphone,methnic,midtype,mage,mculture,mjob,mprovince,mcity,mcounty,mdistrict,mvillage,mregistered,fname,fcard,fbirthdate,fphone,fethnic,fidtype,fage,fculture,fjob,fprovince,fcity,fcounty,fdistrict,fvillage,fregistered,address,creatdate,getmarrieddate,regtypeid,landlinenumber,mimg,fimg,email,doctorname FROM userinfo WHERE userid = ? 

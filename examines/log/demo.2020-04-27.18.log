@@ -1,0 +1,8 @@
+2020-04-27 15:54:59,502 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT id,content FROM suggest 
+2020-04-27 15:54:59,523 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-27 15:54:59,526 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 7
+2020-04-27 15:55:12,739 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT assid,userid,content,sdid,doctorname,examinedate FROM assess WHERE ( ( userid = ? ) ) 
+2020-04-27 15:55:12,740 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer)
+2020-04-27 15:55:12,744 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-27 15:55:12,747 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE assess SET userid = ?,content = ?,sdid = ?,doctorname = ?,examinedate = ? WHERE assid = ? 
+2020-04-27 15:55:12,749 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer), 有准备、有计划的怀孕，避免大龄生育。合理营养，控制饮食，科学增补叶酸、碘、铁、钙等营养素及微童元素。(String), 1(Integer), 张三(String), 2020-04-27 00:00:00.0(Timestamp), 1(Integer)

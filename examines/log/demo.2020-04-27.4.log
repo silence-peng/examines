@@ -1,0 +1,12 @@
+2020-04-27 15:30:30,137 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 3
+2020-04-27 15:30:30,137 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 7
+2020-04-27 15:30:30,146 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-27 15:30:58,280 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT assid,userid,content,sdid,doctorname,examinedate FROM assess WHERE assid = ? AND userid = ? 
+2020-04-27 15:30:58,281 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: null, 2020122412(Integer)
+2020-04-27 15:30:58,285 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 0
+2020-04-27 15:30:58,288 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: INSERT INTO assess ( assid,userid,content,sdid,doctorname,examinedate ) VALUES( ?,?,?,?,?,? ) 
+2020-04-27 15:30:58,290 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: null, 2020122412(Integer), 有准备、有计划的怀孕，避免大龄生育。合理营养，控制饮食，科学增补叶酸、碘、铁、钙等营养素及微童元素。(String), null, 张三(String), 2020-04-27 00:00:00.0(Timestamp)
+2020-04-27 15:30:58,319 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 1
+2020-04-27 15:33:44,120 INFO (StartupInfoLogger.java:50)- Starting ControlerApplication on DESKTOP-E0OONUJ with PID 7456 (E:\IDEAProject\examines\examines\web\target\classes started by ZZW in E:\IDEAProject\examines\examines)
+2020-04-27 15:33:44,124 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2020-04-27 15:33:44,125 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default

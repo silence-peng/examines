@@ -1,0 +1,12 @@
+2020-04-27 15:43:07,384 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 7
+2020-04-27 15:43:07,390 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-27 15:43:26,688 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT assid,userid,content,sdid,doctorname,examinedate FROM assess WHERE ( ( userid = ? ) ) 
+2020-04-27 15:43:26,689 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer)
+2020-04-27 15:43:26,691 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-27 15:43:26,693 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE assess SET userid = ?,content = ?,sdid = ?,doctorname = ?,examinedate = ? WHERE assid = ? 
+2020-04-27 15:43:26,694 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer), 合理营养，控制饮食，科学增补叶酸、碘、铁、钙等营养素及微童元素。(String), null, 张三(String), 2020-04-27 00:00:00.0(Timestamp), 1(Integer)
+2020-04-27 15:43:26,698 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 1
+2020-04-27 15:46:55,073 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT count(0) FROM userinfo WHERE 1 = 1 
+2020-04-27 15:46:55,074 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-27 15:46:55,089 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-27 15:46:55,092 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM userinfo where 1=1 order by creatDate desc LIMIT ? 

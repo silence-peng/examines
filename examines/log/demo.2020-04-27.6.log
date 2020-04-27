@@ -1,0 +1,12 @@
+2020-04-27 15:34:02,246 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 3
+2020-04-27 15:34:02,246 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 7
+2020-04-27 15:34:02,257 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-27 15:34:13,719 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT assid,userid,content,sdid,doctorname,examinedate FROM assess WHERE assid = ? AND userid = ? 
+2020-04-27 15:34:13,720 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: null, 2020122412(Integer)
+2020-04-27 15:34:13,721 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 0
+2020-04-27 15:34:13,724 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: INSERT INTO assess ( assid,userid,content,sdid,doctorname,examinedate ) VALUES( ?,?,?,?,?,? ) 
+2020-04-27 15:34:13,727 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: null, 2020122412(Integer), (String), null, 张三(String), 2020-04-27 00:00:00.0(Timestamp)
+2020-04-27 15:34:13,730 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 1
+2020-04-27 15:37:19,606 INFO (StartupInfoLogger.java:50)- Starting ControlerApplication on DESKTOP-E0OONUJ with PID 8816 (E:\IDEAProject\examines\examines\web\target\classes started by ZZW in E:\IDEAProject\examines\examines)
+2020-04-27 15:37:19,609 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2020-04-27 15:37:19,610 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default

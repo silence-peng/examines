@@ -1,0 +1,7 @@
+2020-04-27 15:33:47,789 INFO (StartupInfoLogger.java:59)- Started ControlerApplication in 4.3692245 seconds (JVM running for 5.642)
+2020-04-27 15:34:02,204 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT id,content FROM suggest 
+2020-04-27 15:34:02,209 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT userid,mname,mcard,mbirthdate,mphone,methnic,midtype,mage,mculture,mjob,mprovince,mcity,mcounty,mdistrict,mvillage,mregistered,fname,fcard,fbirthdate,fphone,fethnic,fidtype,fage,fculture,fjob,fprovince,fcity,fcounty,fdistrict,fvillage,fregistered,address,creatdate,getmarrieddate,regtypeid,landlinenumber,mimg,fimg,email,doctorname FROM userinfo WHERE userid = ? 
+2020-04-27 15:34:02,221 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT did,content FROM suggestd 
+2020-04-27 15:34:02,229 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-27 15:34:02,229 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-27 15:34:02,229 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer)

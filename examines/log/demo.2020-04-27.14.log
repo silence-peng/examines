@@ -1,0 +1,9 @@
+2020-04-27 15:47:02,686 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 3
+2020-04-27 15:47:02,703 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT id,content FROM suggest 
+2020-04-27 15:47:02,704 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-27 15:47:02,705 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 7
+2020-04-27 15:51:57,685 INFO (StartupInfoLogger.java:50)- Starting ControlerApplication on DESKTOP-E0OONUJ with PID 14520 (E:\IDEAProject\examines\examines\web\target\classes started by ZZW in E:\IDEAProject\examines\examines)
+2020-04-27 15:51:57,689 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2020-04-27 15:51:57,689 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2020-04-27 15:52:01,516 INFO (StartupInfoLogger.java:59)- Started ControlerApplication in 4.6162539 seconds (JVM running for 5.853)
+2020-04-27 15:52:09,963 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT userid,mname,mcard,mbirthdate,mphone,methnic,midtype,mage,mculture,mjob,mprovince,mcity,mcounty,mdistrict,mvillage,mregistered,fname,fcard,fbirthdate,fphone,fethnic,fidtype,fage,fculture,fjob,fprovince,fcity,fcounty,fdistrict,fvillage,fregistered,address,creatdate,getmarrieddate,regtypeid,landlinenumber,mimg,fimg,email,doctorname FROM userinfo WHERE userid = ? 
