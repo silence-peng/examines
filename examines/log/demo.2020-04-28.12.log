@@ -1,0 +1,8 @@
+2020-04-28 01:02:36,111 INFO (StartupInfoLogger.java:59)- Started ControlerApplication in 4.4872363 seconds (JVM running for 5.747)
+2020-04-28 01:02:48,200 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT count(0) FROM userinfo WHERE 1 = 1 
+2020-04-28 01:02:48,218 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-28 01:02:48,233 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-28 01:02:48,236 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM userinfo where 1=1 order by creatDate desc LIMIT ? 
+2020-04-28 01:02:48,237 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 3(Integer)
+2020-04-28 01:02:48,245 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 3
+2020-04-28 01:02:49,852 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT userid,mname,mcard,mbirthdate,mphone,methnic,midtype,mage,mculture,mjob,mprovince,mcity,mcounty,mdistrict,mvillage,mregistered,fname,fcard,fbirthdate,fphone,fethnic,fidtype,fage,fculture,fjob,fprovince,fcity,fcounty,fdistrict,fvillage,fregistered,address,creatdate,getmarrieddate,regtypeid,landlinenumber,mimg,fimg,email,doctorname FROM userinfo WHERE userid = ? 

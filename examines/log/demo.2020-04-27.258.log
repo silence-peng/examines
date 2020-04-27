@@ -1,0 +1,13 @@
+2020-04-27 21:47:02,234 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: DELETE FROM bultrasound WHERE userid = ? 
+2020-04-27 21:47:02,245 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer)
+2020-04-27 21:47:02,246 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 1
+2020-04-27 21:47:04,989 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT bid,userid,bimgfile,result,dev,examinedate,bdoctorname,imgsize FROM bultrasound WHERE userid = ? 
+2020-04-27 21:47:04,990 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer)
+2020-04-27 21:47:04,992 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 0
+2020-04-27 21:47:05,215 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT bid,userid,bimgfile,result,dev,examinedate,bdoctorname,imgsize FROM bultrasound WHERE userid = ? 
+2020-04-27 21:47:05,217 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer)
+2020-04-27 21:47:05,218 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 0
+2020-04-27 21:47:08,663 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT yxid,yxitem FROM yxadvise 
+2020-04-27 21:47:08,664 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-27 21:47:08,665 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 5
+2020-04-27 21:47:08,693 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM yxcheckresult WHERE userid=? AND sex=? 

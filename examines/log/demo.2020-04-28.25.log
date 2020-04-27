@@ -1,0 +1,6 @@
+2020-04-28 01:18:32,790 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122415(Integer)
+2020-04-28 01:18:32,793 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 0
+2020-04-28 01:18:32,796 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: INSERT INTO bultrasound ( bid,userid,bimgfile,result,dev,examinedate,bdoctorname,imgsize ) VALUES( ?,?,?,?,?,?,?,? ) 
+2020-04-28 01:18:32,797 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: null, 2020122415(Integer), 3f5ce6d4-2d22-47c4-b6c4-f29b467e98c1jpeg(String), null, null, null, null, 1096.08(Float)
+2020-04-28 01:18:32,823 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 1
+2020-04-28 01:18:33,063 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT userid,mname,mcard,mbirthdate,mphone,methnic,midtype,mage,mculture,mjob,mprovince,mcity,mcounty,mdistrict,mvillage,mregistered,fname,fcard,fbirthdate,fphone,fethnic,fidtype,fage,fculture,fjob,fprovince,fcity,fcounty,fdistrict,fvillage,fregistered,address,creatdate,getmarrieddate,regtypeid,landlinenumber,mimg,fimg,email,doctorname FROM userinfo WHERE userid = ? 

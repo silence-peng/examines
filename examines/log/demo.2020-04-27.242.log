@@ -1,0 +1,9 @@
+2020-04-27 21:37:56,074 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT bid,userid,bimgfile,result,dev,examinedate,bdoctorname,imgsize FROM bultrasound WHERE userid = ? 
+2020-04-27 21:37:56,175 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer)
+2020-04-27 21:37:56,176 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 0
+2020-04-27 21:37:56,281 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT bid,userid,bimgfile,result,dev,examinedate,bdoctorname,imgsize FROM bultrasound WHERE userid = ? 
+2020-04-27 21:37:56,282 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer)
+2020-04-27 21:37:56,284 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 0
+2020-04-27 21:37:56,447 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT bid,userid,bimgfile,result,dev,examinedate,bdoctorname,imgsize FROM bultrasound WHERE userid = ? 
+2020-04-27 21:37:56,448 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer)
+2020-04-27 21:37:56,449 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 0

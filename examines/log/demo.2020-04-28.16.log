@@ -1,0 +1,9 @@
+2020-04-28 01:09:45,382 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT userid,mname,mcard,mbirthdate,mphone,methnic,midtype,mage,mculture,mjob,mprovince,mcity,mcounty,mdistrict,mvillage,mregistered,fname,fcard,fbirthdate,fphone,fethnic,fidtype,fage,fculture,fjob,fprovince,fcity,fcounty,fdistrict,fvillage,fregistered,address,creatdate,getmarrieddate,regtypeid,landlinenumber,mimg,fimg,email,doctorname FROM userinfo WHERE userid = ? 
+2020-04-28 01:09:45,385 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122415(Integer)
+2020-04-28 01:09:45,387 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-28 01:09:51,223 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE bultrasound SET userid = ?,bimgfile = ?,imgsize = ? WHERE ( ( userid = ? ) ) 
+2020-04-28 01:09:51,225 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122415(Integer), c020a868-1841-40bc-8757-848acdaf6effjpeg(String), 1096.08(Float), 2020122415(Integer)
+2020-04-28 01:09:51,227 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 0
+2020-04-28 01:09:51,421 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT userid,mname,mcard,mbirthdate,mphone,methnic,midtype,mage,mculture,mjob,mprovince,mcity,mcounty,mdistrict,mvillage,mregistered,fname,fcard,fbirthdate,fphone,fethnic,fidtype,fage,fculture,fjob,fprovince,fcity,fcounty,fdistrict,fvillage,fregistered,address,creatdate,getmarrieddate,regtypeid,landlinenumber,mimg,fimg,email,doctorname FROM userinfo WHERE userid = ? 
+2020-04-28 01:09:51,422 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122415(Integer)
+2020-04-28 01:09:51,426 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
