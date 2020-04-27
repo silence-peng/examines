@@ -1,5 +1,6 @@
 package com.csdj.examines.service.impl;
 
+import com.csdj.examines.dao.CheckProveMapper;
 import com.csdj.examines.dao.UserinfoMapper;
 import com.csdj.examines.pojo.Userinfo;
 import com.csdj.examines.service.MessageService;
@@ -12,7 +13,9 @@ import java.util.List;
 public class MessageServiceImpl implements MessageService {
     @Autowired
     private UserinfoMapper mapper;
+    @Autowired
+    private CheckProveMapper checkProveMapper;
     public List<Userinfo> loadUserInfo(String name, Date startdate, Date enddate) {
-        return mapper.loadUserInfo(name, startdate, enddate);
+        return checkProveMapper.loadUserInfo(name, startdate, enddate);
     }
 }

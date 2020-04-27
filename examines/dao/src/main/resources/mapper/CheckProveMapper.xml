@@ -7,4 +7,14 @@
         SELECT a.`adviseArr` FROM yxadvisecheckresult a,yxcheckresult b WHERE
         a.`resultId`=b.`resultId` AND b.userId=#{userid} AND b.`sex`=#{sex}
     </select>
+    <select id="loadUserInfo" resultType="Userinfo">
+        SELECT u.userid,u.fname,u.fage,u.fbirthdate,a.content as address FROM userinfo u,assess a
+        WHERE u.userid=a.userid
+        <if test="name!=null and name!=''">
+        AND (u.fname like concat('%',#{name},'%') or u.mname like concat('%',#{name},'%'))
+        </if>
+        <if test="startDate!=null and startDate!='' and endDate!=null and endDate!='' ">
+        "AND u.createdate between #{startDate} and #{endDate}",
+        </if>
+    </select>
 </mapper>
