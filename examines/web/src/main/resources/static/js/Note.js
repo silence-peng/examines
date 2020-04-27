@@ -13,8 +13,9 @@ layui.use(['form','layer','laydate','jquery','table'], function() {
 		});
 		
 		table.render({
+			id:"info",
 			elem: '#test',
-			url: '/',
+			url: '/message/loadInfo',
 			cols: [
 				[{field:'id',type : 'checkbox'}
 				,{field: 'userid',title: '编号',sort: true}
@@ -27,4 +28,17 @@ layui.use(['form','layer','laydate','jquery','table'], function() {
 			],
 			page: true
 		});
-})
+		$("#find").click(function () {
+			table.reload('info', {
+				page: {
+					curr: 1 //重新从第 1 页开始
+				}
+				, where: {
+						fname: $("input[name='name']").val(),
+						fbirthdate: $("input[name='startdate']").val(),
+						mbirthdate: $("input[name='enddate']").val()
+				}
+			})
+		});
+
+});

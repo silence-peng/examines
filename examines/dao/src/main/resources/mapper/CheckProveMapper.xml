@@ -8,13 +8,16 @@
         a.`resultId`=b.`resultId` AND b.userId=#{userid} AND b.`sex`=#{sex}
     </select>
     <select id="loadUserInfo" resultType="Userinfo">
-        SELECT u.userid,u.fname,u.fage,u.fbirthdate,a.content as address FROM userinfo u,assess a
+        SELECT u.userid,u.fname,u.fcard,u.fbirthdate,u.fage,a.content as address,u.fphone FROM userinfo u,assess a
         WHERE u.userid=a.userid
         <if test="name!=null and name!=''">
         AND (u.fname like concat('%',#{name},'%') or u.mname like concat('%',#{name},'%'))
         </if>
-        <if test="startDate!=null and startDate!='' and endDate!=null and endDate!='' ">
-        "AND u.createdate between #{startDate} and #{endDate}",
+        <if test="startdate!=null">
+        AND u.creatdate >=  #{startdate}
+        </if>
+        <if test="enddate!=null">
+            AND  u.creatdate &lt;= #{enddate}
         </if>
     </select>
 </mapper>

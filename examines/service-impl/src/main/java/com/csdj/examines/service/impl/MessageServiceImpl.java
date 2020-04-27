@@ -4,6 +4,8 @@ import com.csdj.examines.dao.CheckProveMapper;
 import com.csdj.examines.dao.UserinfoMapper;
 import com.csdj.examines.pojo.Userinfo;
 import com.csdj.examines.service.MessageService;
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -15,7 +17,8 @@ public class MessageServiceImpl implements MessageService {
     private UserinfoMapper mapper;
     @Autowired
     private CheckProveMapper checkProveMapper;
-    public List<Userinfo> loadUserInfo(String name, Date startdate, Date enddate) {
-        return checkProveMapper.loadUserInfo(name, startdate, enddate);
+    public PageInfo<Userinfo> loadUserInfo(String name, Date startdate, Date enddate, Integer page, Integer limit) {
+        PageHelper.startPage(page,limit);
+        return new PageInfo<Userinfo>(checkProveMapper.loadUserInfo(name, startdate, enddate));
     }
 }

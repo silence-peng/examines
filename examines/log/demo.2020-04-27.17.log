@@ -1,0 +1,12 @@
+2020-04-27 16:32:26,209 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT u.userid,u.fname,u.fage,u.fbirthdate,a.content as address FROM userinfo u,assess a WHERE u.userid=a.userid LIMIT ? 
+2020-04-27 16:32:26,224 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 10(Integer)
+2020-04-27 16:32:26,249 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-27 16:32:26,255 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT count(0) FROM userinfo u, assess a WHERE u.userid = a.userid 
+2020-04-27 16:32:26,256 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-27 16:32:26,259 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-27 16:32:26,261 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT u.userid,u.fname,u.fage,u.fbirthdate,a.content as address FROM userinfo u,assess a WHERE u.userid=a.userid LIMIT ? 
+2020-04-27 16:32:26,265 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 10(Integer)
+2020-04-27 16:32:26,267 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-27 16:32:33,498 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT count(0) FROM userinfo u, assess a WHERE u.userid = a.userid 
+2020-04-27 16:32:33,499 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-27 16:32:33,501 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1

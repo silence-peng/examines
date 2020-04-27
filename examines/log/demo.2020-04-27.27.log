@@ -1,0 +1,16 @@
+2020-04-27 16:39:01,873 INFO (StartupInfoLogger.java:59)- Started ControlerApplication in 6.4703097 seconds (JVM running for 290.451)
+2020-04-27 16:48:12,251 INFO (StartupInfoLogger.java:50)- Starting ControlerApplication on DESKTOP-RJURPVR with PID 11072 (D:\MAVEN\Git\examines\examines\web\target\classes started by hh in D:\MAVEN\Git\examines\examines)
+2020-04-27 16:48:12,252 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2020-04-27 16:48:12,253 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2020-04-27 16:49:21,722 INFO (StartupInfoLogger.java:50)- Starting ControlerApplication on DESKTOP-RJURPVR with PID 11072 (D:\MAVEN\Git\examines\examines\web\target\classes started by hh in D:\MAVEN\Git\examines\examines)
+2020-04-27 16:49:21,729 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2020-04-27 16:49:21,729 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2020-04-27 16:50:09,399 INFO (StartupInfoLogger.java:50)- Starting ControlerApplication on DESKTOP-RJURPVR with PID 11072 (D:\MAVEN\Git\examines\examines\web\target\classes started by hh in D:\MAVEN\Git\examines\examines)
+2020-04-27 16:50:09,400 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2020-04-27 16:50:09,400 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2020-04-27 16:52:03,794 INFO (StartupInfoLogger.java:50)- Starting ControlerApplication on DESKTOP-RJURPVR with PID 11072 (D:\MAVEN\Git\examines\examines\web\target\classes started by hh in D:\MAVEN\Git\examines\examines)
+2020-04-27 16:52:03,794 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2020-04-27 16:52:03,795 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2020-04-27 16:52:59,485 INFO (StartupInfoLogger.java:50)- Starting ControlerApplication on DESKTOP-RJURPVR with PID 11072 (D:\MAVEN\Git\examines\examines\web\target\classes started by hh in D:\MAVEN\Git\examines\examines)
+2020-04-27 16:52:59,485 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2020-04-27 16:52:59,485 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default

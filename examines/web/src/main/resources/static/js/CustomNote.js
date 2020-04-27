@@ -14,7 +14,7 @@ layui.use(['form','layer','laydate','jquery','table'], function() {
 		
 		table.render({
 			elem: '#test',
-			url: '/message/loadInfo',
+			url: '',
 			cols: [
 				[{field: 'userid',title: '编号',sort: true}
 				, {field: 'fname',title: '姓名'}

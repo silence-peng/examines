@@ -1,0 +1,10 @@
+2020-04-27 16:24:34,063 INFO (StartupInfoLogger.java:59)- Started ControlerApplication in 6.8452067 seconds (JVM running for 9.507)
+2020-04-27 16:25:20,797 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT count(0) FROM userinfo u, assess a WHERE u.userid = a.userid 
+2020-04-27 16:25:20,818 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-27 16:25:20,867 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-27 16:25:20,871 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT u.userid,u.fname,u.fage,u.fbirthdate,a.content as address FROM userinfo u,assess a WHERE u.userid=a.userid LIMIT ? 
+2020-04-27 16:25:20,873 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 10(Integer)
+2020-04-27 16:25:20,879 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-27 16:28:11,700 INFO (StartupInfoLogger.java:50)- Starting ControlerApplication on DESKTOP-RJURPVR with PID 9664 (D:\MAVEN\Git\examines\examines\web\target\classes started by hh in D:\MAVEN\Git\examines\examines)
+2020-04-27 16:28:11,701 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2020-04-27 16:28:11,701 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
