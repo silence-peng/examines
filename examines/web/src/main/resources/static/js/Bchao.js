@@ -59,9 +59,10 @@ $(function () {
 				data:{userid:$("#userid").val()},
 				dataType:"json",
 				success:function(result){
-					$('#img1').attr('src', result.bimgfile);
-					$('#img2').attr('src', result.bimgfile);
-					$("#minImg").append("<label name='imgsize'>"+result.imgsize+"kb</label>")
+					$('#img1').attr('src', "img/"+result.bimgfile);
+					$('#img2').attr('src', "img/"+result.bimgfile);
+					$("#size").html("");
+					$("#size").append(result.imgsize+"kb");
 					form.val("formTest",result);
 				}
 			});
