@@ -10,11 +10,24 @@
     <select id="loadUserInfo" resultType="Userinfo">
         SELECT u.userid,u.fname,u.fage,u.fbirthdate,a.content as address FROM userinfo u,assess a
         WHERE u.userid=a.userid
-        <if test="name!=null and name!=''">
+        <if test="fname!=null and fname!=''">
         AND (u.fname like concat('%',#{name},'%') or u.mname like concat('%',#{name},'%'))
         </if>
-        <if test="startDate!=null and startDate!='' and endDate!=null and endDate!='' ">
-        "AND u.createdate between #{startDate} and #{endDate}",
+        <if test="mbirthdate!=null and mbirthdate!='' and fbirthdate!=null and fbirthdate!='' ">
+        "AND u.createdate between #{mbirthdate} and #{fbirthdate}",
         </if>
     </select>
+    <select id="NoteByUserinfo" resultType="Userinfo" parameterType="Userinfo">
+        SELECT * FROM userinfo WHERE 1=1
+        <if test="fname!=null and fname!=''">
+        AND fname LIKE concat('%',#{fname},'%')
+        </if>
+        <if test="mbirthdate!=null and fbirthdate!=null">
+        AND creatDate >= #{mbirthdate} AND creatDate &lt;= #{fbirthdate}
+        </if>
+        <if test="fcity!='' and fcity!=null">
+        AND fcity LIKE concat('%',#{fcity},'%') OR fprovince LIKE concat('%',#{fcity},'%')
+        </if>
+    </select>
+
 </mapper>

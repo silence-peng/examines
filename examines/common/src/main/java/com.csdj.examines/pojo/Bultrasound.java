@@ -16,7 +16,7 @@ public class Bultrasound implements Serializable {
     private String dev;
     @DateTimeFormat(pattern = "yyyy-MM-dd")
     private Date examinedate;
-    private String doctorname;
+    private String bdoctorname;
     private Integer imgsize;
 
     @Override
@@ -28,7 +28,7 @@ public class Bultrasound implements Serializable {
                 ", result='" + result + '\'' +
                 ", dev='" + dev + '\'' +
                 ", examinedate=" + examinedate +
-                ", doctorname='" + doctorname + '\'' +
+                ", bdoctorname='" + bdoctorname + '\'' +
                 ", imgsize=" + imgsize +
                 '}';
     }
@@ -81,12 +81,12 @@ public class Bultrasound implements Serializable {
         this.examinedate = examinedate;
     }
 
-    public String getDoctorname() {
-        return doctorname;
+    public String getBdoctorname() {
+        return bdoctorname;
     }
 
-    public void setDoctorname(String doctorname) {
-        this.doctorname = doctorname;
+    public void setBdoctorname(String doctorname) {
+        this.bdoctorname = doctorname;
     }
 
     public Integer getImgsize() {

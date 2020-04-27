@@ -41,24 +41,39 @@ public class ImageController {
         map.put("data", pages.getList());
         return map;
     }
+    @RequestMapping("tiao")
+    public String tiao(Integer userid,HttpSession session){
+        session.setAttribute("userid",userid);
+        return "Bchao";
+    }
     @RequestMapping("openImage")
     @ResponseBody
     public Userinfo openImage(HttpSession session){
-        session.setAttribute("userid",2020122412);
         Integer userid = (Integer) session.getAttribute("userid");
         Userinfo userinfo = imageService.getUserOne(userid);
         return userinfo;
     }
     @RequestMapping("getB")
     @ResponseBody
-    public Bultrasound getB(Integer userid){
+    public Object getB(Integer userid){
+        System.out.println(userid);
         Bultrasound bultrasound = imageService.getBultrasoundOne(userid);
+        System.out.println(bultrasound);
         return bultrasound;
     }
     @RequestMapping("deleteImg")
     @ResponseBody
     public String deleteImg(Integer userid){
         int result = imageService.deleteImg(userid);
+        if (result>0){
+            return "ok";
+        }
+        return "no";
+    }
+    @RequestMapping("updB")
+    @ResponseBody
+    public Object updB(Bultrasound bultrasound){
+        int result = imageService.updB(bultrasound);
         if (result>0){
             return "ok";
         }

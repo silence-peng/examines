@@ -3,10 +3,11 @@
 	<head>
 		<meta charset="utf-8">
 		<title></title>
-		<link rel="stylesheet" href="layui/css/layui.css">
-		<link rel="stylesheet" href="css/Bchao.css" />
-		<script src="layui/layui.js"></script>
-		<script src="js/Bchao.js"></script>
+		<link rel="stylesheet" href="/layui/css/layui.css">
+		<link rel="stylesheet" href="/css/Bchao.css" />
+		<script src="/js/jquery-1.12.4.js"></script>
+		<script src="/layui/layui.js"></script>
+		<script src="/js/Bchao.js"></script>
 	</head>
 	<body>
 		<div class="layui-container" style="width: 90%;">
@@ -130,7 +131,13 @@
 
 									</div>
 									 <div class="layui-col-md4 layui-col-md-offset2">
-										 <!--<button type="button" class="layui-btn layui-btn-sm" style="margin-top: 10px;">上传</button>-->
+										 <!--<div class="layui-upload">
+											 <button type="button" class="layui-btn" id="test1">上传图片</button>
+											 <div class="layui-upload-list">
+												 <img class="layui-upload-img" id="demo1">
+												 <p id="demoText"></p>
+											 </div>
+										 </div>-->
 									 </div>
 								  </div>
 								</fieldset>
@@ -169,7 +176,7 @@
 								<p>医生签名</p>
 								<div class="layui-form-item">
 								    <div class="layui-row">
-								      <input type="text" name="doctorname" autocomplete="off" class="layui-input">
+								      <input type="text" name="bdoctorname" autocomplete="off" class="layui-input">
 								    </div>
 								</div>
 							</div>

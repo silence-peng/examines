@@ -6,15 +6,17 @@ layui.use(['form','layer','laydate','jquery','table'], function() {
 		,table = layui.table;
 		
 		laydate.render({
-		   elem: '#mdate'
+		   elem: '#startdate'
 		});
 		laydate.render({
-		   elem: '#fdate'
+		   elem: '#enddate'
 		});
 		
 		table.render({
 			elem: '#test',
-			url: '/message/loadInfo',
+			url: '/message/noteByUser',
+			limit:3,
+			limits:[3,6],
 			cols: [
 				[{field: 'userid',title: '编号',sort: true}
 				, {field: 'fname',title: '姓名'}
@@ -25,6 +27,22 @@ layui.use(['form','layer','laydate','jquery','table'], function() {
 				, {field: 'fphone',title: '号码'},
 				, {title:'操作', toolbar: '#barDemo'}]
 			],
-			page: true
+			page: true,
+			id:'testReload'
 		});
-})
+	form.on('submit(formDemo)', function(data) {
+		table.reload('testReload', {
+			page : {
+				curr : 1
+				// 重新从第 1 页开始
+			},
+			where : {
+				fname:$("#name").val(),
+				fcity:$("#region").val(),
+				mbirthdate:$("#startdate").val(),
+				fbirthdate:$("#enddate").val()
+			}
+		});
+		return false;
+	});
+});

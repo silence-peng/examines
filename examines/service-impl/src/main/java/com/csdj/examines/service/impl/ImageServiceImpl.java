@@ -56,5 +56,13 @@ public class ImageServiceImpl implements ImageService {
         bultrasound.setUserid(userid);
         return bultrasoundMapper.delete(bultrasound);
     }
+    @Transactional
+    public int updB(Bultrasound bultrasound) {
+        if (this.getBultrasoundOne(bultrasound.getUserid())!=null){
+            return bultrasoundMapper.updateByPrimaryKey(bultrasound);
+        }
+        return bultrasoundMapper.insert(bultrasound);
+    }
+
 
 }

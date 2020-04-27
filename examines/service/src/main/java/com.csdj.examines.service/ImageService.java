@@ -22,4 +22,5 @@ public interface ImageService {
     Userinfo getUserOne(Integer userid);
     Bultrasound getBultrasoundOne(Integer userid);
     int deleteImg(Integer userid);
+    int updB(Bultrasound bultrasound);
 }

@@ -12,5 +12,5 @@ public interface CheckProveMapper {
     String getAdviseArr(@Param("userid")Integer userid,@Param("sex")Integer sex);
 
     List<Userinfo> loadUserInfo(@Param("name")String name, @Param("startdate") Date startdate, @Param("enddate") Date enddate);
-
+    List<Userinfo> NoteByUserinfo(Userinfo userinfo);
 }

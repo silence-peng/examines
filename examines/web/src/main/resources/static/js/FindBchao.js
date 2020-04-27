@@ -27,7 +27,7 @@ layui.use(['form', 'layer', 'table', 'laydate','jquery'], function() {
 			, {field: 'mcard',title: '丈夫证件号'}
 			, {field: 'mbirthdate',title: '丈夫出生日期'}
 			, {field: 'creatdate',title: '建档日期'}
-			/*, {title:'操作', toolbar: '#barDemo'}*/
+			, {title:'操作', toolbar: '#barDemo'}
 			]],
 		id:'testReload',
 		page:{
@@ -58,8 +58,24 @@ layui.use(['form', 'layer', 'table', 'laydate','jquery'], function() {
 
 	table.on('tool(test)', function(obj) {
 		var data = obj.data;
-		if (obj.event === 'edit') {
-			location.href="/image/openImage?userid="+data.userid;
+		if (obj.event === 'uploading') {
+			location.href="/image/tiao?userid="+data.userid;
+		}else if (obj.event === 'edit'){
+			layer.open({
+				type : 2,
+				content : 'UploadingB',
+				area : [ '500px', '700px' ],
+				shade : 0,
+				maxmin : true,
+				success : function(layero, index) {
+					var iframe = window['layui-layer-iframe' + index];
+					iframe.getid(data.userid);
+				},
+				shade : [ 0.8, '#393d49' ],
+				end : function() {
+					table.reload('testReload');
+				}
+			})
 		}
 	});
 });
