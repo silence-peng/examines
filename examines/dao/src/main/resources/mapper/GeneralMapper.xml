@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.csdj.examines.dao.GeneralMapper">
+    <select id="getUserInfo" resultType="Userinfo">
+        SELECT * FROM userinfo a,bultrasound b WHERE a.`userId`=b.`userId`
+            <if test="result!=null and result!=''">
+                and b.`result`=#{result}
+            </if>
+            <if test="userid!=null and userid>0">
+               and  a.userid=#{userid}
+            </if>
+            <if test="creatDateone!=null and creatDateone!='' and creatDatetwo!=null and creatDatetwo!=''">
+              and   a.creatdate BETWEEN #{creatDateone} AND #{creatDatetwo}
+            </if>
+            <if test="mname!=null and mname!=''">
+              and   a.mname like concat('%',#{mname},'%')
+            </if>
+            <if test="mcard!=null and mcard!=''">
+              and  a.mcard like concat('%',#{mcard},'%')
+            </if>
+            <if test="fname!=null and fname!=''">
+              and  a.fname like concat('%',#{fname},'%')
+            </if>
+            <if test="fcard!=null and fcard!=''">
+              and  a.fcard like concat('%',#{fcard},'%')
+            </if>
+
+          limit #{index},#{pageSize}
+    </select>
+    <select id="getUserInfoCount" resultType="int">
+        SELECT count(*) FROM userinfo a,bultrasound b WHERE a.`userId`=b.`userId`
+
+        <if test="userid!=null and userid>0">
+             and  a.userid=#{userid}
+        </if>
+        <if test="creatDateone!=null and creatDateone!='' and creatDatetwo!=null and creatDatetwo!=''">
+            and   a.creatdate BETWEEN #{creatDateone} AND #{creatDatetwo}
+        </if>
+        <if test="mname!=null and mname!=''">
+            and   a.mname like concat('%',#{mname},'%')
+        </if>
+        <if test="mcard!=null and mcard!=''">
+            and  a.mcard like concat('%',#{mcard},'%')
+        </if>
+        <if test="fname!=null and fname!=''">
+            and  a.fname like concat('%',#{fname},'%')
+        </if>
+        <if test="fcard!=null and fcard!=''">
+            and  a.fcard like concat('%',#{fcard},'%')
+        </if>
+        <if test="result!=null and result!=''">
+            and b.`result`=#{result}
+        </if>
+    </select>
+
+</mapper>

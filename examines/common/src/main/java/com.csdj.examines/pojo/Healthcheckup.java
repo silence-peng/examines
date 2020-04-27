@@ -31,6 +31,44 @@ public class Healthcheckup {
     private String doctorname;
     @DateTimeFormat(pattern = "yyyy-MM-dd")
     private Date examinedate;
+    private  String mname;
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
+    private Date mbirthdate;
+    private  String fname;
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
+    private  Date fbirthdate;
+
+    public String getMname() {
+        return mname;
+    }
+
+    public void setMname(String mname) {
+        this.mname = mname;
+    }
+
+    public Date getMbirthdate() {
+        return mbirthdate;
+    }
+
+    public void setMbirthdate(Date mbirthdate) {
+        this.mbirthdate = mbirthdate;
+    }
+
+    public String getFname() {
+        return fname;
+    }
+
+    public void setFname(String fname) {
+        this.fname = fname;
+    }
+
+    public Date getFbirthdate() {
+        return fbirthdate;
+    }
+
+    public void setFbirthdate(Date fbirthdate) {
+        this.fbirthdate = fbirthdate;
+    }
 
     @Override
     public String toString() {

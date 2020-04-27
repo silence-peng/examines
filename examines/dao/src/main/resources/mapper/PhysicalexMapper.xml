@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "mybatis-3-mapper.dtd" >
+<mapper namespace="com.csdj.examines.dao.Physicalexaminationmapper">
+    <select id="getHealthcheck" resultType="Healthcheckup">
+        SELECT * FROM healthcheckup a , userinfo b WHERE a.`userid`=b.`userid` and a.`userid`=#{userid} AND a.`sex`=#{sex};
+    </select>
+    <update id="updateheal" parameterType="Healthcheckup">
+        update  healthcheckup set height=#{height},bmi=#{bmi},weight=#{weight},smmhg=#{smmhg},mmhgs=#{mmhgs},p=#{p},
+        isspirit=#{isspirit},spiritcontent=#{spiritcontent},isthefive=#{isthefive},thefivecontent=#{thefivecontent},
+        isposture=#{isposture},posturecontent=#{posturecontent},isface=#{isface},facecontent=#{facecontent},ishair=#{ishair},
+        haircontent=#{haircontent},isthyroid=#{isthyroid},thyroidcontent=#{thyroidcontent},doctorname=#{doctorname},
+        examinedate=#{examinedate} where userid=#{userid} and sex=#{sex}
+    </update>
+</mapper>
