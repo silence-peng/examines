@@ -1,7 +1,4 @@
-2020-04-28 12:10:14,992 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT a.`adviseArr` FROM yxadvisecheckresult a,yxcheckresult b WHERE a.`resultId`=b.`resultId` AND b.userId=? AND b.`sex`=? 
-2020-04-28 12:10:15,005 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer), 0(Integer)
-2020-04-28 12:10:15,008 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
-2020-04-28 12:12:20,228 INFO (StartupInfoLogger.java:50)- Starting ControlerApplication on 工藤新一 with PID 4628 (F:\re\examines\examines\web\target\classes started by Administrator in F:\re\examines\examines)
-2020-04-28 12:12:20,257 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
-2020-04-28 12:12:20,258 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
-2020-04-28 12:12:40,487 INFO (StartupInfoLogger.java:59)- Started ControlerApplication in 22.934180238 seconds (JVM running for 36.813)
+2020-04-28 14:49:54,881 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-28 14:49:54,973 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: update clinicalbilling set b=?,m=?,l=?,zcell=?,abo=?,rh=?,bloodsugar=?, hbsag=?,hbeab=?,hbsab=?,hbcab=?,hbeag=?,alt=?,cr=?,tsh=?, figg=?,tp=?,jigg=?,jigm=?,gigg=?,gigm=?,other=?,doctorname=?, examinedate=? where userid=? and sex=? 
+2020-04-28 14:49:54,976 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: null, on(String), on(String), on(String), on(String), null, on(String), on(String), null, on(String), on(String), on(String), null, on(String), null, on(String), null, on(String), on(String), on(String), on(String), on(String), 张三(String), 2020-04-23 00:00:00.0(Timestamp), 2020122412(Integer), 0(Integer)
+2020-04-28 14:49:55,027 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 1

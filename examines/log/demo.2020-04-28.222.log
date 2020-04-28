@@ -1,0 +1,9 @@
+2020-04-28 13:41:50,317 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM healthcheckup a , userinfo b WHERE a.`userid`=b.`userid` and a.`userid`=? AND a.`sex`=?; 
+2020-04-28 13:41:50,337 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122414(Integer), 0(Integer)
+2020-04-28 13:41:50,347 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-28 13:41:59,109 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM healthcheckup a , userinfo b WHERE a.`userid`=b.`userid` and a.`userid`=? AND a.`sex`=?; 
+2020-04-28 13:41:59,110 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122414(Integer), 0(Integer)
+2020-04-28 13:41:59,120 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-28 13:41:59,160 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: update healthcheckup set height=?,bmi=?,weight=?,smmhg=?,mmhgs=?,p=?, isspirit=?,spiritcontent=?,isthefive=?,thefivecontent=?, isposture=?,posturecontent=?,isface=?,facecontent=?,ishair=?, haircontent=?,isthyroid=?,thyroidcontent=?,doctorname=?, examinedate=? where userid=? and sex=? 
+2020-04-28 13:41:59,166 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 175(Integer), 15.0(Float), 45.0(Float), 12(Integer), 12(Integer), 89(Integer), 0(Integer), (String), 0(Integer), (String), 1(Integer), 微胖女孩(String), 0(Integer), (String), 0(Integer), (String), 0(Integer), (String), 李四(String), 2020-04-28 00:00:00.0(Timestamp), 2020122414(Integer), 0(Integer)
+2020-04-28 13:41:59,200 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 1

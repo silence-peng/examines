@@ -1,0 +1,12 @@
+2020-04-28 13:50:38,235 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM clinicalbilling where userid=? and sex=?; 
+2020-04-28 13:50:38,248 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer), 0(Integer)
+2020-04-28 13:50:38,254 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-28 13:50:39,266 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM healthcheckup a , userinfo b WHERE a.`userid`=b.`userid` and a.`userid`=? AND a.`sex`=?; 
+2020-04-28 13:50:39,267 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer), 0(Integer)
+2020-04-28 13:50:39,275 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-28 13:50:39,298 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM healthcheckup a , userinfo b WHERE a.`userid`=b.`userid` and a.`userid`=? AND a.`sex`=?; 
+2020-04-28 13:50:39,299 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer), 0(Integer)
+2020-04-28 13:50:39,307 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-28 13:52:00,145 INFO (StartupInfoLogger.java:50)- Starting ControlerApplication on 工藤新一 with PID 6220 (F:\re\examines\examines\web\target\classes started by Administrator in F:\re\examines\examines)
+2020-04-28 13:52:00,175 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2020-04-28 13:52:00,175 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default

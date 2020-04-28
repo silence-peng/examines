@@ -1,0 +1,12 @@
+2020-04-28 14:10:15,416 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM clinicalexamination a,abo c WHERE c.id=a.`abotypeId` AND a.`userId`=? and a.`sex`=?; 
+2020-04-28 14:10:15,452 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122414(Integer), 0(Integer)
+2020-04-28 14:10:15,454 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-28 14:10:16,650 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM clinicalbilling where userid=? and sex=?; 
+2020-04-28 14:10:16,651 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122414(Integer), 0(Integer)
+2020-04-28 14:10:16,654 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-28 14:10:20,887 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM clinicalbilling where userid=? and sex=?; 
+2020-04-28 14:10:20,894 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122414(Integer), 0(Integer)
+2020-04-28 14:10:20,897 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-28 14:10:20,989 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: update clinicalbilling set b=?,m=?,l=?,zcell=?,abo=?,rh=?,bloodsugar=?, hbsag=?,hbeab=?,hbsab=?,hbcab=?,hbeag=?,alt=?,cr=?,tsh=?, figg=?,tp=?,jigg=?,jigm=?,gigg=?,gigm=?,other=?,doctorname=?, examinedate=? where userid=? and sex=? 
+2020-04-28 14:10:20,992 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: null, on(String), on(String), null, on(String), null, on(String), null, on(String), on(String), null, null, null, on(String), null, null, on(String), null, on(String), null, null, on(String), 张三(String), 2020-04-27 00:00:00.0(Timestamp), 2020122414(Integer), 0(Integer)
+2020-04-28 14:10:21,008 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 1

@@ -1,0 +1,11 @@
+2020-04-28 13:49:29,452 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 刘(String), 0(Integer), 3(Integer)
+2020-04-28 13:49:29,482 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 2
+2020-04-28 13:49:29,498 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT count(*) FROM userinfo a LEFT JOIN bultrasound b ON a.`userId`=b.`userId` WHERE 1=1 and a.fname like concat('%',?,'%') 
+2020-04-28 13:49:29,500 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 刘(String)
+2020-04-28 13:49:29,507 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-28 13:49:38,363 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM userinfo a LEFT JOIN bultrasound b ON a.`userId`=b.`userId` WHERE 1=1 and a.mname like concat('%',?,'%') limit ?,? 
+2020-04-28 13:49:38,365 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 彭(String), 0(Integer), 3(Integer)
+2020-04-28 13:49:38,386 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-28 13:49:38,400 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT count(*) FROM userinfo a LEFT JOIN bultrasound b ON a.`userId`=b.`userId` WHERE 1=1 and a.mname like concat('%',?,'%') 
+2020-04-28 13:49:38,401 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 彭(String)
+2020-04-28 13:49:38,406 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
