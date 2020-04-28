@@ -23,17 +23,16 @@ $(function () {
 			//选择文件后的回调
 			,choose: function (obj) {
 				obj.preview(function (index, file, result) {
-					$('#demo1').attr('src', '/img/'+result);
+					$('#demo1').attr('src', result);
 				})
 			}
 			//操作成功的回调
 			,done: function(res){
 				//如果上传失败
 				if(res.code > 0){
-					layer.msg('上传失败');
+					return layer.msg('上传失败');
 				}else{
-					layer.msg('上传成功');
-					location.reload();
+					return layer.msg('上传成功');
 				}
 			}
 			//上传错误回调
@@ -59,10 +58,15 @@ $(function () {
 				data:{userid:$("#userid").val()},
 				dataType:"json",
 				success:function(result){
-					$('#img1').attr('src', "img/"+result.bimgfile);
-					$('#img2').attr('src', "img/"+result.bimgfile);
-					$("#size").html("");
-					$("#size").append(result.imgsize+"kb");
+					$("#minImg").html("");
+					$("#maxImg").html("");
+					if (result.bimgfile!=null){
+						$("#minImg").append("<img width='50px' src='../image/img/"+result.bimgfile+"' id='img1'/><label name='imgsize' id='size'>"+result.imgsize+"KB</label>");
+						$("#maxImg").append("<img width='90%' style='padding: 30px;' id='img2' src='../image/img/"+result.bimgfile+"'/>");
+					}else{
+						$("#minImg").append("暂未图片信息");
+						$("#maxImg").append("暂未图片信息");
+					}
 					form.val("formTest",result);
 				}
 			});
