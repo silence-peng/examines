@@ -10,4 +10,6 @@ public interface Clinicalzzhexaminationservice {
     Clinicalexamination getClinical(Integer userid, Integer sex);
     List<Abo> getabo();
     int updateClincale(Clinicalexamination clinicalexamination);
+    int addClinicale(Clinicalexamination clinicalexamination);
+    Clinicalexamination getClinacle(Integer userid, Integer sex);
 }

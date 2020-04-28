@@ -11,4 +11,13 @@
         haircontent=#{haircontent},isthyroid=#{isthyroid},thyroidcontent=#{thyroidcontent},doctorname=#{doctorname},
         examinedate=#{examinedate} where userid=#{userid} and sex=#{sex}
     </update>
+    <select id="gettheal" resultType="Userinfo">
+        select * from userinfo where userid=#{userid}
+    </select>
+    <insert id="addheal" parameterType="Healthcheckup">
+        insert into healthcheckup(userid,height,bmi,weight,smmhg,mmhgs,p,isspirit,spiritcontent,isthefive,thefivecontent,isposture,posturecontent,isface,facecontent,ishair,haircontent,isthyroid
+        ,thyroidcontent,doctorname,examinedate,sex)
+        values(#{userid},#{height},#{bmi},#{weight},#{smmhg},#{mmhgs},#{p},#{isspirit},#{spiritcontent},#{isthefive},#{thefivecontent},#{isposture},#{posturecontent},#{isface},#{facecontent},#{ishair},#{haircontent},#{isthyroid},
+        #{thyroidcontent},#{doctorname},#{examinedate},#{sex})
+    </insert>
 </mapper>

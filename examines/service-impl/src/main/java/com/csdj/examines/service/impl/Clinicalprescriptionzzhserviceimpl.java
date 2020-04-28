@@ -21,4 +21,11 @@ public class Clinicalprescriptionzzhserviceimpl implements Clinicalprescriptionz
     public int updateClincal(Clinicalbilling clinicalbilling) {
         return mapper.updateClincal(clinicalbilling);
     }
+
+    public int addClincale(Clinicalbilling clinicalbilling) {
+        return mapper.addClincale(clinicalbilling);
+    }
+    public Clinicalbilling getClinacle(Integer userid, Integer sex) {
+        return mapper.getClinacle(userid, sex);
+    }
 }

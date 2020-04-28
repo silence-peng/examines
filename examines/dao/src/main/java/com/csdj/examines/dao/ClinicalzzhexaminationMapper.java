@@ -13,5 +13,10 @@ import java.util.List;
 public interface ClinicalzzhexaminationMapper {
      Clinicalexamination getClinical(@Param("userid") Integer userid, @Param("sex") Integer sex);
      List<Abo> getabo();
+
      int updateClincale(Clinicalexamination clinicalexamination);
+
+     int addClinicale(Clinicalexamination clinicalexamination);
+
+     Clinicalexamination getClinacle(@Param("userid") Integer userid, @Param("sex") Integer sex);
 }

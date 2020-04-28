@@ -27,4 +27,11 @@ public class Clinicalzzhexaminationserviceimpl implements Clinicalzzhexamination
     public int updateClincale(Clinicalexamination clinicalexamination) {
         return mapper.updateClincale(clinicalexamination);
     }
+    public int addClinicale(Clinicalexamination clinicalexamination) {
+        return mapper.addClinicale(clinicalexamination);
+    }
+
+    public Clinicalexamination getClinacle(Integer userid,Integer sex) {
+        return mapper.getClinacle(userid,sex);
+    }
 }

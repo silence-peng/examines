@@ -10,4 +10,13 @@
         figg=#{figg},tp=#{tp},jigg=#{jigg},jigm=#{jigm},gigg=#{gigg},gigm=#{gigm},other=#{other},doctorname=#{doctorname},
         examinedate=#{examinedate} where userid=#{userid} and sex=#{sex}
     </update>
+    <insert id="addClincale" parameterType="Clinicalbilling">
+        insert into clinicalbilling(userid,b,m,l,zcell,abo,rh,bloodsugar,hbsag,hbeab,hbsab,hbcab,hbeag,alt,
+        cr,tsh,figg,tp,jigg,jigm,gigg,gigm,other,doctorname,examinedate,sex)
+        values(#{userid},#{b},#{m},#{l},#{zcell},#{abo},#{rh},#{bloodsugar},#{hbsag},#{hbeab},#{hbsab},#{hbcab},#{hbeag},#{alt},#{cr}
+        ,#{tsh},#{figg},#{tp},#{jigg},#{jigm},#{gigg},#{gigm},#{other},#{doctorname},#{examinedate},#{sex})
+    </insert>
+    <select id="getClinacle" resultType="Clinicalbilling">
+        SELECT * FROM clinicalbilling where userid=#{userid} and sex=#{sex};
+    </select>
 </mapper>

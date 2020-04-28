@@ -10,4 +10,6 @@ import org.springframework.stereotype.Repository;
 public interface ClinicalprescriptionzzhMapper {
     Clinicalbilling getnvClincal(@Param("userid") Integer userid, @Param("sex") Integer sex);
     int updateClincal(Clinicalbilling clinicalbilling);
+    int addClincale(Clinicalbilling clinicalbilling);
+    Clinicalbilling getClinacle(@Param("userid") Integer userid, @Param("sex") Integer sex);
 }
