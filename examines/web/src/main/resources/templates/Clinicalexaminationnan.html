@@ -9,14 +9,15 @@
 <body>
 <br>
 <div  class="layui-container">
-    <form class="layui-form" id="form"  lay-filter="check" action="" >
+    <form class="layui-form"  id="form" lay-filter="check" action="" >
         <div style="border:  0.8px solid cornflowerblue"><p  style="background-color: rgb(214, 236, 246);font-size: 15px;color: #0074d9;text-align: left">尿液常规检查</p>
             <br/>
-            <input type="hidden" name="sex" style="width: 300px"  lay-verify="title"  autocomplete="off" class="layui-input">
+            <input type="hidden" name="sex" id="sex" style="width: 300px" value="1" lay-verify="title"  autocomplete="off" class="layui-input">
             <div class="layui-form-item" style="width: 100%">
                 <label class="layui-form-label" style="width: 100px" >尿液常规检查:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <div class="layui-input-inline" style="width: 300px">
                     <select name="pissexamine" lay-filter="aihao">
+
                         <option value="正常">正常</option>
                         <option value="异常">异常</option>
                     </select>
@@ -27,6 +28,8 @@
                         <input type="text" name="abnormal" style="width: 300px"  lay-verify="title"  autocomplete="off" class="layui-input">
                     </div>
                 </div>
+
+
                 <br>
             </div>
 
@@ -36,14 +39,20 @@
                 <div class="layui-form-item" style="width: 100%">
                     <label class="layui-form-label" style="width: 100px" >ABO:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <div class="layui-input-inline" style="width: 300px">
-                        <select name="abotypeid" id="abotypeid" lay-filter="aihao">
-
+                        <select name="abotypeid" id="abotypeid" lay-filter="abot">
+                            <option value="1">A</option>
+                            <option value="2">B</option>
+                            <option value="3">O</option>
+                            <option value="5">AB</option>
                         </select>
                     </div>
                     <div class="layui-inline">
                         <label class="layui-form-label"  style="width: 200px" >RH:</label>
-                        <div class="layui-input-inline">
-                            <input type="text" name="rh" style="width: 300px"  lay-verify="title"  autocomplete="off" class="layui-input">
+                        <div class="layui-input-inline" style="width: 370px">
+                            <select name="rh" lay-filter="aihao">
+                                <option value="阳性">阳性</option>
+                                <option value="阴性">阴性</option>
+                            </select>
                         </div>
                     </div>
                 </div>
@@ -224,11 +233,7 @@
             elem: '#date1'
         });
         $(document).ready(function(){
-            $.post("/Clincalzzh/xlk",function(result){
-                $(result).each(function(){
-                    $("#abotypeid").append("<option value="+this.id+">"+this.type+"</option>")
-                })
-            })
+
             var sex="1";
             $.ajax({
                 url:"/Clincalzzh/get",
@@ -242,21 +247,45 @@
 
         })
         $("#button").click(function() {
-
+            var sex=$("#sex").val();
             $.ajax({
-                url:"/Clincalzzh/updateClincale",
+                url:"/Clincalzzh/getclinacleNoOrYse",
                 type:"post",
-                data:$("#form").serialize(),
+                data:{"sex":sex},
                 dataType:"text",
                 success:function(result){
-                    if(result=='a'){
-                        layer.msg("保存成功!",{time:3000,icon:1})
-
+                    if(result=='no'){
+                        $.ajax({
+                            url:"/Clincalzzh/addClincale",
+                            type:"post",
+                            data:$("#form").serialize(),
+                            dataType:"text",
+                            success:function(result){
+                                if(result=='a'){
+                                    layer.msg("保存成功!",{time:3000,icon:1})
+                                }else{
+                                    layer.msg("保存失败!",{icon:2})
+                                }
+                            }
+                        });
                     }else{
-                        layer.msg("保存失败!",{icon:2})
+                        $.ajax({
+                            url:"/Clincalzzh/updateClincale",
+                            type:"post",
+                            data:$("#form").serialize(),
+                            dataType:"text",
+                            success:function(result){
+                                if(result=='a'){
+                                    layer.msg("保存成功!",{time:3000,icon:1})
+                                }else{
+                                    layer.msg("保存失败!",{icon:2})
+                                }
+                            }
+                        });
                     }
                 }
             });
+
 
         });
 

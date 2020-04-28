@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
 <head lang="en">
     <meta charset="UTF-8">
     <title>体格检查男</title>
@@ -20,25 +20,25 @@
             <div class="layui-inline">
                 <label class="layui-form-label"  >姓名:</label>
                 <div class="layui-input-inline">
-                    <input type="text" name="fname" style="width: 300px"  lay-verify="title" readonly="readonly"  autocomplete="off" class="layui-input">
+                    <input type="text" name="mname" style="width: 300px"  lay-verify="title" readonly="readonly"  autocomplete="off" class="layui-input">
                 </div>
             </div>
         </div>
         <div class="layui-form-item" >
             <label class="layui-form-label" >性别:</label>
             <div class="layui-input-inline">
-                <input type="text" style="width: 300px" name="sex" id="sex" lay-verify="title" autocomplete="off"   class="layui-input">
+                <input type="text" style="width: 300px" th:value="男"  name="sex" id="sex" lay-verify="title" autocomplete="off"   class="layui-input">
             </div>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             &nbsp;
             <div class="layui-inline">
                 <label class="layui-form-label"  >出生年月:</label>
                 <div class="layui-input-inline">
-                    <input type="text" name="fbirthdate" style="width: 300px"  lay-verify="date" readonly="readonly"  autocomplete="off" class="layui-input">
+                    <input type="text" name="mbirthdate" style="width: 300px"  lay-verify="date" readonly="readonly"  autocomplete="off" class="layui-input">
                 </div>
             </div>
         </div>
-        <div style="border:  0.8px solid cornflowerblue"><p  style="background-color: rgb(214, 236, 246);font-size: 15px;color: #0074d9;text-align: left">男一般体格检查</p>
+        <div style="border:  0.8px solid cornflowerblue"><p  style="background-color: rgb(214, 236, 246);font-size: 15px;color: #0074d9;text-align: left">男子一般体格检查</p>
             <div class="layui-form-item">
                 <label class="layui-form-label" >身高(CM):</label>
                 <div class="layui-input-inline">
@@ -219,21 +219,44 @@
         });
         $("#button").click(function() {
             var sex=$("#sex").val("1");
-
             $.ajax({
-                url:"/Physicalexmination/updatehealthcheck",
+                url:"/Physicalexmination/get",
                 type:"post",
                 data:$("#form").serialize(),
                 dataType:"text",
                 success:function(result){
-                    if(result=='a'){
-                        layer.msg("保存成功!",{time:1000,icon:1})
-                        location.href="Physicalexaminationnan.html";
+                    if(result=='no'){
+                        $.ajax({
+                            url:"/Physicalexmination/addhealthcheck",
+                            type:"post",
+                            data:$("#form").serialize(),
+                            dataType:"text",
+                            success:function(result){
+                                if(result=='a'){
+                                    layer.msg("保存成功!",{time:3000,icon:1})
+                                }else{
+                                    layer.msg("保存失败!",{icon:2})
+                                }
+                            }
+                        });
                     }else{
-                        layer.msg("保存失败!",{icon:2})
+                        $.ajax({
+                            url:"/Physicalexmination/updatehealthcheck",
+                            type:"post",
+                            data:$("#form").serialize(),
+                            dataType:"text",
+                            success:function(result){
+                                if(result=='a'){
+                                    layer.msg("保存成功!",{time:3000,icon:1})
+                                }else{
+                                    layer.msg("保存失败!",{icon:2})
+                                }
+                            }
+                        });
                     }
                 }
             });
+
 
         });
         $(document).ready(function(){
@@ -242,12 +265,33 @@
                 url:"/Physicalexmination/get",
                 type:"post",
                 data:{"sex":sex},
-                dataType:"json",
+                dataType:"text",
                 success:function(result){
-                    if(result.sex==1){
-                        result.sex="男";
+                    if(result=='no'){
+                        $.ajax({
+                            url:"/Physicalexmination/getuserinfo",
+                            type:"post",
+                            data:{"sex":sex},
+                            dataType:"json",
+                            success:function(result){
+                                form.val("check",result);
+                            }
+                        });
+                    }else{
+                        $.ajax({
+                            url:"/Physicalexmination/getpysicale",
+                            type:"post",
+                            data:{"sex":sex},
+                            dataType:"json",
+                            success:function(result){
+                                if(result.sex==1){
+                                    result.sex="男";
+                                    form.val("check",result);
+                                }
+                            }
+                        });
                     }
-                    form.val("check",result);
+
 
                 }
             });

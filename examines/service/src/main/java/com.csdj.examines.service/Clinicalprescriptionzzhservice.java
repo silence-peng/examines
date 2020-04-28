@@ -6,4 +6,6 @@ import org.apache.ibatis.annotations.Param;
 public interface Clinicalprescriptionzzhservice {
     Clinicalbilling getnvClincal(Integer userid, Integer sex);
     int updateClincal(Clinicalbilling clinicalbilling);
+    int addClincale(Clinicalbilling clinicalbilling);
+    Clinicalbilling getClinacle(Integer userid, Integer sex);
 }

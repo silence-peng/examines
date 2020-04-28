@@ -1,12 +1,7 @@
-2020-04-28 10:53:48,390 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT count(0) FROM userinfo u, assess a WHERE u.userid = a.userid
-2020-04-28 10:53:48,403 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters:
-2020-04-28 10:53:48,406 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
-2020-04-28 10:53:48,408 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT u.userid,u.fname,u.fage,u.fcard,u.fphone,u.fbirthdate,a.content as address FROM userinfo u,assess a WHERE u.userid=a.userid LIMIT ?
-2020-04-28 10:53:48,410 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 10(Integer)
-2020-04-28 10:53:48,416 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
-2020-04-28 09:03:19,698 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE bultrasound SET userid = ?,bimgfile = ?,imgsize = ? WHERE ( ( userid = ? ) )
-2020-04-28 09:03:19,700 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122415(Integer), 01c17fea-0fa8-4425-b4eb-55c7e50903f0.jpeg(String), 1236.6(Float), 2020122415(Integer)
-2020-04-28 09:03:19,702 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 1
-2020-04-28 09:03:28,433 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT bid,userid,bimgfile,result,dev,examinedate,bdoctorname,imgsize FROM bultrasound WHERE userid = ?
-2020-04-28 09:03:28,434 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122415(Integer)
-2020-04-28 09:03:28,436 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-28 12:10:14,992 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT a.`adviseArr` FROM yxadvisecheckresult a,yxcheckresult b WHERE a.`resultId`=b.`resultId` AND b.userId=? AND b.`sex`=? 
+2020-04-28 12:10:15,005 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer), 0(Integer)
+2020-04-28 12:10:15,008 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-28 12:12:20,228 INFO (StartupInfoLogger.java:50)- Starting ControlerApplication on 工藤新一 with PID 4628 (F:\re\examines\examines\web\target\classes started by Administrator in F:\re\examines\examines)
+2020-04-28 12:12:20,257 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2020-04-28 12:12:20,258 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2020-04-28 12:12:40,487 INFO (StartupInfoLogger.java:59)- Started ControlerApplication in 22.934180238 seconds (JVM running for 36.813)

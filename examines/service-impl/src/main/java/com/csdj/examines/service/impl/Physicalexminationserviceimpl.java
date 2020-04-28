@@ -2,6 +2,7 @@ package com.csdj.examines.service.impl;
 
 import com.csdj.examines.dao.Physicalexaminationmapper;
 import com.csdj.examines.pojo.Healthcheckup;
+import com.csdj.examines.pojo.Userinfo;
 import com.csdj.examines.service.Physicalexminationservice;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -21,5 +22,12 @@ public class Physicalexminationserviceimpl implements Physicalexminationservice 
     @Transactional
     public int updateheal(Healthcheckup healthcheckup) {
         return mapper.updateheal(healthcheckup);
+    }
+
+    public int addheal(Healthcheckup healthcheckup) {
+        return mapper.addheal(healthcheckup);
+    }
+    public Userinfo gettheal(Integer userid) {
+        return mapper.gettheal(userid);
     }
 }

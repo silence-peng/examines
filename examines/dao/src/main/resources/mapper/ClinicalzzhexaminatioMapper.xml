@@ -7,10 +7,19 @@
     <select id="getabo" resultType="Abo">
         select * from abo
     </select>
+
     <update id="updateClincale" parameterType="Clinicalexamination">
         update clinicalexamination set pissexamine=#{pissexamine},abnormal=#{abnormal},abotypeid=#{abotypeid},
         rh=#{rh},bloodsugar=#{bloodsugar},hbsag=#{hbsag},hbeab=#{hbeab},hbsab=#{hbsab},hbcab=#{hbcab},hbeag=#{hbeag},
         alt=#{alt},cr=#{cr},tsh=#{tsh},figg=#{figg},tp=#{tp},jigg=#{jigg},jigm=#{jigm},gigg=#{gigg},gigm=#{gigm},other=#{other},
         doctorname=#{doctorname},examinedate=#{examinedate} where userid=#{userid} and sex=#{sex}
     </update>
+    <insert id="addClinicale" parameterType="Clinicalexamination">
+        insert into clinicalexamination(userid,pissexamine,abnormal,abotypeid,rh,bloodsugar,hbsag,hbeab,hbsab,hbcab,hbeag,alt,cr,tsh,figg,tp,jigg,jigm,gigg,gigm,other,doctorname,examinedate,sex)
+        values(#{userid},#{pissexamine},#{abnormal},#{abotypeid},#{rh},#{bloodsugar},#{hbsag},#{hbeab},#{hbsab},#{hbcab},#{hbeag},#{alt},#{cr},#{tsh},#{figg},#{tp},#{jigg},#{jigm},#{gigg},#{gigm},#{other},#{doctorname},#{examinedate},#{sex})
+    </insert>
+
+    <select id="getClinacle" resultType="Clinicalexamination">
+        select * from clinicalexamination where userid=#{userid} and sex=#{sex}
+    </select>
 </mapper>

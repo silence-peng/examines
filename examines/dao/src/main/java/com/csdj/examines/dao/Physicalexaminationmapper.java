@@ -1,6 +1,7 @@
 package com.csdj.examines.dao;
 
 import com.csdj.examines.pojo.Healthcheckup;
+import com.csdj.examines.pojo.Userinfo;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
@@ -19,4 +20,8 @@ public interface Physicalexaminationmapper {
     Healthcheckup getHealthcheck(@Param("userid") Integer userid, @Param("sex") Integer sex);
 
     int updateheal(Healthcheckup healthcheckup);
+
+    int addheal(Healthcheckup healthcheckup);
+
+    Userinfo gettheal(@Param("userid") Integer userid);
 }

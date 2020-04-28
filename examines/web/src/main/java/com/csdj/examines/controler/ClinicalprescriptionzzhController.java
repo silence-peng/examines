@@ -37,4 +37,27 @@ public class ClinicalprescriptionzzhController {
         }
         return  null;
     }
+
+    @RequestMapping("/addClin")
+    @ResponseBody
+    public String add(Clinicalbilling clinicalbilling,HttpSession session){
+        Integer userid= (Integer) session.getAttribute("userid");
+        clinicalbilling.setUserid(userid);
+        int a=servie.addClincale(clinicalbilling);
+        if(a>0){
+            return  "a";
+        }
+        return  null;
+    }
+
+    @RequestMapping("/getclinacleNoOrYse")
+    @ResponseBody
+    public String getds(HttpSession session,Integer sex){
+        Integer userid= (Integer) session.getAttribute("userid");
+        Clinicalbilling clinacle=servie.getClinacle(userid,sex);
+        if (clinacle==null){
+            return "no";
+        }
+        return "yes";
+    }
 }
