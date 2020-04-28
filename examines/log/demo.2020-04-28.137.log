@@ -1,0 +1,12 @@
+2020-04-28 10:00:53,232 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 2
+2020-04-28 10:00:55,548 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT regtypeid,type FROM registertype 
+2020-04-28 10:00:55,549 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-28 10:00:55,550 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 2
+2020-04-28 10:00:57,399 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT regtypeid,type FROM registertype 
+2020-04-28 10:00:57,399 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-28 10:00:57,401 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 2
+2020-04-28 10:00:58,946 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT regtypeid,type FROM registertype 
+2020-04-28 10:00:58,946 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-28 10:00:58,948 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 2
+2020-04-28 10:02:58,323 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM userinfo a,bultrasound b WHERE a.`userId`=b.`userId` limit ?,? 
+2020-04-28 10:02:58,323 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Integer), 3(Integer)

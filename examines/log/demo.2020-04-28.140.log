@@ -1,0 +1,12 @@
+2020-04-28 10:05:29,602 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-28 10:05:29,609 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT id,content FROM suggest 
+2020-04-28 10:05:29,609 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-28 10:05:29,610 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 7
+2020-04-28 10:05:31,297 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM userinfo a,bultrasound b WHERE a.`userId`=b.`userId` limit ?,? 
+2020-04-28 10:05:31,298 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Integer), 3(Integer)
+2020-04-28 10:05:31,300 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 3
+2020-04-28 10:05:31,303 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT count(*) FROM userinfo a,bultrasound b WHERE a.`userId`=b.`userId` 
+2020-04-28 10:05:31,303 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-28 10:05:31,305 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-28 10:05:35,532 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT userid,mname,mcard,mbirthdate,mphone,methnic,midtype,mage,mculture,mjob,mprovince,mcity,mcounty,mdistrict,mvillage,mregistered,fname,fcard,fbirthdate,fphone,fethnic,fidtype,fage,fculture,fjob,fprovince,fcity,fcounty,fdistrict,fvillage,fregistered,address,creatdate,getmarrieddate,regtypeid,landlinenumber,mimg,fimg,email,doctorname FROM userinfo WHERE userid = ? 
+2020-04-28 10:05:35,532 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer)

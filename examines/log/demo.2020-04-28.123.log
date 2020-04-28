@@ -1,0 +1,10 @@
+2020-04-28 09:53:29,337 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT bid,userid,bimgfile,result,dev,examinedate,bdoctorname,imgsize FROM bultrasound WHERE userid = ? 
+2020-04-28 09:53:29,340 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer)
+2020-04-28 09:53:29,341 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-28 09:53:33,076 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT count(0) FROM userinfo WHERE 1 = 1 
+2020-04-28 09:53:33,077 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-28 09:53:33,078 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-28 09:53:33,079 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM userinfo where 1=1 order by creatDate desc LIMIT ? 
+2020-04-28 09:53:33,080 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 3(Integer)
+2020-04-28 09:53:33,082 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 3
+2020-04-28 09:53:43,527 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT userid,mname,mcard,mbirthdate,mphone,methnic,midtype,mage,mculture,mjob,mprovince,mcity,mcounty,mdistrict,mvillage,mregistered,fname,fcard,fbirthdate,fphone,fethnic,fidtype,fage,fculture,fjob,fprovince,fcity,fcounty,fdistrict,fvillage,fregistered,address,creatdate,getmarrieddate,regtypeid,landlinenumber,mimg,fimg,email,doctorname FROM userinfo WHERE userid = ? 

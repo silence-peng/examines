@@ -1,0 +1,11 @@
+2020-04-28 09:55:32,849 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-28 09:55:36,064 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE yxcheckresult SET isabnormal = ?,abnormalities = ? WHERE resultid = ? 
+2020-04-28 09:55:36,065 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Integer), (String), 2(Integer)
+2020-04-28 09:55:36,066 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 1
+2020-04-28 09:55:36,068 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE yxadvisecheckresult SET advisearr = ? WHERE ( ( resultid = ? ) ) 
+2020-04-28 09:55:36,069 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 1(String), 2(Integer)
+2020-04-28 09:55:36,070 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 1
+2020-04-28 09:59:15,144 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT regtypeid,type FROM registertype 
+2020-04-28 09:59:15,145 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-28 09:59:15,147 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 2
+2020-04-28 09:59:19,909 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT regtypeid,type FROM registertype 

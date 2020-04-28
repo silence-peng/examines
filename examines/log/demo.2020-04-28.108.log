@@ -1,0 +1,9 @@
+2020-04-28 09:03:19,698 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE bultrasound SET userid = ?,bimgfile = ?,imgsize = ? WHERE ( ( userid = ? ) ) 
+2020-04-28 09:03:19,700 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122415(Integer), 01c17fea-0fa8-4425-b4eb-55c7e50903f0.jpeg(String), 1236.6(Float), 2020122415(Integer)
+2020-04-28 09:03:19,702 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 1
+2020-04-28 09:03:28,433 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT bid,userid,bimgfile,result,dev,examinedate,bdoctorname,imgsize FROM bultrasound WHERE userid = ? 
+2020-04-28 09:03:28,434 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122415(Integer)
+2020-04-28 09:03:28,436 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-28 09:30:21,385 INFO (StartupInfoLogger.java:50)- Starting ControlerApplication on DESKTOP-E0OONUJ with PID 1940 (E:\IDEAProject\examines\examines\web\target\classes started by ZZW in E:\IDEAProject\examines\examines)
+2020-04-28 09:30:21,390 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2020-04-28 09:30:21,391 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default

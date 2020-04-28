@@ -1,0 +1,11 @@
+2020-04-28 10:05:35,534 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-28 10:05:35,543 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT id,content FROM suggest 
+2020-04-28 10:05:35,544 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-28 10:05:35,546 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 7
+2020-04-28 10:06:06,502 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT assid,userid,content,sdid,doctorname,examinedate FROM assess WHERE ( ( userid = ? ) ) 
+2020-04-28 10:06:06,503 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer)
+2020-04-28 10:06:06,505 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-28 10:06:06,506 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE assess SET userid = ?,content = ?,sdid = ?,doctorname = ?,examinedate = ? WHERE assid = ? 
+2020-04-28 10:06:06,599 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer), 有准备、有计划的怀孕，避免大龄生育。
+合理用食(String), 1(Integer), 张三(String), 2020-04-28 00:00:00.0(Timestamp), 1(Integer)
+2020-04-28 10:06:06,603 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 1

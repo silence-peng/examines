@@ -17,15 +17,18 @@ layui.use(['form','layer','laydate','jquery','table'], function() {
 			url: '/message/noteByUser',
 			limit:3,
 			limits:[3,6],
+			toolbar: '#toolbarDemo',
+			defaultToolbar:false,
 			cols: [
-				[{field: 'userid',title: '编号',sort: true}
+				[
+				{field:'checkbox',type : 'checkbox'}
+				,{field: 'userid',title: '编号',sort: true}
 				, {field: 'fname',title: '姓名'}
 				, {field: 'fcard',title: '身份证号'}
 				, {field: 'fage',title: '年龄'}
 				, {field: 'fbirthdate',title: '出生日期'}
 				, {field: 'address',title: '地址'}
-				, {field: 'fphone',title: '号码'},
-				, {title:'操作', toolbar: '#barDemo'}]
+				, {field: 'fphone',title: '号码'}]
 			],
 			page: true,
 			id:'testReload'
@@ -44,5 +47,30 @@ layui.use(['form','layer','laydate','jquery','table'], function() {
 			}
 		});
 		return false;
+	});
+	table.on('toolbar(test)', function(obj) {
+		var checkStatus = table.checkStatus(obj.config.id);
+		if (obj.event=="send"){
+			var userid = [];
+			$(data).each(function () {
+				userid.push(data.userid);
+			});
+
+			$.ajax({
+				url:"/message/",
+				type:"post",
+				data:{},
+				dataType:"text",
+				traditional: true,
+				success:function(result){
+					if(result=="ok"){
+						layer.msg('发送成功!');
+					}else{
+						layer.msg('发送失败!');
+					}
+				}
+			});
+
+		}
 	});
 });

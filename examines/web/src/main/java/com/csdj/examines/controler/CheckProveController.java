@@ -33,7 +33,7 @@ public class CheckProveController {
     @RequestMapping("getUserByuserid")
     @ResponseBody
     public Userinfo getUser(HttpSession session){
-        session.setAttribute("userid",2020122412);
+        System.out.println( session.getAttribute("userid"));
         Userinfo userinfo =checkProveService.getUserByUserid((Integer) session.getAttribute("userid"));
         return userinfo;
     }
@@ -46,14 +46,14 @@ public class CheckProveController {
     @RequestMapping("getAdviseArr")
     @ResponseBody
     public String getAdviseArr(Integer sex,HttpSession session){
-        session.setAttribute("userid",2020122412);
+        System.out.println( session.getAttribute("userid"));
         String adviseArr =checkProveService.getAdviseArr((Integer) session.getAttribute("userid"),sex);
         return adviseArr;
     }
     @RequestMapping("getYxResult")
     @ResponseBody
     public Yxcheckresult getYxResultByUserid(Integer sex,HttpSession session){
-        session.setAttribute("userid",2020122412);
+        System.out.println( session.getAttribute("userid"));
         Yxcheckresult yxcheckresult =checkProveService.getYxResultByUserid((Integer) session.getAttribute("userid"),sex);
         return yxcheckresult;
     }

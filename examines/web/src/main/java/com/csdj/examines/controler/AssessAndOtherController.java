@@ -31,7 +31,6 @@ public class AssessAndOtherController {
     @RequestMapping("getUser")
     @ResponseBody
     public Userinfo getUser(HttpSession session){
-        session.setAttribute("userid",2020122412);
         Userinfo userinfo = assessAndOtherService.getUserOne((Integer)session.getAttribute("userid"));
         return userinfo;
     }

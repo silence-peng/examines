@@ -1,0 +1,14 @@
+2020-04-28 09:50:56,359 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer)
+2020-04-28 09:50:56,363 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-28 09:50:56,366 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT a.`adviseArr` FROM yxadvisecheckresult a,yxcheckresult b WHERE a.`resultId`=b.`resultId` AND b.userId=? AND b.`sex`=? 
+2020-04-28 09:50:56,368 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer), 1(Integer)
+2020-04-28 09:50:56,369 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-28 09:51:12,090 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT count(0) FROM userinfo WHERE 1 = 1 
+2020-04-28 09:51:12,091 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-28 09:51:12,095 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-28 09:51:12,098 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM userinfo where 1=1 order by creatDate desc LIMIT ? 
+2020-04-28 09:51:12,099 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 3(Integer)
+2020-04-28 09:51:12,100 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 3
+2020-04-28 09:51:12,873 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT userid,mname,mcard,mbirthdate,mphone,methnic,midtype,mage,mculture,mjob,mprovince,mcity,mcounty,mdistrict,mvillage,mregistered,fname,fcard,fbirthdate,fphone,fethnic,fidtype,fage,fculture,fjob,fprovince,fcity,fcounty,fdistrict,fvillage,fregistered,address,creatdate,getmarrieddate,regtypeid,landlinenumber,mimg,fimg,email,doctorname FROM userinfo WHERE userid = ? 
+2020-04-28 09:51:12,874 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer)
+2020-04-28 09:51:12,876 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
