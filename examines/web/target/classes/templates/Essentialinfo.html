@@ -138,20 +138,15 @@
                             }else{
                                 layer.msg("没有选中",{icon:2})
                             }
-                    var userids='';
-
-                    if (data.length>0) {
-                        for ( var i = 0; i<data.length; i++) {
-                            userids+=data[i].userid;
-                        }
-                    }
                     // layer.confirm('确认删除吗?',{title:'提示',icon:5},function(index){
                         $.ajax({
                             type:'post',
                             url:'/General/adduserid',
-                            data:{'userid':userids},
+                            data:data[0],
+                            traditional:true,
                             success:function(data){
                                 if(data='a'){
+                                    layer.alert("选取成功")
                                 }
                             }
                         });
@@ -160,7 +155,7 @@
                     break;
             };
         });
-    table.on('row(test)',function(){
+    table.on('row(test)',function(obj){
         if(obj.tr.hasClass('layui-table-click')){
                  obj.tr.removeClass('layui-table-click');
         }else{
@@ -178,5 +173,6 @@
     });
 
 </script>
+</div>
 </body>
 </html>
