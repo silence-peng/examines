@@ -59,7 +59,7 @@ layui.use(['form', 'layer', 'table', 'laydate','jquery'], function() {
 	table.on('tool(test)', function(obj) {
 		var data = obj.data;
 		if (obj.event === 'uploading') {
-			location.href="/image/tiao?userid="+data.userid;
+			location.href="image/tiao?userid="+data.userid;
 		}else if (obj.event === 'edit'){
 			layer.open({
 				type : 2,

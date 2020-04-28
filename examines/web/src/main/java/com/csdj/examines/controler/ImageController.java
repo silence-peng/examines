@@ -92,7 +92,7 @@ public class ImageController {
         Map<String,Object> map = new HashMap<String,Object>();
         Map<String,Object> map2 = new HashMap<String,Object>();
         if (!file.isEmpty()){
-            String path = System.getProperty("user.dir")+ "/web/src/main/resources/static/img/";
+            String path = System.getProperty("user.dir")+ "/web/src/main/resources/static/image/img/";
             String name=file.getOriginalFilename();
             String newFileName= UUID.randomUUID().toString();
             String suffix=name.substring(name.lastIndexOf("."));
