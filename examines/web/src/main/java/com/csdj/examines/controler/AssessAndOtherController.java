@@ -31,7 +31,11 @@ public class AssessAndOtherController {
     @RequestMapping("getUser")
     @ResponseBody
     public Userinfo getUser(HttpSession session){
-        Userinfo userinfo = assessAndOtherService.getUserOne((Integer)session.getAttribute("userid"));
+        Integer userid = (Integer)session.getAttribute("userid");
+        if (userid==null){
+            return null;
+        }
+        Userinfo userinfo = assessAndOtherService.getUserOne(userid);
         return userinfo;
     }
     @RequestMapping("getSuggest")

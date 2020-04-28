@@ -1,0 +1,10 @@
+2020-04-28 12:27:58,563 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT regtypeid,type FROM registertype 
+2020-04-28 12:27:58,584 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-28 12:27:58,596 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 2
+2020-04-28 12:28:06,013 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT yxid,yxitem FROM yxadvise 
+2020-04-28 12:28:06,013 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-28 12:28:06,017 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 5
+2020-04-28 12:32:43,739 INFO (StartupInfoLogger.java:50)- Starting ControlerApplication on DESKTOP-E0OONUJ with PID 10788 (E:\IDEAProject\examines\examines\web\target\classes started by ZZW in E:\IDEAProject\examines\examines)
+2020-04-28 12:32:43,740 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2020-04-28 12:32:43,740 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2020-04-28 12:32:46,068 INFO (StartupInfoLogger.java:59)- Started ControlerApplication in 2.3923717 seconds (JVM running for 303.301)

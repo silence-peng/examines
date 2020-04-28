@@ -1,0 +1,16 @@
+2020-04-28 12:45:39,515 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer)
+2020-04-28 12:45:39,523 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-28 12:45:39,524 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT a.`adviseArr` FROM yxadvisecheckresult a,yxcheckresult b WHERE a.`resultId`=b.`resultId` AND b.userId=? AND b.`sex`=? 
+2020-04-28 12:45:39,530 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer), 0(Integer)
+2020-04-28 12:45:39,535 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-28 12:45:50,404 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM yxcheckresult WHERE userid=? AND sex=? 
+2020-04-28 12:45:50,405 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer), 1(Integer)
+2020-04-28 12:45:50,408 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-28 12:45:50,408 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT yxid,yxitem FROM yxadvise 
+2020-04-28 12:45:50,408 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-28 12:45:50,410 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 5
+2020-04-28 12:45:50,420 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT userid,mname,mcard,mbirthdate,mphone,methnic,midtype,mage,mculture,mjob,mprovince,mcity,mcounty,mdistrict,mvillage,mregistered,fname,fcard,fbirthdate,fphone,fethnic,fidtype,fage,fculture,fjob,fprovince,fcity,fcounty,fdistrict,fvillage,fregistered,address,creatdate,getmarrieddate,regtypeid,landlinenumber,mimg,fimg,email,doctorname FROM userinfo WHERE userid = ? 
+2020-04-28 12:45:50,421 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer)
+2020-04-28 12:45:50,423 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-28 12:45:50,439 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT a.`adviseArr` FROM yxadvisecheckresult a,yxcheckresult b WHERE a.`resultId`=b.`resultId` AND b.userId=? AND b.`sex`=? 
+2020-04-28 12:45:50,442 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer), 1(Integer)

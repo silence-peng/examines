@@ -35,12 +35,14 @@ public class CheckProveController {
     public Userinfo getUser(HttpSession session){
         System.out.println( session.getAttribute("userid"));
         Userinfo userinfo =checkProveService.getUserByUserid((Integer) session.getAttribute("userid"));
+        System.out.println(userinfo);
         return userinfo;
     }
     @RequestMapping("getYxAdvise")
     @ResponseBody
     public List<Yxadvise> getYxAdvise(){
         List<Yxadvise> yxadvises =checkProveService.getYxAdvise();
+        System.out.println(yxadvises);
         return yxadvises;
     }
     @RequestMapping("getAdviseArr")
@@ -48,6 +50,7 @@ public class CheckProveController {
     public String getAdviseArr(Integer sex,HttpSession session){
         System.out.println( session.getAttribute("userid"));
         String adviseArr =checkProveService.getAdviseArr((Integer) session.getAttribute("userid"),sex);
+        System.out.println(adviseArr);
         return adviseArr;
     }
     @RequestMapping("getYxResult")
@@ -55,6 +58,7 @@ public class CheckProveController {
     public Yxcheckresult getYxResultByUserid(Integer sex,HttpSession session){
         System.out.println( session.getAttribute("userid"));
         Yxcheckresult yxcheckresult =checkProveService.getYxResultByUserid((Integer) session.getAttribute("userid"),sex);
+        System.out.println(yxcheckresult);
         return yxcheckresult;
     }
     @RequestMapping("save")
