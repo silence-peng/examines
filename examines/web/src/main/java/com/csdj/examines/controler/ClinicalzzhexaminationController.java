@@ -30,7 +30,7 @@ public class ClinicalzzhexaminationController {
     public Clinicalexamination get(HttpSession session, Integer sex){
         Integer userid= (Integer) session.getAttribute("userid");
         Clinicalexamination clinicalexamination=service.getClinical(userid,sex);
-        return clinicalexamination;
+            return clinicalexamination;
     }
 
     @RequestMapping("/xlk")
@@ -50,6 +50,28 @@ public class ClinicalzzhexaminationController {
             return  "a";
         }
         return  null;
+    }
+    @RequestMapping("/addClincale")
+    @ResponseBody
+    public String add(Clinicalexamination clinicalexamination,HttpSession session){
+        Integer userid= (Integer) session.getAttribute("userid");
+        clinicalexamination.setUserid(userid);
+        int a=service.addClinicale(clinicalexamination);
+        if(a>0){
+            return  "a";
+        }
+        return  null;
+    }
+
+    @RequestMapping("/getclinacleNoOrYse")
+    @ResponseBody
+    public String getds(HttpSession session,Integer sex){
+        Integer userid= (Integer) session.getAttribute("userid");
+        Clinicalexamination clinacle=service.getClinacle(userid,sex);
+        if (clinacle==null){
+            return "no";
+        }
+        return "yes";
     }
 
 }

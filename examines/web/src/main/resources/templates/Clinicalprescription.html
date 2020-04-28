@@ -11,7 +11,7 @@
     <form class="layui-form" lay-filter="check" id="form" action="">
         <div style="border:  0.8px solid cornflowerblue">
             <p  style="background-color: rgb(214, 236, 246);font-size: 15px;color: #0074d9;text-align: left">尿液常规检查</p>
-            <input type="hidden" name="sex" style="width: 300px"  lay-verify="title"  autocomplete="off" class="layui-input">
+            <input type="hidden" name="sex" style="width: 300px"  value="0" lay-verify="title"  autocomplete="off" class="layui-input">
 
             <div class="layui-form-item" pane="" >
                 <div class="layui-input-block" align="left" >
@@ -305,7 +305,6 @@
         });
         form.render('checkbox');
             $(document).ready(function () {
-
                 var sex = "0";
                 $.ajax({
                     url: "/prescription/getscript",
@@ -320,15 +319,39 @@
             })
         $("#button").click(function() {
             $.ajax({
-                url:"/prescription/updateClincale",
+                url:"/prescription/getclinacleNoOrYse",
                 type:"post",
                 data:$("#form").serialize(),
                 dataType:"text",
                 success:function(result){
-                    if(result=='a'){
-                        layer.msg("保存成功!",{time:3000,icon:1})
+                    if(result=='no'){
+                        $.ajax({
+                            url:"/prescription/addClin",
+                            type:"post",
+                            data:$("#form").serialize(),
+                            dataType:"text",
+                            success:function(result){
+                                if(result=='a'){
+                                    layer.msg("保存成功!",{time:3000,icon:1})
+                                }else{
+                                    layer.msg("保存失败!",{icon:2})
+                                }
+                            }
+                        });
                     }else{
-                        layer.msg("保存失败!",{icon:2})
+                        $.ajax({
+                            url:"/prescription/updateClincale",
+                            type:"post",
+                            data:$("#form").serialize(),
+                            dataType:"text",
+                            success:function(result){
+                                if(result=='a'){
+                                    layer.msg("保存成功!",{time:3000,icon:1})
+                                }else{
+                                    layer.msg("保存失败!",{icon:2})
+                                }
+                            }
+                        });
                     }
                 }
             });

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
@@ -21,7 +21,7 @@
                     <input type="hidden" name="isoral" value="0">
                     <input type="hidden" name="isx" value="0">
                     <input type="hidden" name="iscgkz" value="0">
-                    <input type="text" name="userid" value="2020122412"  autocomplete="off" class="layui-input">
+                    <input type="text" name="userid" th:value="${session.userid}"  autocomplete="off" class="layui-input">
                 </div>
                 <label class="layui-form-label">姓名</label>
                 <div class="layui-input-inline" style="width: 300px;">
