@@ -41,13 +41,14 @@ layui.use(['form','layer','laydate','jquery','table'], function() {
 						text.push(obj.address);
 					});
 					var obj={"phone":phone,"text":text};
-						$.ajax({
+					$.ajax({
 						type:"POST",
 						url:"/message/sendMessage",
 						dataType:"json",
 						contentType:"application/json",
 						data:JSON.stringify(obj),
 						success:function(data){
+							console.log(data);
 							if (data>0){
 								layer.alert("发送短信成功，已发送"+data+"条短信")
 							}else{

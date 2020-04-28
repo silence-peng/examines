@@ -31,7 +31,12 @@ public class MessageServiceImpl implements MessageService {
         HttpClientUtil client = HttpClientUtil.getInstance();
 
         //UTF发送
-        int result = client.sendMsgUtf8("silence_", "d41d8cd98f00b204e980",text,phone);
+        int result = client.sendMsgUtf8("silence__", "d41d8cd98f00b204e980",text,phone);
+        if(result>0){
+            System.out.println("UTF8成功发送条数=="+result);
+        }else{
+            System.out.println(client.getErrorMsg(result));
+        }
         return result;
     }
     public PageInfo<Userinfo> NoteByUserinfo(Userinfo userinfo,Integer pageNum,Integer pageSize) {
