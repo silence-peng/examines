@@ -1,0 +1,10 @@
+2020-04-28 09:30:47,012 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM userinfo WHERE 1=1 LIMIT ? 
+2020-04-28 09:30:47,021 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 3(Integer)
+2020-04-28 09:30:47,031 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 3
+2020-04-28 09:30:53,282 INFO (StartupInfoLogger.java:50)- Starting ControlerApplication on DESKTOP-RJURPVR with PID 7992 (D:\MAVEN\Git\examines\examines\web\target\classes started by hh in D:\MAVEN\Git\examines\examines)
+2020-04-28 09:30:53,282 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2020-04-28 09:30:53,283 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2020-04-28 09:30:56,870 INFO (StartupInfoLogger.java:59)- Started ControlerApplication in 3.7201019 seconds (JVM running for 943.772)
+2020-04-28 09:32:07,909 INFO (StartupInfoLogger.java:50)- Starting ControlerApplication on DESKTOP-RJURPVR with PID 8216 (D:\MAVEN\Git\examines\examines\web\target\classes started by hh in D:\MAVEN\Git\examines\examines)
+2020-04-28 09:32:07,917 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2020-04-28 09:32:07,918 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default

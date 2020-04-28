@@ -4,11 +4,17 @@ import com.csdj.examines.dao.CheckProveMapper;
 import com.csdj.examines.dao.UserinfoMapper;
 import com.csdj.examines.pojo.Userinfo;
 import com.csdj.examines.service.MessageService;
+import com.csdj.examines.util.HttpClientUtil;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
+import org.apache.commons.httpclient.Header;
+import org.apache.commons.httpclient.HttpClient;
+import org.apache.commons.httpclient.NameValuePair;
+import org.apache.commons.httpclient.methods.PostMethod;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.io.IOException;
 import java.util.Date;
 import java.util.List;
 @Service
@@ -17,11 +23,17 @@ public class MessageServiceImpl implements MessageService {
     private UserinfoMapper mapper;
     @Autowired
     private CheckProveMapper checkProveMapper;
-    public PageInfo<Userinfo> loadUserInfo(Userinfo userinfo, Integer page, Integer limit) {
+    public PageInfo<Userinfo> loadUserInfo(String name,Date startdate,Date enddate, Integer page, Integer limit) {
         PageHelper.startPage(page,limit);
-        return new PageInfo<Userinfo>(checkProveMapper.loadUserInfo(userinfo));
+        return new PageInfo<Userinfo>(checkProveMapper.loadUserInfo(name,startdate,enddate));
     }
+    public Integer sendMessage(String phone,String text) throws IOException {
+        HttpClientUtil client = HttpClientUtil.getInstance();
 
+        //UTF发送
+        int result = client.sendMsgUtf8("silence_", "d41d8cd98f00b204e980",text,phone);
+        return result;
+    }
     public PageInfo<Userinfo> NoteByUserinfo(Userinfo userinfo,Integer pageNum,Integer pageSize) {
         PageHelper.startPage(pageNum,pageSize);
         List<Userinfo> list = checkProveMapper.NoteByUserinfo(userinfo);
