@@ -50,6 +50,7 @@ public class MessageServiceController {
         for (int i=0;i<phone.size();i++){
             result +=service.sendMessage(phone.get(i),text.get(i));
         }
+        System.out.println(result);
         return result;
     }
 }

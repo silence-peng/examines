@@ -1,0 +1,12 @@
+2020-04-28 12:15:07,457 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020-04-15 00:00:00.0(Timestamp), 2020-04-23 00:00:00.0(Timestamp)
+2020-04-28 12:15:07,461 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-28 12:15:07,462 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM userinfo WHERE 1=1 AND creatDate>=? AND creatDate <=? LIMIT ? 
+2020-04-28 12:15:07,462 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020-04-15 00:00:00.0(Timestamp), 2020-04-23 00:00:00.0(Timestamp), 3(Integer)
+2020-04-28 12:15:07,465 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 3
+2020-04-28 12:15:22,995 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT ntypeid,ntype FROM nowmedicalhistorytype 
+2020-04-28 12:15:22,996 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-28 12:15:22,999 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 4
+2020-04-28 12:15:23,000 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT typeid,type FROM medicalhistorytype 
+2020-04-28 12:15:23,002 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-28 12:15:23,007 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 7
+2020-04-28 12:15:23,011 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from cgkzresult where userid=? and sex=? 

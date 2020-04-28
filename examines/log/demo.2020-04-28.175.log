@@ -1,0 +1,11 @@
+2020-04-28 12:15:23,012 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122414(Integer), 0(Integer)
+2020-04-28 12:15:23,017 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 0
+2020-04-28 12:15:27,554 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT count(0) FROM userinfo u, assess a WHERE u.userid = a.userid 
+2020-04-28 12:15:27,556 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-28 12:15:27,558 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-28 12:15:27,560 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT u.userid,u.fname,u.fage,u.fcard,u.fphone,u.fbirthdate,a.content as address FROM userinfo u,assess a WHERE u.userid=a.userid LIMIT ? 
+2020-04-28 12:15:27,560 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 10(Integer)
+2020-04-28 12:15:27,888 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-28 12:15:51,349 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT count(0) FROM userinfo u, assess a WHERE u.userid = a.userid AND (u.fname LIKE concat('%', ?, '%') OR u.mname LIKE concat('%', ?, '%')) 
+2020-04-28 12:15:51,350 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 哇(String), 哇(String)
+2020-04-28 12:15:51,459 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1

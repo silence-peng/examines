@@ -11,10 +11,10 @@
         SELECT u.userid,u.fname,u.fage,u.fcard,u.fphone,u.fbirthdate,a.content as address FROM userinfo u,assess a
         WHERE u.userid=a.userid
         <if test="name!=null and name!=''">
-        AND (u.fname like concat('%',#{name},'%') or u.mname like concat('%',#{name},'%'))
+            AND (u.fname like concat('%',#{name},'%') or u.mname like concat('%',#{name},'%'))
         </if>
         <if test="startdate!=null   ">
-        AND u.createdate >= #{startdate}
+            AND u.createdate >= #{startdate}
         </if>
         <if test="enddate!=null ">
             and  u.createdate &lt;= #{enddate}

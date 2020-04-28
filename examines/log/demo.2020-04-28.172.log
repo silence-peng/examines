@@ -1,0 +1,8 @@
+2020-04-28 12:13:23,049 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 3
+2020-04-28 12:13:24,629 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT userid,mname,mcard,mbirthdate,mphone,methnic,midtype,mage,mculture,mjob,mprovince,mcity,mcounty,mdistrict,mvillage,mregistered,fname,fcard,fbirthdate,fphone,fethnic,fidtype,fage,fculture,fjob,fprovince,fcity,fcounty,fdistrict,fvillage,fregistered,address,creatdate,getmarrieddate,regtypeid,landlinenumber,mimg,fimg,email,doctorname FROM userinfo WHERE userid = ? 
+2020-04-28 12:13:24,630 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: null
+2020-04-28 12:13:24,631 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 0
+2020-04-28 12:13:26,116 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT bid,userid,bimgfile,result,dev,examinedate,bdoctorname,imgsize FROM bultrasound 
+2020-04-28 12:13:26,116 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-28 12:13:26,119 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 4
+2020-04-28 12:13:27,294 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT count(0) FROM userinfo WHERE 1 = 1 

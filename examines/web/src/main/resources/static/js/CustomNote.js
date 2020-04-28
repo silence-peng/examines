@@ -51,26 +51,38 @@ layui.use(['form','layer','laydate','jquery','table'], function() {
 	table.on('toolbar(test)', function(obj) {
 		var checkStatus = table.checkStatus(obj.config.id);
 		if (obj.event=="send"){
-			var userid = [];
-			$(data).each(function () {
-				userid.push(data.userid);
-			});
-
-			$.ajax({
-				url:"/message/",
-				type:"post",
-				data:{},
-				dataType:"text",
-				traditional: true,
-				success:function(result){
-					if(result=="ok"){
-						layer.msg('发送成功!');
-					}else{
-						layer.msg('发送失败!');
-					}
+			var data = checkStatus.data;
+			var phone=[];
+			var text=[];
+			if($("#text").val().trim()!=null && $("#text").val().trim()!=''){
+				$(data).each(function (i,obj) {
+					phone.push(obj.fphone);
+					text.push($("#text").val());
+				});
+				if (phone.length>0){
+					var obj={"phone":phone,"text":text};
+					$.ajax({
+						type:"POST",
+						url:"/message/sendMessage",
+						dataType:"json",
+						contentType:"application/json",
+						data:JSON.stringify(obj),
+						success:function(data){
+							console.log(data);
+							if (data>0){
+								layer.msg("发送短信成功，已发送"+data+"条短信")
+							}else{
+								layer.msg("发送失败！")
+							}
+						}
+					});
+				}else {
+					layer.msg("请选中收信人");
 				}
-			});
 
+			}else {
+				layer.msg("请输入短信内容");
+			}
 		}
 	});
 });
