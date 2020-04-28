@@ -1,8 +1,12 @@
-2020-04-28 08:11:53,330 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
-2020-04-28 08:11:57,294 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT count(0) FROM userinfo WHERE 1 = 1 
-2020-04-28 08:11:57,295 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
-2020-04-28 08:11:57,296 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
-2020-04-28 08:11:57,300 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM userinfo where 1=1 order by creatDate desc LIMIT ? 
-2020-04-28 08:11:57,301 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 3(Integer)
-2020-04-28 08:11:57,305 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 3
-2020-04-28 08:12:00,292 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT userid,mname,mcard,mbirthdate,mphone,methnic,midtype,mage,mculture,mjob,mprovince,mcity,mcounty,mdistrict,mvillage,mregistered,fname,fcard,fbirthdate,fphone,fethnic,fidtype,fage,fculture,fjob,fprovince,fcity,fcounty,fdistrict,fvillage,fregistered,address,creatdate,getmarrieddate,regtypeid,landlinenumber,mimg,fimg,email,doctorname FROM userinfo WHERE userid = ? 
+2020-04-28 08:37:47,684 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT count(*) FROM userinfo a,bultrasound b WHERE a.`userId`=b.`userId` 
+2020-04-28 08:37:47,693 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-28 08:37:47,697 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-28 08:39:46,667 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM userinfo a,bultrasound b WHERE a.`userId`=b.`userId` limit ?,? 
+2020-04-28 08:39:46,669 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Integer), 3(Integer)
+2020-04-28 08:39:46,672 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 0
+2020-04-28 08:39:46,676 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT count(*) FROM userinfo a,bultrasound b WHERE a.`userId`=b.`userId` 
+2020-04-28 08:39:46,677 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-28 08:39:46,679 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-28 08:43:31,565 INFO (StartupInfoLogger.java:50)- Starting ControlerApplication on DESKTOP-RJURPVR with PID 9768 (D:\MAVEN\Git\examines\examines\web\target\classes started by hh in D:\MAVEN\Git\examines\examines)
+2020-04-28 08:43:31,565 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2020-04-28 08:43:31,566 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default

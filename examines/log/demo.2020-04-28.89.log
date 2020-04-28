@@ -1,8 +1,11 @@
-2020-04-28 08:55:52,831 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
-2020-04-28 08:55:52,836 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
-2020-04-28 08:55:52,837 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM userinfo where 1=1 order by creatDate desc LIMIT ? 
-2020-04-28 08:55:52,838 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 3(Integer)
-2020-04-28 08:55:52,852 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 3
-2020-04-28 08:55:53,936 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT userid,mname,mcard,mbirthdate,mphone,methnic,midtype,mage,mculture,mjob,mprovince,mcity,mcounty,mdistrict,mvillage,mregistered,fname,fcard,fbirthdate,fphone,fethnic,fidtype,fage,fculture,fjob,fprovince,fcity,fcounty,fdistrict,fvillage,fregistered,address,creatdate,getmarrieddate,regtypeid,landlinenumber,mimg,fimg,email,doctorname FROM userinfo WHERE userid = ? 
-2020-04-28 08:55:53,938 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122415(Integer)
-2020-04-28 08:55:53,941 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-28 10:40:09,115 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT count(0) FROM userinfo u, assess a WHERE u.userid = a.userid 
+2020-04-28 10:40:09,124 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-28 10:40:09,127 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-28 10:40:09,128 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT u.userid,u.fname,u.fage,u.fcard,u.fphone,u.fbirthdate,a.content as address FROM userinfo u,assess a WHERE u.userid=a.userid LIMIT ? 
+2020-04-28 10:40:09,128 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 10(Integer)
+2020-04-28 10:40:09,131 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-28 10:40:12,339 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT count(0) FROM userinfo u, assess a WHERE u.userid = a.userid 
+2020-04-28 10:40:12,341 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-28 10:40:12,343 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-28 10:40:12,344 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT u.userid,u.fname,u.fage,u.fcard,u.fphone,u.fbirthdate,a.content as address FROM userinfo u,assess a WHERE u.userid=a.userid LIMIT ? 
+2020-04-28 10:40:12,345 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 10(Integer)

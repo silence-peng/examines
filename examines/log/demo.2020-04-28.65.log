@@ -1,8 +1,10 @@
-2020-04-28 08:19:41,763 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122414(Integer)
-2020-04-28 08:19:41,768 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
-2020-04-28 08:19:43,565 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT bid,userid,bimgfile,result,dev,examinedate,bdoctorname,imgsize FROM bultrasound WHERE userid = ? 
-2020-04-28 08:19:43,566 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122414(Integer)
-2020-04-28 08:19:43,568 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
-2020-04-28 08:22:10,905 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT userid,mname,mcard,mbirthdate,mphone,methnic,midtype,mage,mculture,mjob,mprovince,mcity,mcounty,mdistrict,mvillage,mregistered,fname,fcard,fbirthdate,fphone,fethnic,fidtype,fage,fculture,fjob,fprovince,fcity,fcounty,fdistrict,fvillage,fregistered,address,creatdate,getmarrieddate,regtypeid,landlinenumber,mimg,fimg,email,doctorname FROM userinfo WHERE userid = ? 
-2020-04-28 08:22:10,906 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122414(Integer)
-2020-04-28 08:22:10,907 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-28 09:44:44,252 INFO (StartupInfoLogger.java:59)- Started ControlerApplication in 3.5524783 seconds (JVM running for 245.554)
+2020-04-28 09:45:14,440 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT count(0) FROM userinfo u, assess a WHERE u.userid = a.userid 
+2020-04-28 09:45:14,444 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-28 09:45:14,446 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-28 09:45:14,447 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT u.userid,u.fname,u.fage,u.fcard,u.fphone,u.fbirthdate,a.content as address FROM userinfo u,assess a WHERE u.userid=a.userid LIMIT ? 
+2020-04-28 09:45:14,448 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 10(Integer)
+2020-04-28 09:45:15,891 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-28 09:45:22,259 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT count(0) FROM userinfo u, assess a WHERE u.userid = a.userid 
+2020-04-28 09:45:22,260 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-28 09:45:22,261 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1

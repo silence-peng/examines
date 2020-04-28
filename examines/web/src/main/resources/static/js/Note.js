@@ -15,8 +15,9 @@ layui.use(['form','layer','laydate','jquery','table'], function() {
 		table.render({
 			id:"info",
 			elem: '#test',
-			url: '/message/loadInfo',
-			cols: [
+			url: '/message/loadInfo'
+			,toolbar: '#toolbarDemo'
+			,cols: [
 				[{field:'id',type : 'checkbox'}
 				,{field: 'userid',title: '编号',sort: true}
 				, {field: 'fname',title: '姓名'}
@@ -27,6 +28,36 @@ layui.use(['form','layer','laydate','jquery','table'], function() {
 				, {field: 'fphone',title: '号码'}]
 			],
 			page: true
+		});
+		table.on('toolbar(test)', function(obj){
+			var checkStatus = table.checkStatus(obj.config.id);
+			switch(obj.event){
+				case 'getCheckData':
+					var data = checkStatus.data;
+					var phone=[];
+					var text=[];
+					$(data).each(function (i,obj) {
+						phone.push(obj.fphone);
+						text.push(obj.address);
+					});
+					var obj={"phone":phone,"text":text};
+					$.ajax({
+						type:"POST",
+						url:"/message/sendMessage",
+						dataType:"json",
+						contentType:"application/json",
+						data:JSON.stringify(obj),
+						success:function(data){
+							console.log(data);
+							if (data>0){
+								layer.alert("发送短信成功，已发送"+data+"条短信")
+							}else{
+								layer.alert("发送失败！")
+							}
+						}
+					});
+					break;
+			}
 		});
 		$("#find").click(function () {
 			table.reload('info', {

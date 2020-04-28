@@ -1,10 +1,11 @@
-2020-04-28 08:13:20,376 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
-2020-04-28 08:13:22,240 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT bid,userid,bimgfile,result,dev,examinedate,bdoctorname,imgsize FROM bultrasound WHERE userid = ? 
-2020-04-28 08:13:22,242 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122415(Integer)
-2020-04-28 08:13:22,244 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
-2020-04-28 08:15:39,557 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: DELETE FROM bultrasound WHERE userid = ? 
-2020-04-28 08:15:39,558 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122415(Integer)
-2020-04-28 08:15:39,561 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 1
-2020-04-28 08:15:42,127 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT bid,userid,bimgfile,result,dev,examinedate,bdoctorname,imgsize FROM bultrasound WHERE userid = ? 
-2020-04-28 08:15:42,131 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122415(Integer)
-2020-04-28 08:15:42,133 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 0
+2020-04-28 08:48:32,923 INFO (StartupInfoLogger.java:59)- Started ControlerApplication in 4.280184 seconds (JVM running for 662.14)
+2020-04-28 09:00:55,026 INFO (StartupInfoLogger.java:50)- Starting ControlerApplication on DESKTOP-RJURPVR with PID 9768 (D:\MAVEN\Git\examines\examines\web\target\classes started by hh in D:\MAVEN\Git\examines\examines)
+2020-04-28 09:00:55,028 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2020-04-28 09:00:55,029 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2020-04-28 09:00:59,691 INFO (StartupInfoLogger.java:59)- Started ControlerApplication in 4.8710297 seconds (JVM running for 1408.909)
+2020-04-28 09:05:04,972 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT count(0) FROM userinfo WHERE 1 = 1 
+2020-04-28 09:05:04,974 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-28 09:05:04,986 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-28 09:05:04,991 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM userinfo WHERE 1=1 LIMIT ? 
+2020-04-28 09:05:04,992 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 3(Integer)
+2020-04-28 09:05:05,010 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 3
