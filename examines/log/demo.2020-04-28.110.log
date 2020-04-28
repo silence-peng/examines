@@ -1,0 +1,10 @@
+2020-04-28 12:27:07,251 INFO (StartupInfoLogger.java:59)- Started ControlerApplication in 16.4656279 seconds (JVM running for 21.563)
+2020-04-28 12:27:25,024 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM userinfo a LEFT JOIN bultrasound b ON a.`userId`=b.`userId` WHERE 1=1 limit ?,? 
+2020-04-28 12:27:25,059 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Integer), 3(Integer)
+2020-04-28 12:27:25,113 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 3
+2020-04-28 12:27:25,121 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT count(*) FROM userinfo a LEFT JOIN bultrasound b ON a.`userId`=b.`userId` WHERE 1=1 
+2020-04-28 12:27:25,122 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-28 12:27:25,126 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-28 12:28:34,244 INFO (StartupInfoLogger.java:50)- Starting ControlerApplication on DESKTOP-RJURPVR with PID 9820 (D:\MAVEN\Git\examines\examines\web\target\classes started by hh in D:\MAVEN\Git\examines\examines)
+2020-04-28 12:28:34,251 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2020-04-28 12:28:34,252 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default

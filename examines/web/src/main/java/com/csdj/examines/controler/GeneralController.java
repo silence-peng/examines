@@ -29,7 +29,6 @@ public class GeneralController {
     @RequestMapping("/getGeneraluserinfo")
     @ResponseBody
     public Map<String, Object> cx(Integer userid, String creatDateone, String creatDatetwo, String mname, String mcard, String fname, String fcard, String result, Integer page,Integer limit){
-
         List<Userinfo> userinfo=service.getUserInfo(userid, creatDateone, creatDatetwo, mname, mcard, fname, fcard, result, page, limit);
         int getCount=service.getUserInfoCount(userid, creatDateone, creatDatetwo, mname, mcard, fname, fcard, result);
         Map<String, Object> map=new HashMap<String, Object>();
@@ -42,9 +41,9 @@ public class GeneralController {
 
     @RequestMapping("/adduserid")
     @ResponseBody
-    public String adduerid(Integer userid, HttpSession session){
-        System.out.println(userid);
-        session.setAttribute("userid",userid);
+    public String adduerid(Userinfo user, HttpSession session){
+        session.setAttribute("user",user);
+        session.setAttribute("userid",user.getUserid());
         return "a";
     }
 
