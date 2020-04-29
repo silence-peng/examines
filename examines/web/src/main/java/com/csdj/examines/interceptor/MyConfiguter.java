@@ -14,7 +14,6 @@ public class MyConfiguter implements WebMvcConfigurer {
 
     public void addInterceptors(InterceptorRegistry registry) {
         registry.addInterceptor(loginIntercepoter).
-                addPathPatterns("/assesAndOther",
-                        "/addUser","/checkProve","/check","/prescription","/Clincalzzh","/General","/image","/message","/Physicalexmination");
+                addPathPatterns("/check");
     }
 }
