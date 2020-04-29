@@ -1,11 +1,10 @@
-2020-04-28 09:55:32,849 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
-2020-04-28 09:55:36,064 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE yxcheckresult SET isabnormal = ?,abnormalities = ? WHERE resultid = ? 
-2020-04-28 09:55:36,065 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Integer), (String), 2(Integer)
-2020-04-28 09:55:36,066 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 1
-2020-04-28 09:55:36,068 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE yxadvisecheckresult SET advisearr = ? WHERE ( ( resultid = ? ) ) 
-2020-04-28 09:55:36,069 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 1(String), 2(Integer)
-2020-04-28 09:55:36,070 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 1
-2020-04-28 09:59:15,144 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT regtypeid,type FROM registertype 
-2020-04-28 09:59:15,145 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
-2020-04-28 09:59:15,147 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 2
-2020-04-28 09:59:19,909 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT regtypeid,type FROM registertype 
+2020-04-28 12:43:52,243 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM userinfo a LEFT JOIN bultrasound b ON a.`userId`=b.`userId` WHERE 1=1 limit ?,? 
+2020-04-28 12:43:52,250 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Integer), 3(Integer)
+2020-04-28 12:43:52,254 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 3
+2020-04-28 12:43:52,258 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT count(*) FROM userinfo a LEFT JOIN bultrasound b ON a.`userId`=b.`userId` WHERE 1=1 
+2020-04-28 12:43:52,259 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-28 12:43:52,260 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-28 12:43:59,523 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM yxcheckresult WHERE userid=? AND sex=? 
+2020-04-28 12:43:59,525 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer), 0(Integer)
+2020-04-28 12:43:59,525 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT yxid,yxitem FROM yxadvise 
+2020-04-28 12:43:59,526 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 

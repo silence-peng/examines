@@ -1,13 +1,8 @@
-2020-04-28 09:59:19,910 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
-2020-04-28 09:59:19,913 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 2
-2020-04-28 10:00:08,280 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT regtypeid,type FROM registertype 
-2020-04-28 10:00:08,281 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
-2020-04-28 10:00:08,283 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 2
-2020-04-28 10:00:11,881 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM userinfo a,bultrasound b WHERE a.`userId`=b.`userId` limit ?,? 
-2020-04-28 10:00:11,881 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Integer), 3(Integer)
-2020-04-28 10:00:11,883 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 3
-2020-04-28 10:00:11,887 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT count(*) FROM userinfo a,bultrasound b WHERE a.`userId`=b.`userId` 
-2020-04-28 10:00:11,887 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
-2020-04-28 10:00:11,889 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
-2020-04-28 10:00:12,064 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM userinfo a,bultrasound b WHERE a.`userId`=b.`userId` limit ?,? 
-2020-04-28 10:00:12,065 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Integer), 3(Integer)
+2020-04-28 12:43:59,527 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-28 12:43:59,527 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 5
+2020-04-28 12:43:59,579 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT userid,mname,mcard,mbirthdate,mphone,methnic,midtype,mage,mculture,mjob,mprovince,mcity,mcounty,mdistrict,mvillage,mregistered,fname,fcard,fbirthdate,fphone,fethnic,fidtype,fage,fculture,fjob,fprovince,fcity,fcounty,fdistrict,fvillage,fregistered,address,creatdate,getmarrieddate,regtypeid,landlinenumber,mimg,fimg,email,doctorname FROM userinfo WHERE userid = ? 
+2020-04-28 12:43:59,580 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer)
+2020-04-28 12:43:59,583 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-28 12:43:59,591 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT a.`adviseArr` FROM yxadvisecheckresult a,yxcheckresult b WHERE a.`resultId`=b.`resultId` AND b.userId=? AND b.`sex`=? 
+2020-04-28 12:43:59,592 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer), 0(Integer)
+2020-04-28 12:43:59,593 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1

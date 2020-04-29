@@ -1,4 +1,7 @@
-2020-04-28 14:49:54,881 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
-2020-04-28 14:49:54,973 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: update clinicalbilling set b=?,m=?,l=?,zcell=?,abo=?,rh=?,bloodsugar=?, hbsag=?,hbeab=?,hbsab=?,hbcab=?,hbeag=?,alt=?,cr=?,tsh=?, figg=?,tp=?,jigg=?,jigm=?,gigg=?,gigm=?,other=?,doctorname=?, examinedate=? where userid=? and sex=? 
-2020-04-28 14:49:54,976 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: null, on(String), on(String), on(String), on(String), null, on(String), on(String), null, on(String), on(String), on(String), null, on(String), null, on(String), null, on(String), on(String), on(String), on(String), on(String), 张三(String), 2020-04-23 00:00:00.0(Timestamp), 2020122412(Integer), 0(Integer)
-2020-04-28 14:49:55,027 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 1
+2020-04-29 15:23:54,241 INFO (StartupInfoLogger.java:59)- Started ControlerApplication in 7.0631307 seconds (JVM running for 10.345)
+2020-04-29 15:24:05,815 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM userinfo a LEFT JOIN bultrasound b ON a.`userId`=b.`userId` WHERE 1=1 limit ?,? 
+2020-04-29 15:24:05,841 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Integer), 3(Integer)
+2020-04-29 15:24:05,870 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 3
+2020-04-29 15:24:05,876 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT count(*) FROM userinfo a LEFT JOIN bultrasound b ON a.`userId`=b.`userId` WHERE 1=1 
+2020-04-29 15:24:05,877 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-29 15:24:05,879 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1

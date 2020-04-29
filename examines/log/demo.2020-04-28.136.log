@@ -1,12 +1,12 @@
-2020-04-28 10:00:12,067 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 3
-2020-04-28 10:00:12,072 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT count(*) FROM userinfo a,bultrasound b WHERE a.`userId`=b.`userId` 
-2020-04-28 10:00:12,072 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
-2020-04-28 10:00:12,074 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
-2020-04-28 10:00:14,603 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT regtypeid,type FROM registertype 
-2020-04-28 10:00:14,604 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
-2020-04-28 10:00:14,605 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 2
-2020-04-28 10:00:16,125 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT regtypeid,type FROM registertype 
-2020-04-28 10:00:16,126 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
-2020-04-28 10:00:16,127 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 2
-2020-04-28 10:00:53,230 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT regtypeid,type FROM registertype 
-2020-04-28 10:00:53,231 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-28 12:44:25,263 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM userinfo a LEFT JOIN bultrasound b ON a.`userId`=b.`userId` WHERE 1=1 limit ?,? 
+2020-04-28 12:44:25,272 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Integer), 3(Integer)
+2020-04-28 12:44:25,276 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 3
+2020-04-28 12:44:25,279 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT count(*) FROM userinfo a LEFT JOIN bultrasound b ON a.`userId`=b.`userId` WHERE 1=1 
+2020-04-28 12:44:25,280 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-28 12:44:25,282 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-28 12:44:49,266 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM yxcheckresult WHERE userid=? AND sex=? 
+2020-04-28 12:44:49,267 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT yxid,yxitem FROM yxadvise 
+2020-04-28 12:44:49,269 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer), 0(Integer)
+2020-04-28 12:44:49,269 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-28 12:44:49,271 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-28 12:44:49,277 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 5

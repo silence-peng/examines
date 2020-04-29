@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" href="layui/css/layui.css">
+		<script src="layui/layui.js"></script>
+		<script src="js/login.js"></script>
+	</head>
+	<style>
+		body{
+			background-image: url("/image/img/5.jpg");
+			background-repeat: no-repeat;
+			background-size: 100%;
+		}
+	</style>
+	<body >
+		<div class="layui-container" >
+			<form class="layui-form">
+				<div class="" style="margin-top: 250px;">
+					<div class="" style="border: 1px silver solid;width: 400px;height: 400px;margin: 0 auto;background-color: white;">
+						<fieldset class="layui-elem-field layui-field-title">
+						  <legend>登录</legend>
+						</fieldset>
+						<div style="margin-top: 80px;">
+							<div class="layui-form-item">
+							    <label class="layui-form-label">管理员</label>
+							    <div class="layui-input-inline">
+							      <input type="text" name="doctorName" lay-verify="required" autocomplete="off" class="layui-input">
+							    </div>
+							</div>
+							<br />
+							<div class="layui-form-item">
+							    <label class="layui-form-label">密码</label>
+							    <div class="layui-input-inline">
+							      <input type="text" name="doctorPassword" lay-verify="required" autocomplete="off" class="layui-input">
+							    </div>
+							</div>
+							<div class="" style="text-align: center;margin-top:50px;">
+								<div class="layui-form-item" style="color: red;">
+								    <button type="button"lay-submit lay-filter="formDemo" class="layui-btn">新建</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</body>
+</html>
