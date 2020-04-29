@@ -1,0 +1,13 @@
+2020-04-29 15:50:37,306 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-29 15:50:38,776 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from oralcavity where userid=? and sex=? 
+2020-04-29 15:50:38,777 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer), 0(Integer)
+2020-04-29 15:50:38,781 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-29 15:50:39,794 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT yxid,yxitem FROM yxadvise 
+2020-04-29 15:50:39,795 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-29 15:50:39,796 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from yxcheckresult where userid=? and sex=? 
+2020-04-29 15:50:39,797 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 5
+2020-04-29 15:50:39,797 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer), 0(Integer)
+2020-04-29 15:50:39,800 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-29 15:50:39,824 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from yxadvisecheckresult WHERE resultId=? 
+2020-04-29 15:50:39,824 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 1(Integer)
+2020-04-29 15:50:39,826 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1

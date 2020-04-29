@@ -21,11 +21,11 @@
                     <input type="hidden" name="isoral" value="0">
                     <input type="hidden" name="isx" value="0">
                     <input type="hidden" name="iscgkz" value="0">
-                    <input type="text" name="userid" th:value="${session.user?.userid?}"   autocomplete="off" class="layui-input">
+                    <input type="text" name="userid"  th:if="${session.user}" th:value="${session.user.userid}"   autocomplete="off" class="layui-input">
                 </div>
                 <label class="layui-form-label">姓名</label>
                 <div class="layui-input-inline" style="width: 300px;">
-                    <input type="text" name="fname" th:value="${session.user?.mname?}"   autocomplete="off" class="layui-input">
+                    <input type="text" name="fname"  th:if="${session.user}" th:value="${session.user.mname}"   autocomplete="off" class="layui-input">
                 </div>
             </div>
         </div>
@@ -129,7 +129,7 @@
                     <div class="layui-inline">
                         <label class="layui-form-label">医师签名</label>
                         <div class="layui-input-inline" style="width:200px">
-                            <input type="text" name="doctorname"  th:value="${session.admin?.doctorname?}"    autocomplete="off" class="layui-input">
+                            <input type="text" name="doctorname"   autocomplete="off" class="layui-input">
                         </div>
                         <label class="layui-form-label">检查时间</label>
                         <div class="layui-input-inline" style="width:200px">

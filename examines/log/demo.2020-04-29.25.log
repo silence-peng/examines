@@ -1,0 +1,16 @@
+2020-04-29 15:53:20,283 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-29 15:53:20,284 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT nmedicalid,ntypelist,elsecontent FROM nowmedicalhistory WHERE nmedicalid = ? 
+2020-04-29 15:53:20,282 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2(Integer)
+2020-04-29 15:53:20,296 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2(Integer)
+2020-04-29 15:53:20,298 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-29 15:53:20,298 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-29 15:53:20,428 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT yxid,yxitem FROM yxadvise 
+2020-04-29 15:53:20,429 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-29 15:53:20,430 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from yxcheckresult where userid=? and sex=? 
+2020-04-29 15:53:20,431 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer), 1(Integer)
+2020-04-29 15:53:20,431 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 5
+2020-04-29 15:53:20,433 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-29 15:53:20,465 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from yxadvisecheckresult WHERE resultId=? 
+2020-04-29 15:53:20,465 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2(Integer)
+2020-04-29 15:53:20,467 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-29 15:53:20,825 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from oralcavity where userid=? and sex=? 
