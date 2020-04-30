@@ -34,7 +34,7 @@
             <div class="layui-inline">
                 <label class="layui-form-label"  >出生年月:</label>
                 <div class="layui-input-inline">
-                    <input type="text" name="mbirthdate" style="width: 300px"  lay-verify="date" readonly="readonly"  autocomplete="off" class="layui-input">
+                    <input type="text" name="fbirthdate" style="width: 300px"  lay-verify="date" readonly="readonly"  autocomplete="off" class="layui-input">
                 </div>
             </div>
         </div>
@@ -91,13 +91,13 @@
         <div style="border: 0.8px solid cornflowerblue"><p  style="background-color: rgb(214, 236, 246);font-size: 15px;color: #0074d9;text-align: left">精神状态</p>
             <div class="layui-form-item" align="left">
                 <div class="layui-input-block">
-                    <input type="radio" name="isspirit" id="cb" value="1" title="是" >
-                    <input type="radio" name="isspirit"  value="0" title="否" >
+                    <input type="radio" name="isspirit" id="cb" lay-filter="ishaving" value="1" title="是" >
+                    <input type="radio" name="isspirit"  value="0" lay-filter="ishaving" checked title="否" >
                 </div>
                 <div class="layui-inline">
                     <label class="layui-form-label"  style="width: 200px" >精神状态异常描述:</label>
                     <div class="layui-input-inline">
-                        <input type="text" name="spiritcontent" id="jszt" style="width: 300px"  lay-verify="title"  autocomplete="off" class="layui-input">
+                        <input type="text" name="spiritcontent" id="jszt" style="width: 300px" disabled lay-verify="title"  autocomplete="off" class="layui-input">
                     </div>
                 </div>
             </div>
@@ -107,13 +107,13 @@
     <div style="border: 0.8px solid cornflowerblue"><p  style="background-color: rgb(214, 236, 246);font-size: 15px;color: #0074d9;text-align: left">五官</p>
         <div class="layui-form-item" align="left">
             <div class="layui-input-block">
-                <input type="radio" name="isthefive" value="0" title="正常" >
-                <input type="radio" name="isthefive" value="1" title="异常" >
+                <input type="radio" name="isthefive" value="0" lay-filter="iswuguan" checked title="正常" >
+                <input type="radio" name="isthefive" value="1" lay-filter="iswuguan" title="异常" >
             </div>
             <div class="layui-inline">
                 <label class="layui-form-label"  style="width: 200px" >五官异常描述:</label>
                 <div class="layui-input-inline">
-                    <input type="text" name="thefivecontent" style="width: 300px"  lay-verify="title"  autocomplete="off" class="layui-input">
+                    <input type="text" name="thefivecontent" style="width: 300px"  disabled lay-verify="title"  autocomplete="off" class="layui-input">
                 </div>
             </div>
         </div>
@@ -122,13 +122,13 @@
     <div style="border: 0.8px solid cornflowerblue"><p  style="background-color: rgb(214, 236, 246);font-size: 15px;color: #0074d9;text-align: left">特殊体态</p>
         <div class="layui-form-item" align="left">
             <div class="layui-input-block">
-                <input type="radio" name="isposture" value="0" title="无" >
-                <input type="radio" name="isposture" value="1" title="有" >
+                <input type="radio" name="isposture" lay-filter="istitai" value="0" checked title="无" >
+                <input type="radio" name="isposture" lay-filter="istitai" value="1" title="有" >
             </div>
             <div class="layui-inline">
                 <label class="layui-form-label"  style="width: 200px" >特殊体态描述:</label>
                 <div class="layui-input-inline">
-                    <input type="text" name="posturecontent" style="width: 300px"  lay-verify="title"  autocomplete="off" class="layui-input">
+                    <input type="text" name="posturecontent" style="width: 300px"  lay-verify="title" disabled  autocomplete="off" class="layui-input">
                 </div>
             </div>
         </div>
@@ -137,13 +137,13 @@
     <div style="border: 0.8px solid cornflowerblue"><p  style="background-color: rgb(214, 236, 246);font-size: 15px;color: #0074d9;text-align: left">特殊面容</p>
         <div class="layui-form-item" align="left">
             <div class="layui-input-block">
-                <input type="radio" name="isface" value="0" title="无" >
-                <input type="radio" name="isface" value="1" title="有" >
+                <input type="radio" name="isface" value="0" lay-filter="ismianro" checked  title="无" >
+                <input type="radio" name="isface" value="1" lay-filter="ismianro" title="有" >
             </div>
             <div class="layui-inline">
                 <label class="layui-form-label"  style="width: 200px" >特殊面容描述:</label>
                 <div class="layui-input-inline">
-                    <input type="text" name="facecontent" style="width: 300px"  lay-verify="title"  autocomplete="off" class="layui-input">
+                    <input type="text" name="facecontent" style="width: 300px"  lay-verify="title" disabled  autocomplete="off" class="layui-input">
                 </div>
             </div>
         </div>
@@ -152,13 +152,13 @@
     <div style="border: 0.8px solid cornflowerblue"><p  style="background-color: rgb(214, 236, 246);font-size: 15px;color: #0074d9;text-align: left">皮肤毛发</p>
         <div class="layui-form-item" align="left">
             <div class="layui-input-block">
-                <input type="radio" name="ishair" value="0" title="正常" >
-                <input type="radio" name="ishair" value="1" title="异常" >
+                <input type="radio" name="ishair" value="0" lay-filter="ispifu" checked title="正常" >
+                <input type="radio" name="ishair" value="1" lay-filter="ispifu"  title="异常" >
             </div>
             <div class="layui-inline">
                 <label class="layui-form-label"  style="width: 200px" >皮肤毛发异常描述:</label>
                 <div class="layui-input-inline">
-                    <input type="text" name="haircontent" style="width: 300px"  lay-verify="title"  autocomplete="off" class="layui-input">
+                    <input type="text" name="haircontent" style="width: 300px"  lay-verify="title" disabled  autocomplete="off" class="layui-input">
                 </div>
             </div>
         </div>
@@ -167,13 +167,13 @@
     <div style="border: 0.8px solid cornflowerblue"><p  style="background-color: rgb(214, 236, 246);font-size: 15px;color: #0074d9;text-align: left">甲状腺</p>
         <div class="layui-form-item" align="left">
             <div class="layui-input-block">
-                <input type="radio" name="isthyroid" value="0" title="正常" >
-                <input type="radio" name="isthyroid"  value="1" title="异常" >
+                <input type="radio" name="isthyroid" value="0" lay-filter="isjzx" checked title="正常" >
+                <input type="radio" name="isthyroid"  value="1" lay-filter="isjzx" title="异常" >
             </div>
             <div class="layui-inline">
                 <label class="layui-form-label"  style="width: 200px" >甲状腺异常描述:</label>
                 <div class="layui-input-inline">
-                    <input type="text" name="thyroidcontent" style="width: 300px"  lay-verify="title"  autocomplete="off" class="layui-input">
+                    <input type="text" name="thyroidcontent" style="width: 300px"  lay-verify="title" disabled  autocomplete="off" class="layui-input">
                 </div>
             </div>
         </div>
@@ -297,8 +297,54 @@
             });
 
         })
-
-
+        form.on("radio(ishaving)", function (data) {
+            if (this.value==='0') {
+                $("input[name='spiritcontent']").attr("disabled",true);
+                $("input[name='spiritcontent']").val("");
+            } else{
+                $("input[name='spiritcontent']").attr("disabled",false);
+            }
+        });
+        form.on("radio(iswuguan)", function (data) {
+            if (this.value==='0') {
+                $("input[name='thefivecontent']").attr("disabled",true);
+                $("input[name='thefivecontent']").val("");
+            } else{
+                $("input[name='thefivecontent']").attr("disabled",false);
+            }
+        });
+        form.on("radio(istitai)", function (data) {
+            if (this.value==='0') {
+                $("input[name='posturecontent']").attr("disabled",true);
+                $("input[name='posturecontent']").val("");
+            } else{
+                $("input[name='posturecontent']").attr("disabled",false);
+            }
+        });
+        form.on("radio(ismianro)", function (data) {
+            if (this.value==='0') {
+                $("input[name='facecontent']").attr("disabled",true);
+                $("input[name='facecontent']").val("");
+            } else{
+                $("input[name='facecontent']").attr("disabled",false);
+            }
+        });
+        form.on("radio(ispifu)", function (data) {
+            if (this.value==='0') {
+                $("input[name='haircontent']").attr("disabled",true);
+                $("input[name='haircontent']").val("");
+            } else{
+                $("input[name='haircontent']").attr("disabled",false);
+            }
+        });
+        form.on("radio(isjzx)", function (data) {
+            if (this.value==='0') {
+                $("input[name='thyroidcontent']").attr("disabled",true);
+                $("input[name='thyroidcontent']").val("");
+            } else{
+                $("input[name='thyroidcontent']").attr("disabled",false);
+            }
+        });
     });
 
 </script>
