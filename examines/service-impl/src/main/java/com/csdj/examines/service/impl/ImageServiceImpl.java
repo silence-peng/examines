@@ -55,7 +55,10 @@ public class ImageServiceImpl implements ImageService {
     public int deleteImg(Integer userid) {
         Bultrasound bultrasound= new Bultrasound();
         bultrasound.setUserid(userid);
-        return bultrasoundMapper.delete(bultrasound);
+        bultrasound.setBimgfile("");
+        Example example = new Example(bultrasound.getClass());
+        example.createCriteria().andEqualTo("userid",bultrasound.getUserid());
+        return bultrasoundMapper.updateByExampleSelective(bultrasound,example);
     }
     @Transactional
     public int updB(Bultrasound bultrasound) {

@@ -52,26 +52,31 @@ $(function () {
 		});
 		form.on('submit(formDemo)', function(data) {
 			console.log($("#userid").val());
-			$.ajax({
-				url:"/image/getB",
-				type:"post",
-				data:{userid:$("#userid").val()},
-				dataType:"json",
-				success:function(result){
-					$("#minImg").html("");
-					$("#maxImg").html("");
-					if (result.bimgfile!=null){
-						/*$("img1").attr('src',result.bimgfile);
-						$("img2").attr('src',result.bimgfile)*/
-						$("#minImg").append("<img width='50px' src='../image/img/"+result.bimgfile+"' id='img1'/><label name='imgsize' id='size'>"+result.imgsize+"KB</label>");
-						$("#maxImg").append("<img width='90%' style='padding: 30px;' id='img2' src='../image/img/"+result.bimgfile+"'/>");
-					}else{
-						$("#minImg").append("暂未图片信息");
-						$("#maxImg").append("暂未图片信息");
+			if($("#userid").val()!=null && $("#userid").val()!=''){
+				$.ajax({
+					url:"/image/getB",
+					type:"post",
+					data:{userid:$("#userid").val()},
+					dataType:"json",
+					success:function(result){
+						$("#minImg").html("");
+						$("#maxImg").html("");
+						if (result.bimgfile!=null&&result.bimgfile!=''){
+							/*$("img1").attr('src',result.bimgfile);
+                            $("img2").attr('src',result.bimgfile)*/
+							$("#minImg").append("<img width='50px' src='../image/img/"+result.bimgfile+"' id='img1'/><label name='imgsize' id='size'>"+result.imgsize+"KB</label>");
+							$("#maxImg").append("<img width='90%' style='padding: 30px;' id='img2' src='../image/img/"+result.bimgfile+"'/>");
+						}else{
+							$("#minImg").append("暂未图片信息");
+							$("#maxImg").append("暂未图片信息");
+						}
+						form.val("formTest",result);
 					}
-					form.val("formTest",result);
-				}
-			});
+				});
+			}else{
+				layer.msg("请选择查询人员");
+			}
+
 			return false;
 		});
 		$("#minImg").dblclick(function () {

@@ -5,12 +5,12 @@ layui.use(['form','layer','jquery'], function() {
 	form.on('submit(formDemo)', function(data) {
 		let param = $("form").serialize();
 		$.ajax({
-			url:"",
-			type:"checkLogin",
+			url:"checkLogin",
+			type:"post",
 			data:param,
 			dataType:"text",
 			success:function(result){
-				if(result){
+				if(result=="ok"){
 					layer.msg('欢迎使用孕检系统！',function () {
 						location.href="/home";
 					});

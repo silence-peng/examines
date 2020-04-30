@@ -13,7 +13,6 @@ public class MyConfiguter implements WebMvcConfigurer {
 
 
     public void addInterceptors(InterceptorRegistry registry) {
-        registry.addInterceptor(loginIntercepoter).
-                addPathPatterns("/check");
+        registry.addInterceptor(loginIntercepoter).addPathPatterns("/**").excludePathPatterns("/css/**","/images/**","/js/**","/checkLogin","/login");
     }
 }

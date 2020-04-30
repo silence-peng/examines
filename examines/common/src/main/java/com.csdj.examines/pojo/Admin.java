@@ -8,6 +8,7 @@ public class Admin implements Serializable {
     private Integer adminid;
     private String doctorname;
     private String doctorpassword;
+    private String uqx;
 
     @Override
     public String toString() {
@@ -15,6 +16,7 @@ public class Admin implements Serializable {
                 "adminid=" + adminid +
                 ", doctorname='" + doctorname + '\'' +
                 ", doctorpassword='" + doctorpassword + '\'' +
+                ", uqx='" + uqx + '\'' +
                 '}';
     }
 
@@ -40,5 +42,13 @@ public class Admin implements Serializable {
 
     public void setDoctorpassword(String doctorpassword) {
         this.doctorpassword = doctorpassword;
+    }
+
+    public String getUqx() {
+        return uqx;
+    }
+
+    public void setUqx(String uqx) {
+        this.uqx = uqx;
     }
 }

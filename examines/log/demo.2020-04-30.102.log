@@ -1,0 +1,8 @@
+2020-04-30 16:23:02,933 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT bid,userid,bimgfile,result,dev,examinedate,bdoctorname,imgsize FROM bultrasound WHERE userid = ? 
+2020-04-30 16:23:02,936 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122414(Integer)
+2020-04-30 16:23:02,939 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-30 16:23:02,975 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE bultrasound SET userid = ?,bimgfile = ?,imgsize = ? WHERE ( ( userid = ? ) ) 
+2020-04-30 16:23:02,976 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122414(Integer), c4af36fd-b3fc-4cf2-876a-9fcc99d84908.png(String), 437.39(Float), 2020122414(Integer)
+2020-04-30 16:23:02,978 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 1
+2020-04-30 16:23:08,045 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT userid,mname,mcard,mbirthdate,mphone,methnic,midtype,mage,mculture,mjob,mprovince,mcity,mcounty,mdistrict,mvillage,mregistered,fname,fcard,fbirthdate,fphone,fethnic,fidtype,fage,fculture,fjob,fprovince,fcity,fcounty,fdistrict,fvillage,fregistered,address,creatdate,getmarrieddate,regtypeid,landlinenumber,mimg,fimg,email,doctorname FROM userinfo WHERE userid = ? 
+2020-04-30 16:23:08,047 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122414(Integer)

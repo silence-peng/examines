@@ -1,0 +1,12 @@
+2020-04-30 16:18:10,918 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-30 16:18:38,629 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT count(0) FROM userinfo WHERE 1 = 1 
+2020-04-30 16:18:38,630 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-30 16:18:38,631 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-30 16:18:38,636 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM userinfo where 1=1 order by creatDate desc LIMIT ? 
+2020-04-30 16:18:38,637 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 3(Integer)
+2020-04-30 16:18:38,639 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 3
+2020-04-30 16:18:44,189 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM yxcheckresult WHERE userid=? AND sex=? 
+2020-04-30 16:18:44,192 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: null, 0(Integer)
+2020-04-30 16:18:44,193 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 0
+2020-04-30 16:18:44,194 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT yxid,yxitem FROM yxadvise 
+2020-04-30 16:18:44,195 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 

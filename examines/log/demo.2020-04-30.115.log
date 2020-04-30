@@ -1,0 +1,8 @@
+2020-04-30 16:56:46,014 INFO (StartupInfoLogger.java:59)- Started ControlerApplication in 1.777629 seconds (JVM running for 492.651)
+2020-04-30 16:58:02,652 INFO (StartupInfoLogger.java:50)- Starting ControlerApplication on DESKTOP-E0OONUJ with PID 10628 (E:\IDEAProject\examines\examines\web\target\classes started by ZZW in E:\IDEAProject\examines\examines)
+2020-04-30 16:58:02,653 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2020-04-30 16:58:02,653 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2020-04-30 16:58:04,114 INFO (StartupInfoLogger.java:59)- Started ControlerApplication in 1.6094751 seconds (JVM running for 570.75)
+2020-04-30 17:15:13,835 INFO (StartupInfoLogger.java:50)- Starting ControlerApplication on DESKTOP-E0OONUJ with PID 10628 (E:\IDEAProject\examines\examines\web\target\classes started by ZZW in E:\IDEAProject\examines\examines)
+2020-04-30 17:15:13,835 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2020-04-30 17:15:13,836 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
