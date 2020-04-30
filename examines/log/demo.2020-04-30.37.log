@@ -1,0 +1,12 @@
+2020-04-30 15:11:32,911 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-30 15:11:32,920 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 7
+2020-04-30 15:11:47,462 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT assid,userid,content,sdid,doctorname,examinedate FROM assess WHERE ( ( userid = ? ) ) 
+2020-04-30 15:11:47,465 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122414(Integer)
+2020-04-30 15:11:47,468 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 0
+2020-04-30 15:11:47,474 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: INSERT INTO assess ( assid,userid,content,sdid,doctorname,examinedate ) VALUES( ?,?,?,?,?,? ) 
+2020-04-30 15:11:47,477 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: null, 2020122414(Integer), 有准备、有计划的怀孕，避免大龄生育。谨慎用药,计划受孕期间尽里避免服用药物。(String), 1(Integer), 张三(String), 2020-04-30 00:00:00.0(Timestamp)
+2020-04-30 15:11:47,478 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 1
+2020-04-30 15:11:51,617 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT count(0) FROM userinfo WHERE 1 = 1 
+2020-04-30 15:11:51,617 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-30 15:11:51,619 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-30 15:11:51,622 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM userinfo WHERE 1=1 LIMIT ? 

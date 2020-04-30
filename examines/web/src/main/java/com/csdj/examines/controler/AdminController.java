@@ -13,8 +13,9 @@ import javax.servlet.http.HttpSession;
 public class AdminController {
     @Autowired
     private AdminService service;
-    @RequestMapping("checkLpgin")
+    @RequestMapping("checkLogin")
     public Object checkLogin(Admin admin, HttpSession session){
+        System.out.println(admin);
         Admin admin1=service.checkLogin(admin);
         if (admin1!=null){
             session.setAttribute("admin", admin1);

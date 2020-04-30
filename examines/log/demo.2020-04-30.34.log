@@ -1,0 +1,12 @@
+2020-04-30 15:11:21,174 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM clinicalexamination a,abo c WHERE c.id=a.`abotypeId` AND a.`userId`=? and a.`sex`=?; 
+2020-04-30 15:11:21,183 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer), 0(Integer)
+2020-04-30 15:11:21,186 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-30 15:11:21,807 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM clinicalbilling where userid=? and sex=?; 
+2020-04-30 15:11:21,808 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer), 0(Integer)
+2020-04-30 15:11:21,810 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-30 15:11:23,355 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM healthcheckup a , userinfo b WHERE a.`userid`=b.`userid` and a.`userid`=? AND a.`sex`=?; 
+2020-04-30 15:11:23,357 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer), 1(Integer)
+2020-04-30 15:11:23,364 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-30 15:11:23,386 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM healthcheckup a , userinfo b WHERE a.`userid`=b.`userid` and a.`userid`=? AND a.`sex`=?; 
+2020-04-30 15:11:23,387 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer), 1(Integer)
+2020-04-30 15:11:23,391 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1

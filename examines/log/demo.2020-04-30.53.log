@@ -1,0 +1,10 @@
+2020-04-30 15:14:42,704 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 0
+2020-04-30 15:14:42,715 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE cgkzresult SET nmedicalid = ?,medicalid = ?,birthid = ?,doctorname = ?,createdate = ?,userid = ?,sex = ? WHERE cgid = ? 
+2020-04-30 15:14:42,716 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: null, null, 3(Integer), 张三(String), null, 2020122415(Integer), 0(Integer), 3(Integer)
+2020-04-30 15:14:42,718 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 1
+2020-04-30 15:14:44,587 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from xexamine where userid=? and sex=? 
+2020-04-30 15:14:44,588 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122415(Integer), 0(Integer)
+2020-04-30 15:14:44,594 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 0
+2020-04-30 15:14:58,400 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from xexamine where userid=? and sex=? 
+2020-04-30 15:14:58,401 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122415(Integer), 0(Integer)
+2020-04-30 15:14:58,402 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 0

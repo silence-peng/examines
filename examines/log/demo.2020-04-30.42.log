@@ -1,0 +1,8 @@
+2020-04-30 15:13:24,924 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 0
+2020-04-30 15:13:24,941 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: INSERT INTO bultrasound ( bid,userid,bimgfile,result,dev,examinedate,bdoctorname,imgsize ) VALUES( ?,?,?,?,?,?,?,? ) 
+2020-04-30 15:13:24,942 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: null, 2020122424(Integer), 05d71c16-dbaf-433d-bd83-de9b24d46792.jpg(String), null, null, null, null, 440.96(Float)
+2020-04-30 15:13:24,944 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 1
+2020-04-30 15:13:26,225 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT bid,userid,bimgfile,result,dev,examinedate,bdoctorname,imgsize FROM bultrasound WHERE userid = ? 
+2020-04-30 15:13:26,226 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122424(Integer)
+2020-04-30 15:13:26,229 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-30 15:13:38,128 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM userinfo a LEFT JOIN bultrasound b ON a.`userId`=b.`userId` WHERE 1=1 limit ?,? 

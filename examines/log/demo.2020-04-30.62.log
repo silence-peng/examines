@@ -1,0 +1,9 @@
+2020-04-30 15:16:33,071 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT a.`adviseArr` FROM yxadvisecheckresult a,yxcheckresult b WHERE a.`resultId`=b.`resultId` AND b.userId=? AND b.`sex`=? 
+2020-04-30 15:16:33,100 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122415(Integer), 0(Integer)
+2020-04-30 15:16:33,104 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 0
+2020-04-30 15:16:40,234 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE yxcheckresult SET isabnormal = ?,abnormalities = ? WHERE resultid = ? 
+2020-04-30 15:16:40,235 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Integer), (String), 17(Integer)
+2020-04-30 15:16:40,236 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 1
+2020-04-30 15:16:40,237 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE yxadvisecheckresult SET advisearr = ? WHERE ( ( resultid = ? ) ) 
+2020-04-30 15:16:40,239 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 1,2(String), 17(Integer)
+2020-04-30 15:16:40,240 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 0

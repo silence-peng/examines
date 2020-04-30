@@ -1,0 +1,9 @@
+2020-04-30 08:25:22,245 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT adminid,doctorname,doctorpassword FROM admin WHERE doctorname = ? AND doctorpassword = ? 
+2020-04-30 08:25:22,260 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 张三(String), 123456(String)
+2020-04-30 08:25:22,262 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-30 08:26:33,257 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT adminid,doctorname,doctorpassword FROM admin WHERE doctorname = ? AND doctorpassword = ? 
+2020-04-30 08:26:33,258 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 张三(String), 123456(String)
+2020-04-30 08:26:33,259 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-30 14:31:27,871 INFO (StartupInfoLogger.java:50)- Starting ControlerApplication on DESKTOP-RJURPVR with PID 10072 (D:\MAVEN\Git\examines\examines\web\target\classes started by hh in D:\MAVEN\Git\examines\examines)
+2020-04-30 14:31:27,913 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2020-04-30 14:31:27,914 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default

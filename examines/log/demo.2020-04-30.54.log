@@ -1,0 +1,9 @@
+2020-04-30 15:14:58,403 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from yxcheckresult where userid=? and sex=? 
+2020-04-30 15:14:58,409 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122415(Integer), 0(Integer)
+2020-04-30 15:14:58,412 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-30 15:14:58,413 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE yxcheckresult SET userid = ?,sex = ?,isx = ?,iscgkz = ? WHERE resultid = ? 
+2020-04-30 15:14:58,414 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122415(Integer), 0(Integer), 1(Integer), 1(Integer), 17(Integer)
+2020-04-30 15:14:58,416 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 1
+2020-04-30 15:14:58,418 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: INSERT INTO xexamine ( userid,xnum,opinion,abnormaltype,abnormalcontent,doctorname,examinedate,sex ) VALUES( ?,?,?,?,?,?,?,? ) 
+2020-04-30 15:14:58,419 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122415(Integer), 23(Integer), aaa(String), 0(Integer), (String), 张三(String), 2020-04-30 00:00:00.0(Timestamp), 0(Integer)
+2020-04-30 15:14:58,421 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 1

@@ -1,0 +1,9 @@
+2020-04-30 15:16:51,481 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from yxadvisecheckresult WHERE resultId=? 
+2020-04-30 15:16:51,488 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 17(Integer)
+2020-04-30 15:16:51,489 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 0
+2020-04-30 15:16:51,489 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: INSERT INTO yxadvisecheckresult ( relationid,resultid,advisearr ) VALUES( ?,?,? ) 
+2020-04-30 15:16:51,490 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: null, null, null
+2020-04-30 15:16:51,491 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 1
+2020-04-30 15:16:51,491 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE yxcheckresult SET userid = ?,sex = ?,isabnormal = ?,abnormalities = ?,disease = ?,sanitation = ?,consult = ?,supplement = ?,advise = ?,adviseproject = ?,isadvise = ?,referralhospital = ?,referraldate = ?,forwarddate = ?,provedate = ?,doctorname = ?,examinedate = ?,isoral = ?,isx = ?,iscgkz = ?,isover = ? WHERE resultid = ? 
+2020-04-30 15:16:51,493 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122415(Integer), 0(Integer), 0(Integer), null, null, 正常(String), 正常(String), (String), (String), (String), 0(Integer), (String), null, null, null, 张三(String), 2020-04-30 00:00:00.0(Timestamp), 1(Integer), 1(Integer), 1(Integer), 1(Integer), 17(Integer)
+2020-04-30 15:16:51,494 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 1

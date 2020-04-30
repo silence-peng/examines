@@ -1,0 +1,8 @@
+2020-04-30 15:14:35,044 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE yxcheckresult SET userid = ?,sex = ?,isabnormal = ?,abnormalities = ?,disease = ?,sanitation = ?,consult = ?,supplement = ?,advise = ?,adviseproject = ?,isadvise = ?,referralhospital = ?,referraldate = ?,forwarddate = ?,provedate = ?,doctorname = ?,examinedate = ?,isoral = ?,isx = ?,iscgkz = ?,isover = ? WHERE resultid = ? 
+2020-04-30 15:14:35,051 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122415(Integer), 0(Integer), null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 1(Integer), null, 17(Integer)
+2020-04-30 15:14:35,059 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 1
+2020-04-30 15:14:35,060 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: INSERT INTO Maritalhistory(isdivorced,soncount,girlcount,isgeneticdisease,geneticdisease) VALUES(?,?,?,?,?) 
+2020-04-30 15:14:35,061 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Integer), null, null, 0(Integer), null
+2020-04-30 15:14:35,066 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 1
+2020-04-30 15:14:35,067 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT LAST_INSERT_ID() 
+2020-04-30 15:14:35,068 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 

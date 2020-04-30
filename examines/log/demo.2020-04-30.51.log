@@ -1,0 +1,16 @@
+2020-04-30 15:14:35,072 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-30 15:14:35,082 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: INSERT INTO Medicalhistory(typelist,medicalname,morbiditycount,latelytime,istakemedicine,capacity,isoperating,operatingroom,operatingdate) VALUES(?,?,?,?,?,?,?,?,?) 
+2020-04-30 15:14:35,084 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 1,2,3(String), (String), 3(Integer), 2020-04-09 00:00:00.0(Timestamp), 1(Integer), 不工作(String), 0(Integer), null, null
+2020-04-30 15:14:35,087 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 1
+2020-04-30 15:14:35,088 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT LAST_INSERT_ID() 
+2020-04-30 15:14:35,089 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-30 15:14:35,091 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-30 15:14:35,092 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: INSERT INTO Nowmedicalhistory(ntypelist,elsecontent) VALUES(?,?) 
+2020-04-30 15:14:35,093 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 1,2(String), null
+2020-04-30 15:14:35,097 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 1
+2020-04-30 15:14:35,098 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT LAST_INSERT_ID() 
+2020-04-30 15:14:35,100 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-30 15:14:35,103 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-30 15:14:35,108 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: INSERT INTO cgkzresult ( cgid,nmedicalid,medicalid,birthid,doctorname,createdate,userid,sex ) VALUES( ?,?,?,?,?,?,?,? ) 
+2020-04-30 15:14:35,109 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: null, 3(Integer), 3(Integer), 3(Integer), 张三(String), null, 2020122415(Integer), 0(Integer)
+2020-04-30 15:14:35,111 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 1

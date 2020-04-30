@@ -5,10 +5,11 @@ layui.use(['form','layer','jquery'], function() {
 	form.on('submit(formDemo)', function(data) {
 		let param = $("form").serialize();
 		$.ajax({
-			url:"",
-			type:"checkLogin",
+			url:"checkLogin",
+			type:"post",
 			data:param,
 			dataType:"text",
+			traditional:true,
 			success:function(result){
 				if(result){
 					layer.msg('欢迎使用孕检系统！',function () {

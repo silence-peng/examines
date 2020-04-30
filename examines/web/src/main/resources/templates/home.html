@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html  xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -32,7 +32,7 @@
             <li class="layui-nav-item">
                 <a href="javascript:void(0)">
                     <img src="http://t.cn/RCzsdCq" class="layui-nav-img">
-                    贤心
+                    <span th:if="${session.admin}" th:text="${session.admin.doctorname}"></span>
                 </a>
                 <dl class="layui-nav-child">
                     <dd><a href="">基本资料</a></dd>
@@ -49,7 +49,7 @@
 
     <div class="layui-body">
         <!-- 内容主体区域 -->
-        <iframe id="iframeMain" src="" style="width: 100%" height="100%"></iframe>
+        <iframe id="iframeMain" src="Essentialinfo" style="width: 100%" height="100%"></iframe>
     </div>
 
     <div class="layui-footer">
@@ -64,7 +64,7 @@
             <li class="layui-nav-item layui-nav-itemed">
                 <a class="" href="javascript:void(0)">信息查询</a>
                 <dl class="layui-nav-child">
-                    <dd><a href="javascript:void(0)" @click.stop="changeIframe('Essentialinfo')">基础信息查询</a></dd>
+                    <dd><a href="javascript:void(0)"  @click.stop="changeIframe('Essentialinfo')">基础信息查询</a></dd>
                     </dl>
             </li>
             <li class="layui-nav-item">

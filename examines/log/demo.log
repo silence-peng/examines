@@ -1,3 +1,2 @@
-2020-04-29 15:54:44,648 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT bid,userid,bimgfile,result,dev,examinedate,bdoctorname,imgsize FROM bultrasound WHERE userid = ? 
-2020-04-29 15:54:44,654 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer)
-2020-04-29 15:54:44,655 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-30 16:11:16,402 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-30 16:11:16,411 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1

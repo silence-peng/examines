@@ -1,0 +1,8 @@
+2020-04-30 16:05:46,835 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from yxadvisecheckresult WHERE resultid=? 
+2020-04-30 16:05:46,842 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 17(Integer)
+2020-04-30 16:05:46,843 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 0
+2020-04-30 16:07:17,263 INFO (StartupInfoLogger.java:50)- Starting ControlerApplication on DESKTOP-RJURPVR with PID 4584 (D:\MAVEN\Git\examines\examines\web\target\classes started by hh in D:\MAVEN\Git\examines\examines)
+2020-04-30 16:07:17,270 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2020-04-30 16:07:17,271 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2020-04-30 16:07:22,689 INFO (StartupInfoLogger.java:59)- Started ControlerApplication in 6.7764018 seconds (JVM running for 9.367)
+2020-04-30 16:08:02,925 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM userinfo a LEFT JOIN bultrasound b ON a.`userId`=b.`userId` WHERE 1=1 limit ?,? 
