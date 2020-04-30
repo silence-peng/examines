@@ -1,0 +1,14 @@
+2020-04-30 15:28:42,708 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122415(Integer), 0(Integer)
+2020-04-30 15:28:42,713 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-30 15:28:42,727 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT birthid,isdivorced,soncount,girlcount,isgeneticdisease,geneticdisease FROM maritalhistory WHERE birthid = ? 
+2020-04-30 15:28:42,728 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 3(Integer)
+2020-04-30 15:28:42,728 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT medicalid,typelist,medicalname,morbiditycount,latelytime,istakemedicine,capacity,isoperating,operatingroom,operatingdate FROM medicalhistory WHERE medicalid = ? 
+2020-04-30 15:28:42,729 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 3(Integer)
+2020-04-30 15:28:42,729 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-30 15:28:42,730 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-30 15:28:42,733 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT nmedicalid,ntypelist,elsecontent FROM nowmedicalhistory WHERE nmedicalid = ? 
+2020-04-30 15:28:42,734 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 3(Integer)
+2020-04-30 15:28:42,735 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-30 15:28:43,118 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from xexamine where userid=? and sex=? 
+2020-04-30 15:28:43,118 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122415(Integer), 0(Integer)
+2020-04-30 15:28:43,120 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1

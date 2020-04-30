@@ -1,0 +1,16 @@
+2020-04-30 15:22:21,687 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from cgkzresult where userid=? and sex=? 
+2020-04-30 15:22:21,718 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122415(Integer), 0(Integer)
+2020-04-30 15:22:21,720 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 0
+2020-04-30 15:22:27,287 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from cgkzresult where userid=? and sex=? 
+2020-04-30 15:22:27,288 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122415(Integer), 0(Integer)
+2020-04-30 15:22:27,290 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 0
+2020-04-30 15:22:27,290 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from yxcheckresult where userid=? and sex=? 
+2020-04-30 15:22:27,291 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122415(Integer), 0(Integer)
+2020-04-30 15:22:27,294 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-30 15:22:27,296 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE yxcheckresult SET userid = ?,sex = ?,isabnormal = ?,abnormalities = ?,disease = ?,sanitation = ?,consult = ?,supplement = ?,advise = ?,adviseproject = ?,isadvise = ?,referralhospital = ?,referraldate = ?,forwarddate = ?,provedate = ?,doctorname = ?,examinedate = ?,isoral = ?,isx = ?,iscgkz = ?,isover = ? WHERE resultid = ? 
+2020-04-30 15:22:27,297 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122415(Integer), 0(Integer), null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 1(Integer), null, 17(Integer)
+2020-04-30 15:22:27,299 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 1
+2020-04-30 15:22:27,299 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: INSERT INTO Maritalhistory(isdivorced,soncount,girlcount,isgeneticdisease,geneticdisease) VALUES(?,?,?,?,?) 
+2020-04-30 15:22:27,300 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Integer), null, null, 0(Integer), null
+2020-04-30 15:22:27,304 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 1
+2020-04-30 15:22:27,304 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT LAST_INSERT_ID() 

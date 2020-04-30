@@ -1,0 +1,10 @@
+2020-04-30 15:06:55,651 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE yxcheckresult SET isabnormal = ?,abnormalities = ? WHERE resultid = ? 
+2020-04-30 15:06:55,654 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Integer), (String), null
+2020-04-30 15:06:55,656 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 0
+2020-04-30 15:06:55,657 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE yxadvisecheckresult SET advisearr = ? 
+2020-04-30 15:06:55,657 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: (String)
+2020-04-30 15:06:55,658 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 2
+2020-04-30 15:08:28,574 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM userinfo a LEFT JOIN bultrasound b ON a.`userId`=b.`userId` WHERE 1=1 limit ?,? 
+2020-04-30 15:08:28,624 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Integer), 3(Integer)
+2020-04-30 15:08:28,626 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 3
+2020-04-30 15:08:28,631 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT count(*) FROM userinfo a LEFT JOIN bultrasound b ON a.`userId`=b.`userId` WHERE 1=1 

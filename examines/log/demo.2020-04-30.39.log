@@ -1,0 +1,14 @@
+2020-04-30 15:22:55,744 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122415(Integer), 0(Integer), 1(Integer), 1(Integer), 1(Integer), 17(Integer)
+2020-04-30 15:22:55,747 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 1
+2020-04-30 15:22:55,748 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: INSERT INTO oralcavity ( userid,checkequipment,opinion,abnormaltype,abnormalcontent,doctorname,examinedate,sex ) VALUES( ?,?,?,?,?,?,?,? ) 
+2020-04-30 15:22:55,749 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122415(Integer), sss(String), sddd(String), 0(Integer), (String), dd(String), 2020-04-30 00:00:00.0(Timestamp), 0(Integer)
+2020-04-30 15:22:55,752 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 1
+2020-04-30 15:22:57,869 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT yxid,yxitem FROM yxadvise 
+2020-04-30 15:22:57,870 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-30 15:22:57,872 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 5
+2020-04-30 15:22:57,876 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from yxcheckresult where userid=? and sex=? 
+2020-04-30 15:22:57,876 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122415(Integer), 0(Integer)
+2020-04-30 15:22:57,878 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-30 15:22:57,891 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from yxadvisecheckresult WHERE resultId=? 
+2020-04-30 15:22:57,892 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 17(Integer)
+2020-04-30 15:22:57,893 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 0

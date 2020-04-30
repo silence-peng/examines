@@ -61,6 +61,8 @@ $(function () {
 					$("#minImg").html("");
 					$("#maxImg").html("");
 					if (result.bimgfile!=null){
+						/*$("img1").attr('src',result.bimgfile);
+						$("img2").attr('src',result.bimgfile)*/
 						$("#minImg").append("<img width='50px' src='../image/img/"+result.bimgfile+"' id='img1'/><label name='imgsize' id='size'>"+result.imgsize+"KB</label>");
 						$("#maxImg").append("<img width='90%' style='padding: 30px;' id='img2' src='../image/img/"+result.bimgfile+"'/>");
 					}else{
