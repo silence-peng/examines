@@ -17,11 +17,11 @@
                 <div class="layui-input-inline" style="width: 300px;">
                     <input type="hidden" name="sex" value="0">
                     <input type="hidden" name="type" value="insert">
-                    <input type="text" name="userid" th:value="${session.user.userid}"  autocomplete="off" class="layui-input">
+                    <input type="text" name="userid" th:if="${session.user}" th:value="${session.user.userid}"  autocomplete="off" class="layui-input">
                 </div>
                 <label class="layui-form-label">姓名</label>
                 <div class="layui-input-inline" style="width: 300px;">
-                    <input type="text" name="fname" th:value="${session.user.fname}" autocomplete="off" class="layui-input">
+                    <input type="text" name="fname"  th:if="${session.user}" th:value="${session.user.fname}" autocomplete="off" class="layui-input">
                 </div>
             </div>
         </div>
@@ -62,7 +62,7 @@
                     <div class="layui-inline" style="width:100%" >
                         <label class="layui-form-label">医师签名</label>
                         <div class="layui-input-inline" style="width: 30%">
-                            <input type="text" name="doctorname"  autocomplete="off" class="layui-input">
+                            <input type="text" name="doctorname"   autocomplete="off" class="layui-input">
                         </div>
                         <label class="layui-form-label">检查时间</label>
                         <div class="layui-input-inline">

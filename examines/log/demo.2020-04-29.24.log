@@ -1,0 +1,12 @@
+2020-04-29 15:53:20,167 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT typeid,type FROM medicalhistorytype 
+2020-04-29 15:53:20,177 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-29 15:53:20,179 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 7
+2020-04-29 15:53:20,239 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT ntypeid,ntype FROM nowmedicalhistorytype 
+2020-04-29 15:53:20,241 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from cgkzresult where userid=? and sex=? 
+2020-04-29 15:53:20,242 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer), 1(Integer)
+2020-04-29 15:53:20,244 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-29 15:53:20,243 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-29 15:53:20,254 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 4
+2020-04-29 15:53:20,280 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT birthid,isdivorced,soncount,girlcount,isgeneticdisease,geneticdisease FROM maritalhistory WHERE birthid = ? 
+2020-04-29 15:53:20,281 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2(Integer)
+2020-04-29 15:53:20,281 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT medicalid,typelist,medicalname,morbiditycount,latelytime,istakemedicine,capacity,isoperating,operatingroom,operatingdate FROM medicalhistory WHERE medicalid = ? 

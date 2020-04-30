@@ -1,0 +1,10 @@
+2020-04-28 14:00:25,650 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-28 14:01:48,839 INFO (StartupInfoLogger.java:50)- Starting ControlerApplication on 工藤新一 with PID 17264 (F:\re\examines\examines\web\target\classes started by Administrator in F:\re\examines\examines)
+2020-04-28 14:01:48,869 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2020-04-28 14:01:48,869 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2020-04-28 14:02:01,016 INFO (StartupInfoLogger.java:59)- Started ControlerApplication in 15.401219242 seconds (JVM running for 20.133)
+2020-04-28 14:02:23,454 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM userinfo a LEFT JOIN bultrasound b ON a.`userId`=b.`userId` WHERE 1=1 limit ?,? 
+2020-04-28 14:02:23,491 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Integer), 3(Integer)
+2020-04-28 14:02:23,592 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 3
+2020-04-28 14:02:23,603 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT count(*) FROM userinfo a LEFT JOIN bultrasound b ON a.`userId`=b.`userId` WHERE 1=1 
+2020-04-28 14:02:23,605 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 

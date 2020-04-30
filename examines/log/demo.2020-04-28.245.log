@@ -1,0 +1,10 @@
+2020-04-28 13:52:26,586 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from userinfo where userid=? 
+2020-04-28 13:52:26,596 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: null
+2020-04-28 13:52:26,610 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 0
+2020-04-28 13:52:29,819 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM userinfo a LEFT JOIN bultrasound b ON a.`userId`=b.`userId` WHERE 1=1 limit ?,? 
+2020-04-28 13:52:29,821 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Integer), 3(Integer)
+2020-04-28 13:52:29,840 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 3
+2020-04-28 13:52:29,852 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT count(*) FROM userinfo a LEFT JOIN bultrasound b ON a.`userId`=b.`userId` WHERE 1=1 
+2020-04-28 13:52:29,854 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-28 13:52:29,858 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-28 13:52:36,539 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM healthcheckup a , userinfo b WHERE a.`userid`=b.`userid` and a.`userid`=? AND a.`sex`=?; 

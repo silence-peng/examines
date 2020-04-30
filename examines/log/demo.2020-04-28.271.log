@@ -1,0 +1,6 @@
+2020-04-28 14:23:22,322 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM clinicalbilling where userid=? and sex=?; 
+2020-04-28 14:23:22,334 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer), 0(Integer)
+2020-04-28 14:23:22,339 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-28 14:23:22,397 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: update clinicalbilling set b=?,m=?,l=?,zcell=?,abo=?,rh=?,bloodsugar=?, hbsag=?,hbeab=?,hbsab=?,hbcab=?,hbeag=?,alt=?,cr=?,tsh=?, figg=?,tp=?,jigg=?,jigm=?,gigg=?,gigm=?,other=?,doctorname=?, examinedate=? where userid=? and sex=? 
+2020-04-28 14:23:22,405 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: null, on(String), on(String), on(String), on(String), on(String), on(String), on(String), null, on(String), on(String), on(String), null, on(String), null, on(String), null, on(String), on(String), on(String), on(String), on(String), 张三(String), 2020-04-23 00:00:00.0(Timestamp), 2020122412(Integer), 0(Integer)
+2020-04-28 14:23:22,442 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 1

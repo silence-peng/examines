@@ -1,0 +1,9 @@
+2020-04-28 14:10:03,766 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM clinicalbilling where userid=? and sex=?; 
+2020-04-28 14:10:03,781 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122414(Integer), 0(Integer)
+2020-04-28 14:10:03,789 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-28 14:10:11,722 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM clinicalbilling where userid=? and sex=?; 
+2020-04-28 14:10:11,724 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122414(Integer), 0(Integer)
+2020-04-28 14:10:11,728 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-28 14:10:11,758 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: update clinicalbilling set b=?,m=?,l=?,zcell=?,abo=?,rh=?,bloodsugar=?, hbsag=?,hbeab=?,hbsab=?,hbcab=?,hbeag=?,alt=?,cr=?,tsh=?, figg=?,tp=?,jigg=?,jigm=?,gigg=?,gigm=?,other=?,doctorname=?, examinedate=? where userid=? and sex=? 
+2020-04-28 14:10:11,765 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: null, on(String), on(String), null, on(String), on(String), on(String), null, on(String), on(String), null, null, null, on(String), null, null, on(String), null, on(String), null, null, on(String), 张三(String), 2020-04-27 00:00:00.0(Timestamp), 2020122414(Integer), 0(Integer)
+2020-04-28 14:10:11,880 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 1

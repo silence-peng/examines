@@ -41,22 +41,22 @@
     <div class="layui-form-item" >
         <label class="layui-form-label" style="width: 100px">妻子姓名:</label>
         <div class="layui-input-inline">
-            <input type="text" style="width: 220px" name="mName" id="mname" lay-verify="title" autocomplete="off"  class="layui-input">
+            <input type="text" style="width: 220px" name="fName" id="fname" lay-verify="title" autocomplete="off"  class="layui-input">
         </div>
         <label class="layui-form-label" style="width: 100px">妻子证件号:</label>
         <div class="layui-input-inline">
-            <input type="text" style="width: 220px" name="mcard" id="mcard" lay-verify="title" autocomplete="off" class="layui-input">
+            <input type="text" style="width: 220px" name="fcard" id="fcard" lay-verify="title" autocomplete="off" class="layui-input">
         </div>
         <label class="layui-form-label" style="width: 100px">丈夫姓名:</label>
         <div class="layui-input-inline">
-            <input type="text" style="width: 220px" name="fname" id="fname" lay-verify="title" autocomplete="off"  class="layui-input">
+            <input type="text" style="width: 220px" name="mname" id="mname" lay-verify="title" autocomplete="off"  class="layui-input">
         </div>
 
     </div>
     <div class="layui-form-item" style="width: 100%">
         <label class="layui-form-label" style="width: 100px">丈夫证件号:</label>
         <div class="layui-input-inline">
-            <input type="text" style="width: 220px" name="fcard" id="fcard" lay-verify="title" autocomplete="off" class="layui-input">
+            <input type="text" style="width: 220px" name="mcard" id="mcard" lay-verify="title" autocomplete="off" class="layui-input">
         </div>
 
         <label class="layui-form-label" style="width: 100px" >B超状态:</label>
@@ -101,12 +101,12 @@
             ,cols:[
                     [{type: 'radio', fixed: 'left'}
                     ,{field:'userid',title:'编号',sort: true}
-                    ,{field:'mname',title:'妻子姓名'}
-                    ,{field:'mcard',title:'妻子证件号'}
+                    ,{field:'mname',title:'丈夫姓名'}
+                    ,{field:'mcard',title:'丈夫证件号'}
                     ,{field:'mbirthdate',title:'妻子出生日期'}
-                    ,{field:'fname',title:'丈夫姓名'}
-                    ,{field:'fcard',title:'丈夫证件号'}
-                    ,{field:'fbirthdate',title:'丈夫出生日期'}
+                    ,{field:'fname',title:'妻子姓名'}
+                    ,{field:'fcard',title:'妻子证件号'}
+                    ,{field:'fbirthdate',title:'妻子出生日期'}
                     ,{field:'creatdate',title:'建档日期'}]
             ]
         });
