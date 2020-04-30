@@ -31,6 +31,7 @@ layui.use(['form','layer','laydate','jquery'], function() {
                     ,dataType:'json'
                     ,success:function(result){
                         $("#sex").val("男");
+                        $("#mimg").append("<img src='image/img/"+result.mimg+"' width='150' height='150\'>");
                         form.val("formTest",result);
                     }
                 });
