@@ -1,10 +1,8 @@
-2020-04-28 13:43:14,726 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 3
-2020-04-28 13:43:14,790 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT count(*) FROM userinfo a LEFT JOIN bultrasound b ON a.`userId`=b.`userId` WHERE 1=1 
-2020-04-28 13:43:14,792 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
-2020-04-28 13:43:14,795 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
-2020-04-28 13:43:25,547 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM userinfo a LEFT JOIN bultrasound b ON a.`userId`=b.`userId` WHERE 1=1 limit ?,? 
-2020-04-28 13:43:25,550 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 3(Integer), 3(Integer)
-2020-04-28 13:43:25,554 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 2
-2020-04-28 13:43:25,563 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT count(*) FROM userinfo a LEFT JOIN bultrasound b ON a.`userId`=b.`userId` WHERE 1=1 
-2020-04-28 13:43:25,565 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
-2020-04-28 13:43:25,571 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-28 15:44:24,223 INFO (StartupInfoLogger.java:59)- Started ControlerApplication in 7.9399288 seconds (JVM running for 10.144)
+2020-04-28 15:44:54,134 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT count(0) FROM userinfo WHERE 1 = 1 
+2020-04-28 15:44:54,154 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-28 15:44:54,170 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-28 15:44:54,173 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM userinfo where 1=1 order by creatDate desc LIMIT ? 
+2020-04-28 15:44:54,174 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 3(Integer)
+2020-04-28 15:44:54,183 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 3
+2020-04-28 15:44:55,885 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT userid,mname,mcard,mbirthdate,mphone,methnic,midtype,mage,mculture,mjob,mprovince,mcity,mcounty,mdistrict,mvillage,mregistered,fname,fcard,fbirthdate,fphone,fethnic,fidtype,fage,fculture,fjob,fprovince,fcity,fcounty,fdistrict,fvillage,fregistered,address,creatdate,getmarrieddate,regtypeid,landlinenumber,mimg,fimg,email,doctorname FROM userinfo WHERE userid = ? 

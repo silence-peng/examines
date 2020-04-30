@@ -1,10 +1,7 @@
-2020-04-28 13:48:34,256 INFO (StartupInfoLogger.java:59)- Started ControlerApplication in 17.623462988 seconds (JVM running for 27.045)
-2020-04-28 13:49:13,080 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM userinfo a LEFT JOIN bultrasound b ON a.`userId`=b.`userId` WHERE 1=1 limit ?,? 
-2020-04-28 13:49:13,146 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Integer), 3(Integer)
-2020-04-28 13:49:13,254 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 3
-2020-04-28 13:49:13,268 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT count(*) FROM userinfo a LEFT JOIN bultrasound b ON a.`userId`=b.`userId` WHERE 1=1 
-2020-04-28 13:49:13,271 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
-2020-04-28 13:49:13,276 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
-2020-04-28 13:49:17,704 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM userinfo a LEFT JOIN bultrasound b ON a.`userId`=b.`userId` WHERE 1=1 limit ?,? 
-2020-04-28 13:49:17,705 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 3(Integer), 3(Integer)
-2020-04-28 13:49:17,733 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 2
+2020-04-28 15:45:03,457 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT count(0) FROM userinfo WHERE 1 = 1 
+2020-04-28 15:45:03,467 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-28 15:45:03,468 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-28 15:45:03,470 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM userinfo where 1=1 order by creatDate desc LIMIT ?, ? 
+2020-04-28 15:45:03,470 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 3(Integer), 3(Integer)
+2020-04-28 15:45:03,475 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 2
+2020-04-28 15:45:04,888 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT userid,mname,mcard,mbirthdate,mphone,methnic,midtype,mage,mculture,mjob,mprovince,mcity,mcounty,mdistrict,mvillage,mregistered,fname,fcard,fbirthdate,fphone,fethnic,fidtype,fage,fculture,fjob,fprovince,fcity,fcounty,fdistrict,fvillage,fregistered,address,creatdate,getmarrieddate,regtypeid,landlinenumber,mimg,fimg,email,doctorname FROM userinfo WHERE userid = ? 

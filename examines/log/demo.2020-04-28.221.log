@@ -1,10 +1,10 @@
-2020-04-28 13:39:55,606 INFO (StartupInfoLogger.java:59)- Started ControlerApplication in 28.063436773 seconds (JVM running for 39.324)
-2020-04-28 13:41:35,556 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM userinfo a LEFT JOIN bultrasound b ON a.`userId`=b.`userId` WHERE 1=1 limit ?,? 
-2020-04-28 13:41:35,618 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Integer), 3(Integer)
-2020-04-28 13:41:35,870 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 3
-2020-04-28 13:41:35,917 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT count(*) FROM userinfo a LEFT JOIN bultrasound b ON a.`userId`=b.`userId` WHERE 1=1 
-2020-04-28 13:41:35,919 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
-2020-04-28 13:41:35,927 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
-2020-04-28 13:41:50,294 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM healthcheckup a , userinfo b WHERE a.`userid`=b.`userid` and a.`userid`=? AND a.`sex`=?; 
-2020-04-28 13:41:50,295 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122414(Integer), 0(Integer)
-2020-04-28 13:41:50,305 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-28 13:07:34,042 INFO (StartupInfoLogger.java:59)- Started ControlerApplication in 6.2661694 seconds (JVM running for 8.442)
+2020-04-28 13:07:42,918 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM userinfo a LEFT JOIN bultrasound b ON a.`userId`=b.`userId` WHERE 1=1 limit ?,? 
+2020-04-28 13:07:42,937 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Integer), 3(Integer)
+2020-04-28 13:07:42,954 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 3
+2020-04-28 13:07:42,958 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT count(*) FROM userinfo a LEFT JOIN bultrasound b ON a.`userId`=b.`userId` WHERE 1=1 
+2020-04-28 13:07:42,959 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-28 13:07:42,961 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-28 13:07:51,190 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM yxcheckresult WHERE userid=? AND sex=? 
+2020-04-28 13:07:51,191 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122414(Integer), 0(Integer)
+2020-04-28 13:07:51,193 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1

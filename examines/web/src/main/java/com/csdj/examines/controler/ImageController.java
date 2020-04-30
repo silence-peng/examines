@@ -36,6 +36,13 @@ public class ImageController {
         return page;
     }
 
+    /**
+     * 查看b超档案信息
+     * @param userinfo
+     * @param page
+     * @param limit
+     * @return
+     */
     @RequestMapping("getUser")
     @ResponseBody
     public Map<String,Object> getUser(Userinfo userinfo,Integer page,Integer limit){
@@ -47,11 +54,24 @@ public class ImageController {
         map.put("data", pages.getList());
         return map;
     }
+
+    /**
+     * 查看b超
+     * @param userid
+     * @param session
+     * @return
+     */
     @RequestMapping("tiao")
     public String tiao(Integer userid,HttpSession session){
         session.setAttribute("userid",userid);
         return "Bchao";
     }
+
+    /**
+     * 显示用户信息
+     * @param session
+     * @return
+     */
     @RequestMapping("openImage")
     @ResponseBody
     public Userinfo openImage(HttpSession session){
@@ -59,6 +79,12 @@ public class ImageController {
         Userinfo userinfo = imageService.getUserOne(userid);
         return userinfo;
     }
+
+    /**
+     * 查询b超对应的信息
+     * @param userid
+     * @return
+     */
     @RequestMapping("getB")
     @ResponseBody
     public Object getB(Integer userid){
@@ -67,6 +93,12 @@ public class ImageController {
         System.out.println(bultrasound);
         return bultrasound;
     }
+
+    /**
+     * 删除图片
+     * @param userid
+     * @return
+     */
     @RequestMapping("deleteImg")
     @ResponseBody
     public String deleteImg(Integer userid){
@@ -76,6 +108,12 @@ public class ImageController {
         }
         return "no";
     }
+
+    /**
+     * 编辑B超
+     * @param bultrasound
+     * @return
+     */
     @RequestMapping("updB")
     @ResponseBody
     public Object updB(Bultrasound bultrasound){
@@ -85,6 +123,14 @@ public class ImageController {
         }
         return "no";
     }
+
+    /**
+     * 上传图片
+     * @param file
+     * @param userid
+     * @return
+     * @throws IOException
+     */
     @RequestMapping("updateImg")
     @ResponseBody
     public Object updateImg(MultipartFile file,Integer userid) throws IOException {

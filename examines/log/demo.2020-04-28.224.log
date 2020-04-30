@@ -1,8 +1,12 @@
-2020-04-28 13:42:09,285 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT count(0) FROM userinfo WHERE 1 = 1 
-2020-04-28 13:42:09,317 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
-2020-04-28 13:42:09,323 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
-2020-04-28 13:42:09,331 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM userinfo where 1=1 order by creatDate desc LIMIT ? 
-2020-04-28 13:42:09,332 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 3(Integer)
-2020-04-28 13:42:09,345 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 3
-2020-04-28 13:42:10,634 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT userid,mname,mcard,mbirthdate,mphone,methnic,midtype,mage,mculture,mjob,mprovince,mcity,mcounty,mdistrict,mvillage,mregistered,fname,fcard,fbirthdate,fphone,fethnic,fidtype,fage,fculture,fjob,fprovince,fcity,fcounty,fdistrict,fvillage,fregistered,address,creatdate,getmarrieddate,regtypeid,landlinenumber,mimg,fimg,email,doctorname FROM userinfo WHERE userid = ? 
-2020-04-28 13:42:10,641 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122414(Integer)
+2020-04-28 13:08:10,159 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM userinfo a LEFT JOIN bultrasound b ON a.`userId`=b.`userId` WHERE 1=1 limit ?,? 
+2020-04-28 13:08:10,162 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Integer), 3(Integer)
+2020-04-28 13:08:10,164 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 3
+2020-04-28 13:08:10,166 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT count(*) FROM userinfo a LEFT JOIN bultrasound b ON a.`userId`=b.`userId` WHERE 1=1 
+2020-04-28 13:08:10,167 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-28 13:08:10,168 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-28 13:08:16,341 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM yxcheckresult WHERE userid=? AND sex=? 
+2020-04-28 13:08:16,342 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer), 0(Integer)
+2020-04-28 13:08:16,344 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT yxid,yxitem FROM yxadvise 
+2020-04-28 13:08:16,345 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-28 13:08:16,345 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-28 13:08:16,346 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 5
