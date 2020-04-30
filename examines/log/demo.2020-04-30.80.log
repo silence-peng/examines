@@ -1,24 +1,11 @@
-2020-04-30 16:06:55,181 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT a.`adviseArr` FROM yxadvisecheckresult a,yxcheckresult b WHERE a.`resultId`=b.`resultId` AND b.userId=? AND b.`sex`=? 
-2020-04-30 16:06:55,183 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer), 1(Integer)
-2020-04-30 16:06:55,184 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
-2020-04-30 16:09:16,164 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM yxcheckresult WHERE userid=? AND sex=? 
-2020-04-30 16:09:16,165 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer), 1(Integer)
-2020-04-30 16:09:16,165 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT yxid,yxitem FROM yxadvise 
-2020-04-30 16:09:16,165 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
-2020-04-30 16:09:16,166 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
-2020-04-30 16:09:16,167 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 5
-2020-04-30 16:09:16,185 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT userid,mname,mcard,mbirthdate,mphone,methnic,midtype,mage,mculture,mjob,mprovince,mcity,mcounty,mdistrict,mvillage,mregistered,fname,fcard,fbirthdate,fphone,fethnic,fidtype,fage,fculture,fjob,fprovince,fcity,fcounty,fdistrict,fvillage,fregistered,address,creatdate,getmarrieddate,regtypeid,landlinenumber,mimg,fimg,email,doctorname FROM userinfo WHERE userid = ? 
-2020-04-30 16:09:16,186 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer)
-2020-04-30 16:09:16,191 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
-2020-04-30 16:09:16,195 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT a.`adviseArr` FROM yxadvisecheckresult a,yxcheckresult b WHERE a.`resultId`=b.`resultId` AND b.userId=? AND b.`sex`=? 
-2020-04-30 16:09:16,195 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer), 1(Integer)
-2020-04-30 16:09:16,196 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
-2020-04-30 16:09:16,912 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM yxcheckresult WHERE userid=? AND sex=? 
-2020-04-30 16:09:16,913 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT yxid,yxitem FROM yxadvise 
-2020-04-30 16:09:16,913 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
-2020-04-30 16:09:16,913 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer), 0(Integer)
-2020-04-30 16:09:16,914 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
-2020-04-30 16:09:16,914 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 5
-2020-04-30 16:09:16,923 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT userid,mname,mcard,mbirthdate,mphone,methnic,midtype,mage,mculture,mjob,mprovince,mcity,mcounty,mdistrict,mvillage,mregistered,fname,fcard,fbirthdate,fphone,fethnic,fidtype,fage,fculture,fjob,fprovince,fcity,fcounty,fdistrict,fvillage,fregistered,address,creatdate,getmarrieddate,regtypeid,landlinenumber,mimg,fimg,email,doctorname FROM userinfo WHERE userid = ? 
-2020-04-30 16:09:16,924 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer)
-2020-04-30 16:09:16,925 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-30 15:56:19,464 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM userinfo a LEFT JOIN bultrasound b ON a.`userId`=b.`userId` WHERE 1=1 limit ?,? 
+2020-04-30 15:56:19,502 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Integer), 3(Integer)
+2020-04-30 15:56:19,506 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 3
+2020-04-30 15:56:19,514 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT count(*) FROM userinfo a LEFT JOIN bultrasound b ON a.`userId`=b.`userId` WHERE 1=1 
+2020-04-30 15:56:19,515 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-30 15:56:19,517 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-30 15:56:21,580 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT yxid,yxitem FROM yxadvise 
+2020-04-30 15:56:21,581 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-30 15:56:21,585 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 5
+2020-04-30 15:56:21,586 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from yxcheckresult where userid=? and sex=? 
+2020-04-30 15:56:21,587 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: null, 0(Integer)

@@ -1,10 +1,10 @@
-2020-04-30 15:06:55,651 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE yxcheckresult SET isabnormal = ?,abnormalities = ? WHERE resultid = ? 
-2020-04-30 15:06:55,654 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Integer), (String), null
-2020-04-30 15:06:55,656 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 0
-2020-04-30 15:06:55,657 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE yxadvisecheckresult SET advisearr = ? 
-2020-04-30 15:06:55,657 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: (String)
-2020-04-30 15:06:55,658 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 2
-2020-04-30 15:08:28,574 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM userinfo a LEFT JOIN bultrasound b ON a.`userId`=b.`userId` WHERE 1=1 limit ?,? 
-2020-04-30 15:08:28,624 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Integer), 3(Integer)
-2020-04-30 15:08:28,626 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 3
-2020-04-30 15:08:28,631 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT count(*) FROM userinfo a LEFT JOIN bultrasound b ON a.`userId`=b.`userId` WHERE 1=1 
+2020-04-30 15:08:16,617 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM userinfo a LEFT JOIN bultrasound b ON a.`userId`=b.`userId` WHERE 1=1 limit ?,? 
+2020-04-30 15:08:16,625 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Integer), 3(Integer)
+2020-04-30 15:08:16,628 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 3
+2020-04-30 15:08:16,632 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT count(*) FROM userinfo a LEFT JOIN bultrasound b ON a.`userId`=b.`userId` WHERE 1=1 
+2020-04-30 15:08:16,632 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-30 15:08:16,635 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-30 15:08:19,403 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT regtypeid,type FROM registertype 
+2020-04-30 15:08:19,405 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-30 15:08:19,407 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 2
+2020-04-30 15:10:41,241 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: INSERT INTO userinfo(mname,mcard,mbirthdate,mphone,methnic,midtype,mage,mculture,mjob,mprovince,mcity,mcounty,mdistrict, mvillage,mregistered,fname,fcard,fbirthDate,fphone,fethnic,fIdtype,fage,fculture,fjob,fprovince,fcity,fcounty,fdistrict, fvillage,fregistered,address,creatDate,getMarriedDate,regtypeId,landlineNumber,mimg,fimg,email,doctorName) VALUES(?,?,?,?,?,?,?,?,?,?,?,?, ?,?,?,?,?,?,?,?,?,?,?,?, ?,?,?,?,?,?,?,?,?,?, ?,?,?,?,?) 

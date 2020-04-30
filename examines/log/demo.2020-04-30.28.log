@@ -1,16 +1,5 @@
-2020-04-30 15:08:28,631 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
-2020-04-30 15:08:28,635 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
-2020-04-30 15:08:28,744 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM userinfo a LEFT JOIN bultrasound b ON a.`userId`=b.`userId` WHERE 1=1 limit ?,? 
-2020-04-30 15:08:28,744 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Integer), 3(Integer)
-2020-04-30 15:08:28,748 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 3
-2020-04-30 15:08:28,753 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT count(*) FROM userinfo a LEFT JOIN bultrasound b ON a.`userId`=b.`userId` WHERE 1=1 
-2020-04-30 15:08:28,754 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
-2020-04-30 15:08:28,788 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
-2020-04-30 15:08:31,674 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM yxcheckresult WHERE userid=? AND sex=? 
-2020-04-30 15:08:31,675 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122415(Integer), 1(Integer)
-2020-04-30 15:08:31,676 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
-2020-04-30 15:08:31,677 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT yxid,yxitem FROM yxadvise 
-2020-04-30 15:08:31,677 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
-2020-04-30 15:08:31,679 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 5
-2020-04-30 15:08:32,105 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM yxcheckresult WHERE userid=? AND sex=? 
-2020-04-30 15:08:32,105 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT yxid,yxitem FROM yxadvise 
+2020-04-30 15:10:41,242 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 周正午(String), 430426200109127865(String), 2013-02-28 00:00:00.0(Timestamp), 13478906543(String), 汉族(String), 身份证(String), 13(Integer), 高中(String), 灰领(String), 湖南(String), 长沙(String), 望城(String), aaa(String), aaa(String), 农村户口(String), 陈佳辉(String), 430426200109134562(String), 2013-03-08 00:00:00.0(Timestamp), 18243567843(String), 汉族(String), 身份证(String), 13(Integer), 高中(String), 灰领(String), 湖南(String), 长沙(String), 望城(String), aaa(String), aaa(String), 农村户口(String), (String), 2020-04-30 00:00:00.0(Timestamp), 2020-04-30 00:00:00.0(Timestamp), 1(Integer), (String), null, null, (String), 张三(String)
+2020-04-30 15:10:41,281 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 1
+2020-04-30 15:10:41,282 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT LAST_INSERT_ID() 
+2020-04-30 15:10:41,283 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-30 15:10:41,301 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1

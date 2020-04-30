@@ -1,16 +1,12 @@
-2020-04-30 15:05:30,594 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer), 1(Integer)
-2020-04-30 15:05:30,685 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
-2020-04-30 15:05:32,898 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE yxcheckresult SET isabnormal = ?,abnormalities = ? WHERE resultid = ? 
-2020-04-30 15:05:32,899 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Integer), (String), 2(Integer)
-2020-04-30 15:05:32,901 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 1
-2020-04-30 15:05:32,904 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE yxadvisecheckresult SET advisearr = ? WHERE ( ( resultid = ? ) ) 
-2020-04-30 15:05:32,905 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 1(String), 2(Integer)
-2020-04-30 15:05:32,906 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 1
-2020-04-30 15:05:35,990 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM userinfo a LEFT JOIN bultrasound b ON a.`userId`=b.`userId` WHERE 1=1 limit ?,? 
-2020-04-30 15:05:35,990 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Integer), 3(Integer)
-2020-04-30 15:05:35,993 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 3
-2020-04-30 15:05:35,995 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT count(*) FROM userinfo a LEFT JOIN bultrasound b ON a.`userId`=b.`userId` WHERE 1=1 
-2020-04-30 15:05:35,996 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
-2020-04-30 15:05:35,998 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
-2020-04-30 15:05:36,126 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM userinfo a LEFT JOIN bultrasound b ON a.`userId`=b.`userId` WHERE 1=1 limit ?,? 
-2020-04-30 15:05:36,127 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Integer), 3(Integer)
+2020-04-30 14:48:47,405 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: (String)
+2020-04-30 14:48:47,432 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 2
+2020-04-30 14:48:51,910 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE yxcheckresult SET isabnormal = ?,abnormalities = ? WHERE resultid = ? 
+2020-04-30 14:48:51,911 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Integer), (String), null
+2020-04-30 14:48:51,914 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 0
+2020-04-30 14:48:51,917 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE yxadvisecheckresult SET advisearr = ? 
+2020-04-30 14:48:51,918 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: (String)
+2020-04-30 14:48:51,920 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 2
+2020-04-30 14:51:43,107 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM userinfo a LEFT JOIN bultrasound b ON a.`userId`=b.`userId` WHERE 1=1 limit ?,? 
+2020-04-30 14:51:43,108 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Integer), 3(Integer)
+2020-04-30 14:51:43,113 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 3
+2020-04-30 14:51:43,120 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT count(*) FROM userinfo a LEFT JOIN bultrasound b ON a.`userId`=b.`userId` WHERE 1=1 

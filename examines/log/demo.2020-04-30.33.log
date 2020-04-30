@@ -1,12 +1,8 @@
-2020-04-30 15:22:11,971 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM userinfo a LEFT JOIN bultrasound b ON a.`userId`=b.`userId` WHERE 1=1 limit ?,? 
-2020-04-30 15:22:11,973 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Integer), 3(Integer)
-2020-04-30 15:22:11,975 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 3
-2020-04-30 15:22:11,977 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT count(*) FROM userinfo a LEFT JOIN bultrasound b ON a.`userId`=b.`userId` WHERE 1=1 
-2020-04-30 15:22:11,977 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
-2020-04-30 15:22:11,978 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
-2020-04-30 15:22:21,678 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT ntypeid,ntype FROM nowmedicalhistorytype 
-2020-04-30 15:22:21,678 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT typeid,type FROM medicalhistorytype 
-2020-04-30 15:22:21,679 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
-2020-04-30 15:22:21,679 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
-2020-04-30 15:22:21,681 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 7
-2020-04-30 15:22:21,681 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 4
+2020-04-30 15:11:06,014 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer), 0(Integer)
+2020-04-30 15:11:06,027 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-30 15:11:19,281 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM healthcheckup a , userinfo b WHERE a.`userid`=b.`userid` and a.`userid`=? AND a.`sex`=?; 
+2020-04-30 15:11:19,282 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer), 0(Integer)
+2020-04-30 15:11:19,285 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-30 15:11:19,315 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: update healthcheckup set height=?,bmi=?,weight=?,smmhg=?,mmhgs=?,p=?, isspirit=?,spiritcontent=?,isthefive=?,thefivecontent=?, isposture=?,posturecontent=?,isface=?,facecontent=?,ishair=?, haircontent=?,isthyroid=?,thyroidcontent=?,doctorname=?, examinedate=? where userid=? and sex=? 
+2020-04-30 15:11:19,318 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 180(Integer), 19.5(Float), 50.0(Float), null, null, 90(Integer), 0(Integer), (String), 0(Integer), (String), 0(Integer), (String), 0(Integer), (String), 0(Integer), (String), 0(Integer), (String), 张三(String), 2020-04-23 00:00:00.0(Timestamp), 2020122412(Integer), 0(Integer)
+2020-04-30 15:11:19,327 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 1

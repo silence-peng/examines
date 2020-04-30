@@ -1,13 +1,9 @@
-2020-04-30 15:25:56,840 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE yxcheckresult SET isabnormal = ?,abnormalities = ? WHERE resultid = ? 
-2020-04-30 15:25:56,843 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Integer), (String), 17(Integer)
-2020-04-30 15:25:56,844 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 1
-2020-04-30 15:25:56,845 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE yxadvisecheckresult SET advisearr = ? WHERE ( ( resultid = ? ) ) 
-2020-04-30 15:25:56,845 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: (String), 17(Integer)
-2020-04-30 15:25:56,846 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 0
-2020-04-30 15:28:42,696 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT typeid,type FROM medicalhistorytype 
-2020-04-30 15:28:42,698 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
-2020-04-30 15:28:42,700 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT ntypeid,ntype FROM nowmedicalhistorytype 
-2020-04-30 15:28:42,701 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
-2020-04-30 15:28:42,701 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 7
-2020-04-30 15:28:42,702 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 4
-2020-04-30 15:28:42,707 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from cgkzresult where userid=? and sex=? 
+2020-04-30 15:14:58,403 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from yxcheckresult where userid=? and sex=? 
+2020-04-30 15:14:58,409 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122415(Integer), 0(Integer)
+2020-04-30 15:14:58,412 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-30 15:14:58,413 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE yxcheckresult SET userid = ?,sex = ?,isx = ?,iscgkz = ? WHERE resultid = ? 
+2020-04-30 15:14:58,414 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122415(Integer), 0(Integer), 1(Integer), 1(Integer), 17(Integer)
+2020-04-30 15:14:58,416 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 1
+2020-04-30 15:14:58,418 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: INSERT INTO xexamine ( userid,xnum,opinion,abnormaltype,abnormalcontent,doctorname,examinedate,sex ) VALUES( ?,?,?,?,?,?,?,? ) 
+2020-04-30 15:14:58,419 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122415(Integer), 23(Integer), aaa(String), 0(Integer), (String), 张三(String), 2020-04-30 00:00:00.0(Timestamp), 0(Integer)
+2020-04-30 15:14:58,421 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 1

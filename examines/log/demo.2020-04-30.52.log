@@ -1,12 +1,8 @@
-2020-04-30 15:25:48,063 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
-2020-04-30 15:25:48,063 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
-2020-04-30 15:25:49,069 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM yxcheckresult WHERE userid=? AND sex=? 
-2020-04-30 15:25:49,069 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT yxid,yxitem FROM yxadvise 
-2020-04-30 15:25:49,071 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
-2020-04-30 15:25:49,071 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122415(Integer), 1(Integer)
-2020-04-30 15:25:49,072 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 5
-2020-04-30 15:25:49,072 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
-2020-04-30 15:25:54,627 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM yxcheckresult WHERE userid=? AND sex=? 
-2020-04-30 15:25:54,628 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT yxid,yxitem FROM yxadvise 
-2020-04-30 15:25:54,631 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122415(Integer), 0(Integer)
-2020-04-30 15:25:54,631 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-30 15:14:42,681 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from cgkzresult where userid=? and sex=? 
+2020-04-30 15:14:42,688 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122415(Integer), 0(Integer)
+2020-04-30 15:14:42,690 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-30 15:14:42,692 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE nowmedicalhistory SET ntypelist = ?,elsecontent = ? WHERE nmedicalid = ? 
+2020-04-30 15:14:42,693 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 1,2(String), null, null
+2020-04-30 15:14:42,696 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 0
+2020-04-30 15:14:42,699 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE medicalhistory SET typelist = ?,medicalname = ?,morbiditycount = ?,latelytime = ?,istakemedicine = ?,capacity = ?,isoperating = ?,operatingroom = ?,operatingdate = ? WHERE medicalid = ? 
+2020-04-30 15:14:42,701 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: null, (String), 3(Integer), 2020-04-09 00:00:00.0(Timestamp), 1(Integer), 正常工作(String), 0(Integer), null, null, null

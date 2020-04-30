@@ -23,6 +23,8 @@ public class CheckResultConytoller {
     }
     @RequestMapping("commitCheckResult")
     public Object commit(Yxcheckresult yxcheckresult,Integer [] advices){
+        System.out.println(yxcheckresult);
+        System.out.println(advices.toString());
         return service.commitCheckResult(yxcheckresult, advices);
     }
 

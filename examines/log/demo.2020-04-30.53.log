@@ -1,8 +1,10 @@
-2020-04-30 15:25:54,632 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 5
-2020-04-30 15:25:54,632 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
-2020-04-30 15:25:54,642 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT userid,mname,mcard,mbirthdate,mphone,methnic,midtype,mage,mculture,mjob,mprovince,mcity,mcounty,mdistrict,mvillage,mregistered,fname,fcard,fbirthdate,fphone,fethnic,fidtype,fage,fculture,fjob,fprovince,fcity,fcounty,fdistrict,fvillage,fregistered,address,creatdate,getmarrieddate,regtypeid,landlinenumber,mimg,fimg,email,doctorname FROM userinfo WHERE userid = ? 
-2020-04-30 15:25:54,642 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122415(Integer)
-2020-04-30 15:25:54,644 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
-2020-04-30 15:25:54,647 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT a.`adviseArr` FROM yxadvisecheckresult a,yxcheckresult b WHERE a.`resultId`=b.`resultId` AND b.userId=? AND b.`sex`=? 
-2020-04-30 15:25:54,647 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122415(Integer), 0(Integer)
-2020-04-30 15:25:54,648 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 0
+2020-04-30 15:14:42,704 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 0
+2020-04-30 15:14:42,715 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE cgkzresult SET nmedicalid = ?,medicalid = ?,birthid = ?,doctorname = ?,createdate = ?,userid = ?,sex = ? WHERE cgid = ? 
+2020-04-30 15:14:42,716 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: null, null, 3(Integer), 张三(String), null, 2020122415(Integer), 0(Integer), 3(Integer)
+2020-04-30 15:14:42,718 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 1
+2020-04-30 15:14:44,587 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from xexamine where userid=? and sex=? 
+2020-04-30 15:14:44,588 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122415(Integer), 0(Integer)
+2020-04-30 15:14:44,594 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 0
+2020-04-30 15:14:58,400 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from xexamine where userid=? and sex=? 
+2020-04-30 15:14:58,401 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122415(Integer), 0(Integer)
+2020-04-30 15:14:58,402 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 0

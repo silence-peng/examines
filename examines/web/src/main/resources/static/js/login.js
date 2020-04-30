@@ -9,6 +9,7 @@ layui.use(['form','layer','jquery'], function() {
 			type:"post",
 			data:param,
 			dataType:"text",
+			traditional:true,
 			success:function(result){
 				if(result=="ok"){
 					layer.msg('欢迎使用孕检系统！',function () {

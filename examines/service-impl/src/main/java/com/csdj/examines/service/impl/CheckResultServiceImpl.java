@@ -27,11 +27,15 @@ public class CheckResultServiceImpl implements CheckResultService {
     @Transactional
     public Integer commitCheckResult(Yxcheckresult yxcheckresult, Integer[] advices) {
         String str= StringUtils.join(advices, ",");
+        System.out.println(str);
         Yxadvisecheckresult yxadvisecheckresult=mapper.getOne(yxcheckresult.getResultid());
         if (yxadvisecheckresult!=null){
             mapper.updateAdvicseResult(str,yxcheckresult.getResultid());
         }else{
-            mapper.insert(yxadvisecheckresult);
+            Yxadvisecheckresult yxadvisecheckresult1=new Yxadvisecheckresult();
+            yxadvisecheckresult1.setAdvisearr(str);
+            yxadvisecheckresult1.setResultid(yxcheckresult.getResultid());
+            mapper.insert(yxadvisecheckresult1);
         }
         yxcheckresult.setIsover(1);
         return checkresultMapper.updateByPrimaryKey(yxcheckresult);

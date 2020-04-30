@@ -1,12 +1,8 @@
-2020-04-30 15:22:27,354 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 1
-2020-04-30 15:22:33,309 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from xexamine where userid=? and sex=? 
-2020-04-30 15:22:33,310 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122415(Integer), 0(Integer)
-2020-04-30 15:22:33,312 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 0
-2020-04-30 15:22:33,448 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from xexamine where userid=? and sex=? 
-2020-04-30 15:22:33,448 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122415(Integer), 0(Integer)
-2020-04-30 15:22:33,450 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 0
-2020-04-30 15:22:45,466 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from xexamine where userid=? and sex=? 
-2020-04-30 15:22:45,467 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122415(Integer), 0(Integer)
-2020-04-30 15:22:45,468 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 0
-2020-04-30 15:22:45,468 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from yxcheckresult where userid=? and sex=? 
-2020-04-30 15:22:45,469 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122415(Integer), 0(Integer)
+2020-04-30 15:11:26,814 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 3
+2020-04-30 15:11:26,827 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT count(*) FROM userinfo a LEFT JOIN bultrasound b ON a.`userId`=b.`userId` WHERE 1=1 
+2020-04-30 15:11:26,828 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-30 15:11:26,830 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-30 15:11:32,873 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT userid,mname,mcard,mbirthdate,mphone,methnic,midtype,mage,mculture,mjob,mprovince,mcity,mcounty,mdistrict,mvillage,mregistered,fname,fcard,fbirthdate,fphone,fethnic,fidtype,fage,fculture,fjob,fprovince,fcity,fcounty,fdistrict,fvillage,fregistered,address,creatdate,getmarrieddate,regtypeid,landlinenumber,mimg,fimg,email,doctorname FROM userinfo WHERE userid = ? 
+2020-04-30 15:11:32,875 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122414(Integer)
+2020-04-30 15:11:32,878 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-30 15:11:32,910 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT id,content FROM suggest 

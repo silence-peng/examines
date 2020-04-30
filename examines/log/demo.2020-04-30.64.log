@@ -1,12 +1,12 @@
-2020-04-30 15:58:51,651 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122415(Integer)
-2020-04-30 15:58:51,656 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
-2020-04-30 15:58:51,657 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT a.`adviseArr` FROM yxadvisecheckresult a,yxcheckresult b WHERE a.`resultId`=b.`resultId` AND b.userId=? AND b.`sex`=? 
-2020-04-30 15:58:51,658 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122415(Integer), 0(Integer)
-2020-04-30 15:58:51,659 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 0
-2020-04-30 15:58:56,836 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM yxcheckresult WHERE userid=? AND sex=? 
-2020-04-30 15:58:56,837 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT yxid,yxitem FROM yxadvise 
-2020-04-30 15:58:56,838 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122415(Integer), 1(Integer)
-2020-04-30 15:58:56,838 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
-2020-04-30 15:58:56,839 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 5
-2020-04-30 15:58:56,839 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
-2020-04-30 15:58:56,947 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM yxcheckresult WHERE userid=? AND sex=? 
+2020-04-30 15:16:42,877 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT nmedicalid,ntypelist,elsecontent FROM nowmedicalhistory WHERE nmedicalid = ? 
+2020-04-30 15:16:42,891 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: null
+2020-04-30 15:16:42,894 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 0
+2020-04-30 15:16:43,189 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT yxid,yxitem FROM yxadvise 
+2020-04-30 15:16:43,190 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-30 15:16:43,194 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from yxcheckresult where userid=? and sex=? 
+2020-04-30 15:16:43,195 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122415(Integer), 0(Integer)
+2020-04-30 15:16:43,195 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 5
+2020-04-30 15:16:43,202 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-04-30 15:16:43,225 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from yxadvisecheckresult WHERE resultId=? 
+2020-04-30 15:16:43,225 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 17(Integer)
+2020-04-30 15:16:43,227 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 0
