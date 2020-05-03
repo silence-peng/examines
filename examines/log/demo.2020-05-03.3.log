@@ -1,0 +1,16 @@
+2020-05-03 15:00:33,416 INFO (StartupInfoLogger.java:59)- Started ControlerApplication in 4.9646161 seconds (JVM running for 6.573)
+2020-05-03 15:01:15,637 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT adminid,doctorname,doctorpassword,uqx FROM admin WHERE doctorname = ? AND doctorpassword = ? 
+2020-05-03 15:01:15,655 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 李四(String), 123456(String)
+2020-05-03 15:01:15,688 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-05-03 15:01:19,605 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM userinfo a LEFT JOIN bultrasound b ON a.`userId`=b.`userId` WHERE 1=1 limit ?,? 
+2020-05-03 15:01:19,607 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Integer), 3(Integer)
+2020-05-03 15:01:19,619 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 3
+2020-05-03 15:01:19,623 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT count(*) FROM userinfo a LEFT JOIN bultrasound b ON a.`userId`=b.`userId` WHERE 1=1 
+2020-05-03 15:01:19,624 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-05-03 15:01:19,630 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-05-03 15:03:10,001 INFO (StartupInfoLogger.java:50)- Starting ControlerApplication on DESKTOP-E0OONUJ with PID 5492 (E:\IDEAProject\examines\examines\web\target\classes started by ZZW in E:\IDEAProject\examines\examines)
+2020-05-03 15:03:10,001 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2020-05-03 15:03:10,001 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2020-05-03 15:05:28,160 INFO (StartupInfoLogger.java:50)- Starting ControlerApplication on DESKTOP-E0OONUJ with PID 5492 (E:\IDEAProject\examines\examines\web\target\classes started by ZZW in E:\IDEAProject\examines\examines)
+2020-05-03 15:05:28,161 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2020-05-03 15:05:28,161 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default

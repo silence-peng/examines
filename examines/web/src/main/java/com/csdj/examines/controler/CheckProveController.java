@@ -20,7 +20,7 @@ import java.util.List;
  * @description: 婚检证明控制器
  */
 @Controller
-@RequestMapping("checkProve")
+@RequestMapping("/checkProve")
 public class CheckProveController {
     @Autowired
     private CheckProveService checkProveService;
