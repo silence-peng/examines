@@ -15,5 +15,5 @@ public class AdminServiceImpl implements AdminService {
     public Admin checkLogin(Admin admin) {
         List<Admin> list=adminMapper.select(admin);
         return list.get(0);
-    }
+}
 }
