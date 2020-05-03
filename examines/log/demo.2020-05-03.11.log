@@ -1,0 +1,22 @@
+2020-05-03 15:28:22,019 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT count(*) FROM userinfo a LEFT JOIN bultrasound b ON a.`userId`=b.`userId` WHERE 1=1 
+2020-05-03 15:28:22,061 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-05-03 15:28:22,074 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-05-03 15:30:49,318 INFO (StartupInfoLogger.java:50)- Starting ControlerApplication on DESKTOP-E0OONUJ with PID 5492 (E:\IDEAProject\examines\examines\web\target\classes started by ZZW in E:\IDEAProject\examines\examines)
+2020-05-03 15:30:49,319 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2020-05-03 15:30:49,319 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2020-05-03 15:30:50,928 INFO (StartupInfoLogger.java:59)- Started ControlerApplication in 1.7576308 seconds (JVM running for 1824.085)
+2020-05-03 15:33:12,080 INFO (StartupInfoLogger.java:50)- Starting ControlerApplication on DESKTOP-E0OONUJ with PID 5492 (E:\IDEAProject\examines\examines\web\target\classes started by ZZW in E:\IDEAProject\examines\examines)
+2020-05-03 15:33:12,080 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2020-05-03 15:33:12,080 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2020-05-03 15:38:35,193 INFO (StartupInfoLogger.java:50)- Starting ControlerApplication on DESKTOP-E0OONUJ with PID 5492 (E:\IDEAProject\examines\examines\web\target\classes started by ZZW in E:\IDEAProject\examines\examines)
+2020-05-03 15:38:35,194 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2020-05-03 15:38:35,194 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2020-05-03 15:41:25,067 INFO (StartupInfoLogger.java:50)- Starting ControlerApplication on DESKTOP-E0OONUJ with PID 5492 (E:\IDEAProject\examines\examines\web\target\classes started by ZZW in E:\IDEAProject\examines\examines)
+2020-05-03 15:41:25,067 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2020-05-03 15:41:25,067 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2020-05-03 15:46:33,373 INFO (StartupInfoLogger.java:50)- Starting ControlerApplication on DESKTOP-E0OONUJ with PID 5492 (E:\IDEAProject\examines\examines\web\target\classes started by ZZW in E:\IDEAProject\examines\examines)
+2020-05-03 15:46:33,373 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2020-05-03 15:46:33,374 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2020-05-03 15:54:59,770 INFO (StartupInfoLogger.java:50)- Starting ControlerApplication on DESKTOP-E0OONUJ with PID 5492 (E:\IDEAProject\examines\examines\web\target\classes started by ZZW in E:\IDEAProject\examines\examines)
+2020-05-03 15:54:59,771 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2020-05-03 15:54:59,771 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default

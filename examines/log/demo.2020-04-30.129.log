@@ -1,0 +1,12 @@
+2020-04-30 18:03:46,265 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM yxcheckresult WHERE userid=? AND sex=? 
+2020-04-30 18:03:46,268 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: null, 0(Integer)
+2020-04-30 18:03:46,270 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 0
+2020-04-30 18:03:46,272 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT yxid,yxitem FROM yxadvise 
+2020-04-30 18:03:46,273 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-30 18:03:46,275 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 5
+2020-04-30 18:03:54,879 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM yxcheckresult WHERE userid=? AND sex=? 
+2020-04-30 18:03:54,880 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: null, 1(Integer)
+2020-04-30 18:03:54,882 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 0
+2020-04-30 18:03:54,884 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT yxid,yxitem FROM yxadvise 
+2020-04-30 18:03:54,885 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-04-30 18:03:54,887 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 5

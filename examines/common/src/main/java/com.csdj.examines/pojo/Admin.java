@@ -8,7 +8,7 @@ public class Admin implements Serializable {
     private Integer adminid;
     private String doctorname;
     private String doctorpassword;
-    private String uqx;
+    private Integer uqx;
 
     @Override
     public String toString() {
@@ -44,11 +44,11 @@ public class Admin implements Serializable {
         this.doctorpassword = doctorpassword;
     }
 
-    public String getUqx() {
+    public Integer getUqx() {
         return uqx;
     }
 
-    public void setUqx(String uqx) {
+    public void setUqx(Integer uqx) {
         this.uqx = uqx;
     }
 }
