@@ -69,6 +69,16 @@ layui.use(['form','layer','laydate','jquery'], function() {
             form.render();
         }
     });
+    $(".print").click(function () {
+        Print('#wrap', {
+            onStart: function () {
+                console.log('onStart', new Date())
+            },
+            onEnd: function () {
+                console.log('onEnd', new Date())
+            }
+        })
+    });
     /*提交*/
     form.on('submit(formDemo)', function(data) {
         if($("#userid").val()!=null && $("#userid").val()!=''){
