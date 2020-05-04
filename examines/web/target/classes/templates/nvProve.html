@@ -8,9 +8,10 @@
 	<link rel="stylesheet" href="css/Prove.css" />
 	<script src="layui/layui.js"></script>
 	<script src="js/nvProve.js"></script>
+	<script src="js/Print.js"></script>
 </head>
 <body>
-<div class="layui-container" style="width: 90%;">
+<div class="layui-container wrap" id="wrap" style="width: 90%;">
 	<form class="layui-form" lay-filter="formTest">
 		<div class="layui-row" style="margin-top: 20px;">
 			<div class="layui-col-md6">
@@ -25,10 +26,7 @@
 				<hr>
 				<div class=""style="margin-left: 20px;">
 					<div class="layui-bg-gray layui-inline info">
-						<div class="layui-row">
-							<div class="layui-col-md6">姓</div>
-							<div class="layui-col-md6">名：</div>
-						</div>
+						姓名：
 					</div>
 					<div class="layui-bg-gray layui-inline infos">
 						<input style="border: none;height: 20px;" name="fname" disabled="disabled" class="layui-bg-gray"/>
@@ -37,10 +35,7 @@
 				<hr>
 				<div class=""style="margin-left: 20px;">
 					<div class="layui-bg-gray layui-inline info">
-						<div class="layui-row">
-							<div class="layui-col-md6">性</div>
-							<div class="layui-col-md6">别：</div>
-						</div>
+						性别：
 					</div>
 					<div class="layui-bg-gray layui-inline infos">
 						<input style="border: none;height: 20px;" value="" id="sex" disabled="disabled" class="layui-bg-gray"/>
@@ -121,6 +116,7 @@
 			<div class="layui-form-item" style="color: red;">
 				<button type="button" lay-submit lay-filter="formDemo" class="layui-btn">保存</button>
 				<button type="reset" class="layui-btn">重置</button>
+				<button type="button"  class="layui-btn print">打印</button>
 			</div>
 		</div>
 	</form>

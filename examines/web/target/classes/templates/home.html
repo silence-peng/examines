@@ -18,7 +18,6 @@
             <li class="layui-nav-item" @click.prevent="changeCpn('message')"><a href="">短信随访</a></li>
             <li class="layui-nav-item" @click.prevent="changeCpn('icon')"><a href="">影像系统</a></li>
             <li class="layui-nav-item" @click.prevent="changeCpn('check')"><a href="">婚检系统</a></li>
-
             <li class="layui-nav-item" >
                 <a href="">系统相关</a>
                 <dl class="layui-nav-child">
@@ -49,8 +48,18 @@
     </div>
 
     <div class="layui-body">
+        <div class="layui-tab" lay-filter="demo" lay-allowclose="true" style="margin: 0;width: 100%;height: 800px">
+            <ul class="layui-tab-title" >
+                <li class="tabs" v-for="item in tab" :id="item.url" :lay-id="item.url" >{{item.name}}</li>
+            </ul>
+            <div class="layui-tab-content" style="margin: 0;width: 100%;height: 800px">
+                <div class="layui-tab-item layui-show" :id="'url'+item.url"  v-for="item in tab" style="margin: 0;width: 100%;height:790px">
+                    <iframe id="iframeMain" :src="item.url" style="width: 100%;border: none" height="100%"></iframe>
+                </div>
+            </div>
+        </div>
         <!-- 内容主体区域 -->
-        <iframe id="iframeMain" src="Essentialinfo" style="width: 100%" height="100%"></iframe>
+
     </div>
 
     <div class="layui-footer">
@@ -65,33 +74,33 @@
             <li class="layui-nav-item layui-nav-itemed">
                 <a class="" href="javascript:void(0)">信息查询</a>
                 <dl class="layui-nav-child">
-                    <dd><a href="javascript:void(0)"  @click.stop="changeIframe('Essentialinfo')">基础信息查询</a></dd>
+                    <dd><a href="javascript:void(0)"  @click.stop="changeIframe('Essentialinfo','基础信息查询')">基础信息查询</a></dd>
                     </dl>
             </li>
             <li class="layui-nav-item">
                 <a href="javascript:void(0)">基础档案信息</a>
                 <dl class="layui-nav-child">
-                    <dd><a href="javascript:void(0)" @click.stop="changeIframe('newRecord')">新建人员档案</a></dd>
+                    <dd><a href="javascript:void(0)" @click.stop="changeIframe('newRecord','新建人员档案')">新建人员档案</a></dd>
                 </dl>
             </li>
             <li class="layui-nav-item">
                 <a href="javascript:void(0)">妻子信息</a>
                 <dl class="layui-nav-child">
-                        <dd><a href="javascript:void(0)" @click.stop="changeIframe('Physicalexamination')">体格检查</a></dd>
-                    <dd><a href="javascript:void(0)" @click.stop="changeIframe('Clinicalexamination')">临床检验</a></dd>
-                    <dd><a href="javascript:void(0)" @click.stop="changeIframe('Clinicalprescription')">临床开单</a></dd>
+                        <dd><a href="javascript:void(0)" @click.stop="changeIframe('Physicalexamination','体格检查(女)')">体格检查</a></dd>
+                    <dd><a href="javascript:void(0)" @click.stop="changeIframe('Clinicalexamination','临床检验(女)')">临床检验</a></dd>
+                    <dd><a href="javascript:void(0)" @click.stop="changeIframe('Clinicalprescription','临床开单(女)')">临床开单</a></dd>
                 </dl>
             </li>
             <li class="layui-nav-item">
                 <a href="javascript:void(0)">丈夫信息</a>
                 <dl class="layui-nav-child">
-                     <dd><a href="javascript:void(0)" @click.stop="changeIframe('Physicalexaminationnan')">体格检查</a></dd>
-                    <dd><a href="javascript:void(0)" @click.stop="changeIframe('Clinicalexaminationnan')">临床检验</a></dd>
-                    <dd><a href="javascript:void(0)" @click.stop="changeIframe('Clinicalprescriptionnan')">临床开单</a></dd>
+                     <dd><a href="javascript:void(0)" @click.stop="changeIframe('Physicalexaminationnan','体格检查(男)')">体格检查</a></dd>
+                    <dd><a href="javascript:void(0)" @click.stop="changeIframe('Clinicalexaminationnan','临床检验(男)')">临床检验</a></dd>
+                    <dd><a href="javascript:void(0)" @click.stop="changeIframe('Clinicalprescriptionnan','临床开单(男)')">临床开单</a></dd>
                 </dl>
             </li>
             <li class="layui-nav-item">
-                <a href="javascript:void(0)" @click.stop="changeIframe('Assess')">评估建议及其他</a>
+                <a href="javascript:void(0)" @click.stop="changeIframe('Assess','评估建议及其他')">评估建议及其他</a>
             </li>
         </ul>
 
@@ -104,8 +113,8 @@
             <li class="layui-nav-item layui-nav-itemed">
                 <a class="" href="javascript:void(0)">短信收发</a>
                 <dl class="layui-nav-child">
-                    <dd><a href="javascript:void(0)" @click.stop="changeIframe('CustomNote')">自定义短信随访</a></dd>
-                    <dd><a href="javascript:void(0)" @click.stop="changeIframe('Note')">评估建议短信随访</a></dd>
+                    <dd><a href="javascript:void(0)" @click.stop="changeIframe('CustomNote','自定义短信随访')">自定义短信随访</a></dd>
+                    <dd><a href="javascript:void(0)" @click.stop="changeIframe('Note','评估建议短信随访')">评估建议短信随访</a></dd>
                 </dl>
             </li>
         </ul>
@@ -119,8 +128,8 @@
             <li class="layui-nav-item layui-nav-itemed">
                 <a class="" href="javascript:void(0)">影像工作站</a>
                 <dl class="layui-nav-child">
-                    <dd><a href="javascript:void(0)" @click.stop="changeIframe('FindBchao')">查询档案信息</a></dd>
-                    <dd><a href="javascript:void(0)" @click.stop="changeIframe('Bchao')">打开超声影像</a></dd>
+                    <dd><a href="javascript:void(0)" @click.stop="changeIframe('FindBchao','查询档案信息')">查询档案信息</a></dd>
+                    <dd><a href="javascript:void(0)" @click.stop="changeIframe('Bchao','打开超声影像')">打开超声影像</a></dd>
                 </dl>
             </li>
         </ul>
@@ -133,26 +142,26 @@
             <li class="layui-nav-item layui-nav-itemed">
                 <a class="" href="javascript:void(0)">申报与证明打印</a>
                 <dl class="layui-nav-child">
-                    <dd><a href="javascript:void(0)" @click.stop="changeIframe('nvProve')">婚前医学证明(女)</a></dd>
-                    <dd><a href="javascript:void(0)" @click.stop="changeIframe('nanProve')">婚前医学证明(男)</a></dd>
+                    <dd><a href="javascript:void(0)" @click.stop="changeIframe('nvProve','婚前医学证明(女)')">婚前医学证明(女)</a></dd>
+                    <dd><a href="javascript:void(0)" @click.stop="changeIframe('nanProve','婚前医学证明(男)')">婚前医学证明(男)</a></dd>
                 </dl>
             </li>
             <li class="layui-nav-item">
                 <a href="javascript:void(0)">女性常规检查</a>
             <dl class="layui-nav-child">
-                <dd><a href="javascript:void(0)" @click.stop="changeIframe('commonCheck-f')">常规扩展项目</a></dd>
-                <dd><a href="javascript:void(0)" @click.stop="changeIframe('X-f')">X射线检查</a></dd>
-                <dd><a href="javascript:void(0)" @click.stop="changeIframe('mouth-check-f')">口腔检查</a></dd>
-                <dd><a href="javascript:void(0)" @click.stop="changeIframe('checkResult-f')">检查结果</a></dd>
+                <dd><a href="javascript:void(0)" @click.stop="changeIframe('commonCheck-f','常规扩展项目(女)')">常规扩展项目</a></dd>
+                <dd><a href="javascript:void(0)" @click.stop="changeIframe('X-f','X射线检查(女)')">X射线检查</a></dd>
+                <dd><a href="javascript:void(0)" @click.stop="changeIframe('mouth-check-f','口腔检查(女)')">口腔检查</a></dd>
+                <dd><a href="javascript:void(0)" @click.stop="changeIframe('checkResult-f','检查结果(女)')">检查结果</a></dd>
             </dl>
             </li>
             <li class="layui-nav-item">
                 <a href="javascript:void(0)">男性常规检查</a>
                 <dl class="layui-nav-child">
-                    <dd><a href="javascript:void(0)" @click.stop="changeIframe('commonCheck-m')">常规扩展项目</a></dd>
-                    <dd><a href="javascript:void(0)" @click.stop="changeIframe('X-m')">X射线检查</a></dd>
-                    <dd><a href="javascript:void(0)" @click.stop="changeIframe('mouth-check-m')">口腔检查</a></dd>
-                    <dd><a href="javascript:void(0)" @click.stop="changeIframe('checkResult-m')">检查结果</a></dd>
+                    <dd><a href="javascript:void(0)" @click.stop="changeIframe('commonCheck-m','常规扩展项目(男)')">常规扩展项目</a></dd>
+                    <dd><a href="javascript:void(0)" @click.stop="changeIframe('X-m','X射线检查(男)')">X射线检查</a></dd>
+                    <dd><a href="javascript:void(0)" @click.stop="changeIframe('mouth-check-m','口腔检查(男)')">口腔检查</a></dd>
+                    <dd><a href="javascript:void(0)" @click.stop="changeIframe('checkResult-m','检查结果(男)')">检查结果</a></dd>
                 </dl>
             </li>
 
@@ -164,10 +173,12 @@
 <script src="layui/jquery-1.12.4.js"></script>
 <script src="/js/home.js"></script>
 <script>
+    var element=null;
     var app=new Vue({
         el:"#app",
         data:{
-            change:"info"
+            change:"info",
+            tab:[{name:"主页",url:"test"}]
         },
         methods:{
             changeCpn:function(value){
@@ -177,36 +188,60 @@
 
         },
         components:{
-            "info":{template:"#info",methods:{changeIframe:function(value){
-                        $("#iframeMain").attr("src",value);
-                        console.log($("#iframeMain").attr("src"))
+            "info":{template:"#info",methods:{changeIframe:function(value,str){
+                        loadTab(value,str,this.$parent);
                     }}},
-            "check":{template:"#check",methods:{changeIframe:function(value){
-                        $("#iframeMain").attr("src",value);
-                        console.log($("#iframeMain").attr("src"))
+            "check":{template:"#check",methods:{changeIframe:function(value,str){
+                        loadTab(value,str,this.$parent);
                     }}},
-            "icon":{template:"#icon",methods:{changeIframe:function(value){
-                        $("#iframeMain").attr("src",value);
-                        console.log($("#iframeMain").attr("src"))
+            "icon":{template:"#icon",methods:{changeIframe:function(value,str){
+                        loadTab(value,str,this.$parent);
                     }}},
-            "message":{template:"#message",methods:{changeIframe:function(value){
-                    $("#iframeMain").attr("src",value);
-                    console.log($("#iframeMain").attr("src"))
+            "message":{template:"#message",methods:{changeIframe:function(value,str){
+                        loadTab(value,str,this.$parent);
                 }}}
         }
     });
     //JavaScript代码区域
-    var element=null;
+
     layui.use('element', function(){
         element = layui.element;
-
+        $(".layui-tab").on("click",function(e){
+            if($(e.target).is(".layui-tab-close")){
+                var name=$(e.target).parent().attr("lay-id");
+                app.tab.forEach((item,index,arr) => {
+                    if(item.url === name){
+                        arr.splice(index,1)
+                    }
+                });
+            }
+        })
     });
-    $(function () {
-        $("li>a").click(function (e) {
-            e.preventDefault();
 
-        });
-    });
+    function loadTab(value,str,parent) {
+        eleRender();
+        var obj={name:str,url:value};
+        var flag=true;
+        for (var i of parent.tab){
+            if (str===i.name){
+                flag=true;
+                break;
+            }
+            flag=false;
+        }
+        if (flag){
+            element.tabDelete('demo', value);
+            $("#"+value).addClass('layui-btn-disabled');
+            $("#url"+value).addClass('layui-btn-disabled');
+        }
+        parent.tab.push(obj);
+        $(".tabs").removeClass("layui-this");
+        $("#"+value).addClass("layui-this");
+        $(".layui-tab-item").removeClass("layui-show");
+        $("#url"+value).addClass("layui-show");
+        eleRender();
+    }
+
 
     function eleRender() {
         element.render();
