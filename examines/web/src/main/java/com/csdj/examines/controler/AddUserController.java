@@ -40,6 +40,7 @@ public class AddUserController {
     @RequestMapping("addUserInfo")
     @ResponseBody
     public String addUser(Userinfo userinfo){
+        System.out.println(userinfo);
         int result = userInfoService.addUserInfo(userinfo);
         if (result>0){
             return "ok";

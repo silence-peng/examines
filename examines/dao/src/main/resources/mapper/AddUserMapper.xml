@@ -10,11 +10,11 @@
         </selectKey>
         INSERT INTO userinfo(mname,mcard,mbirthdate,mphone,methnic,midtype,mage,mculture,mjob,mprovince,mcity,mcounty,mdistrict,
         mvillage,mregistered,fname,fcard,fbirthDate,fphone,fethnic,fIdtype,fage,fculture,fjob,fprovince,fcity,fcounty,fdistrict,
-        fvillage,fregistered,address,creatDate,getMarriedDate,regtypeId,landlineNumber,mimg,fimg,email,doctorName)
+        fvillage,fregistered,address,creatDate,getMarriedDate,regtypeId,landlineNumber,mimg,fimg,email,doctorName,qimgm,qimgf)
         VALUES(#{mname},#{mcard},#{mbirthdate},#{mphone},#{methnic},#{midtype},#{mage},#{mculture},#{mjob},#{mprovince},#{mcity},#{mcounty},
         #{mdistrict},#{mvillage},#{mregistered},#{fname},#{fcard},#{fbirthdate},#{fphone},#{fethnic},#{fidtype},#{fage},#{fculture},#{fjob},
         #{fprovince},#{fcity},#{fcounty},#{fdistrict},#{fvillage},#{fregistered},#{address},#{creatdate},#{getmarrieddate},#{regtypeid},
-        #{landlinenumber},#{mimg},#{fimg},#{email},#{doctorname})
+        #{landlinenumber},#{mimg},#{fimg},#{email},#{doctorname},#{qimgm},#{qimgf})
     </insert>
     <insert id="addNowmedicalhistory" parameterType="Nowmedicalhistory">
         <selectKey resultType="Integer" keyProperty="nmedicalid" order="AFTER" >

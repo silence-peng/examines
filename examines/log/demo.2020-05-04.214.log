@@ -1,0 +1,10 @@
+2020-05-04 11:29:44,085 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM userinfo a LEFT JOIN bultrasound b ON a.`userId`=b.`userId` WHERE 1=1 limit ?,? 
+2020-05-04 11:29:44,091 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Integer), 3(Integer)
+2020-05-04 11:29:44,105 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 3
+2020-05-04 11:29:44,130 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT count(*) FROM userinfo a LEFT JOIN bultrasound b ON a.`userId`=b.`userId` WHERE 1=1 
+2020-05-04 11:29:44,131 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-05-04 11:29:44,133 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-05-04 11:29:47,699 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT regtypeid,type FROM registertype 
+2020-05-04 11:29:47,700 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-05-04 11:29:47,702 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 2
+2020-05-04 11:32:57,463 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM userinfo a LEFT JOIN bultrasound b ON a.`userId`=b.`userId` WHERE 1=1 limit ?,? 

@@ -1,0 +1,8 @@
+2020-05-04 16:46:25,614 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 3
+2020-05-04 16:46:25,620 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT count(*) FROM userinfo a LEFT JOIN bultrasound b ON a.`userId`=b.`userId` WHERE 1=1 
+2020-05-04 16:46:25,621 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-05-04 16:46:25,623 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-05-04 16:46:26,407 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT regtypeid,type FROM registertype 
+2020-05-04 16:46:26,408 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-05-04 16:46:26,409 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 2
+2020-05-04 16:47:15,222 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: INSERT INTO userinfo(mname,mcard,mbirthdate,mphone,methnic,midtype,mage,mculture,mjob,mprovince,mcity,mcounty,mdistrict, mvillage,mregistered,fname,fcard,fbirthDate,fphone,fethnic,fIdtype,fage,fculture,fjob,fprovince,fcity,fcounty,fdistrict, fvillage,fregistered,address,creatDate,getMarriedDate,regtypeId,landlineNumber,mimg,fimg,email,doctorName) VALUES(?,?,?,?,?,?,?,?,?,?,?,?, ?,?,?,?,?,?,?,?,?,?,?,?, ?,?,?,?,?,?,?,?,?,?, ?,?,?,?,?) 

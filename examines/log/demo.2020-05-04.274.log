@@ -1,0 +1,12 @@
+2020-05-04 16:28:28,921 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 2
+2020-05-04 16:29:44,211 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM userinfo a LEFT JOIN bultrasound b ON a.`userId`=b.`userId` WHERE 1=1 limit ?,? 
+2020-05-04 16:29:44,212 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Integer), 3(Integer)
+2020-05-04 16:29:44,218 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 3
+2020-05-04 16:29:44,225 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT count(*) FROM userinfo a LEFT JOIN bultrasound b ON a.`userId`=b.`userId` WHERE 1=1 
+2020-05-04 16:29:44,227 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-05-04 16:29:44,229 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-05-04 16:29:46,098 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT regtypeid,type FROM registertype 
+2020-05-04 16:29:46,099 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-05-04 16:29:46,100 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 2
+2020-05-04 16:30:33,282 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: INSERT INTO userinfo(mname,mcard,mbirthdate,mphone,methnic,midtype,mage,mculture,mjob,mprovince,mcity,mcounty,mdistrict, mvillage,mregistered,fname,fcard,fbirthDate,fphone,fethnic,fIdtype,fage,fculture,fjob,fprovince,fcity,fcounty,fdistrict, fvillage,fregistered,address,creatDate,getMarriedDate,regtypeId,landlineNumber,mimg,fimg,email,doctorName) VALUES(?,?,?,?,?,?,?,?,?,?,?,?, ?,?,?,?,?,?,?,?,?,?,?,?, ?,?,?,?,?,?,?,?,?,?, ?,?,?,?,?) 
+2020-05-04 16:30:33,284 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: ff(String), 123456789123456789(String), 2020-04-26 00:00:00.0(Timestamp), 13245676546(String), dfd(String), 身份证(String), 25(Integer), 高中(String), 粉领(String), (String), (String), (String), (String), (String), 城市户口(String), ss(String), 123456789123456789(String), 2020-05-04 00:00:00.0(Timestamp), 13245676546(String), ssd(String), 身份证(String), 26(Integer), 高中(String), 蓝领(String), (String), (String), (String), (String), (String), 城市户口(String), (String), 2020-04-26 00:00:00.0(Timestamp), 2020-05-20 00:00:00.0(Timestamp), 1(Integer), (String), null, null, (String), 张三(String)

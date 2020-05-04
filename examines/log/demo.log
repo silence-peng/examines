@@ -1,6 +1,9 @@
-2020-05-04 11:06:08,728 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM userinfo a LEFT JOIN bultrasound b ON a.`userId`=b.`userId` WHERE 1=1 limit ?,? 
-2020-05-04 11:06:08,732 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Integer), 3(Integer)
-2020-05-04 11:06:08,736 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 3
-2020-05-04 11:06:08,741 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT count(*) FROM userinfo a LEFT JOIN bultrasound b ON a.`userId`=b.`userId` WHERE 1=1 
-2020-05-04 11:06:08,742 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
-2020-05-04 11:06:08,744 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-05-04 16:51:01,937 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT LAST_INSERT_ID() 
+2020-05-04 16:51:01,940 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-05-04 16:51:01,941 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-05-04 16:51:01,942 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: INSERT INTO yxcheckresult(userId,sex) VALUES(?,?) 
+2020-05-04 16:51:01,943 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122432(Integer), 0(Integer)
+2020-05-04 16:51:01,945 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 1
+2020-05-04 16:51:01,945 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: INSERT INTO yxcheckresult(userId,sex) VALUES(?,?) 
+2020-05-04 16:51:01,946 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122432(Integer), 1(Integer)
+2020-05-04 16:51:01,947 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 1

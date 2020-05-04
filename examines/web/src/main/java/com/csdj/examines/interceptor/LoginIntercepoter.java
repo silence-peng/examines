@@ -50,7 +50,7 @@ public class LoginIntercepoter implements HandlerInterceptor {
                 return false;
             }
         }else if(admin.getUqx()==5){
-            if ( request.getServletPath().contains("home") || request.getServletPath().contains("Essentialinfo")|| request.getServletPath().contains("General") || request.getServletPath().contains("newRecord") || request.getServletPath().contains("tion") || request.getServletPath().contains("assesAndOther") || request.getServletPath().contains("Assess")){
+            if ( request.getServletPath().contains("home") || request.getServletPath().contains("Essentialinfo")|| request.getServletPath().contains("General") || request.getServletPath().contains("newRecord") || request.getServletPath().contains("tion") || request.getServletPath().contains("assesAndOther") || request.getServletPath().contains("Assess") || request.getServletPath().contains("addUser")){
                 return true;
             }else{
                 /*request.getRequestDispatcher("message").forward(request, response);*/

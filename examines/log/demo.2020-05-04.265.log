@@ -1,0 +1,13 @@
+2020-05-04 16:13:42,257 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM userinfo a LEFT JOIN bultrasound b ON a.`userId`=b.`userId` WHERE 1=1 limit ?,? 
+2020-05-04 16:13:42,260 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Integer), 3(Integer)
+2020-05-04 16:13:42,261 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 3
+2020-05-04 16:13:42,264 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT count(*) FROM userinfo a LEFT JOIN bultrasound b ON a.`userId`=b.`userId` WHERE 1=1 
+2020-05-04 16:13:42,265 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-05-04 16:13:42,266 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-05-04 16:13:43,309 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT regtypeid,type FROM registertype 
+2020-05-04 16:13:43,311 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-05-04 16:13:43,313 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 2
+2020-05-04 16:15:16,451 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: INSERT INTO userinfo(mname,mcard,mbirthdate,mphone,methnic,midtype,mage,mculture,mjob,mprovince,mcity,mcounty,mdistrict, mvillage,mregistered,fname,fcard,fbirthDate,fphone,fethnic,fIdtype,fage,fculture,fjob,fprovince,fcity,fcounty,fdistrict, fvillage,fregistered,address,creatDate,getMarriedDate,regtypeId,landlineNumber,mimg,fimg,email,doctorName) VALUES(?,?,?,?,?,?,?,?,?,?,?,?, ?,?,?,?,?,?,?,?,?,?,?,?, ?,?,?,?,?,?,?,?,?,?, ?,?,?,?,?) 
+2020-05-04 16:15:16,452 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: aa(String), 122345678909890989(String), 2020-05-04 00:00:00.0(Timestamp), 41526253256(String), aa(String), 身份证(String), 25(Integer), 高中(String), 灰领(String), (String), (String), (String), (String), (String), 城市户口(String), bb(String), 122345678909890989(String), 2020-05-04 00:00:00.0(Timestamp), 12225652521(String), aa(String), 身份证(String), 30(Integer), 高中(String), 白领(String), (String), (String), (String), (String), (String), 城市户口(String), (String), 2020-04-26 00:00:00.0(Timestamp), 2020-05-04 00:00:00.0(Timestamp), 1(Integer), (String), null, null, (String), 张三(String)
+2020-05-04 16:15:16,456 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 1
+2020-05-04 16:15:16,456 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT LAST_INSERT_ID() 

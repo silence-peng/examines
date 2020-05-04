@@ -1,0 +1,12 @@
+2020-05-04 11:43:23,389 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 2
+2020-05-04 11:43:32,632 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM userinfo a LEFT JOIN bultrasound b ON a.`userId`=b.`userId` WHERE 1=1 limit ?,? 
+2020-05-04 11:43:32,633 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Integer), 3(Integer)
+2020-05-04 11:43:32,636 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 3
+2020-05-04 11:43:32,638 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT count(*) FROM userinfo a LEFT JOIN bultrasound b ON a.`userId`=b.`userId` WHERE 1=1 
+2020-05-04 11:43:32,638 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-05-04 11:43:32,639 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-05-04 11:43:32,914 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM userinfo a LEFT JOIN bultrasound b ON a.`userId`=b.`userId` WHERE 1=1 limit ?,? 
+2020-05-04 11:43:32,915 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Integer), 3(Integer)
+2020-05-04 11:43:32,919 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 3
+2020-05-04 11:43:32,921 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT count(*) FROM userinfo a LEFT JOIN bultrasound b ON a.`userId`=b.`userId` WHERE 1=1 
+2020-05-04 11:43:32,922 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
