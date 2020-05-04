@@ -1,21 +1,21 @@
 .info {
 	height: 17px;
-	width: 60px;
+	width: 100px;
 	border: 1px silver solid;
 	border-top-left-radius: 5px;
 	border-bottom-left-radius: 5px;
-	padding: 5px 10px;
-	font-size: 10px;
+	padding: 5px 12px;
+	font-size: 16px;
 }
 
 .infos {
 	height: 17px;
-	width: 150px;
+	width: 200px;
 	border: 1px silver solid;
 	border-top-right-radius: 5px;
 	border-bottom-right-radius: 5px;
 	padding: 5px 10px;
-	font-size: 10px;
+	font-size: 16px;
 	margin-left: -5px;
 }
 
@@ -35,12 +35,12 @@
 
 .abnormalitys {
 	height: 17px;
-	width: 140px;
+	width:auto;
 	border: 1px silver solid;
 	border-top-right-radius: 5px;
 	border-bottom-right-radius: 5px;
 	padding: 5px 10px;
-	font-size: 10px;
+	font-size: 15px;
 	margin-left: -15px;
 }
 
@@ -64,7 +64,7 @@
 	border-top-right-radius: 5px;
 	border-bottom-right-radius: 5px;
 	padding: 5px 10px;
-	font-size: 10px;
+	font-size: 15px;
 	margin-left: -15px;
 }
 

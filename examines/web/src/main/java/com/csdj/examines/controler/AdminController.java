@@ -16,6 +16,7 @@ public class AdminController {
     private AdminService service;
 
     @RequestMapping("/checkLogin")
+
     public Object checkLogin(Admin admin, HttpSession session){
         Admin admin1=service.checkLogin(admin);
         if (admin1!=null){

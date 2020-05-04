@@ -3,6 +3,7 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>基本信息查询</title>
+    <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="layui/layui.js" />
     <link rel="stylesheet" href="layui/css/layui.css">
 
@@ -13,61 +14,60 @@
     }
 </style>
 <body>
-<div class="layui-container">
+<div class="layui-container" style="width: 90%">
 <div style="background-color: rgb(214, 236, 246);color: #0074d9;height: 50px;text-align: center;line-height: 50px;"><h2>查询条件</h2></div>
 <br>
 <form class="layui-form" action="">
-
-    <div class="layui-form-item" >
-        <label class="layui-form-label" style="width: 100px">档案编号:</label>
-        <div class="layui-input-inline">
-            <input type="text" style="width: 300px" id="userid" name="userid" lay-verify="title" autocomplete="off"  class="layui-input">
-        </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;
+    <div class="layui-form-item ">
         <div class="layui-inline">
-            <label class="layui-form-label" style="width: 100px" >建档开始日期:</label>
+            <label class="layui-form-label" style="width: auto">档案编号:</label>
             <div class="layui-input-inline">
-                <input type="text" name="creatDateone" style="width: 250px" id="creatDateone" lay-verify="date"  autocomplete="off" class="layui-input">
+                <input type="text" style="width: 200px"  id="userid" name="userid" lay-verify="title" autocomplete="off"  class="layui-input">
             </div>
-        </div>
-        &nbsp;&nbsp;
-        <div class="layui-inline">
-            <label class="layui-form-label" style="width: 100px">建档结束日期:</label>
+            <label class="layui-form-label" style="width: auto" >建档开始日期:</label>
+            <div class="layui-input-inline">
+                <input type="text" name="creatDateone"   style="width: 200px"  id="creatDateone" lay-verify="date"  autocomplete="off" class="layui-input">
+            </div>
+            <label class="layui-form-label" style="width:auto">建档结束日期:</label>
             <div class="layui-input-inline">
                 <input type="text" name="creatDatetwo" style="width: 200px" id="creatDatetwo" lay-verify="date"  autocomplete="off" class="layui-input">
             </div>
         </div>
     </div>
-    <div class="layui-form-item" >
-        <label class="layui-form-label" style="width: 100px">妻子姓名:</label>
-        <div class="layui-input-inline">
-            <input type="text" style="width: 220px" name="fName" id="fname" lay-verify="title" autocomplete="off"  class="layui-input">
-        </div>
-        <label class="layui-form-label" style="width: 100px">妻子证件号:</label>
-        <div class="layui-input-inline">
-            <input type="text" style="width: 220px" name="fcard" id="fcard" lay-verify="title" autocomplete="off" class="layui-input">
-        </div>
-        <label class="layui-form-label" style="width: 100px">丈夫姓名:</label>
-        <div class="layui-input-inline">
-            <input type="text" style="width: 220px" name="mname" id="mname" lay-verify="title" autocomplete="off"  class="layui-input">
-        </div>
-
-    </div>
-    <div class="layui-form-item" style="width: 100%">
-        <label class="layui-form-label" style="width: 100px">丈夫证件号:</label>
-        <div class="layui-input-inline">
-            <input type="text" style="width: 220px" name="mcard" id="mcard" lay-verify="title" autocomplete="off" class="layui-input">
-        </div>
-
-        <label class="layui-form-label" style="width: 100px" >B超状态:</label>
-        <div class="layui-input-inline" style="width: 200px">
-            <select name="result" lay-filter="result" id="result">
-                <option value="" selected="">请选择</option>
-                <option value="正常">正常</option>
-                <option value="异常">异常</option>
-            </select>
+    <div class="layui-form-item ">
+        <div class="layui-inline">
+            <label class="layui-form-label" style="width:auto">妻子姓名:</label>
+            <div class="layui-input-inline">
+                <input type="text"  style="width: 200px"  name="fName" id="fname" lay-verify="title" autocomplete="off"  class="layui-input">
+            </div>
+            <label class="layui-form-label" style="width: auto">妻子证件号:</label>
+            <div class="layui-input-inline">
+                <input type="text" style="width: 200px" name="fcard" id="fcard" lay-verify="title" autocomplete="off" class="layui-input">
+            </div>
+            <label class="layui-form-label" style="width: auto">丈夫姓名:</label>
+            <div class="layui-input-inline">
+                <input type="text" style="width: 200px" name="mname" id="mname" lay-verify="title" autocomplete="off"  class="layui-input">
+            </div>
         </div>
     </div>
+    <div class="layui-form-item ">
+        <div class="layui-inline">
+            <label class="layui-form-label" style="width: auto">丈夫证件号:</label>
+            <div class="layui-input-inline">
+                <input type="text" style="width: 200px" name="mcard" id="mcard" lay-verify="title" autocomplete="off" class="layui-input">
+            </div>
+
+            <label class="layui-form-label" style="width: auto" >B超状态:</label>
+            <div class="layui-input-inline" style="width: 200px">
+                <select name="result" lay-filter="result" id="result">
+                    <option value="" selected="">请选择</option>
+                    <option value="正常">正常</option>
+                    <option value="异常">异常</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
 
     <button class="layui-btn" data-type="reload" id="button">查询</button>
     <button type="reset" class="layui-btn layui-btn-normal">清空查询条件</button>
