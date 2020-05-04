@@ -1,0 +1,12 @@
+2020-05-04 08:36:31,995 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT yxid,yxitem FROM yxadvise 
+2020-05-04 08:36:31,992 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM yxcheckresult WHERE userid=? AND sex=? 
+2020-05-04 08:36:31,999 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: null, 1(Integer)
+2020-05-04 08:36:31,999 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-05-04 08:36:32,001 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 0
+2020-05-04 08:36:32,001 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 5
+2020-05-04 08:36:36,408 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM userinfo a LEFT JOIN bultrasound b ON a.`userId`=b.`userId` WHERE 1=1 limit ?,? 
+2020-05-04 08:36:36,409 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Integer), 3(Integer)
+2020-05-04 08:36:36,412 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 3
+2020-05-04 08:36:36,415 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT count(*) FROM userinfo a LEFT JOIN bultrasound b ON a.`userId`=b.`userId` WHERE 1=1 
+2020-05-04 08:36:36,416 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-05-04 08:36:36,417 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1

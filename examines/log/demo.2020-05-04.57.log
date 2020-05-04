@@ -1,0 +1,12 @@
+2020-05-04 08:56:07,887 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT a.`adviseArr` FROM yxadvisecheckresult a,yxcheckresult b WHERE a.`resultId`=b.`resultId` AND b.userId=? AND b.`sex`=? 
+2020-05-04 08:56:07,889 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer), 1(Integer)
+2020-05-04 08:56:07,890 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-05-04 08:56:09,652 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from cgkzresult where userid=? and sex=? 
+2020-05-04 08:56:09,650 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT typeid,type FROM medicalhistorytype 
+2020-05-04 08:56:09,654 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: null, 0(Integer)
+2020-05-04 08:56:09,654 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-05-04 08:56:09,655 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 0
+2020-05-04 08:56:09,655 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 7
+2020-05-04 08:56:09,657 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT ntypeid,ntype FROM nowmedicalhistorytype 
+2020-05-04 08:56:09,657 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-05-04 08:56:09,660 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 4

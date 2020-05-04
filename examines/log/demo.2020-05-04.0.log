@@ -1,0 +1,10 @@
+2020-05-04 08:09:55,810 INFO (StartupInfoLogger.java:50)- Starting ControlerApplication on DESKTOP-E0OONUJ with PID 15300 (E:\IDEAProject\examines\examines\web\target\classes started by ZZW in E:\IDEAProject\examines\examines)
+2020-05-04 08:09:55,847 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2020-05-04 08:09:55,848 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2020-05-04 08:10:04,621 INFO (StartupInfoLogger.java:59)- Started ControlerApplication in 10.1010884 seconds (JVM running for 13.755)
+2020-05-04 08:10:35,988 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT adminid,doctorname,doctorpassword,uqx FROM admin WHERE doctorname = ? AND doctorpassword = ? 
+2020-05-04 08:10:36,005 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 王五六(String), 123456(String)
+2020-05-04 08:10:36,035 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-05-04 08:11:26,945 INFO (StartupInfoLogger.java:50)- Starting ControlerApplication on DESKTOP-E0OONUJ with PID 15300 (E:\IDEAProject\examines\examines\web\target\classes started by ZZW in E:\IDEAProject\examines\examines)
+2020-05-04 08:11:26,945 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2020-05-04 08:11:26,945 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default

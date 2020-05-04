@@ -1,0 +1,10 @@
+2020-05-04 08:59:28,153 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-05-04 08:59:28,159 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT a.`adviseArr` FROM yxadvisecheckresult a,yxcheckresult b WHERE a.`resultId`=b.`resultId` AND b.userId=? AND b.`sex`=? 
+2020-05-04 08:59:28,180 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer), 1(Integer)
+2020-05-04 08:59:28,182 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-05-04 08:59:32,478 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from xexamine where userid=? and sex=? 
+2020-05-04 08:59:32,479 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: null, 0(Integer)
+2020-05-04 08:59:32,481 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 0
+2020-05-04 08:59:33,276 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from oralcavity where userid=? and sex=? 
+2020-05-04 08:59:33,277 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: null, 0(Integer)
+2020-05-04 08:59:33,279 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 0

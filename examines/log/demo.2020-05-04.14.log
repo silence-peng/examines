@@ -1,0 +1,12 @@
+2020-05-04 08:34:39,190 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT count(*) FROM userinfo a LEFT JOIN bultrasound b ON a.`userId`=b.`userId` WHERE 1=1 
+2020-05-04 08:34:39,193 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-05-04 08:34:39,195 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-05-04 08:35:08,325 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT adminid,doctorname,doctorpassword,uqx FROM admin WHERE doctorname = ? AND doctorpassword = ? 
+2020-05-04 08:35:08,326 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 李四(String), 123456(String)
+2020-05-04 08:35:08,328 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-05-04 08:35:11,993 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM userinfo a LEFT JOIN bultrasound b ON a.`userId`=b.`userId` WHERE 1=1 limit ?,? 
+2020-05-04 08:35:11,995 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Integer), 3(Integer)
+2020-05-04 08:35:11,997 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 3
+2020-05-04 08:35:12,000 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT count(*) FROM userinfo a LEFT JOIN bultrasound b ON a.`userId`=b.`userId` WHERE 1=1 
+2020-05-04 08:35:12,000 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-05-04 08:35:12,002 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1

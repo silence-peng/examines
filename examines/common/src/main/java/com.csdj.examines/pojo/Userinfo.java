@@ -52,6 +52,8 @@ public class Userinfo {
     private String fimg;
     private String email;
     private String doctorname;
+    private String qimgm;
+    private String qimgf;
 
     @Override
     public String toString() {
@@ -96,6 +98,8 @@ public class Userinfo {
                 ", fimg='" + fimg + '\'' +
                 ", email='" + email + '\'' +
                 ", doctorname='" + doctorname + '\'' +
+                ", qimgm='" + qimgm + '\'' +
+                ", qimgf='" + qimgf + '\'' +
                 '}';
     }
 
@@ -417,5 +421,21 @@ public class Userinfo {
 
     public void setMimg(String mimg) {
         this.mimg = mimg;
+    }
+
+    public String getQimgm() {
+        return qimgm;
+    }
+
+    public void setQimgm(String qimgm) {
+        this.qimgm = qimgm;
+    }
+
+    public String getQimgf() {
+        return qimgf;
+    }
+
+    public void setQimgf(String qimgf) {
+        this.qimgf = qimgf;
     }
 }
