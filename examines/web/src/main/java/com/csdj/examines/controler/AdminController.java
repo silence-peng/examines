@@ -25,4 +25,10 @@ public class AdminController {
         }
         return "no";
     }
+    @RequestMapping("out")
+    public Object out(HttpSession session){
+        System.out.println("ddd");
+        session.invalidate();
+        return "redirect : login";
+    }
 }

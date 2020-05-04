@@ -1,0 +1,11 @@
+2020-05-04 09:34:39,591 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from oralcavity where userid=? and sex=? 
+2020-05-04 09:34:39,594 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer), 0(Integer)
+2020-05-04 09:34:39,595 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-05-04 09:34:43,572 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from xexamine where userid=? and sex=? 
+2020-05-04 09:34:43,574 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer), 1(Integer)
+2020-05-04 09:34:43,575 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-05-04 09:34:48,033 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from xexamine where userid=? and sex=? 
+2020-05-04 09:34:48,034 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer), 1(Integer)
+2020-05-04 09:34:48,036 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-05-04 09:34:48,037 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE xexamine SET userid = ?,xnum = ?,opinion = ?,abnormaltype = ?,abnormalcontent = ?,doctorname = ?,examinedate = ?,sex = ? WHERE xid = ? 
+2020-05-04 09:34:48,038 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer), 254(Integer), ssss(String), 0(Integer), (String), 张三(String), 2020-04-23 00:00:00.0(Timestamp), 1(Integer), 2(Integer)

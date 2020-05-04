@@ -1,0 +1,8 @@
+2020-05-04 09:55:59,020 INFO (StartupInfoLogger.java:59)- Started ControlerApplication in 1.9979678 seconds (JVM running for 211.198)
+2020-05-04 09:55:59,204 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT userid,mname,mcard,mbirthdate,mphone,methnic,midtype,mage,mculture,mjob,mprovince,mcity,mcounty,mdistrict,mvillage,mregistered,fname,fcard,fbirthdate,fphone,fethnic,fidtype,fage,fculture,fjob,fprovince,fcity,fcounty,fdistrict,fvillage,fregistered,address,creatdate,getmarrieddate,regtypeid,landlinenumber,mimg,fimg,email,doctorname,qimgm,qimgf FROM userinfo WHERE userid = ? 
+2020-05-04 09:55:59,207 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122414(Integer)
+2020-05-04 09:55:59,210 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-05-04 09:55:59,212 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT id,content FROM suggest 
+2020-05-04 09:55:59,212 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-05-04 09:55:59,214 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 7
+2020-05-04 09:55:59,467 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM healthcheckup a , userinfo b WHERE a.`userid`=b.`userid` and a.`userid`=? AND a.`sex`=?; 

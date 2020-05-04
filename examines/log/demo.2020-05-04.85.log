@@ -1,0 +1,16 @@
+2020-05-04 09:29:11,197 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-05-04 09:29:11,201 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT a.`adviseArr` FROM yxadvisecheckresult a,yxcheckresult b WHERE a.`resultId`=b.`resultId` AND b.userId=? AND b.`sex`=? 
+2020-05-04 09:29:11,202 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer), 0(Integer)
+2020-05-04 09:29:11,203 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-05-04 09:29:12,512 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM yxcheckresult WHERE userid=? AND sex=? 
+2020-05-04 09:29:12,515 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT yxid,yxitem FROM yxadvise 
+2020-05-04 09:29:12,516 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-05-04 09:29:12,516 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer), 1(Integer)
+2020-05-04 09:29:12,518 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 5
+2020-05-04 09:29:12,518 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-05-04 09:29:12,545 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT userid,mname,mcard,mbirthdate,mphone,methnic,midtype,mage,mculture,mjob,mprovince,mcity,mcounty,mdistrict,mvillage,mregistered,fname,fcard,fbirthdate,fphone,fethnic,fidtype,fage,fculture,fjob,fprovince,fcity,fcounty,fdistrict,fvillage,fregistered,address,creatdate,getmarrieddate,regtypeid,landlinenumber,mimg,fimg,email,doctorname,qimgm,qimgf FROM userinfo WHERE userid = ? 
+2020-05-04 09:29:12,545 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer)
+2020-05-04 09:29:12,546 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-05-04 09:29:12,551 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT a.`adviseArr` FROM yxadvisecheckresult a,yxcheckresult b WHERE a.`resultId`=b.`resultId` AND b.userId=? AND b.`sex`=? 
+2020-05-04 09:29:12,552 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer), 1(Integer)
+2020-05-04 09:29:12,553 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1

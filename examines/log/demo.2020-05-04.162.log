@@ -1,0 +1,8 @@
+2020-05-04 09:57:31,844 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: update healthcheckup set height=?,bmi=?,weight=?,smmhg=?,mmhgs=?,p=?, isspirit=?,spiritcontent=?,isthefive=?,thefivecontent=?, isposture=?,posturecontent=?,isface=?,facecontent=?,ishair=?, haircontent=?,isthyroid=?,thyroidcontent=?,doctorname=?, examinedate=? where userid=? and sex=? 
+2020-05-04 09:57:31,848 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 160(Integer), null, 105.0(Float), null, null, 92(Integer), 0(Integer), null, 0(Integer), null, 0(Integer), null, 0(Integer), null, 0(Integer), null, 0(Integer), null, 陈继(String), 2020-05-04 00:00:00.0(Timestamp), 2020122414(Integer), 0(Integer)
+2020-05-04 09:57:31,849 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 1
+2020-05-04 09:57:38,771 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM healthcheckup a , userinfo b WHERE a.`userid`=b.`userid` and a.`userid`=? AND a.`sex`=?; 
+2020-05-04 09:57:38,772 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122414(Integer), 0(Integer)
+2020-05-04 09:57:38,774 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-05-04 09:57:38,782 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM healthcheckup a , userinfo b WHERE a.`userid`=b.`userid` and a.`userid`=? AND a.`sex`=?; 
+2020-05-04 09:57:38,782 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122414(Integer), 0(Integer)

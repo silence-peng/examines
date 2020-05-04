@@ -1,0 +1,10 @@
+2020-05-04 09:34:11,244 INFO (StartupInfoLogger.java:59)- Started ControlerApplication in 1.6829282 seconds (JVM running for 193.522)
+2020-05-04 09:34:11,785 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from xexamine where userid=? and sex=? 
+2020-05-04 09:34:11,786 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: null, 0(Integer)
+2020-05-04 09:34:11,787 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 0
+2020-05-04 09:34:12,284 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from oralcavity where userid=? and sex=? 
+2020-05-04 09:34:12,284 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: null, 0(Integer)
+2020-05-04 09:34:12,285 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 0
+2020-05-04 09:34:14,548 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM userinfo a LEFT JOIN bultrasound b ON a.`userId`=b.`userId` WHERE 1=1 limit ?,? 
+2020-05-04 09:34:14,559 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Integer), 3(Integer)
+2020-05-04 09:34:14,561 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 3

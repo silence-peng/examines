@@ -1,0 +1,9 @@
+2020-05-04 09:28:38,602 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM yxcheckresult WHERE userid=? AND sex=? 
+2020-05-04 09:28:38,606 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT yxid,yxitem FROM yxadvise 
+2020-05-04 09:28:38,630 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-05-04 09:28:38,630 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer), 1(Integer)
+2020-05-04 09:28:38,631 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 5
+2020-05-04 09:28:38,632 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-05-04 09:28:38,653 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT userid,mname,mcard,mbirthdate,mphone,methnic,midtype,mage,mculture,mjob,mprovince,mcity,mcounty,mdistrict,mvillage,mregistered,fname,fcard,fbirthdate,fphone,fethnic,fidtype,fage,fculture,fjob,fprovince,fcity,fcounty,fdistrict,fvillage,fregistered,address,creatdate,getmarrieddate,regtypeid,landlinenumber,mimg,fimg,email,doctorname,qimgm,qimgf FROM userinfo WHERE userid = ? 
+2020-05-04 09:28:38,654 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer)
+2020-05-04 09:28:38,655 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1

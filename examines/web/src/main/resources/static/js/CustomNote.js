@@ -6,10 +6,10 @@ layui.use(['form','layer','laydate','jquery','table'], function() {
 		,table = layui.table;
 		
 		laydate.render({
-		   elem: '#startdate'
+		   elem: '#mbirthdate'
 		});
 		laydate.render({
-		   elem: '#enddate'
+		   elem: '#fbirthdate'
 		});
 		
 		table.render({

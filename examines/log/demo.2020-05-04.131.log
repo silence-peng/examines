@@ -1,0 +1,16 @@
+2020-05-04 09:35:22,612 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-05-04 09:35:22,615 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from yxcheckresult where userid=? and sex=? 
+2020-05-04 09:35:22,616 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer), 0(Integer)
+2020-05-04 09:35:22,618 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 5
+2020-05-04 09:35:22,619 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-05-04 09:35:22,634 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from yxadvisecheckresult WHERE resultid=? 
+2020-05-04 09:35:22,635 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 1(Integer)
+2020-05-04 09:35:22,636 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-05-04 09:35:35,743 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from yxadvisecheckresult WHERE resultid=? 
+2020-05-04 09:35:35,744 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 1(Integer)
+2020-05-04 09:35:35,745 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-05-04 09:35:35,745 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE yxadvisecheckresult SET adviseArr=? WHERE resultId=? 
+2020-05-04 09:35:35,745 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2(String), 1(Integer)
+2020-05-04 09:35:35,749 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 1
+2020-05-04 09:35:35,749 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE yxcheckresult SET userid = ?,sex = ?,isabnormal = ?,abnormalities = ?,disease = ?,sanitation = ?,consult = ?,supplement = ?,advise = ?,adviseproject = ?,isadvise = ?,referralhospital = ?,referraldate = ?,forwarddate = ?,provedate = ?,doctorname = ?,examinedate = ?,isoral = ?,isx = ?,iscgkz = ?,isover = ? WHERE resultid = ? 
+2020-05-04 09:35:35,750 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer), 0(Integer), 0(Integer), null, null, 卫生良好(String), (String), (String), (String), (String), 1(Integer), (String), null, null, null, 张三(String), 2020-04-23 00:00:00.0(Timestamp), 1(Integer), 1(Integer), 1(Integer), 1(Integer), 1(Integer)

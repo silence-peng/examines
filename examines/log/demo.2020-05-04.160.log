@@ -1,0 +1,7 @@
+2020-05-04 09:56:45,429 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-05-04 09:57:17,081 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM healthcheckup a , userinfo b WHERE a.`userid`=b.`userid` and a.`userid`=? AND a.`sex`=?; 
+2020-05-04 09:57:17,083 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122414(Integer), 0(Integer)
+2020-05-04 09:57:17,084 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 0
+2020-05-04 09:57:17,098 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: insert into healthcheckup(userid,height,bmi,weight,smmhg,mmhgs,p,isspirit,spiritcontent,isthefive,thefivecontent,isposture,posturecontent,isface,facecontent,ishair,haircontent,isthyroid ,thyroidcontent,doctorname,examinedate,sex) values(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?, ?,?,?,?) 
+2020-05-04 09:57:17,099 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122414(Integer), 160(Integer), null, 105.0(Float), null, null, 92(Integer), 0(Integer), null, 0(Integer), null, 0(Integer), null, 0(Integer), null, 0(Integer), null, 0(Integer), null, 张三(String), 2020-05-04 00:00:00.0(Timestamp), 0(Integer)
+2020-05-04 09:57:17,103 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 1

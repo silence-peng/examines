@@ -1,0 +1,10 @@
+2020-05-04 10:42:16,350 INFO (StartupInfoLogger.java:59)- Started ControlerApplication in 2.0107036 seconds (JVM running for 1324.195)
+2020-05-04 10:42:16,996 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM userinfo a LEFT JOIN bultrasound b ON a.`userId`=b.`userId` WHERE 1=1 limit ?,? 
+2020-05-04 10:42:16,998 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Integer), 3(Integer)
+2020-05-04 10:42:17,000 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 3
+2020-05-04 10:42:17,002 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT count(*) FROM userinfo a LEFT JOIN bultrasound b ON a.`userId`=b.`userId` WHERE 1=1 
+2020-05-04 10:42:17,003 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-05-04 10:42:17,004 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-05-04 10:42:41,396 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM userinfo a LEFT JOIN bultrasound b ON a.`userId`=b.`userId` WHERE 1=1 limit ?,? 
+2020-05-04 10:42:41,397 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Integer), 3(Integer)
+2020-05-04 10:42:41,399 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 3

@@ -29,10 +29,10 @@ public class LoginIntercepoter implements HandlerInterceptor {
         }
         Admin admin = (Admin) request.getSession().getAttribute("admin");
         System.out.println(request.getServletPath());
-        /*if(admin.getUqx()==1){
+        if(admin.getUqx()==1){
             return true;
         }else if(admin.getUqx()==2){
-            if (request.getServletPath().contains("Note") || request.getServletPath().contains("home") || request.getServletPath().contains("Essentialinfo")|| request.getServletPath().contains("General") ||request.getServletPath().contains("message")){
+            if (request.getServletPath().contains("home") || request.getServletPath().contains("Essentialinfo")|| request.getServletPath().contains("General") || request.getServletPath().contains("Bchao") || request.getServletPath().contains("FindBchao") || request.getServletPath().contains("image") || request.getServletPath().contains("UploadingB")){
                 return true;
             }else{
                 return false;
@@ -44,18 +44,19 @@ public class LoginIntercepoter implements HandlerInterceptor {
                 return false;
             }
         }else if(admin.getUqx()==4){
-            if (request.getServletPath().contains("Note")){
+            if (request.getServletPath().contains("Note") || request.getServletPath().contains("home") || request.getServletPath().contains("Essentialinfo")|| request.getServletPath().contains("General") ||request.getServletPath().contains("message")){
                 return true;
             }else{
                 return false;
             }
         }else if(admin.getUqx()==5){
-            if (request.getServletPath().contains("Note")){
+            if ( request.getServletPath().contains("home") || request.getServletPath().contains("Essentialinfo")|| request.getServletPath().contains("General") || request.getServletPath().contains("newRecord") || request.getServletPath().contains("tion") || request.getServletPath().contains("assesAndOther") || request.getServletPath().contains("Assess")){
                 return true;
             }else{
+                /*request.getRequestDispatcher("message").forward(request, response);*/
                 return false;
             }
-        }*/
+        }
         return true;
     }
 }

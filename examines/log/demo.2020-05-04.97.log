@@ -1,0 +1,10 @@
+2020-05-04 09:31:38,222 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 李四(String), 123456(String)
+2020-05-04 09:31:38,238 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-05-04 09:31:41,923 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM userinfo a LEFT JOIN bultrasound b ON a.`userId`=b.`userId` WHERE 1=1 limit ?,? 
+2020-05-04 09:31:41,924 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Integer), 3(Integer)
+2020-05-04 09:31:41,932 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 3
+2020-05-04 09:31:41,938 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT count(*) FROM userinfo a LEFT JOIN bultrasound b ON a.`userId`=b.`userId` WHERE 1=1 
+2020-05-04 09:31:41,938 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-05-04 09:31:41,941 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-05-04 09:31:58,275 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM yxcheckresult WHERE userid=? AND sex=? 
+2020-05-04 09:31:58,276 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: null, 0(Integer)
