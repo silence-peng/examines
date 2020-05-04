@@ -1,0 +1,12 @@
+2020-05-04 08:52:04,082 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT count(0) FROM userinfo WHERE 1 = 1 
+2020-05-04 08:52:04,085 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-05-04 08:52:04,086 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-05-04 08:52:04,087 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM userinfo WHERE 1=1 LIMIT ? 
+2020-05-04 08:52:04,087 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 3(Integer)
+2020-05-04 08:52:04,089 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 3
+2020-05-04 08:52:04,743 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT count(0) FROM userinfo u, assess a WHERE u.userid = a.userid 
+2020-05-04 08:52:04,743 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-05-04 08:52:04,745 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-05-04 08:52:04,745 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT u.userid,u.fname,u.fage,u.fcard,u.fphone,u.fbirthdate,a.content as address FROM userinfo u,assess a WHERE u.userid=a.userid LIMIT ? 
+2020-05-04 08:52:04,746 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 10(Integer)
+2020-05-04 08:52:04,747 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1

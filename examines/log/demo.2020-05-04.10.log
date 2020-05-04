@@ -1,0 +1,11 @@
+2020-05-04 08:29:46,233 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-05-04 08:29:46,235 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-05-04 08:29:46,236 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM userinfo WHERE 1=1 LIMIT ? 
+2020-05-04 08:29:46,237 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 3(Integer)
+2020-05-04 08:29:46,239 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 3
+2020-05-04 08:29:50,929 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT count(0) FROM userinfo WHERE 1 = 1 AND fname LIKE concat('%', ?, '%') 
+2020-05-04 08:29:50,930 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 刘(String)
+2020-05-04 08:29:50,932 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-05-04 08:29:50,934 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM userinfo WHERE 1=1 AND fname LIKE concat('%',?,'%') LIMIT ? 
+2020-05-04 08:29:50,935 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 刘(String), 3(Integer)
+2020-05-04 08:29:50,937 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1

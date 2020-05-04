@@ -1,0 +1,12 @@
+2020-05-04 08:57:01,229 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM userinfo a LEFT JOIN bultrasound b ON a.`userId`=b.`userId` WHERE 1=1 limit ?,? 
+2020-05-04 08:57:01,232 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Integer), 3(Integer)
+2020-05-04 08:57:01,234 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 3
+2020-05-04 08:57:01,236 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT count(*) FROM userinfo a LEFT JOIN bultrasound b ON a.`userId`=b.`userId` WHERE 1=1 
+2020-05-04 08:57:01,238 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-05-04 08:57:01,239 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-05-04 08:58:42,040 INFO (StartupInfoLogger.java:50)- Starting ControlerApplication on DESKTOP-E0OONUJ with PID 15300 (E:\IDEAProject\examines\examines\web\target\classes started by ZZW in E:\IDEAProject\examines\examines)
+2020-05-04 08:58:42,040 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2020-05-04 08:58:42,041 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2020-05-04 08:58:50,237 INFO (StartupInfoLogger.java:50)- Starting ControlerApplication on DESKTOP-E0OONUJ with PID 416 (E:\IDEAProject\examines\examines\web\target\classes started by ZZW in E:\IDEAProject\examines\examines)
+2020-05-04 08:58:50,294 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2020-05-04 08:58:50,296 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default

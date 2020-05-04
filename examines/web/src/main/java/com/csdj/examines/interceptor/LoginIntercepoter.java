@@ -29,34 +29,30 @@ public class LoginIntercepoter implements HandlerInterceptor {
         }
         Admin admin = (Admin) request.getSession().getAttribute("admin");
         System.out.println(request.getServletPath());
-       /* if(admin.getUqx()==1){
+        /*if(admin.getUqx()==1){
             return true;
         }else if(admin.getUqx()==2){
-            if (request.getServletPath().contains("Note") || request.getServletPath().contains("home") || request.getServletPath().contains("Essentialinfo")){
+            if (request.getServletPath().contains("Note") || request.getServletPath().contains("home") || request.getServletPath().contains("Essentialinfo")|| request.getServletPath().contains("General") ||request.getServletPath().contains("message")){
                 return true;
             }else{
-                response.sendRedirect("/message.html");
                 return false;
             }
         }else if(admin.getUqx()==3){
-            if (request.getServletPath().contains("Note")){
+            if (request.getServletPath().contains("Prove") || request.getServletPath().contains("check") || request.getServletPath().contains("home") || request.getServletPath().contains("Essentialinfo")|| request.getServletPath().contains("General") ||request.getServletPath().contains("-f") ||request.getServletPath().contains("-m")){
                 return true;
             }else{
-                response.sendRedirect("/message.html");
                 return false;
             }
         }else if(admin.getUqx()==4){
             if (request.getServletPath().contains("Note")){
                 return true;
             }else{
-                response.sendRedirect("/message.html");
                 return false;
             }
         }else if(admin.getUqx()==5){
             if (request.getServletPath().contains("Note")){
                 return true;
             }else{
-                response.sendRedirect("/message.html");
                 return false;
             }
         }*/

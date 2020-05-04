@@ -1,0 +1,11 @@
+2020-05-04 08:49:06,150 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 10(Integer)
+2020-05-04 08:49:06,157 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-05-04 08:49:08,250 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT count(0) FROM userinfo WHERE 1 = 1 
+2020-05-04 08:49:08,251 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-05-04 08:49:08,252 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-05-04 08:49:08,253 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM userinfo where 1=1 order by creatDate desc LIMIT ? 
+2020-05-04 08:49:08,254 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 3(Integer)
+2020-05-04 08:49:08,257 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 3
+2020-05-04 08:49:08,741 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT userid,mname,mcard,mbirthdate,mphone,methnic,midtype,mage,mculture,mjob,mprovince,mcity,mcounty,mdistrict,mvillage,mregistered,fname,fcard,fbirthdate,fphone,fethnic,fidtype,fage,fculture,fjob,fprovince,fcity,fcounty,fdistrict,fvillage,fregistered,address,creatdate,getmarrieddate,regtypeid,landlinenumber,mimg,fimg,email,doctorname FROM userinfo WHERE userid = ? 
+2020-05-04 08:49:08,742 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer)
+2020-05-04 08:49:08,748 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1

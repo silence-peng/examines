@@ -1,0 +1,12 @@
+2020-05-04 08:46:45,714 INFO (StartupInfoLogger.java:59)- Started ControlerApplication in 1.5829448 seconds (JVM running for 2214.847)
+2020-05-04 08:46:54,620 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT regtypeid,type FROM registertype 
+2020-05-04 08:46:54,622 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-05-04 08:46:54,624 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 2
+2020-05-04 08:47:07,431 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM healthcheckup a , userinfo b WHERE a.`userid`=b.`userid` and a.`userid`=? AND a.`sex`=?; 
+2020-05-04 08:47:07,432 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer), 0(Integer)
+2020-05-04 08:47:07,436 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-05-04 08:47:07,452 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM healthcheckup a , userinfo b WHERE a.`userid`=b.`userid` and a.`userid`=? AND a.`sex`=?; 
+2020-05-04 08:47:07,452 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer), 0(Integer)
+2020-05-04 08:47:07,454 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-05-04 08:47:08,036 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM clinicalexamination a,abo c WHERE c.id=a.`abotypeId` AND a.`userId`=? and a.`sex`=?; 
+2020-05-04 08:47:08,036 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer), 0(Integer)

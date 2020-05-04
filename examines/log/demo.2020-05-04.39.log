@@ -1,0 +1,11 @@
+2020-05-04 08:49:42,520 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-05-04 08:49:42,524 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-05-04 08:49:47,433 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT regtypeid,type FROM registertype 
+2020-05-04 08:49:47,434 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-05-04 08:49:47,435 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 2
+2020-05-04 08:49:48,629 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM healthcheckup a , userinfo b WHERE a.`userid`=b.`userid` and a.`userid`=? AND a.`sex`=?; 
+2020-05-04 08:49:48,629 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer), 0(Integer)
+2020-05-04 08:49:48,632 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-05-04 08:49:48,651 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM healthcheckup a , userinfo b WHERE a.`userid`=b.`userid` and a.`userid`=? AND a.`sex`=?; 
+2020-05-04 08:49:48,651 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122412(Integer), 0(Integer)
+2020-05-04 08:49:48,653 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1

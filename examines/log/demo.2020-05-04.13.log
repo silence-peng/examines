@@ -1,0 +1,8 @@
+2020-05-04 08:34:12,717 INFO (StartupInfoLogger.java:59)- Started ControlerApplication in 1.6180387 seconds (JVM running for 1461.851)
+2020-05-04 08:34:37,028 INFO (StartupInfoLogger.java:50)- Starting ControlerApplication on DESKTOP-E0OONUJ with PID 15300 (E:\IDEAProject\examines\examines\web\target\classes started by ZZW in E:\IDEAProject\examines\examines)
+2020-05-04 08:34:37,029 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2020-05-04 08:34:37,029 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2020-05-04 08:34:38,697 INFO (StartupInfoLogger.java:59)- Started ControlerApplication in 1.766561 seconds (JVM running for 1487.831)
+2020-05-04 08:34:39,182 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM userinfo a LEFT JOIN bultrasound b ON a.`userId`=b.`userId` WHERE 1=1 limit ?,? 
+2020-05-04 08:34:39,184 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Integer), 3(Integer)
+2020-05-04 08:34:39,187 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 3
