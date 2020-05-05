@@ -1,0 +1,12 @@
+2020-05-04 16:51:01,937 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT LAST_INSERT_ID() 
+2020-05-04 16:51:01,940 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-05-04 16:51:01,941 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-05-04 16:51:01,942 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: INSERT INTO yxcheckresult(userId,sex) VALUES(?,?) 
+2020-05-04 16:51:01,943 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122432(Integer), 0(Integer)
+2020-05-04 16:51:01,945 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 1
+2020-05-04 16:51:01,945 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: INSERT INTO yxcheckresult(userId,sex) VALUES(?,?) 
+2020-05-04 16:51:01,946 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 2020122432(Integer), 1(Integer)
+2020-05-04 16:51:01,947 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 1
+2020-05-04 16:52:37,948 INFO (StartupInfoLogger.java:50)- Starting ControlerApplication on DESKTOP-E0OONUJ with PID 3940 (E:\IDEAProject\examines\examines\web\target\classes started by ZZW in E:\IDEAProject\examines\examines)
+2020-05-04 16:52:37,953 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2020-05-04 16:52:37,998 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
