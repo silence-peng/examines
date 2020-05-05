@@ -14,24 +14,37 @@
 			background-repeat: no-repeat;
 			background-size: 100%;
 		}
+		.dlwbk{
+			position: absolute;
+			left: 550px;
+			top: 20px;
+		}
+		.tp{
+			position: relative;
+			left: 10px;
+		}
+		/*.dl{*/
+		/*	background-image: url("/image/img/timg.jpg");*/
+		/*}*/
 	</style>
 	<body >
 		<div class="layui-container" >
 			<form class="layui-form">
 				<div class="" style="margin-top: 250px;">
-					<div class="" style="border: 1px silver solid;width: 400px;height: 400px;margin: 0 auto;background-color: white;">
+					<div class="dl" style="border: 1px silver solid;width: 700px;height: 400px;margin: 0 auto;background-color: white">
 						<fieldset class="layui-elem-field layui-field-title">
-						  <legend>登录</legend>
+						  <legend>欢迎来到婚前检查系统</legend>
 						</fieldset>
-						<div style="margin-top: 80px;">
-							<div class="layui-form-item">
+						<img src="image/img/timgg.jpg" class="tp">
+						<div style="margin-top: 80px;" class="dlwbk"  >
+							<div class="layui-form-item" >
 							    <label class="layui-form-label">管理员</label>
 							    <div class="layui-input-inline">
 							      <input type="text" name="doctorname" lay-verify="required" autocomplete="off" class="layui-input">
 							    </div>
 							</div>
 							<br />
-							<div class="layui-form-item">
+							<div class="layui-form-item"  >
 							    <label class="layui-form-label">密码</label>
 							    <div class="layui-input-inline">
 							      <input type="password" name="doctorpassword" lay-verify="required" autocomplete="off" class="layui-input">
