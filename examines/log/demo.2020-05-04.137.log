@@ -1,0 +1,10 @@
+2020-05-04 09:49:28,250 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM userinfo a LEFT JOIN bultrasound b ON a.`userId`=b.`userId` WHERE 1=1 and a.mname like concat('%',?,'%') limit ?,? 
+2020-05-04 09:49:28,253 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 言(String), 0(Integer), 3(Integer)
+2020-05-04 09:49:28,257 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-05-04 09:49:28,259 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT count(*) FROM userinfo a LEFT JOIN bultrasound b ON a.`userId`=b.`userId` WHERE 1=1 and a.mname like concat('%',?,'%') 
+2020-05-04 09:49:28,261 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 言(String)
+2020-05-04 09:49:28,262 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-05-04 09:49:33,026 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT count(0) FROM userinfo WHERE 1 = 1 
+2020-05-04 09:49:33,026 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-05-04 09:49:33,028 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-05-04 09:49:33,030 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM userinfo where 1=1 order by creatDate desc LIMIT ? 

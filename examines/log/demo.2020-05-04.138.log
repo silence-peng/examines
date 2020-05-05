@@ -1,0 +1,8 @@
+2020-05-04 09:49:33,030 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 3(Integer)
+2020-05-04 09:49:33,037 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 3
+2020-05-04 09:49:33,427 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT userid,mname,mcard,mbirthdate,mphone,methnic,midtype,mage,mculture,mjob,mprovince,mcity,mcounty,mdistrict,mvillage,mregistered,fname,fcard,fbirthdate,fphone,fethnic,fidtype,fage,fculture,fjob,fprovince,fcity,fcounty,fdistrict,fvillage,fregistered,address,creatdate,getmarrieddate,regtypeid,landlinenumber,mimg,fimg,email,doctorname,qimgm,qimgf FROM userinfo WHERE userid = ? 
+2020-05-04 09:49:33,428 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: null
+2020-05-04 09:49:33,430 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 0
+2020-05-04 09:49:36,274 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM userinfo a LEFT JOIN bultrasound b ON a.`userId`=b.`userId` WHERE 1=1 limit ?,? 
+2020-05-04 09:49:36,275 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Integer), 3(Integer)
+2020-05-04 09:49:36,279 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 3
